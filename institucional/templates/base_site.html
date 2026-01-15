@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block info %}
+    {% endblock %}
+
+    <link rel="icon" href="" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts: Poppins (títulos) + Inter (textos) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+
+    <link rel="canonical" href="">
+
+    {% block ld_json %}
+    {% endblock %}
+
+    <!-- CSS base global (cores + tipografia) -->
+    <link rel="stylesheet" href="{% static 'css/base_style_site.css' %}">
+    {% block styles %}
+    {% endblock %}
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <main class="flex-grow-1">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Script de animações -->
+    <script src="{% static 'js/animation_script.js' %}"></script>
+
+    {% block scripts %}
+    {% endblock %}
+</body>
+
+</html>
