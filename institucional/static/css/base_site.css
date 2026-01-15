@@ -1,0 +1,210 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+    /* Brand colors (from Adobe Color) */
+    --color-navy-900: #010D26;
+    --color-navy-800: #122A40;
+
+    --color-gold-300: #F2D680;
+    --color-gold-500: #BF9F63;
+    --color-gold-700: #8C6D46;
+
+    /* Neutrals */
+    --color-white: #FFFFFF;
+    --color-ink: #0B1220;
+    /* fallback text on light backgrounds */
+    --color-muted: #556070;
+    /* subtle text */
+    --color-border: rgba(1, 13, 38, 0.12);
+
+    /* Typography */
+    --font-display: "Cinzel", ui-serif, Georgia, "Times New Roman", serif;
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+    /* Layout */
+    --container-max: 1140px;
+    --radius-sm: 10px;
+    --radius-md: 16px;
+
+    /* Effects */
+    --shadow-sm: 0 8px 24px rgba(1, 13, 38, 0.08);
+
+    /* Gold gradient (logo-like) */
+    --gold-gradient: linear-gradient(135deg, var(--color-gold-300), var(--color-gold-500), var(--color-gold-700));
+}
+
+/* Minimal reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background: var(--color-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* Base elements */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--color-navy-800);
+    text-decoration: none;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+::selection {
+    background: rgba(242, 214, 128, 0.55);
+}
+
+/* Typography scale */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-display);
+    color: var(--color-navy-900);
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+    margin: 0 0 0.6rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 3.2vw, 3.1rem);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+}
+
+h3 {
+    font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+}
+
+p {
+    margin: 0 0 1rem;
+    color: var(--color-ink);
+}
+
+.small-caps {
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+    color: var(--color-muted);
+}
+
+/* “Gold” text for logo-like highlights */
+.text-gold {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Containers */
+.container-custom {
+    width: min(100% - 2rem, var(--container-max));
+    margin-inline: auto;
+}
+
+/* Sections */
+.section {
+    padding: clamp(2.5rem, 5vw, 5rem) 0;
+}
+
+.section--dark {
+    background: var(--color-navy-900);
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.section--dark h1,
+.section--dark h2,
+.section--dark h3 {
+    color: #fff;
+}
+
+.section--dark a {
+    color: var(--color-gold-300);
+}
+
+/* Cards */
+.card-min {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    padding: 1.25rem;
+}
+
+/* Buttons */
+.btn-min {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: 999px;
+    padding: .75rem 1.1rem;
+    border: 1px solid transparent;
+    font-weight: 600;
+    transition: transform .15s ease, opacity .15s ease, background .15s ease, border-color .15s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-min:active {
+    transform: translateY(1px);
+}
+
+.btn-primary-min {
+    background: var(--color-navy-900);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.btn-primary-min:hover {
+    opacity: .92;
+}
+
+.btn-outline-gold {
+    background: transparent;
+    border-color: rgba(191, 159, 99, 0.55);
+    color: var(--color-navy-900);
+}
+
+.btn-outline-gold:hover {
+    border-color: rgba(191, 159, 99, 0.9);
+    background: rgba(242, 214, 128, 0.12);
+}
+
+/* Divider */
+.hr-min {
+    height: 1px;
+    border: 0;
+    background: var(--color-border);
+    margin: 1.25rem 0;
+}
+
+/* Focus accessibility */
+:focus-visible {
+    outline: 3px solid rgba(242, 214, 128, 0.75);
+    outline-offset: 3px;
+    border-radius: 10px;
+}

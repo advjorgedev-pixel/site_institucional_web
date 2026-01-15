@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView, ListView, DetailView
+from django.db.models import Count
+from django.shortcuts import get_object_or_404
+from . import models
 
-# Create your views here.
+
+class HomeView(TemplateView):
+    template_name = "home/home_site.html"
