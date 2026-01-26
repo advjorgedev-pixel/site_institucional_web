@@ -217,6 +217,8 @@ p {
 /* =========================
    Header/Footer
 ========================= */
+
+
 .site-header {
     background: var(--color-navy-800);
     transition: box-shadow .2s ease, background .2s ease, backdrop-filter .2s ease;
@@ -514,4 +516,92 @@ p {
 .footer-legal {
     font-size: .82rem;
     color: rgba(255, 255, 255, .55);
+}
+
+
+/* =========================
+   Modals (Privacy/Terms)
+========================= */
+.modal-themed {
+    background: var(--color-navy-800);
+    color: rgba(255, 255, 255, .88);
+    border: 1px solid rgba(255, 255, 255, .10);
+    border-radius: var(--radius-md);
+    box-shadow: 0 18px 60px rgba(0, 0, 0, .35);
+    overflow: hidden;
+}
+
+.modal-themed .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, .10);
+    background: rgba(1, 13, 38, .25);
+}
+
+.modal-themed .modal-title {
+    font-family: var(--font-display);
+    color: var(--color-white);
+    letter-spacing: .02em;
+}
+
+.modal-body-themed {
+    padding: 1.25rem 1.25rem;
+}
+
+.modal-themed .section-heading {
+    font-family: var(--font-sans);
+    font-size: .85rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-gold-300);
+    margin: 1.25rem 0 .5rem;
+}
+
+.modal-themed p,
+.modal-themed li {
+    color: rgba(255, 255, 255, .75);
+}
+
+.modal-link {
+    color: var(--color-gold-300);
+    text-decoration: none;
+    text-underline-offset: 4px;
+}
+
+.modal-link:hover {
+    text-decoration: underline;
+    color: var(--color-gold-300);
+}
+
+.modal-muted {
+    color: rgba(255, 255, 255, .65);
+}
+
+.modal-footer-themed {
+    border-top: 1px solid rgba(255, 255, 255, .10);
+    background: rgba(1, 13, 38, .18);
+}
+
+.btn-outline-light-min {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .18);
+    color: rgba(255, 255, 255, .88);
+    padding: .55rem 1rem;
+}
+
+.btn-outline-light-min:hover {
+    background: rgba(255, 255, 255, .08);
+    text-decoration: none;
+}
+
+body.modal-open {
+    padding-right: 0 !important;
+}
+
+.fixed-top,
+.sticky-top,
+.modal-open .fixed-top,
+.modal-open .sticky-top {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    right: 0 !important;
 }
