@@ -12,6 +12,7 @@
 
     /* Neutrals */
     --color-white: #FFFFFF;
+    --color-white-70: rgba(255, 255, 255, .70);
     --color-ink: #0B1220;
     /* fallback text on light backgrounds */
     --color-muted: #556070;
@@ -32,7 +33,7 @@
 
     /* Gold gradient (logo-like) */
     --gold-gradient: linear-gradient(135deg, var(--color-gold-700) 30%, var(--color-gold-500)100%, var(--color-gold-300) 50%);
-    
+
     --whatsapp-color: #25D366;
 }
 
@@ -212,7 +213,7 @@ p {
 }
 
 /* =========================
-   Header
+   Header/Footer
 ========================= */
 .site-header {
     background: var(--color-navy-800);
@@ -225,13 +226,14 @@ p {
     box-shadow: var(--shadow-sm);
 }
 
-.brand-logo {
+.brand-logo,
+.footer-logo {
     width: 44px;
     height: 44px;
     object-fit: contain;
 }
 
-.brand-kicker {
+.brand-kicker, .footer-kicker {
     font-family: var(--font-sans);
     font-size: 0.72rem;
     letter-spacing: 0.22em;
@@ -240,7 +242,7 @@ p {
     font-weight: 600;
 }
 
-.brand-name {
+.brand-name, .footer-name{
     font-family: var(--font-display);
     font-size: 0.98rem;
     color: var(--color-white);
@@ -251,16 +253,19 @@ p {
 .header-link {
     position: relative;
     font-weight: 600;
-    color: var(--color-white);
+    color: var(--color-white-70);
     padding: .6rem .8rem;
     border-radius: 10px;
     transition: color .15s ease, background .15s ease;
 }
 
-.header-link:hover {
-    color: var(--color-navy-900);
+.header-link:hover, .footer-link:hover{
+    color: var(--color-white);
     background: rgba(242, 214, 128, 0.10);
+    text-decoration: none;
 }
+
+
 
 .header-link::after {
     content: "";
@@ -276,7 +281,8 @@ p {
     transition: transform .18s ease;
 }
 
-.header-link:hover::after {
+.header-link:hover::after,
+.footer-link:hover::after {
     transform: scaleX(1);
 }
 
@@ -288,11 +294,11 @@ p {
     transform: scaleX(1);
 }
 
-.header-cta {
+.header-cta, .footer-cta {
     background: var(--gold-gradient);
-    color: #fff;
+    color: var(--color-navy-800);
     padding: .30rem 1.1rem;
-    box-shadow: 0 10px 26px rgba(1, 13, 38, 0.12);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .20);
 }
 
 .header-cta:hover {
@@ -386,4 +392,118 @@ p {
         right: 0.75rem;
         bottom: 0.75rem;
     }
+}
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+    background: var(--color-navy-800);
+    color: rgba(255, 255, 255, .88);
+}
+
+.footer-text {
+    font-size: .95rem;
+    color: var(--color-white-70);
+    margin: 0;
+    max-width: 42ch;
+}
+
+.footer-title {
+    font-family: var(--font-sans);
+    font-size: .85rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-gold-700);
+    margin-bottom: 1.25rem;
+}
+
+.footer-link{
+    position: relative;
+    display: inline-block;
+    color: var(--color-white-70);
+    padding: .35rem .55rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: color .15s ease, background .15s ease;
+}
+
+
+/* underline animado (mesmo padrão do header) */
+.footer-link::after{
+    content: "";
+    position: absolute;
+    left: .55rem;
+    right: .55rem;
+    bottom: .18rem;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--gold-gradient);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .18s ease;
+}
+
+
+.footer-link--small {
+    font-size: .92rem;
+}
+
+.footer-muted {
+    color: var(--color-white-70);
+    font-size: .95rem;
+}
+
+.footer-icon {
+    color: var(--color-gold-700);
+    font-size: 1.05rem;
+    margin-top: .15rem;
+}
+
+.footer-social {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .10);
+    color: var(--color-white);
+    transition: background .15s ease, transform .15s ease;
+    text-decoration: none;
+}
+
+.footer-social:hover {
+    background: rgba(242, 214, 128, .22);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+.footer-cta {
+    background: var(--gold-gradient);
+    color: var(--color-navy-800);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .20);
+}
+
+.footer-cta:hover {
+    opacity: .95;
+    text-decoration: none;
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, .12);
+    margin: 0;
+}
+
+.footer-copy {
+    font-size: .95rem;
+    color: rgba(255, 255, 255, .65);
+}
+
+.footer-legal {
+    font-size: .82rem;
+    color: rgba(255, 255, 255, .55);
 }

@@ -1,0 +1,98 @@
+{% load static %}
+
+<footer class="site-footer">
+    <div class="container py-5">
+        <div class="row g-5 py-3">
+
+            <!-- Brand / About -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <a href="" class="d-flex align-items-center gap-3 mb-4 footer-brand">
+                    <img src="{% static 'img/logo/logo_icon_azul-removebg-preview.png' %}" alt="Jorge R. Sarobe"
+                        class="footer-logo" loading="lazy" decoding="async" />
+                    <div class="lh-sm">
+                        <div class="footer-kicker">ADVOCACIA</div>
+                        <div class="footer-name">Jorge R. Sarobe</div>
+                    </div>
+                </a>
+
+                <p class="footer-text">
+                    Assessoria e consultoria jurídica com atendimento personalizado, estratégia clara e condução segura.
+                </p>
+
+                <div class="d-flex gap-3 mt-4">
+                    <a class="footer-social" href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="footer-social" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3 class="footer-title">NAVEGAÇÃO</h3>
+                <ul class="list-unstyled d-grid gap-2 mb-0">
+                    <li><a class="footer-link" href="">Home</a></li>
+                    <li><a class="footer-link" href="">Sobre</a></li>
+                    <li><a class="footer-link" href="">Serviços</a></li>
+                    <li><a class="footer-link" href="">Planos</a></li>
+                    <li><a class="footer-link" href="">Atualizações</a></li>
+                    <li><a class="footer-link" href="">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Practice areas -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3 class="footer-title">ÁREAS DE ATUAÇÃO</h3>
+                <ul class="list-unstyled d-grid gap-2 mb-0">
+                    <li><a class="footer-link" href="">Direito Bancário</a></li>
+                    <li><a class="footer-link" href="">Direito Sucessório</a></li>
+                    <li><a class="footer-link" href="">Direito Previdenciário</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3 class="footer-title">CONTATO</h3>
+
+                <ul class="list-unstyled d-grid gap-3 mb-0">
+                    <li class="d-flex align-items-start gap-3">
+                        <i class="bi bi-telephone footer-icon"></i>
+                        <a class="footer-link" href="tel:+5548988263060">+55 (48) 98826-3060</a>
+                    </li>
+
+                    <li class="d-flex align-items-start gap-3">
+                        <i class="bi bi-envelope footer-icon"></i>
+                        <a class="footer-link" href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a>
+                    </li>
+
+                    <li class="d-flex align-items-start gap-3">
+                        <i class="bi bi-geo-alt footer-icon"></i>
+                        <span class="footer-muted">Florianópolis - SC</span>
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/5548988263060" target="_blank" rel="noopener noreferrer"
+                    class="btn-min footer-cta mt-4">
+                    <i class="bi bi-whatsapp"></i>
+                    <span>Agendar Consulta</span>
+                </a>
+            </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 py-3">
+            <p class="footer-copy mb-0 text-center text-md-start">
+                © {% now "Y" %} Jorge R. Sarobe - OAB/SC 00000. Todos os direitos reservados.
+            </p>
+
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <a class="footer-link footer-link--small" href="">Política de Privacidade</a>
+                <a class="footer-link footer-link--small" href="">Termos de Uso</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
