@@ -2,24 +2,25 @@
 
 <footer class="site-footer">
     <div class="container py-5">
-        <div class="row g-5 py-3">
+        <div class="row g-5 py-3 text-center text-md-start justify-content-center">
 
             <!-- Brand / About -->
             <div class="col-12 col-md-6 col-lg-3">
-                <a href="" class="d-flex align-items-center gap-3 mb-4 footer-brand">
+                <a href=""
+                    class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-2 mb-4 footer-brand">
                     <img src="{% static 'img/logo/logo_icon_azul-removebg-preview.png' %}" alt="Jorge R. Sarobe"
                         class="footer-logo" loading="lazy" decoding="async" />
-                    <div class="lh-sm">
+                    <div class="lh-sm text-center text-md-start">
                         <div class="footer-kicker">ADVOCACIA</div>
                         <div class="footer-name">Jorge R. Sarobe</div>
                     </div>
                 </a>
 
-                <p class="footer-text">
+                <p class="footer-text mx-auto mx-md-0">
                     Assessoria e consultoria jurídica com atendimento personalizado, estratégia clara e condução segura.
                 </p>
 
-                <div class="d-flex gap-3 mt-4">
+                <div class="d-flex justify-content-center justify-content-md-start gap-2 mt-4">
                     <a class="footer-social" href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-linkedin"></i>
                     </a>
@@ -31,8 +32,8 @@
 
             <!-- Navigation -->
             <div class="col-12 col-md-6 col-lg-3">
-                <h3 class="footer-title">NAVEGAÇÃO</h3>
-                <ul class="list-unstyled d-grid gap-2 mb-0">
+                <h3 class="footer-title text-center text-md-start">NAVEGAÇÃO</h3>
+                <ul class="list-unstyled d-grid gap-1 mb-0">
                     <li><a class="footer-link" href="">Home</a></li>
                     <li><a class="footer-link" href="">Sobre</a></li>
                     <li><a class="footer-link" href="">Serviços</a></li>
@@ -44,8 +45,8 @@
 
             <!-- Practice areas -->
             <div class="col-12 col-md-6 col-lg-3">
-                <h3 class="footer-title">ÁREAS DE ATUAÇÃO</h3>
-                <ul class="list-unstyled d-grid gap-2 mb-0">
+                <h3 class="footer-title text-center text-md-start">ÁREAS DE ATUAÇÃO</h3>
+                <ul class="list-unstyled d-grid gap-1 mb-0">
                     <li><a class="footer-link" href="">Direito Bancário</a></li>
                     <li><a class="footer-link" href="">Direito Sucessório</a></li>
                     <li><a class="footer-link" href="">Direito Previdenciário</a></li>
@@ -54,37 +55,52 @@
 
             <!-- Contact -->
             <div class="col-12 col-md-6 col-lg-3">
-                <h3 class="footer-title">CONTATO</h3>
+                <h3 class="footer-title text-center text-md-start">CONTATO</h3>
 
-                <ul class="list-unstyled d-grid gap-3 mb-0">
-                    <li class="d-flex align-items-start gap-3">
+                <ul class="list-unstyled d-grid gap-2 mb-0">
+                    <li class="d-flex justify-content-center justify-content-md-start align-items-center gap-2">
                         <i class="bi bi-telephone footer-icon"></i>
                         <a class="footer-link" href="tel:+5548988263060">+55 (48) 98826-3060</a>
                     </li>
 
-                    <li class="d-flex align-items-start gap-3">
+                    <li class="d-flex justify-content-center justify-content-md-start align-items-center gap-2">
                         <i class="bi bi-envelope footer-icon"></i>
                         <a class="footer-link" href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a>
                     </li>
 
-                    <li class="d-flex align-items-start gap-3">
+                    <li class="d-flex justify-content-center justify-content-md-start align-items-center gap-2">
                         <i class="bi bi-geo-alt footer-icon"></i>
                         <span class="footer-muted">Florianópolis - SC</span>
                     </li>
                 </ul>
 
-                <a href="https://wa.me/5548988263060" target="_blank" rel="noopener noreferrer"
-                    class="btn-min footer-cta mt-4">
-                    <i class="bi bi-whatsapp"></i>
-                    <span>Agendar Consulta</span>
-                </a>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="https://wa.me/5548988263060" target="_blank" rel="noopener noreferrer"
+                        class="btn-min footer-cta mt-4">
+                        <i class="bi bi-whatsapp"></i>
+                        <span>Agendar Consulta</span>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <hr class="footer-divider" />
+        <!-- Map -->
+        <div class="mt-1">
+            <div class="rounded-4 overflow-hidden border" style="height: 260px;">
+                <iframe class="w-100 h-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.8144364644672!2d-48.607928400000006!3d-27.5992821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273913fba9669b%3A0x9e7e783983cf37ec!2sAthayde%20e%20Z%C3%A1rate%20Escrit%C3%B3rio%20de%20Advocacia%20%7C%20AZ%20Sociedade%20de%20Advogados%20%7C%20S%C3%A3o%20Jos%C3%A9%20Campinas%20%7C%20Advogado%20Especialista!5e0!3m2!1spt-BR!2sbr!4v1749153361435!5m2!1spt-BR!2sbr"
+                    style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    aria-label="Localização do escritório"></iframe>
+            </div>
+        </div>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 py-3">
-            <p class="footer-copy mb-0 text-center text-md-start">
+
+
+        <hr class="footer-divider my-4" />
+
+        <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 py-3 text-center text-md-start">
+            <p class="footer-copy mb-0">
                 © {% now "Y" %} Jorge R. Sarobe - OAB/SC 00000. Todos os direitos reservados.
             </p>
 
@@ -93,6 +109,5 @@
                 <a class="footer-link footer-link--small" href="">Termos de Uso</a>
             </div>
         </div>
-
     </div>
 </footer>
