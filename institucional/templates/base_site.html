@@ -33,10 +33,10 @@
 
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 {% block body_class %}{% endblock %}">
 
     {% include 'components/_header.html' %}
-    <main class="flex-grow-1">
+    <main class="flex-grow-1 ">
         {% block content %}
         {% endblock %}
     </main>

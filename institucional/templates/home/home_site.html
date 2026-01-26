@@ -1,7 +1,10 @@
 {% extends 'base_site.html' %}
 {% load static %}
 
+{% block body_class %}page-home{% endblock %}
+
 {% block styles %}
+<link rel="stylesheet" href="{% static 'css/home_site.css' %}">
 {% endblock %}
 
 {% block ld_json %}
@@ -9,8 +12,10 @@
 
 
 {% block content %}
-
+<!-- Seção Hero -->
+{% include 'home/components/_hero_home.html' %}
 {% endblock %}
 
 {% block scripts %}
+<script src="{% static 'js/home_site.js' %}"></script>
 {% endblock %}
