@@ -235,7 +235,8 @@ p {
     object-fit: contain;
 }
 
-.brand-kicker, .footer-kicker {
+.brand-kicker,
+.footer-kicker {
     font-family: var(--font-sans);
     font-size: 0.72rem;
     letter-spacing: 0.22em;
@@ -244,7 +245,8 @@ p {
     font-weight: 600;
 }
 
-.brand-name, .footer-name{
+.brand-name,
+.footer-name {
     font-family: var(--font-display);
     font-size: 0.98rem;
     color: var(--color-white);
@@ -261,12 +263,12 @@ p {
     transition: color .15s ease, background .15s ease;
 }
 
-.header-link:hover, .footer-link:hover{
+.header-link:hover,
+.footer-link:hover {
     color: var(--color-white);
     background: rgba(242, 214, 128, 0.10);
     text-decoration: none;
 }
-
 
 
 .header-link::after {
@@ -296,7 +298,8 @@ p {
     transform: scaleX(1);
 }
 
-.header-cta, .footer-cta {
+.header-cta,
+.footer-cta {
     background: var(--gold-gradient);
     color: var(--color-navy-800);
     padding: .30rem 1.1rem;
@@ -327,6 +330,8 @@ p {
 
     .header-link {
         padding: .75rem .9rem;
+        white-space: normal;
+        line-height: 1.2;
     }
 
     .header-link::after {
@@ -422,7 +427,7 @@ p {
     margin-bottom: 1.25rem;
 }
 
-.footer-link{
+.footer-link {
     position: relative;
     display: inline-block;
     color: var(--color-white-70);
@@ -434,7 +439,7 @@ p {
 
 
 /* underline animado (mesmo padrão do header) */
-.footer-link::after{
+.footer-link::after {
     content: "";
     position: absolute;
     left: .55rem;
