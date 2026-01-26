@@ -1,0 +1,72 @@
+{% load static %}
+
+<header class="site-header fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark header-navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="" class="navbar-brand d-flex align-items-center">
+                <picture>
+                    <img src="{% static 'img/logo/logo_icon_azul-removebg-preview.png' %}" alt="Sarobe Contabilidade"
+                        class="brand-logo" loading="eager" decoding="async"/>
+                </picture>
+
+                <div class="d-flex flex-column lh-sm ms-2">
+                    <span class="brand-kicker">ADVOCACIA</span>
+                    <span class="brand-name">Jorge R. Sarobe</span>
+                </div>
+            </a>
+
+            <!-- Botão hamburguer (mobile) -->
+            <button class="navbar-toggler header-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu (desktop + mobile) -->
+            <div class="collapse navbar-collapse justify-content-end text-center header-collapse" id="mainNavbar">
+                {% with current=request.resolver_match.url_name %}
+                <ul class="navbar-nav align-items-md-center gap-md-3">
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link header-link {% if current == 'home' %}is-active{% endif %}"
+                            aria-current="{% if current == 'home' %}page{% endif %}">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link header-link {% if current == 'about' %}is-active{% endif %}"
+                            aria-current="{% if current == 'about' %}page{% endif %}">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link header-link {% if current == 'blog' %}is-active{% endif %}">
+                            Atualizações
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href=""
+                            class="nav-link header-link {% if current == 'contact' %}is-active{% endif %}">
+                            Contato
+                        </a>
+                    </li>
+
+                    <li class="nav-item mt-3 mt-md-0 w-100 w-md-auto">
+                        <a href=""
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn-min header-cta d-inline-flex align-items-center justify-content-center mx-auto">
+                            <i class="bi bi-telephone me-2"></i>
+                            Agendar Consulta
+                        </a>
+                    </li>
+                </ul>
+                {% endwith %}
+            </div>
+        </div>
+    </nav>
+</header>
