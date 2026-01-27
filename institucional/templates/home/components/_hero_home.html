@@ -1,7 +1,7 @@
 {% load static %}
 
 {% block content %}
-<section class="hero-home" style="--hero-bg: url('{% static 'img/photos/tesyt.png' %}');">
+<section class="hero-home py-5" style="--hero-bg: url('{% static 'img/photos/tesyt.png' %}');">
     <div class="container-custom h-100">
         <div class="row g-0 h-100 align-items-end align-items-lg-center">
             <div class="col-12 col-lg-7">
@@ -31,7 +31,15 @@
 
             <div class="col-12 col-lg-5 d-none d-lg-block">
             </div>
+
         </div>
     </div>
+
+    <div class="hero-wave" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path d="M0,256L1440,160L1440,320L0,320Z"></path>
+        </svg>
+    </div>
+
 </section>
 {% endblock %}

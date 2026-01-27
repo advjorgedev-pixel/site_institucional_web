@@ -53,7 +53,7 @@ body {
     margin: 0;
     font-family: var(--font-sans);
     color: var(--color-ink);
-    background: var(--color-white);
+    background: var(--color-navy-800);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
