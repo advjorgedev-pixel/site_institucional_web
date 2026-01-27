@@ -339,11 +339,48 @@
 }
 
 .review-stars .bi {
-    color:var(--color-gold-700);
+    color: var(--color-gold-700);
     font-size: .95rem;
 }
 
 .review-text {
     color: var(--color-white-70);
     margin: 0;
+}
+
+
+/* FAQ */
+
+.accordion-themed .accordion-item {
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: .85rem;
+}
+
+.accordion-themed .accordion-button {
+    background: transparent;
+    color:var(--color-white-70);
+    font-weight: 800;
+    padding: 1rem 1.1rem;
+    box-shadow: none;
+}
+
+.accordion-themed .accordion-button.collapsed {
+    color: rgba(255, 255, 255, .92);
+}
+
+.accordion-themed .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(242, 214, 128, .25);
+}
+
+.accordion-themed .accordion-button::after {
+    filter: brightness(1.2);
+}
+
+.accordion-themed .accordion-body {
+    color: rgba(255, 255, 255, .74);
+    padding: 0 1.1rem 1.1rem;
 }
