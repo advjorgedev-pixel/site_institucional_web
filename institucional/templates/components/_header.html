@@ -64,15 +64,6 @@
                         </a>
                     </li>
 
-                    <li class="nav-item mt-3 mt-md-0 w-100 w-md-auto">
-                        <a href="" target="_blank" rel="noopener noreferrer"
-                            class="btn-primary d-inline-flex align-items-center justify-content-center mx-auto"
-                            aria-label="{% trans 'Agendar consulta via WhatsApp' %}">
-                            <i class="bi bi-whatsapp me-2"></i>
-                            {% trans "Agendar Consulta" %}
-                        </a>
-                    </li>
-
                     <li class="nav-item mt-2 mt-md-0">
                         <form action="{% url 'set_language' %}" method="post" class="d-inline-flex align-items-center">
                             {% csrf_token %}
@@ -99,6 +90,15 @@
                             </button>
                             {% endif %}
                         </form>
+                    </li>
+
+                    <li class="nav-item mt-3 mt-md-0 w-100 w-md-auto">
+                        <a href="" target="_blank" rel="noopener noreferrer"
+                            class="btn-primary d-inline-flex align-items-center justify-content-center mx-auto"
+                            aria-label="{% trans 'Agendar consulta via WhatsApp' %}">
+                            <i class="bi bi-whatsapp me-2"></i>
+                            {% trans "Agendar Consulta" %}
+                        </a>
                     </li>
 
                 </ul>

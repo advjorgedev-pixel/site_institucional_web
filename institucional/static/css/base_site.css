@@ -374,7 +374,7 @@ p {
 
 .lang-chip:hover {
     background: rgba(242, 214, 128, .12);
-    border-color: rgba(242, 214, 128, .90);
+    border-color: var(--color-gold-700);
     transform: translateY(-1px);
 }
 
@@ -387,7 +387,7 @@ p {
 }
 
 .lang-chip__next {
-    color: rgba(255, 255, 255, .88);
+    color: var(--color-white-70);
 }
 
 .lang-chip__sep {
