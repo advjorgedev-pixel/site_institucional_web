@@ -1,40 +1,57 @@
 {% load static %}
 <section id="about" class="py-5">
     <div class="container-custom">
-        <div class="row g-4 g-lg-5 align-items-center">
-            <!-- imagem -->
-            <div class="col-12 col-lg-5" data-aos="fade-right">
-                <figure class="about-photo">
+        <div class="row g-4 g-lg-5 align-items-center justify-content-center text-center text-lg-start">
+
+            <!-- TÍTULO (mobile primeiro, desktop dentro do texto) -->
+            <div class="col-12 order-1 d-lg-none" data-aos="fade-up">
+                <p class="section-kicker mb-2">Sobre</p>
+                <h2 class="section-title mb-0">Jorge R. Sarobe</h2>
+            </div>
+
+            <!-- IMAGEM (mobile segundo, desktop esquerda) -->
+            <div class="col-12 col-lg-5 order-2 order-lg-1 d-flex justify-content-center justify-content-lg-start"
+                data-aos="fade-right">
+                <figure class="about-photo mb-0">
                     <img src="{% static 'img/photos/jorge.png' %}" alt="Jorge R. Sarobe" loading="lazy">
                 </figure>
             </div>
 
-            <!-- texto -->
-            <div class="col-12 col-lg-7" data-aos="fade-left">
-                <p class="section-kicker mb-2">Sobre</p>
-                <h2 class="section-title mb-3">Jorge R. Sarobe</h2>
+            <!-- CONTEÚDO (mobile terceiro, desktop direita) -->
+            <div class="col-12 col-lg-7 order-3 order-lg-2" data-aos="fade-left">
+
+                <!-- TÍTULO desktop -->
+                <div class="d-none d-lg-block">
+                    <p class="section-kicker mb-2">Sobre</p>
+                    <h2 class="section-title mb-3">Jorge R. Sarobe</h2>
+                </div>
 
                 <div class="about-text">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi quasi, totam recusandae nisi, blanditiis magnam qui dolores sit corporis vel suscipit inventore expedita. Dolor iste doloribus provident veritatis! Vel.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi quasi, totam recusandae
+                        nisi,
+                        blanditiis magnam qui dolores sit corporis vel suscipit inventore expedita.
                     </p>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eveniet est tempore laborum laudantium nisi, perferendis, aperiam ducimus sint cum commodi. Eius fugiat in sunt exercitationem enim. Tempore, hic modi?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eveniet est tempore laborum
+                        laudantium
+                        nisi, perferendis, aperiam ducimus sint cum commodi.
                     </p>
                 </div>
 
-                <div class="about-highlights mt-4">
+                <div class="about-highlights mt-4 justify-content-center justify-content-lg-start">
                     <div class="about-pill"><i class="bi bi-check2-circle"></i> Atendimento direto</div>
                     <div class="about-pill"><i class="bi bi-check2-circle"></i> Estratégia e clareza</div>
                     <div class="about-pill"><i class="bi bi-check2-circle"></i> Foco em resultado</div>
                 </div>
 
-                <div class="mt-4">
+                <div class="mt-4 d-flex justify-content-center justify-content-lg-start">
                     <a class="btn-primary" href="#contato">
                         <i class="bi bi-calendar-check"></i> Agendar consulta
                     </a>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

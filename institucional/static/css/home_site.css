@@ -204,9 +204,6 @@
 }
 
 
-
-/* About */
-
 .about-photo {
     max-width: 350px;
     margin: 0 auto;
@@ -217,17 +214,30 @@
     box-shadow: 0 18px 60px rgba(0, 0, 0, .18);
 }
 
+@media (max-width: 575.98px) {
+    .about-photo {
+        max-width: 260px;
+    }
+}
+
 .about-photo img {
     width: 100%;
     height: auto;
-    display: block;
+    object-fit: cover;
+    object-position: center top;
 
-    /* preto e branco */
+    display: block;
     filter: grayscale(100%) contrast(1.05) brightness(.95);
     transition: filter .25s ease, transform .25s ease;
 }
 
-/* efeito sutil ao passar */
+/* MOBILE: menos altura */
+@media (max-width: 575.98px) {
+    .about-photo img {
+        height: 320px;
+    }
+}
+
 .about-photo:hover img {
     filter: grayscale(70%) contrast(1.05) brightness(.98);
     transform: scale(1.02);
