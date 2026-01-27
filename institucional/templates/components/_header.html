@@ -1,24 +1,27 @@
 {% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
 
 <header class="site-header fixed-top">
     <nav class="navbar navbar-expand-md navbar-dark header-navbar">
         <div class="container">
             <!-- Logo -->
-            <a href="" class="navbar-brand d-flex align-items-center">
+            <a href="{% url 'home' %}" class="navbar-brand d-flex align-items-center">
                 <picture>
-                    <img src="{% static 'img/logo/logo_icon_azul-removebg-preview.png' %}" alt="Sarobe Contabilidade"
-                        class="brand-logo" loading="eager" decoding="async" />
+                    <img src="{% static 'img/logo/logo_icon_azul-removebg-preview.png' %}"
+                        alt="{% trans 'Jorge R. Sarobe' %}" class="brand-logo" loading="eager" decoding="async" />
                 </picture>
 
                 <div class="d-flex flex-column lh-sm ms-2">
-                    <span class="brand-kicker">ADVOCACIA</span>
+                    <span class="brand-kicker">{% trans "ADVOCACIA" %}</span>
                     <span class="brand-name">Jorge R. Sarobe</span>
                 </div>
             </a>
 
             <!-- Botão hamburguer (mobile) -->
             <button class="navbar-toggler header-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Abrir menu">
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                aria-label="{% trans 'Abrir menu' %}">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -27,46 +30,77 @@
                 {% with current=request.resolver_match.url_name %}
                 <ul class="navbar-nav align-items-md-center gap-md-3">
                     <li class="nav-item">
-                        <a href="/" class="nav-link header-link {% if current == 'home' %}is-active{% endif %}"
+                        <a href="{% url 'home' %}"
+                            class="nav-link header-link {% if current == 'home' %}is-active{% endif %}"
                             aria-current="{% if current == 'home' %}page{% endif %}">
-                            Home
+                            {% trans "Home" %}
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="" class="nav-link header-link {% if current == 'about' %}is-active{% endif %}"
+                        <a href="#about" class="nav-link header-link {% if current == 'about' %}is-active{% endif %}"
                             aria-current="{% if current == 'about' %}page{% endif %}">
-                            Sobre
+                            {% trans "Sobre" %}
                         </a>
                     </li>
 
-                    <a href=""
-                        class="nav-link header-link header-link--wrap {% if current == 'area' %}is-active{% endif %}">
-                        Especialidades
-                    </a>
-
-
                     <li class="nav-item">
-                        <a href="" class="nav-link header-link {% if current == 'blog' %}is-active{% endif %}">
-                            Atualizações
+                        <a href="#areas"
+                            class="nav-link header-link header-link--wrap {% if current == 'area' %}is-active{% endif %}">
+                            {% trans "Especialidades" %}
                         </a>
                     </li>
 
+                    <li class="nav-item">
+                        <a href="#updates" class="nav-link header-link {% if current == 'blog' %}is-active{% endif %}">
+                            {% trans "Atualizações" %}
+                        </a>
+                    </li>
 
                     <li class="nav-item">
-                        <a href=""
+                        <a href="#contato"
                             class="nav-link header-link {% if current == 'contact' %}is-active{% endif %}">
-                            Contato
+                            {% trans "Contato" %}
                         </a>
                     </li>
 
                     <li class="nav-item mt-3 mt-md-0 w-100 w-md-auto">
                         <a href="" target="_blank" rel="noopener noreferrer"
-                            class="btn-primary d-inline-flex align-items-center justify-content-center mx-auto">
+                            class="btn-primary d-inline-flex align-items-center justify-content-center mx-auto"
+                            aria-label="{% trans 'Agendar consulta via WhatsApp' %}">
                             <i class="bi bi-whatsapp me-2"></i>
-                            Agendar Consulta
+                            {% trans "Agendar Consulta" %}
                         </a>
                     </li>
+
+                    <li class="nav-item mt-2 mt-md-0">
+                        <form action="{% url 'set_language' %}" method="post" class="d-inline-flex align-items-center">
+                            {% csrf_token %}
+
+                            {% if CURRENT_LANG == "es" %}
+                            <input type="hidden" name="next" value="{{ request.path|slice:'3:' }}">
+                            <input type="hidden" name="language" value="/">
+
+                            <button type="submit" class="lang-chip"
+                                aria-label="{% trans 'Mudar idioma para Português (Brasil)' %}">
+                                <span class="lang-chip__next">PT</span>
+                                <span class="lang-chip__sep">|</span>
+                                <span class="lang-chip__active">ES</span>
+                            </button>
+                            {% else %}
+                            <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                            <input type="hidden" name="language" value="es">
+
+                            <button type="submit" class="lang-chip"
+                                aria-label="{% trans 'Mudar idioma para Espanhol' %}">
+                                <span class="lang-chip__active">PT</span>
+                                <span class="lang-chip__sep">|</span>
+                                <span class="lang-chip__next">ES</span>
+                            </button>
+                            {% endif %}
+                        </form>
+                    </li>
+
                 </ul>
                 {% endwith %}
             </div>

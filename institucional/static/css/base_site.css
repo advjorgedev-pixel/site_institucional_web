@@ -354,6 +354,47 @@ p {
     }
 }
 
+/* =========================
+   Language chip (PT | ES)
+========================= */
+.lang-chip {
+    border-radius: 999px;
+    padding: .45rem .75rem;
+    border: 1px solid rgba(242, 214, 128, .45);
+    background: rgba(255, 255, 255, .06);
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    font-weight: 800;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .88);
+    transition: transform .15s ease, background-color .2s ease, border-color .2s ease;
+}
+
+.lang-chip:hover {
+    background: rgba(242, 214, 128, .12);
+    border-color: rgba(242, 214, 128, .90);
+    transform: translateY(-1px);
+}
+
+.lang-chip:active {
+    transform: translateY(0);
+}
+
+.lang-chip__active {
+    color: var(--color-gold-300);
+}
+
+.lang-chip__next {
+    color: rgba(255, 255, 255, .88);
+}
+
+.lang-chip__sep {
+    color: rgba(255, 255, 255, .45);
+}
+
+
 
 /* CTA Final */
 .cta-final {

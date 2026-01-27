@@ -1,0 +1,2138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: site_institucional_web\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-27 17:38-0300\n"
+"PO-Revision-Date: 2026-01-27 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\settings.py:103
+msgid "Português (Brasil)"
+msgstr "Portugués (Brasil)"
+
+#: .\core\settings.py:104
+msgid "Español"
+msgstr "Español"
+
+#: .\core\validators.py:10
+msgid "A senha deve conter pelo menos uma letra maiúscula."
+msgstr "La contraseña debe contener al menos una letra mayúscula."
+
+#: .\core\validators.py:15
+msgid "Sua senha deve conter pelo menos uma letra maiúscula."
+msgstr "Tu contraseña debe contener al menos una letra mayúscula."
+
+#: .\core\validators.py:22
+msgid "A senha deve conter pelo menos uma letra minúscula."
+msgstr "La contraseña debe contener al menos una letra minúscula."
+
+#: .\core\validators.py:27
+msgid "Sua senha deve conter pelo menos uma letra minúscula."
+msgstr "Tu contraseña debe contener al menos una letra minúscula."
+
+#: .\core\validators.py:34
+msgid "A senha deve conter pelo menos um caractere especial."
+msgstr "La contraseña debe contener al menos un carácter especial."
+
+#: .\core\validators.py:39
+msgid "Sua senha deve conter pelo menos um caractere especial."
+msgstr "Tu contraseña debe contener al menos un carácter especial."
+
+#: .\core\validators.py:46
+msgid "A senha deve conter pelo menos um número."
+msgstr "La contraseña debe contener al menos un número."
+
+#: .\core\validators.py:51
+msgid "Sua senha deve conter pelo menos um número."
+msgstr "Tu contraseña debe contener al menos un número."
+
+#: .\institucional\templates\components\_cta_final.html:13
+msgid "Agende sua consulta com segurança e clareza"
+msgstr "Agenda tu consulta con seguridad y claridad"
+
+#: .\institucional\templates\components\_cta_final.html:16
+msgid ""
+"Atendimento direto, orientação objetiva e estratégia personalizada para o "
+"seu caso."
+msgstr "Atención directa, orientación objetiva y estrategia personalizada para tu caso."
+
+#: .\institucional\templates\components\_cta_final.html:21
+#: .\institucional\templates\components\_cta_final.html:22
+msgid "Falar no WhatsApp"
+msgstr "Hablar por WhatsApp"
+
+#: .\institucional\templates\components\_cta_final.html:25
+#: .\institucional\templates\components\_cta_final.html:26
+msgid "Ligar agora"
+msgstr "Llamar ahora"
+
+#: .\institucional\templates\components\_footer.html:13
+#: .\institucional\templates\components\_header.html:11
+msgid "Jorge R. Sarobe"
+msgstr "Jorge R. Sarobe"
+
+#: .\institucional\templates\components\_footer.html:15
+#: .\institucional\templates\components\_header.html:15
+msgid "ADVOCACIA"
+msgstr "ABOGACÍA"
+
+#: .\institucional\templates\components\_footer.html:21
+msgid ""
+"Assessoria e consultoria jurídica com atendimento personalizado, estratégia "
+"clara e condução segura."
+msgstr "Asesoría y consultoría jurídica con atención personalizada, estrategia clara y conducción segura."
+
+#: .\institucional\templates\components\_footer.html:25
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: .\institucional\templates\components\_footer.html:29
+msgid "Instagram"
+msgstr "Instagram"
+
+#: .\institucional\templates\components\_footer.html:38
+msgid "NAVEGAÇÃO"
+msgstr "NAVEGACIÓN"
+
+#: .\institucional\templates\components\_footer.html:40
+#: .\institucional\templates\components\_header.html:35
+msgid "Home"
+msgstr "Inicio"
+
+#: .\institucional\templates\components\_footer.html:41
+#: .\institucional\templates\components\_header.html:42
+#: .\institucional\templates\home\components\_about_home.html:10
+#: .\institucional\templates\home\components\_about_home.html:28
+msgid "Sobre"
+msgstr "Sobre"
+
+#: .\institucional\templates\components\_footer.html:42
+msgid "Atuação"
+msgstr "Actuación"
+
+#: .\institucional\templates\components\_footer.html:43
+#: .\institucional\templates\components\_header.html:55
+msgid "Atualizações"
+msgstr "Actualizaciones"
+
+#: .\institucional\templates\components\_footer.html:44
+#: .\institucional\templates\components\_header.html:62
+msgid "Contato"
+msgstr "Contacto"
+
+#: .\institucional\templates\components\_footer.html:50
+msgid "ÁREAS DE ATUAÇÃO"
+msgstr "ÁREAS DE ACTUACIÓN"
+
+#: .\institucional\templates\components\_footer.html:52
+#: .\institucional\templates\home\components\_areas_home.html:26
+msgid "Direito Bancário"
+msgstr "Derecho Bancario"
+
+#: .\institucional\templates\components\_footer.html:53
+msgid "Direito Sucessório"
+msgstr "Derecho Sucesorio"
+
+#: .\institucional\templates\components\_footer.html:54
+#: .\institucional\templates\home\components\_areas_home.html:48
+msgid "Direito Previdenciário"
+msgstr "Derecho Previsional"
+
+#: .\institucional\templates\components\_footer.html:60
+msgid "CONTATO"
+msgstr "CONTACTO"
+
+#: .\institucional\templates\components\_footer.html:81
+#: .\institucional\templates\components\_header.html:69
+msgid "Agendar consulta via WhatsApp"
+msgstr "Agendar consulta por WhatsApp"
+
+#: .\institucional\templates\components\_footer.html:83
+#: .\institucional\templates\components\_header.html:71
+msgid "Agendar Consulta"
+msgstr "Agendar consulta"
+
+#: .\institucional\templates\components\_footer.html:95
+msgid "Localização do escritório"
+msgstr "Ubicación del despacho"
+
+#: .\institucional\templates\components\_footer.html:104
+msgid "Todos os direitos reservados."
+msgstr "Todos los derechos reservados."
+
+#: .\institucional\templates\components\_footer.html:110
+msgid "Política de Privacidade"
+msgstr "Política de Privacidad"
+
+#: .\institucional\templates\components\_footer.html:113
+msgid "Termos de Uso"
+msgstr "Términos de Uso"
+
+#: .\institucional\templates\components\_header.html:23
+msgid "Abrir menu"
+msgstr "Abrir menú"
+
+#: .\institucional\templates\components\_header.html:49
+#: .\institucional\templates\home\components\_areas_home.html:7
+msgid "Especialidades"
+msgstr "Especialidades"
+
+#: .\institucional\templates\components\_privacy_terms.html:10
+msgid "Política de Privacidade — Advocacia Jorge R. Sarobe"
+msgstr "Política de Privacidad — Abogacía Jorge R. Sarobe"
+
+#: .\institucional\templates\components\_privacy_terms.html:13
+#: .\institucional\templates\components\_privacy_terms.html:102
+#: .\institucional\templates\components\_privacy_terms.html:119
+#: .\institucional\templates\components\_privacy_terms.html:199
+msgid "Fechar"
+msgstr "Cerrar"
+
+#: .\institucional\templates\components\_privacy_terms.html:18
+msgid ""
+"\n"
+"                    Respeitamos sua privacidade e tratamos dados pessoais "
+"com segurança, transparência e em conformidade\n"
+"                    com a\n"
+"                    <strong>LGPD (Lei nº 13.709/2018)</strong>.\n"
+"                    "
+msgstr ""
+"\n"
+"                    Respetamos tu privacidad y tratamos los datos personales con seguridad, transparencia y de conformidad\n"
+"                    con la\n"
+"                    <strong>LGPD (Ley nº 13.709/2018)</strong>.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:25
+msgid "1. Dados coletados"
+msgstr "1. Datos recopilados"
+
+#: .\institucional\templates\components\_privacy_terms.html:27
+msgid ""
+"\n"
+"                    Podemos coletar dados fornecidos por você (ex.: nome, "
+"telefone, e-mail, mensagem) ao preencher\n"
+"                    formulários,\n"
+"                    entrar em contato via WhatsApp ou agendar atendimento. "
+"Também podemos coletar dados técnicos de\n"
+"                    navegação\n"
+"                    (ex.: IP, dispositivo e páginas visitadas) para fins de "
+"segurança e estatística.\n"
+"                    "
+msgstr ""
+"\n"
+"                    Podemos recopilar los datos que nos proporcionas (p. ej.: nombre, teléfono, correo, mensaje) al completar\n"
+"                    formularios,\n"
+"                    contactar por WhatsApp o agendar una atención. También podemos recopilar datos técnicos de\n"
+"                    navegación\n"
+"                    (p. ej.: IP, dispositivo y páginas visitadas) con fines de seguridad y estadística.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:36
+msgid "2. Finalidades do tratamento"
+msgstr "2. Finalidades del tratamiento"
+
+#: .\institucional\templates\components\_privacy_terms.html:38
+msgid "Responder solicitações, dúvidas e pedidos de orçamento/consulta."
+msgstr "Responder solicitudes, dudas y pedidos de presupuesto/consulta."
+
+#: .\institucional\templates\components\_privacy_terms.html:39
+msgid "Agendar e conduzir atendimentos."
+msgstr "Agendar y realizar atenciones."
+
+#: .\institucional\templates\components\_privacy_terms.html:40
+msgid "Cumprir obrigações legais e regulatórias aplicáveis."
+msgstr "Cumplir obligaciones legales y regulatorias aplicables."
+
+#: .\institucional\templates\components\_privacy_terms.html:41
+msgid "Garantir segurança do site e prevenção a fraudes."
+msgstr "Garantizar la seguridad del sitio y la prevención de fraudes."
+
+#: .\institucional\templates\components\_privacy_terms.html:44
+msgid "3. Cookies e métricas"
+msgstr "3. Cookies y métricas"
+
+#: .\institucional\templates\components\_privacy_terms.html:46
+msgid ""
+"\n"
+"                    Este site pode utilizar cookies estritamente necessários "
+"e/ou ferramentas de métricas (ex.: Google\n"
+"                    Analytics)\n"
+"                    para análise agregada de uso, sem finalidade de "
+"identificação direta do visitante.\n"
+"                    "
+msgstr ""
+"\n"
+"                    Este sitio puede utilizar cookies estrictamente necesarias y/o herramientas de métricas (p. ej.: Google\n"
+"                    Analytics)\n"
+"                    para el análisis agregado de uso, sin finalidad de identificación directa del visitante.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:53
+msgid "4. Compartilhamento"
+msgstr "4. Compartición"
+
+#: .\institucional\templates\components\_privacy_terms.html:55
+msgid ""
+"\n"
+"                    Não vendemos dados. Poderemos compartilhar informações "
+"apenas quando necessário para:\n"
+"                    <strong>cumprimento legal</strong>, <strong>exercício "
+"regular de direitos</strong> ou com\n"
+"                    <strong>fornecedores essenciais</strong> (ex.: "
+"hospedagem/infraestrutura), sempre no mínimo\n"
+"                    necessário.\n"
+"                    "
+msgstr ""
+"\n"
+"                    No vendemos datos. Podemos compartir información solo cuando sea necesario para:\n"
+"                    <strong>cumplimiento legal</strong>, <strong>ejercicio regular de derechos</strong> o con\n"
+"                    <strong>proveedores esenciales</strong> (p. ej.: hosting/infraestructura), siempre en el mínimo\n"
+"                    necesario.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:63
+msgid "5. Direitos do titular"
+msgstr "5. Derechos del titular"
+
+#: .\institucional\templates\components\_privacy_terms.html:65
+msgid ""
+"\n"
+"                    Você pode solicitar confirmação, acesso, correção, "
+"anonimização, portabilidade, eliminação e\n"
+"                    informações sobre\n"
+"                    compartilhamento, conforme a LGPD, quando aplicável.\n"
+"                    "
+msgstr ""
+"\n"
+"                    Puedes solicitar confirmación, acceso, corrección, anonimización, portabilidad, eliminación e\n"
+"                    información sobre\n"
+"                    compartición, conforme la LGPD, cuando corresponda.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:72
+msgid "6. Segurança e retenção"
+msgstr "6. Seguridad y retención"
+
+#: .\institucional\templates\components\_privacy_terms.html:74
+msgid ""
+"\n"
+"                    Adotamos medidas técnicas e administrativas para "
+"proteger os dados. Mantemos informações apenas pelo\n"
+"                    tempo\n"
+"                    necessário às finalidades e obrigações legais.\n"
+"                    "
+msgstr ""
+"\n"
+"                    Adoptamos medidas técnicas y administrativas para proteger los datos. Conservamos la información solo por el\n"
+"                    tiempo\n"
+"                    necesario para las finalidades y obligaciones legales.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:81
+#: .\institucional\templates\components\_privacy_terms.html:178
+msgid "7. Contato"
+msgstr "7. Contacto"
+
+#: .\institucional\templates\components\_privacy_terms.html:84
+#: .\institucional\templates\components\_privacy_terms.html:181
+msgid "Telefone/WhatsApp:"
+msgstr "Teléfono/WhatsApp:"
+
+#: .\institucional\templates\components\_privacy_terms.html:90
+#: .\institucional\templates\components\_privacy_terms.html:187
+msgid "E-mail:"
+msgstr "Correo:"
+
+#: .\institucional\templates\components\_privacy_terms.html:94
+#: .\institucional\templates\components\_privacy_terms.html:191
+msgid "Cidade:"
+msgstr "Ciudad:"
+
+#: .\institucional\templates\components\_privacy_terms.html:116
+msgid "Termos de Uso — Advocacia Jorge R. Sarobe"
+msgstr "Términos de Uso — Abogacía Jorge R. Sarobe"
+
+#: .\institucional\templates\components\_privacy_terms.html:123
+msgid "1. Aceitação"
+msgstr "1. Aceptación"
+
+#: .\institucional\templates\components\_privacy_terms.html:125
+msgid ""
+"\n"
+"                    Ao acessar este site, você concorda com estes Termos. Se "
+"não concordar, interrompa a navegação.\n"
+"                    "
+msgstr ""
+"\n"
+"                    Al acceder a este sitio, aceptas estos Términos. Si no estás de acuerdo, interrumpe la navegación.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:130
+msgid "2. Finalidade do conteúdo"
+msgstr "2. Finalidad del contenido"
+
+#: .\institucional\templates\components\_privacy_terms.html:132
+msgid ""
+"\n"
+"                    O conteúdo tem caráter <strong>informativo</strong> e "
+"não substitui consulta jurídica\n"
+"                    individualizada.\n"
+"                    O envio de mensagens por este site/WhatsApp não cria, "
+"por si só, relação advogado-cliente.\n"
+"                    "
+msgstr ""
+"\n"
+"                    El contenido tiene carácter <strong>informativo</strong> y no sustituye una consulta jurídica\n"
+"                    individualizada.\n"
+"                    El envío de mensajes por este sitio/WhatsApp no crea, por sí solo, una relación abogado-cliente.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:139
+msgid "3. Uso permitido"
+msgstr "3. Uso permitido"
+
+#: .\institucional\templates\components\_privacy_terms.html:142
+msgid ""
+"\n"
+"                        É proibido usar o site para práticas ilícitas, SPAM, "
+"ataques, exploração de falhas ou violação\n"
+"                        de direitos.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Está prohibido usar el sitio para prácticas ilícitas, SPAM, ataques, explotación de fallos o violación\n"
+"                        de derechos.\n"
+"                        "
+
+#: .\institucional\templates\components\_privacy_terms.html:148
+msgid "É vedada a reprodução do conteúdo sem autorização, quando aplicável."
+msgstr "Se prohíbe la reproducción del contenido sin autorización, cuando corresponda."
+
+#: .\institucional\templates\components\_privacy_terms.html:152
+msgid "4. Privacidade"
+msgstr "4. Privacidad"
+
+#: .\institucional\templates\components\_privacy_terms.html:154
+msgid ""
+"\n"
+"                    O tratamento de dados pessoais segue a LGPD. Consulte a "
+"Política de Privacidade para detalhes sobre\n"
+"                    coleta,\n"
+"                    finalidades e direitos.\n"
+"                    "
+msgstr ""
+"\n"
+"                    El tratamiento de datos personales sigue la LGPD. Consulta la Política de Privacidad para detalles sobre\n"
+"                    recopilación,\n"
+"                    finalidades y derechos.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:161
+msgid "5. Limitação de responsabilidade"
+msgstr "5. Limitación de responsabilidad"
+
+#: .\institucional\templates\components\_privacy_terms.html:163
+msgid ""
+"\n"
+"                    Empregamos boas práticas de segurança, mas não "
+"garantimos disponibilidade ininterrupta ou ausência\n"
+"                    total de falhas.\n"
+"                    Links externos são de responsabilidade de seus "
+"respectivos provedores.\n"
+"                    "
+msgstr ""
+"\n"
+"                    Aplicamos buenas prácticas de seguridad, pero no garantizamos disponibilidad ininterrumpida ni ausencia\n"
+"                    total de fallos.\n"
+"                    Los enlaces externos son responsabilidad de sus respectivos proveedores.\n"
+"                    "
+
+#: .\institucional\templates\components\_privacy_terms.html:170
+msgid "6. Alterações"
+msgstr "6. Cambios"
+
+#: .\institucional\templates\components\_privacy_terms.html:172
+msgid ""
+"\n"
+"                    Podemos atualizar estes Termos e a Política de "
+"Privacidade a qualquer momento. A versão vigente é a\n"
+"                    exibida neste modal.\n"
+"                    "
+msgstr ""
+"\n"
+"                    Podemos actualizar estos Términos y la Política de Privacidad en cualquier momento. La versión vigente es la\n"
+"                    mostrada en este modal.\n"
+"                    "
+
+#: .\institucional\templates\home\components\_about_home.html:18
+msgid "Foto de Jorge R. Sarobe"
+msgstr "Foto de Jorge R. Sarobe"
+
+#: .\institucional\templates\home\components\_about_home.html:34
+msgid ""
+"\n"
+"                        Lorem ipsum dolor sit amet consectetur adipisicing "
+"elit. Quis commodi quasi, totam\n"
+"                        recusandae nisi, blanditiis magnam qui dolores sit "
+"corporis vel suscipit inventore expedita.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi quasi, totam\n"
+"                        recusandae nisi, blanditiis magnam qui dolores sit corporis vel suscipit inventore expedita.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_about_home.html:40
+msgid ""
+"\n"
+"                        Lorem ipsum dolor, sit amet consectetur adipisicing "
+"elit. Sequi eveniet est tempore\n"
+"                        laborum laudantium nisi, perferendis, aperiam "
+"ducimus sint cum commodi.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eveniet est tempore\n"
+"                        laborum laudantium nisi, perferendis, aperiam ducimus sint cum commodi.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_about_home.html:48
+msgid "Atendimento direto"
+msgstr "Atención directa"
+
+#: .\institucional\templates\home\components\_about_home.html:49
+msgid "Estratégia e clareza"
+msgstr "Estrategia y claridad"
+
+#: .\institucional\templates\home\components\_about_home.html:50
+msgid "Foco em resultado"
+msgstr "Enfoque en resultados"
+
+#: .\institucional\templates\home\components\_about_home.html:54
+#: .\institucional\templates\home\components\_about_home.html:55
+msgid "Agendar consulta"
+msgstr "Agendar consulta"
+
+#: .\institucional\templates\home\components\_areas_home.html:8
+msgid "Áreas de Atuação"
+msgstr "Áreas de Actuación"
+
+#: .\institucional\templates\home\components\_areas_home.html:11
+msgid ""
+"\n"
+"                Atuação focada em três frentes essenciais, com orientação "
+"clara e estratégia desde o primeiro\n"
+"                atendimento.\n"
+"                "
+msgstr ""
+"\n"
+"                Actuación enfocada en tres frentes esenciales, con orientación clara y estrategia desde el primer\n"
+"                contacto.\n"
+"                "
+
+#: .\institucional\templates\home\components\_areas_home.html:29
+msgid ""
+"\n"
+"                        Revisão de contratos, juros abusivos, renegociação e "
+"medidas para proteção do consumidor em\n"
+"                        relações bancárias.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Revisión de contratos, intereses abusivos, renegociación y medidas para la protección del consumidor en\n"
+"                        relaciones bancarias.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_areas_home.html:35
+#: .\institucional\templates\home\components\_areas_home.html:36
+#: .\institucional\templates\home\components\_areas_home.html:57
+#: .\institucional\templates\home\components\_areas_home.html:58
+#: .\institucional\templates\home\components\_areas_home.html:78
+#: .\institucional\templates\home\components\_areas_home.html:79
+msgid "Falar com o advogado"
+msgstr "Hablar con el abogado"
+
+#: .\institucional\templates\home\components\_areas_home.html:51
+msgid ""
+"\n"
+"                        Planejamento e requerimento de benefícios, revisões "
+"e acompanhamento completo para segurança\n"
+"                        jurídica.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Planificación y solicitud de beneficios, revisiones y acompañamiento completo para seguridad\n"
+"                        jurídica.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_areas_home.html:70
+msgid "Sucessões"
+msgstr "Sucesiones"
+
+#: .\institucional\templates\home\components\_areas_home.html:73
+msgid ""
+"\n"
+"                        Inventário, partilha, testamentos e organização "
+"patrimonial com discrição, clareza e eficiência.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Inventario, partición, testamentos y organización patrimonial con discreción, claridad y eficiencia.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_assessment_home.html:8
+msgid "Avaliações"
+msgstr "Reseñas"
+
+#: .\institucional\templates\home\components\_assessment_home.html:9
+msgid "O que dizem no Google"
+msgstr "Lo que dicen en Google"
+
+#: .\institucional\templates\home\components\_assessment_home.html:11
+msgid "Transparência e confiança no atendimento."
+msgstr "Transparencia y confianza en la atención."
+
+#: .\institucional\templates\home\components\_assessment_home.html:18
+#: .\institucional\templates\home\components\_assessment_home.html:42
+#: .\institucional\templates\home\components\_assessment_home.html:64
+#: .\institucional\templates\home\components\_assessment_home.html:86
+msgid "5 de 5"
+msgstr "5 de 5"
+
+#: .\institucional\templates\home\components\_assessment_home.html:25
+msgid "Baseado em <strong>+30</strong> avaliações"
+msgstr "Basado en <strong>+30</strong> reseñas"
+
+#: .\institucional\templates\home\components\_assessment_home.html:29
+#: .\institucional\templates\home\components\_assessment_home.html:30
+msgid "Ver no Google"
+msgstr "Ver en Google"
+
+#: .\institucional\templates\home\components\_assessment_home.html:50
+#: .\institucional\templates\home\components\_assessment_home.html:72
+#: .\institucional\templates\home\components\_assessment_home.html:94
+msgid ""
+"\n"
+"                        Atendimento excelente, explicou tudo com clareza e "
+"me deu segurança em cada etapa.\n"
+"                        Recomendo.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Atención excelente, explicó todo con claridad y me dio seguridad en cada etapa.\n"
+"                        Lo recomiendo.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:6
+msgid "Dúvidas"
+msgstr "Dudas"
+
+#: .\institucional\templates\home\components\_faq_home.html:7
+msgid "Perguntas frequentes"
+msgstr "Preguntas frecuentes"
+
+#: .\institucional\templates\home\components\_faq_home.html:10
+msgid ""
+"\n"
+"                Respostas objetivas para as dúvidas mais comuns sobre "
+"atendimento e atuação.\n"
+"                "
+msgstr ""
+"\n"
+"                Respuestas objetivas para las dudas más comunes sobre atención y actuación.\n"
+"                "
+
+#: .\institucional\templates\home\components\_faq_home.html:22
+msgid "Como funciona a primeira consulta?"
+msgstr "¿Cómo funciona la primera consulta?"
+
+#: .\institucional\templates\home\components\_faq_home.html:28
+msgid ""
+"\n"
+"                        Você apresenta sua situação e os documentos "
+"disponíveis. Eu avalio o cenário, explico\n"
+"                        possibilidades,\n"
+"                        riscos e próximos passos. Se fizer sentido, "
+"definimos a estratégia e a forma de condução do\n"
+"                        caso.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Presentas tu situación y los documentos disponibles. Yo evalúo el escenario, explico\n"
+"                        posibilidades,\n"
+"                        riesgos y próximos pasos. Si tiene sentido, definimos la estrategia y la forma de llevar el\n"
+"                        caso.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:43
+msgid "Quais documentos devo levar para a consulta?"
+msgstr "¿Qué documentos debo llevar a la consulta?"
+
+#: .\institucional\templates\home\components\_faq_home.html:49
+msgid ""
+"\n"
+"                        Depende do tema, mas geralmente ajudam: RG/CPF, "
+"comprovantes, contratos, extratos, comunicações\n"
+"                        do banco/INSS,\n"
+"                        e qualquer documento que comprove a situação. Se "
+"faltar algo, eu oriento o que solicitar depois.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Depende del tema, pero generalmente ayudan: RG/CPF, comprobantes, contratos, extractos, comunicaciones\n"
+"                        del banco/INSS,\n"
+"                        y cualquier documento que acredite la situación. Si falta algo, te indico qué solicitar después.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:63
+msgid "O atendimento pode ser online?"
+msgstr "¿La atención puede ser en línea?"
+
+#: .\institucional\templates\home\components\_faq_home.html:69
+msgid ""
+"\n"
+"                        Sim. O atendimento online é possível para a maioria "
+"dos casos, com envio de documentos\n"
+"                        digitalizados e\n"
+"                        reunião por vídeo/WhatsApp. Quando necessário, "
+"alinhamos atendimento presencial.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Sí. La atención en línea es posible para la mayoría de los casos, con envío de documentos\n"
+"                        digitalizados y\n"
+"                        reunión por video/WhatsApp. Cuando sea necesario, coordinamos atención presencial.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:83
+msgid "Quanto tempo demora um processo?"
+msgstr "¿Cuánto tiempo tarda un proceso?"
+
+#: .\institucional\templates\home\components\_faq_home.html:89
+msgid ""
+"\n"
+"                        O prazo varia conforme o caso, a urgência, o volume "
+"de provas e a resposta da outra parte/órgão.\n"
+"                        Na consulta, eu estimarei cenários de tempo e as "
+"alternativas para buscar maior agilidade.\n"
+"                        "
+msgstr ""
+"\n"
+"                        El plazo varía según el caso, la urgencia, el volumen de pruebas y la respuesta de la otra parte/organismo.\n"
+"                        En la consulta, estimaré escenarios de tiempo y alternativas para buscar mayor agilidad.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:102
+msgid "O que é preciso para revisar juros abusivos ou contratos bancários?"
+msgstr "¿Qué se necesita para revisar intereses abusivos o contratos bancarios?"
+
+#: .\institucional\templates\home\components\_faq_home.html:108
+msgid ""
+"\n"
+"                        Normalmente precisamos do contrato, demonstrativos, "
+"extratos, comprovantes de pagamento e\n"
+"                        eventuais\n"
+"                        renegociações. Com isso, é possível avaliar a "
+"legalidade de taxas e cláusulas.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Normalmente necesitamos el contrato, comprobantes, extractos, comprobantes de pago y\n"
+"                        eventuales\n"
+"                        renegociaciones. Con eso, es posible evaluar la legalidad de tasas y cláusulas.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:122
+msgid "Posso pedir benefício previdenciário mesmo após indeferimento?"
+msgstr "¿Puedo solicitar un beneficio previsional incluso después de un rechazo?"
+
+#: .\institucional\templates\home\components\_faq_home.html:128
+msgid ""
+"\n"
+"                        Sim. Dependendo do motivo do indeferimento, podemos "
+"recorrer administrativamente ou ingressar\n"
+"                        com ação.\n"
+"                        Avalio o fundamento, documentos, laudos e histórico "
+"contributivo para definir a melhor\n"
+"                        estratégia.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Sí. Dependiendo del motivo del rechazo, podemos recurrir administrativamente o iniciar\n"
+"                        una acción.\n"
+"                        Evalúo el fundamento, documentos, informes y el historial contributivo para definir la mejor\n"
+"                        estrategia.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:143
+msgid "Como funciona inventário e partilha?"
+msgstr "¿Cómo funciona el inventario y la partición?"
+
+#: .\institucional\templates\home\components\_faq_home.html:149
+msgid ""
+"\n"
+"                        O inventário organiza bens, dívidas e herdeiros para "
+"formalizar a partilha. Pode ser judicial ou\n"
+"                        em cartório,\n"
+"                        conforme requisitos. Eu conduzo o processo e indico "
+"a via mais adequada para o seu cenário.\n"
+"                        "
+msgstr ""
+"\n"
+"                        El inventario organiza bienes, deudas y herederos para formalizar la partición. Puede ser judicial o\n"
+"                        notarial,\n"
+"                        según los requisitos. Conduzco el proceso e indico la vía más adecuada para tu escenario.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:163
+msgid "Quando vale a pena fazer testamento?"
+msgstr "¿Cuándo vale la pena hacer testamento?"
+
+#: .\institucional\templates\home\components\_faq_home.html:169
+msgid ""
+"\n"
+"                        O testamento é útil para organizar a vontade, "
+"reduzir conflitos e dar previsibilidade. Ele não\n"
+"                        elimina regras\n"
+"                        legais, mas ajuda muito no planejamento sucessório. "
+"Eu explico opções e limites de forma clara.\n"
+"                        "
+msgstr ""
+"\n"
+"                        El testamento es útil para organizar la voluntad, reducir conflictos y dar previsibilidad. No\n"
+"                        elimina las reglas\n"
+"                        legales, pero ayuda mucho en la planificación sucesoria. Explico opciones y límites de forma clara.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:183
+msgid "Quais são as formas de honorários?"
+msgstr "¿Cuáles son las modalidades de honorarios?"
+
+#: .\institucional\templates\home\components\_faq_home.html:189
+msgid ""
+"\n"
+"                        Os honorários variam conforme complexidade, urgência "
+"e modelo de atuação (consultivo,\n"
+"                        administrativo ou\n"
+"                        judicial). Eu apresento a proposta com clareza e "
+"alinhamos tudo antes de iniciar.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Los honorarios varían según la complejidad, la urgencia y el modelo de actuación (consultivo,\n"
+"                        administrativo o\n"
+"                        judicial). Presento la propuesta con claridad y lo alineamos todo antes de iniciar.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_faq_home.html:203
+msgid "Como posso agendar e qual o prazo para retorno?"
+msgstr "¿Cómo puedo agendar y cuál es el plazo de respuesta?"
+
+#: .\institucional\templates\home\components\_faq_home.html:209
+msgid ""
+"\n"
+"                        Você pode agendar pelo WhatsApp ou telefone. "
+"Normalmente retorno no mesmo dia útil, e em casos\n"
+"                        urgentes\n"
+"                        priorizo o atendimento conforme disponibilidade.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Puedes agendar por WhatsApp o por teléfono. Normalmente respondo el mismo día hábil y, en casos\n"
+"                        urgentes,\n"
+"                        priorizo la atención según disponibilidad.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_hero_home.html:11
+msgid "Atuação estratégica e atendimento humanizado"
+msgstr "Actuación estratégica y atención humanizada"
+
+#: .\institucional\templates\home\components\_hero_home.html:15
+msgid ""
+"\n"
+"                        Soluções jurídicas para <span class=\"text-"
+"gold\">bancário</span>, <span\n"
+"                            class=\"text-gold\">previdenciário</span> e "
+"<span class=\"text-gold\">sucessões</span>\n"
+"                        "
+msgstr ""
+"\n"
+"                        Soluciones jurídicas para <span class=\"text-gold\">bancario</span>, <span\n"
+"                            class=\"text-gold\">previsional</span> y <span class=\"text-gold\">sucesiones</span>\n"
+"                        "
+
+#: .\institucional\templates\home\components\_hero_home.html:22
+msgid ""
+"\n"
+"                        Orientação clara do início ao fim, com foco em "
+"segurança, agilidade e resultado.Entenda seu caso e os próximos passos.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Orientación clara de principio a fin, con enfoque en seguridad, agilidad y resultado. Comprende tu caso y los próximos pasos.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_hero_home.html:28
+msgid "Falar agora no WhatsApp"
+msgstr "Hablar ahora por WhatsApp"
+
+#: .\institucional\templates\home\components\_hero_home.html:29
+msgid "Falar agora"
+msgstr "Hablar ahora"
+
+#: .\institucional\templates\home\components\_hero_home.html:32
+#: .\institucional\templates\home\components\_hero_home.html:33
+msgid "Ver áreas de atuação"
+msgstr "Ver áreas de actuación"
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
+msgid "Messages"
+msgstr "Mensajes"
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr "Mapas del sitio"
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr "Archivos estáticos"
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr "Sindicación"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:33
+msgid "…"
+msgstr "…"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:35
+msgid "That page number is not an integer"
+msgstr "Ese número de página no es un entero"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:36
+msgid "That page number is less than 1"
+msgstr "Ese número de página es menor que 1"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:37
+msgid "That page contains no results"
+msgstr "Esa página no contiene resultados"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr "Introduce un valor válido."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:70
+msgid "Enter a valid domain name."
+msgstr "Introduce un nombre de dominio válido."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:153
+#: .\venv\Lib\site-packages\django\forms\fields.py:774
+msgid "Enter a valid URL."
+msgstr "Introduce una URL válida."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:200
+msgid "Enter a valid integer."
+msgstr "Introduce un entero válido."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:211
+msgid "Enter a valid email address."
+msgstr "Introduce una dirección de correo válida."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr "Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr "Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or hyphens."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:309
+#: .\venv\Lib\site-packages\django\core\validators.py:318
+#: .\venv\Lib\site-packages\django\core\validators.py:332
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "Enter a valid %(protocol)s address."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:311
+msgid "IPv4"
+msgstr "IPv4"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:320
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:43
+msgid "IPv6"
+msgstr "IPv6"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:334
+msgid "IPv4 or IPv6"
+msgstr "IPv4 or IPv6"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr "Enter only digits separated by commas."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Ensure this value is less than or equal to %(limit_value)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Ensure this value is greater than or equal to %(limit_value)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Ensure this value is a multiple of step size %(limit_value)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr "Ensure this value is a multiple of step size %(limit_value)s, starting from %(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "Ensure this value has at least %(limit_value)d characters (it has %(show_value)d)."
+msgstr[1] "Ensure this value has at least %(limit_value)d characters (it has %(show_value)d)."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "Ensure this value has at most %(limit_value)d characters (it has %(show_value)d)."
+msgstr[1] "Ensure this value has at most %(limit_value)d characters (it has %(show_value)d)."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:514
+#: .\venv\Lib\site-packages\django\forms\fields.py:365
+#: .\venv\Lib\site-packages\django\forms\fields.py:404
+msgid "Enter a number."
+msgstr "Enter a number."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] "Ensure that there are no more than %(max)s digits in total."
+msgstr[1] "Ensure that there are no more than %(max)s digits in total."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] "Ensure that there are no more than %(max)s decimal places."
+msgstr[1] "Ensure that there are no more than %(max)s decimal places."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] "Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[1] "Ensure that there are no more than %(max)s digits before the decimal point."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr "File extension “%(extension)s” is not allowed. Allowed extensions are: %(allowed_extensions)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:659
+msgid "Null characters are not allowed."
+msgstr "Null characters are not allowed."
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1631
+#: .\venv\Lib\site-packages\django\forms\models.py:932
+msgid "and"
+msgstr "and"
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1633
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s with this %(field_labels)s already exists."
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:20
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "Constraint “%(name)s” is violated."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "Value %(value)r is not a valid choice."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+msgid "This field cannot be null."
+msgstr "This field cannot be null."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:136
+msgid "This field cannot be blank."
+msgstr "This field cannot be blank."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s with this %(field_label)s already exists."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Field of type: %(field_type)s"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1161
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "“%(value)s” value must be either True or False."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "“%(value)s” value must be either True, False, or None."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1164
+msgid "Boolean (Either True or False)"
+msgstr "Boolean (Either True or False)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1214
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "String (up to %(max_length)s)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1216
+msgid "String (unlimited)"
+msgstr "String (unlimited)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1325
+msgid "Comma-separated integers"
+msgstr "Comma-separated integers"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1426
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD format."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1430
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1565
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid date."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1434
+msgid "Date (without time)"
+msgstr "Date (without time)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1561
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr "“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1569
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr "“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1574
+msgid "Date (with time)"
+msgstr "Date (with time)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1701
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "“%(value)s” value must be a decimal number."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1703
+msgid "Decimal number"
+msgstr "Decimal number"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr "“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[.uuuuuu] format."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
+msgid "Duration"
+msgstr "Duration"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1920
+msgid "Email address"
+msgstr "Email address"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1945
+msgid "File path"
+msgstr "File path"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "“%(value)s” value must be a float."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
+msgid "Floating point number"
+msgstr "Floating point number"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "“%(value)s” value must be an integer."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
+msgid "Integer"
+msgstr "Integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr "Big (8 byte) integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2180
+msgid "Small integer"
+msgstr "Small integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2188
+msgid "IPv4 address"
+msgstr "IPv4 address"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2219
+msgid "IP address"
+msgstr "IP address"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "“%(value)s” value must be either None, True or False."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr "Boolean (Either True, False or None)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2364
+msgid "Positive big integer"
+msgstr "Positive big integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2379
+msgid "Positive integer"
+msgstr "Positive integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2394
+msgid "Positive small integer"
+msgstr "Positive small integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (up to %(max_length)s)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2446
+msgid "Text"
+msgstr "Text"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr "“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] format."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an invalid time."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
+msgid "Time"
+msgstr "Time"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2642
+msgid "URL"
+msgstr "URL"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2666
+msgid "Raw binary data"
+msgstr "Raw binary data"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” is not a valid UUID."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
+msgid "Universally unique identifier"
+msgstr "Universally unique identifier"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:244
+msgid "File"
+msgstr "File"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:420
+msgid "Image"
+msgstr "Image"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:24
+msgid "A JSON object"
+msgstr "A JSON object"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "Value must be valid JSON."
+msgstr "Value must be valid JSON."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:978
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr "%(model)s instance with %(field)s %(value)r is not a valid choice."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:981
+msgid "Foreign Key (type determined by related field)"
+msgstr "Foreign Key (type determined by related field)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1275
+msgid "One-to-one relationship"
+msgstr "One-to-one relationship"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1332
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "%(from)s-%(to)s relationship"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1334
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "%(from)s-%(to)s relationships"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1382
+msgid "Many-to-many relationship"
+msgstr "Many-to-many relationship"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to
+#. the label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:188
+msgid ":?.!"
+msgstr ":?.!"
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:92
+msgid "This field is required."
+msgstr "This field is required."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:314
+msgid "Enter a whole number."
+msgstr "Enter a whole number."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:485
+#: .\venv\Lib\site-packages\django\forms\fields.py:1251
+msgid "Enter a valid date."
+msgstr "Enter a valid date."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:508
+#: .\venv\Lib\site-packages\django\forms\fields.py:1252
+msgid "Enter a valid time."
+msgstr "Enter a valid time."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:535
+msgid "Enter a valid date/time."
+msgstr "Enter a valid date/time."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:569
+msgid "Enter a valid duration."
+msgstr "Enter a valid duration."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:570
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "The number of days must be between {min_days} and {max_days}."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:639
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "No file was submitted. Check the encoding type on the form."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:640
+msgid "No file was submitted."
+msgstr "No file was submitted."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:641
+msgid "The submitted file is empty."
+msgstr "The submitted file is empty."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:643
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] "Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[1] "Ensure this filename has at most %(max)d characters (it has %(length)d)."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:648
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr "Please either submit a file or check the clear checkbox, not both."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:716
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr "Upload a valid image. The file you uploaded was either not an image or a corrupted image."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:872
+#: .\venv\Lib\site-packages\django\forms\fields.py:959
+#: .\venv\Lib\site-packages\django\forms\models.py:1621
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "Select a valid choice. %(value)s is not one of the available choices."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:961
+#: .\venv\Lib\site-packages\django\forms\fields.py:1080
+#: .\venv\Lib\site-packages\django\forms\models.py:1619
+msgid "Enter a list of values."
+msgstr "Enter a list of values."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1081
+msgid "Enter a complete value."
+msgstr "Enter a complete value."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1323
+msgid "Enter a valid UUID."
+msgstr "Enter a valid UUID."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1353
+msgid "Enter a valid JSON."
+msgstr "Enter a valid JSON."
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:97
+msgid ":"
+msgstr ":"
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(Hidden field %(name)s) %(error)s"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr "ManagementForm data is missing or has been tampered with. Missing fields: %(field_names)s. You may need to file a bug report if the issue persists."
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] "Please submit at most %(num)d forms."
+msgstr[1] "Please submit at most %(num)d forms."
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] "Please submit at least %(num)d forms."
+msgstr[1] "Please submit at least %(num)d forms."
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr "Order"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr "Delete"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:925
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "Please correct the duplicate data for %(field)s."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:930
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr "Please correct the duplicate data for %(field)s, which must be unique."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:937
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr "Please correct the duplicate data for %(field_name)s which must be unique for the %(lookup)s in %(date_field)s."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:946
+msgid "Please correct the duplicate values below."
+msgstr "Please correct the duplicate values below."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1383
+msgid "The inline value did not match the parent instance."
+msgstr "The inline value did not match the parent instance."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1474
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr "Select a valid choice. That choice is not one of the available choices."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1623
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "“%(pk)s” is not a valid value."
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr "%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it may be ambiguous or it may not exist."
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:528
+msgid "Clear"
+msgstr "Borrar"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:529
+msgid "Currently"
+msgstr "Actualmente"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:530
+msgid "Change"
+msgstr "Cambiar"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:869
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:870
+msgid "Yes"
+msgstr "Sí"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:871
+msgid "No"
+msgstr "No"
+
+#: .\venv\Lib\site-packages\django\tasks\base.py:34
+msgctxt "Task"
+msgid "Ready"
+msgstr "Ready"
+
+#: .\venv\Lib\site-packages\django\tasks\base.py:36
+msgctxt "Task"
+msgid "Running"
+msgstr "Running"
+
+#: .\venv\Lib\site-packages\django\tasks\base.py:38
+msgctxt "Task"
+msgid "Failed"
+msgstr "Failed"
+
+#: .\venv\Lib\site-packages\django\tasks\base.py:40
+msgctxt "Task"
+msgid "Successful"
+msgstr "Successful"
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:878
+msgid "yes,no,maybe"
+msgstr "yes,no,maybe"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:908
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:925
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d bytes"
+msgstr[1] "%(size)d bytes"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:927
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:929
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:931
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:933
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:935
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "p.m."
+msgstr "p.m."
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:75
+msgid "a.m."
+msgstr "a.m."
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "PM"
+msgstr "PM"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:81
+msgid "AM"
+msgstr "AM"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:153
+msgid "midnight"
+msgstr "midnight"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:155
+msgid "noon"
+msgstr "noon"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr "Monday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr "Tuesday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr "Wednesday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr "Thursday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr "Friday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr "Saturday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr "Sunday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr "Mon"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr "Tue"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr "Wed"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr "Thu"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr "Fri"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr "Sat"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr "Sun"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr "January"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr "February"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr "March"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr "April"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr "May"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr "June"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr "July"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr "August"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr "September"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr "October"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr "November"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr "December"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr "jan"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr "feb"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr "mar"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr "apr"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr "may"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr "jun"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr "jul"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr "aug"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr "sep"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr "oct"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr "nov"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr "dec"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "Jan."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "Feb."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "March"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "April"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "May"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "June"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "July"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "Aug."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "Sept."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "Oct."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "Nov."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "Dec."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "January"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "February"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "March"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "April"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "May"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "June"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "July"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "August"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "September"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "October"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "November"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "December"
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr "This is not a valid IPv6 address."
+
+#: .\venv\Lib\site-packages\django\utils\text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(truncated_text)s…"
+
+#: .\venv\Lib\site-packages\django\utils\text.py:287
+msgid "or"
+msgstr "or"
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:306
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ", "
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] "%(num)d years"
+msgstr[1] "%(num)d years"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] "%(num)d months"
+msgstr[1] "%(num)d months"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] "%(num)d weeks"
+msgstr[1] "%(num)d weeks"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] "%(num)d days"
+msgstr[1] "%(num)d days"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] "%(num)d hours"
+msgstr[1] "%(num)d hours"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] "%(num)d minutes"
+msgstr[1] "%(num)d minutes"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:29
+msgid "Forbidden"
+msgstr "Forbidden"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr "CSRF verification failed. Request aborted."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr "You are seeing this message because this HTTPS site requires a “Referer header” to be sent by your web browser, but none was sent. This header is required for security reasons, to ensure that your browser is not being hijacked by third parties."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr "If you have configured your browser to disable “Referer” headers, please re-enable them, at least for this site, or for HTTPS connections, or for “same-origin” requests."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or including the “Referrer-Policy: no-referrer” header, please remove them. The CSRF protection requires the “Referer” header to do strict referer checking. If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer\" …> for links to third-party sites."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr "You are seeing this message because this site requires a CSRF cookie when submitting forms. This cookie is required for security reasons, to ensure that your browser is not being hijacked by third parties."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr "If you have configured your browser to disable cookies, please re-enable them, at least for this site, or for “same-origin” requests."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr "More information is available with DEBUG=True."
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr "No year specified"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr "Date out of range"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr "No month specified"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr "No day specified"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr "No week specified"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:353
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "No %(verbose_name_plural)s available"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr "Future %(verbose_name_plural)s not available because %(class_name)s.allow_future is False."
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "Invalid date string “%(datestr)s” given format “%(format)s”"
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "No %(verbose_name)s found matching the query"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "Page is not “last”, nor can it be converted to an int."
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "Invalid page (%(page_number)s): %(message)s"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "Empty list and “%(class_name)s.allow_empty” is False."
+
+#: .\venv\Lib\site-packages\django\views\static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr "Directory indexes are not allowed here."
+
+#: .\venv\Lib\site-packages\django\views\static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "“%(path)s” does not exist"
+
+#: .\venv\Lib\site-packages\django\views\static.py:68
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "Index of %(directory)s"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr "The install worked successfully! Congratulations!"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr "You are seeing this page because <a href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not configured any URLs."
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
+msgid "Django Documentation"
+msgstr "Django Documentation"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr "Topics, references, &amp; how-to’s"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr "Tutorial: A Polling App"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:227
+msgid "Get started with Django"
+msgstr "Get started with Django"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:235
+msgid "Django Community"
+msgstr "Django Community"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr "Connect, get help, or contribute"

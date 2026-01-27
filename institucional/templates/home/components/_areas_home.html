@@ -1,59 +1,83 @@
 {% load static %}
-
+{% load i18n %}
 
 <section id="areas" class="py-5">
     <div class="container-custom">
         <div data-aos="fade-up">
-            <p class="section-kicker">Especialidades</p>
-            <h2 class="section-title">Áreas de Atuação</h2>
+            <p class="section-kicker">{% trans "Especialidades" %}</p>
+            <h2 class="section-title">{% trans "Áreas de Atuação" %}</h2>
+
             <p class="section-subtitle">
+                {% blocktrans %}
                 Atuação focada em três frentes essenciais, com orientação clara e estratégia desde o primeiro
                 atendimento.
+                {% endblocktrans %}
             </p>
         </div>
 
         <div class="row g-3 g-lg-4 mt-2">
             <!-- Bancário -->
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="col-12 col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="0">
                 <article class="area-card">
                     <div class="area-icon">
                         <i class="bi bi-bank"></i>
                     </div>
-                    <h3 class="area-title">Direito Bancário</h3>
+
+                    <h3 class="area-title">{% trans "Direito Bancário" %}</h3>
+
                     <p class="area-text">
+                        {% blocktrans %}
                         Revisão de contratos, juros abusivos, renegociação e medidas para proteção do consumidor em
                         relações bancárias.
+                        {% endblocktrans %}
                     </p>
-                    <a class="area-link" href="#contato">Falar com o advogado <i class="bi bi-arrow-right"></i></a>
+
+                    <a class="area-link" href="#contato" aria-label="{% trans 'Falar com o advogado' %}">
+                        {% trans "Falar com o advogado" %} <i class="bi bi-arrow-right"></i>
+                    </a>
                 </article>
             </div>
 
             <!-- Previdenciário -->
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+            <div class="col-12 col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="80">
                 <article class="area-card">
                     <div class="area-icon">
                         <i class="bi bi-shield-check"></i>
                     </div>
-                    <h3 class="area-title">Direito Previdenciário</h3>
+
+                    <h3 class="area-title">{% trans "Direito Previdenciário" %}</h3>
+
                     <p class="area-text">
+                        {% blocktrans %}
                         Planejamento e requerimento de benefícios, revisões e acompanhamento completo para segurança
                         jurídica.
+                        {% endblocktrans %}
                     </p>
-                    <a class="area-link" href="#contato">Falar com o advogado <i class="bi bi-arrow-right"></i></a>
+
+                    <a class="area-link" href="#contato" aria-label="{% trans 'Falar com o advogado' %}">
+                        {% trans "Falar com o advogado" %} <i class="bi bi-arrow-right"></i>
+                    </a>
                 </article>
             </div>
 
             <!-- Sucessões -->
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+            <div class="col-12 col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="160">
                 <article class="area-card">
                     <div class="area-icon">
                         <i class="bi bi-journal-text"></i>
                     </div>
-                    <h3 class="area-title">Sucessões</h3>
+
+                    <h3 class="area-title">{% trans "Sucessões" %}</h3>
+
                     <p class="area-text">
+                        {% blocktrans %}
                         Inventário, partilha, testamentos e organização patrimonial com discrição, clareza e eficiência.
+                        {% endblocktrans %}
                     </p>
-                    <a class="area-link" href="#contato">Falar com o advogado <i class="bi bi-arrow-right"></i></a>
+
+                    <a class="area-link" href="#contato" aria-label="{% trans 'Falar com o advogado' %}">
+                        {% trans "Falar com o advogado" %} <i class="bi bi-arrow-right"></i>
+                    </a>
                 </article>
             </div>
         </div>

@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 {% block content %}
 <section class="hero-home py-5" style="--hero-bg: url('{% static 'img/photos/tesyt.png' %}');">
@@ -6,32 +7,36 @@
         <div class="row g-0 h-100 align-items-end align-items-lg-center">
             <div class="col-12 col-lg-7">
                 <div class="hero-panel" data-aos="fade-up" data-aos-delay="50">
-                    <p class="hero-kicker small-caps mb-3">Atuação estratégica e atendimento humanizado</p>
+                    <p class="hero-kicker small-caps mb-3">
+                        {% trans "Atuação estratégica e atendimento humanizado" %}
+                    </p>
 
                     <h1 class="hero-title mb-3">
+                        {% blocktrans %}
                         Soluções jurídicas para <span class="text-gold">bancário</span>, <span
                             class="text-gold">previdenciário</span> e <span class="text-gold">sucessões</span>
+                        {% endblocktrans %}
                     </h1>
 
                     <p class="hero-subtitle mb-4">
-                        Orientação clara do início ao fim, com foco em segurança, agilidade e resultado. Entenda seu
-                        caso e os próximos passos.
+                        {% blocktrans %}
+                        Orientação clara do início ao fim, com foco em segurança, agilidade e resultado.Entenda seu caso e os próximos passos.
+                        {% endblocktrans %}
                     </p>
 
                     <div class="d-flex flex-column flex-sm-row gap-2">
-                        <a class="btn-primary" href="#contato">
-                            <i class="bi bi-whatsapp"></i> Falar agora
+                        <a class="btn-primary" href="#contato" aria-label="{% trans 'Falar agora no WhatsApp' %}">
+                            <i class="bi bi-whatsapp"></i> {% trans "Falar agora" %}
                         </a>
-                        <a class="btn-outline" href="#areas">
-                            Ver áreas de atuação
+
+                        <a class="btn-outline" href="#areas" aria-label="{% trans 'Ver áreas de atuação' %}">
+                            {% trans "Ver áreas de atuação" %}
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-lg-5 d-none d-lg-block">
-            </div>
-
+            <div class="col-12 col-lg-5 d-none d-lg-block"></div>
         </div>
     </div>
 
@@ -40,6 +45,5 @@
             <path d="M0,256L1440,160L1440,320L0,320Z"></path>
         </svg>
     </div>
-
 </section>
 {% endblock %}

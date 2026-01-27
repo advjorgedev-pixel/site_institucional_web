@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <footer class="site-footer">
     <div class="container py-5">
@@ -6,25 +7,27 @@
 
             <!-- Brand / About -->
             <div class="col-12 col-md-6 col-lg-3">
-                <a href=""
+                <a href="{% url 'home' %}"
                     class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-2 mb-4 footer-brand">
-                    <img src="{% static 'img/logo/logo_icon_azul-removebg-preview.png' %}" alt="Jorge R. Sarobe"
-                        class="footer-logo" loading="lazy" decoding="async" />
+                    <img src="{% static 'img/logo/logo_icon_azul-removebg-preview.png' %}"
+                        alt="{% trans 'Jorge R. Sarobe' %}" class="footer-logo" loading="lazy" decoding="async" />
                     <div class="lh-sm text-center text-md-start">
-                        <div class="footer-kicker">ADVOCACIA</div>
+                        <div class="footer-kicker">{% trans "ADVOCACIA" %}</div>
                         <div class="footer-name">Jorge R. Sarobe</div>
                     </div>
                 </a>
 
                 <p class="footer-text mx-auto mx-md-0">
-                    Assessoria e consultoria jurídica com atendimento personalizado, estratégia clara e condução segura.
+                    {% trans "Assessoria e consultoria jurídica com atendimento personalizado, estratégia clara e condução segura." %}
                 </p>
 
                 <div class="d-flex justify-content-center justify-content-md-start gap-2 mt-4">
-                    <a class="footer-social" href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <a class="footer-social" href="#" aria-label="{% trans 'LinkedIn' %}" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    <a class="footer-social" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <a class="footer-social" href="#" aria-label="{% trans 'Instagram' %}" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </div>
@@ -32,29 +35,29 @@
 
             <!-- Navigation -->
             <div class="col-12 col-md-6 col-lg-3">
-                <h3 class="footer-title text-center text-md-start">NAVEGAÇÃO</h3>
+                <h3 class="footer-title text-center text-md-start">{% trans "NAVEGAÇÃO" %}</h3>
                 <ul class="list-unstyled d-grid gap-1 mb-0">
-                    <li><a class="footer-link" href="/">Home</a></li>
-                    <li><a class="footer-link" href="#">Sobre</a></li>
-                    <li><a class="footer-link" href="#">Atuação</a></li>
-                    <li><a class="footer-link" href="#">Atualizações</a></li>
-                    <li><a class="footer-link" href="#">Contato</a></li>
+                    <li><a class="footer-link" href="{% url 'home' %}">{% trans "Home" %}</a></li>
+                    <li><a class="footer-link" href="#about">{% trans "Sobre" %}</a></li>
+                    <li><a class="footer-link" href="#areas">{% trans "Atuação" %}</a></li>
+                    <li><a class="footer-link" href="#updates">{% trans "Atualizações" %}</a></li>
+                    <li><a class="footer-link" href="#contato">{% trans "Contato" %}</a></li>
                 </ul>
             </div>
 
             <!-- Practice areas -->
             <div class="col-12 col-md-6 col-lg-3">
-                <h3 class="footer-title text-center text-md-start">ÁREAS DE ATUAÇÃO</h3>
+                <h3 class="footer-title text-center text-md-start">{% trans "ÁREAS DE ATUAÇÃO" %}</h3>
                 <ul class="list-unstyled d-grid gap-1 mb-0">
-                    <li><a class="footer-link" href="">Direito Bancário</a></li>
-                    <li><a class="footer-link" href="">Direito Sucessório</a></li>
-                    <li><a class="footer-link" href="">Direito Previdenciário</a></li>
+                    <li><a class="footer-link" href="">{% trans "Direito Bancário" %}</a></li>
+                    <li><a class="footer-link" href="">{% trans "Direito Sucessório" %}</a></li>
+                    <li><a class="footer-link" href="">{% trans "Direito Previdenciário" %}</a></li>
                 </ul>
             </div>
 
             <!-- Contact -->
             <div class="col-12 col-md-6 col-lg-3">
-                <h3 class="footer-title text-center text-md-start">CONTATO</h3>
+                <h3 class="footer-title text-center text-md-start">{% trans "CONTATO" %}</h3>
 
                 <ul class="list-unstyled d-grid gap-2 mb-0">
                     <li class="d-flex justify-content-center justify-content-md-start align-items-center gap-2">
@@ -75,9 +78,9 @@
 
                 <div class="d-flex justify-content-center justify-content-md-start">
                     <a href="https://wa.me/5548988263060" target="_blank" rel="noopener noreferrer"
-                        class="btn-primary mt-4">
+                        class="btn-primary mt-4" aria-label="{% trans 'Agendar consulta via WhatsApp' %}">
                         <i class="bi bi-whatsapp"></i>
-                        <span>Agendar Consulta</span>
+                        <span>{% trans "Agendar Consulta" %}</span>
                     </a>
                 </div>
             </div>
@@ -89,23 +92,26 @@
                 <iframe class="w-100 h-100"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.8144364644672!2d-48.607928400000006!3d-27.5992821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273913fba9669b%3A0x9e7e783983cf37ec!2sAthayde%20e%20Z%C3%A1rate%20Escrit%C3%B3rio%20de%20Advocacia%20%7C%20AZ%20Sociedade%20de%20Advogados%20%7C%20S%C3%A3o%20Jos%C3%A9%20Campinas%20%7C%20Advogado%20Especialista!5e0!3m2!1spt-BR!2sbr!4v1749153361435!5m2!1spt-BR!2sbr"
                     style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    aria-label="Localização do escritório"></iframe>
+                    aria-label="{% trans 'Localização do escritório' %}"></iframe>
             </div>
         </div>
-
-
 
         <hr class="footer-divider mt-3" />
 
         <div
             class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
             <p class="footer-copy mb-0">
-                © {% now "Y" %} Jorge R. Sarobe - OAB/SC 00000. Todos os direitos reservados.
+                © {% now "Y" %} Jorge R. Sarobe - OAB/SC 00000. {% trans "Todos os direitos reservados." %}
             </p>
 
             <div class="d-flex flex-wrap justify-content-center gap-4">
-                <a class="footer-link footer-link--small" href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Política de Privacidade</a>
-                <a class="footer-link footer-link--small" href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Termos de Uso</a>
+                <a class="footer-link footer-link--small" href="#" data-bs-toggle="modal"
+                    data-bs-target="#privacyModal">
+                    {% trans "Política de Privacidade" %}
+                </a>
+                <a class="footer-link footer-link--small" href="#" data-bs-toggle="modal" data-bs-target="#termsModal">
+                    {% trans "Termos de Uso" %}
+                </a>
             </div>
         </div>
     </div>

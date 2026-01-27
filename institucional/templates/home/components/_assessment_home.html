@@ -1,27 +1,33 @@
 {% load static %}
+{% load i18n %}
 
 <section id="assessment" class="py-5">
     <div class="container-custom">
         <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3 mb-4">
             <div data-aos="fade-up">
-                <p class="section-kicker mb-2">Avaliações</p>
-                <h2 class="section-title mb-2">O que dizem no Google</h2>
+                <p class="section-kicker mb-2">{% trans "Avaliações" %}</p>
+                <h2 class="section-title mb-2">{% trans "O que dizem no Google" %}</h2>
                 <p class="section-subtitle mb-0">
-                    Transparência e confiança no atendimento.
+                    {% trans "Transparência e confiança no atendimento." %}
                 </p>
             </div>
 
             <div class="reviews-summary text-center text-lg-end" data-aos="fade-up" data-aos-delay="80">
                 <div class="reviews-rate">
                     <span class="reviews-score">5,0</span>
-                    <span class="reviews-stars" aria-label="5 de 5">
+                    <span class="reviews-stars" aria-label="{% trans '5 de 5' %}">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </span>
                 </div>
-                <div class="reviews-meta">Baseado em <strong>+30</strong> avaliações</div>
-                <a class="btn-outline mt-2" href="SEU_LINK_GOOGLE" target="_blank" rel="noopener">
-                    <i class="bi bi-google"></i> Ver no Google
+
+                <div class="reviews-meta">
+                    {% blocktrans %}Baseado em <strong>+30</strong> avaliações{% endblocktrans %}
+                </div>
+
+                <a class="btn-outline mt-2" href="SEU_LINK_GOOGLE" target="_blank" rel="noopener"
+                    aria-label="{% trans 'Ver no Google' %}">
+                    <i class="bi bi-google"></i> {% trans "Ver no Google" %}
                 </a>
             </div>
         </div>
@@ -33,7 +39,7 @@
                         <div class="review-avatar">M</div>
                         <div>
                             <h3 class="review-name">Mariana S.</h3>
-                            <div class="review-stars">
+                            <div class="review-stars" aria-label="{% trans '5 de 5' %}">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i>
@@ -41,7 +47,10 @@
                         </div>
                     </header>
                     <p class="review-text">
-                        Atendimento excelente, explicou tudo com clareza e me deu segurança em cada etapa. Recomendo.
+                        {% blocktrans %}
+                        Atendimento excelente, explicou tudo com clareza e me deu segurança em cada etapa.
+                        Recomendo.
+                        {% endblocktrans %}
                     </p>
                 </article>
             </div>
@@ -52,7 +61,7 @@
                         <div class="review-avatar">R</div>
                         <div>
                             <h3 class="review-name">Rafael P.</h3>
-                            <div class="review-stars">
+                            <div class="review-stars" aria-label="{% trans '5 de 5' %}">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i>
@@ -60,7 +69,10 @@
                         </div>
                     </header>
                     <p class="review-text">
-                        Profissionalismo e agilidade. Conduziu meu caso bancário com estratégia e transparência.
+                        {% blocktrans %}
+                        Atendimento excelente, explicou tudo com clareza e me deu segurança em cada etapa.
+                        Recomendo.
+                        {% endblocktrans %}
                     </p>
                 </article>
             </div>
@@ -71,7 +83,7 @@
                         <div class="review-avatar">C</div>
                         <div>
                             <h3 class="review-name">Carla A.</h3>
-                            <div class="review-stars">
+                            <div class="review-stars" aria-label="{% trans '5 de 5' %}">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i>
@@ -79,7 +91,10 @@
                         </div>
                     </header>
                     <p class="review-text">
-                        Me ajudou no processo de sucessões com muita empatia e clareza. Trabalho impecável.
+                        {% blocktrans %}
+                        Atendimento excelente, explicou tudo com clareza e me deu segurança em cada etapa.
+                        Recomendo.
+                        {% endblocktrans %}
                     </p>
                 </article>
             </div>
