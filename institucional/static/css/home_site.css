@@ -123,8 +123,7 @@
 }
 
 .hero-home .hero-wave path {
-    fill: var(--color-navy-800);
-    /* ou #122A40 */
+    fill: var(--color-navy-900);
 }
 
 
@@ -201,5 +200,62 @@
 }
 
 .area-link:hover {
-    color: #fff;
+    color: var(--color-white);
+}
+
+
+
+/* About */
+
+.about-photo {
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .08);
+    box-shadow: 0 18px 60px rgba(0, 0, 0, .18);
+}
+
+.about-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    /* preto e branco */
+    filter: grayscale(100%) contrast(1.05) brightness(.95);
+    transition: filter .25s ease, transform .25s ease;
+}
+
+/* efeito sutil ao passar */
+.about-photo:hover img {
+    filter: grayscale(70%) contrast(1.05) brightness(.98);
+    transform: scale(1.02);
+}
+
+.about-text p {
+    color: var(--color-white-70);
+    margin-bottom: .9rem;
+}
+
+.about-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+
+.about-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem .8rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .08);
+    color: var(--color-white-70);
+    font-weight: 700;
+}
+
+.about-pill .bi {
+    color: var(--color-gold-700);
 }

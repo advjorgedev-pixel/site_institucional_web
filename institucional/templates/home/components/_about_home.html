@@ -1,0 +1,40 @@
+{% load static %}
+<section id="about" class="py-5">
+    <div class="container-custom">
+        <div class="row g-4 g-lg-5 align-items-center">
+            <!-- imagem -->
+            <div class="col-12 col-lg-5" data-aos="fade-right">
+                <figure class="about-photo">
+                    <img src="{% static 'img/photos/jorge.png' %}" alt="Jorge R. Sarobe" loading="lazy">
+                </figure>
+            </div>
+
+            <!-- texto -->
+            <div class="col-12 col-lg-7" data-aos="fade-left">
+                <p class="section-kicker mb-2">Sobre</p>
+                <h2 class="section-title mb-3">Jorge R. Sarobe</h2>
+
+                <div class="about-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi quasi, totam recusandae nisi, blanditiis magnam qui dolores sit corporis vel suscipit inventore expedita. Dolor iste doloribus provident veritatis! Vel.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eveniet est tempore laborum laudantium nisi, perferendis, aperiam ducimus sint cum commodi. Eius fugiat in sunt exercitationem enim. Tempore, hic modi?
+                    </p>
+                </div>
+
+                <div class="about-highlights mt-4">
+                    <div class="about-pill"><i class="bi bi-check2-circle"></i> Atendimento direto</div>
+                    <div class="about-pill"><i class="bi bi-check2-circle"></i> Estratégia e clareza</div>
+                    <div class="about-pill"><i class="bi bi-check2-circle"></i> Foco em resultado</div>
+                </div>
+
+                <div class="mt-4">
+                    <a class="btn-primary" href="#contato">
+                        <i class="bi bi-calendar-check"></i> Agendar consulta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
