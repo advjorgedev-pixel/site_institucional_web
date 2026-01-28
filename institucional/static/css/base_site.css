@@ -644,7 +644,7 @@ p {
 .footer-divider {
     border: 0;
     height: 1px;
-    background: rgba(255, 255, 255, .12);
+    background: rgba(255, 255, 255, 1);
     margin: 0;
 }
 

@@ -2,7 +2,6 @@
     min-height: clamp(560px, 78vh, 860px);
     background-image: var(--hero-bg);
     background-size: cover;
-    background-position: 80% 35%;
     position: relative;
     overflow: hidden;
 }
@@ -15,7 +14,6 @@
     background: rgba(1, 13, 38, .28);
 }
 
-/* faixa escura à esquerda (como no print) */
 .hero-home::after {
     content: "";
     position: absolute;
@@ -25,7 +23,6 @@
     width: clamp(520px, 52vw, 760px);
     background: rgba(1, 13, 38, .88);
     box-shadow: 140px 0 160px rgba(1, 13, 38, .65);
-    /* fade suave pro lado direito */
 }
 
 .hero-home .container-custom,
@@ -34,7 +31,6 @@
     z-index: 1;
 }
 
-/* agora o painel vira só espaçamento (sem caixa/borda) */
 .hero-panel {
     max-width: 64ch;
     padding: clamp(1.25rem, 2.2vw, 2rem);
@@ -48,7 +44,6 @@
     color: var(--color-gold-700);
 }
 
-/* título mais “print-like” */
 .hero-title {
     color: var(--color-white);
     text-transform: uppercase;
