@@ -13,11 +13,13 @@
 
 {% block content %}
 {% translate "Um atendimento humano, direto ao ponto e com estratégia." as heroTitle %}
-{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto, consequuntur est veniam quam similique atque!" as heroText %}
+{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas
+quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto, consequuntur est veniam quam similique
+atque!" as heroText %}
 {% include 'components/_hero.html' %}
 
 <!-- FOTO + TEXTO -->
-<section id="client-about" class="py-5 client-about">
+<section id="client-about" class="py-5">
     <div class="container-custom">
         <div class="row g-4 g-lg-5 align-items-start justify-content-center text-center text-lg-start">
 
@@ -60,19 +62,49 @@
                     </p>
                 </div>
 
-                <div class="about-highlights mt-4 justify-content-center justify-content-lg-start">
-                    <div class="about-pill"><i class="bi bi-check2-circle"></i> {% trans "Atendimento direto" %}</div>
-                    <div class="about-pill"><i class="bi bi-check2-circle"></i> {% trans "Confidencialidade" %}</div>
-                    <div class="about-pill"><i class="bi bi-check2-circle"></i> {% trans "Plano de ação claro" %}</div>
+                <!-- CHIPS (linha superior) -->
+                <div class="about-chips mt-4 justify-content-center justify-content-lg-start" data-aos="fade-up">
+                    <div class="about-chip">
+                        <i class="bi bi-award"></i> {% trans "OAB/UF: [NÚMERO]" %}
+                    </div>
 
-                    <div class="about-pill"><i class="bi bi-check2-circle"></i> {% trans "Comunicação transparente" %}
+                    <div class="about-chip">
+                        <i class="bi bi-book"></i> {% trans "[FORMAÇÃO]" %}
                     </div>
-                    <div class="about-pill"><i class="bi bi-check2-circle"></i> {% trans "Acompanhamento contínuo" %}
-                    </div>
-                    <div class="about-pill"><i class="bi bi-check2-circle"></i> {% trans "Estratégia personalizada" %}
+
+                    <div class="about-chip">
+                        <i class="bi bi-geo-alt"></i> {% trans "[CIDADE-UF]" %}
                     </div>
                 </div>
 
+                <!-- CARDS (Formação / Atendimento) -->
+                <div class="row g-3 g-lg-4 mt-3" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="col-12 col-lg-6">
+                        <div class="about-info-card h-100">
+                            <h3 class="about-info-title">{% trans "Formação" %}</h3>
+
+                            <ul class="about-info-list mb-0">
+                                <li>{% trans "Bacharel em Direito - [INSTITUIÇÃO]" %}</li>
+                                <li>{% trans "Pós-graduação em [ESPECIALIZAÇÃO]" %}</li>
+                                <li>{% trans "Cursos de atualização em [ÁREAS]" %}</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="about-info-card h-100">
+                            <h3 class="about-info-title">{% trans "Atendimento" %}</h3>
+
+                            <ul class="about-info-list mb-0">
+                                <li>{% trans "Presencial em [CIDADE-UF]" %}</li>
+                                <li>{% trans "Online (videoconferência)" %}</li>
+                                <li>{% trans "Idiomas: Português [e outros, se aplicável]" %}</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
 
 
                 <div class="mt-4 d-flex justify-content-center">
