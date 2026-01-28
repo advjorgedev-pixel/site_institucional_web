@@ -13,6 +13,7 @@
 {% endblock %}
 
 
+
 {% block content %}
 
 {% include 'home/components/_hero_home.html' %}
@@ -25,10 +26,16 @@
 
 {% include 'home/components/_faq_home.html' %}
 
-
-
 {% endblock %}
+
+{% block cta %}
+    {% translate "Agende sua consulta com segurança e clareza" as ctaTitle %}
+    {% translate "Atendimento direto, orientação objetiva e estratégia personalizada para o seu caso." as ctaText %}
+    {% include "components/_cta_final.html" with ctaTitle=ctaTitle ctaText=ctaText %}
+{% endblock %}
+
 
 {% block scripts %}
 <script src="{% static 'js/home_site.js' %}"></script>
 {% endblock %}
+

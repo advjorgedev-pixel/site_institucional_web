@@ -10,11 +10,13 @@
 
     <div class="container-custom">
         <div class="cta-box" data-aos="fade-up">
-            <h2 class="cta-title">{% trans "Agende sua consulta com segurança e clareza" %}</h2>
+            {% if ctaTitle %}
+            <h2 class="cta-title">{{ ctaTitle }}</h2>
+            {% endif %}
 
-            <p class="cta-text">
-                {% trans "Atendimento direto, orientação objetiva e estratégia personalizada para o seu caso." %}
-            </p>
+            {% if ctaText %}
+            <p class="cta-text">{{ ctaText }}</p>
+            {% endif %}
 
             <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center mt-3">
                 <a class="btn-primary" href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener"
@@ -22,8 +24,8 @@
                     <i class="bi bi-whatsapp"></i> {% trans "Falar no WhatsApp" %}
                 </a>
 
-                <a class="btn-outline" href="tel:+55SEUNUMERO" aria-label="{% trans 'Ligar agora' %}">
-                    <i class="bi bi-telephone"></i> {% trans "Ligar agora" %}
+                <a class="btn-outline" href="#" aria-label="{% trans 'Contato' %}">
+                    {% trans "Contato" %}
                 </a>
             </div>
         </div>
