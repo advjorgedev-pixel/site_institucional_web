@@ -38,7 +38,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#about" class="nav-link header-link {% if current == 'about' %}is-active{% endif %}"
+                        <a href="{% url 'about' %}" class="nav-link header-link {% if current == 'about' %}is-active{% endif %}"
                             aria-current="{% if current == 'about' %}page{% endif %}">
                             {% trans "Sobre" %}
                         </a>

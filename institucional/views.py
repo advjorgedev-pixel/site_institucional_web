@@ -6,3 +6,6 @@ from . import models
 
 class HomeView(TemplateView):
     template_name = "home/home_site.html"
+
+class AboutView(TemplateView):
+    template_name = "about/about_site.html"

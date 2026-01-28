@@ -80,6 +80,7 @@
     box-shadow: none !important;
 }
 
+
 /* HOME: ao sair do hero fica sólido */
 .page-home .site-header.is-solid {
     background: var(--color-navy-900);
@@ -124,24 +125,6 @@
 
 
 /* Areas */
-
-.section-kicker {
-    color: var(--color-gold-700);
-    font-weight: 700;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    margin-bottom: .35rem;
-}
-
-.section-title {
-    color: #fff;
-    margin-bottom: .6rem;
-}
-
-.section-subtitle {
-    color: rgba(255, 255, 255, .72);
-    margin: 0;
-}
 
 .area-card {
     height: 100%;
@@ -197,6 +180,7 @@
 .area-link:hover {
     color: var(--color-white);
 }
+
 
 
 .about-photo {

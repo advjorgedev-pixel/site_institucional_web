@@ -264,6 +264,26 @@ p {
     border-radius: 10px;
 }
 
+
+/* titulos e sub titulos */
+.section-kicker {
+    color: var(--color-gold-700);
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: .35rem;
+}
+
+.section-title {
+    color: var(--color-white);
+    margin-bottom: .6rem;
+}
+
+.section-subtitle {
+    color: var(--color-white-70);
+    margin: 0;
+}
+
 /* =========================
    Header/Footer
 ========================= */
@@ -286,6 +306,7 @@ p {
     height: 44px;
     object-fit: contain;
 }
+
 
 .brand-kicker,
 .footer-kicker {
@@ -418,6 +439,29 @@ p {
 
 .lang-chip__sep {
     color: rgba(255, 255, 255, .45);
+}
+
+
+/* hero base */
+
+.shape-divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(200% + 1.3px);
+    height: 500px;
+}
+
+.shape-divider-top .shape-fill {
+    fill: var(--color-navy-800);
 }
 
 

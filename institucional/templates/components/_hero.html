@@ -1,0 +1,25 @@
+{% load static %}
+{% load i18n %}
+
+<!-- HERO (somente texto) -->
+<section id="base-hero" class="py-5 mt-5 base-hero">
+    <div class="shape-divider-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="container-custom">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-10" data-aos="fade-up">
+
+                {% if heroTitle %}
+                <h1 class="section-title  mb-3">{{ heroTitle }}</h1>
+                {% endif %}
+
+                {% if heroText %}
+                <p class="section-subtitle mb-0">{{ heroText }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
