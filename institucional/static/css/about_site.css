@@ -61,7 +61,7 @@
     font-weight: 700;
 }
 
-.about-pill .bi {
+.about-pill svg {
     color: var(--color-gold-700);
 }
 

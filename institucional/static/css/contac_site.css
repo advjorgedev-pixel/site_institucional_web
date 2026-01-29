@@ -98,19 +98,16 @@
     color: rgba(255, 255, 255, .76);
 }
 
-/* Lista com check */
-.contact-check li {
-    display: flex;
-    align-items: flex-start;
-    gap: .6rem;
-    padding: .35rem 0;
+.about-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem .8rem;
     color: var(--color-white-70);
 }
 
-.contact-check i {
-    margin-top: .1rem;
+.about-pill svg {
     color: var(--color-gold-700);
-    font-size: 1.05rem;
 }
 
 /* Texto e link do mapa */
