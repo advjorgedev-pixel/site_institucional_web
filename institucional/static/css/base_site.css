@@ -664,8 +664,6 @@ p {
 
 .footer-icon {
     color: var(--color-gold-700);
-    font-size: 1.05rem;
-    margin-top: .15rem;
 }
 
 .footer-social {
@@ -676,7 +674,7 @@ p {
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, .10);
-    color: var(--color-white);
+    color: var(--color-gold-700);
     transition: background .15s ease, transform .15s ease;
     text-decoration: none;
 }
