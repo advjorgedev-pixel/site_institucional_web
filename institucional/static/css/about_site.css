@@ -87,7 +87,7 @@
     font-weight: 700;
 }
 
-.about-chip .bi {
+.about-chip svg {
     color: var(--color-gold-700);
     font-size: 1.05rem;
 }
