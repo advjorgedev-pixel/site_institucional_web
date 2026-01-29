@@ -16,6 +16,7 @@
 .practice-title {
     color: var(--color-white);
     margin-bottom: .35rem;
+    font-size: 2rem;
 }
 
 .practice-text {
