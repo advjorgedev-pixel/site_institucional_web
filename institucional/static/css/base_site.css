@@ -173,6 +173,26 @@ p {
     background: rgba(255, 255, 255, .06);
 }
 
+.card-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(242, 214, 128, .10);
+    border: 1px solid rgba(242, 214, 128, .18);
+    margin-bottom: .9rem;
+}
+
+.card-icon svg {
+    width: 1.35rem;
+    height: 1.35rem;
+    color: var(--color-gold-700); 
+    display: block;
+}
+
+
 /* Buttons */
 .btn-primary {
     display: inline-flex;
@@ -549,10 +569,6 @@ p {
     box-shadow: 0 10px 25px rgba(15, 23, 42, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     animation: whatsapp-blink 1.4s ease-in-out infinite;
-}
-
-.fab-whatsapp i {
-    line-height: 1;
 }
 
 /* hover/focus */

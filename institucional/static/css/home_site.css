@@ -124,23 +124,6 @@
 
 /* Areas */
 
-.area-icon {
-    width: 46px;
-    height: 46px;
-    border-radius: 14px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(242, 214, 128, .10);
-    border: 1px solid rgba(242, 214, 128, .18);
-    margin-bottom: .9rem;
-}
-
-.area-icon .bi {
-    font-size: 1.35rem;
-    color: var(--color-gold-700);
-}
-
 .area-title {
     color: var(--color-white);
     margin-bottom: .55rem;
@@ -225,7 +208,7 @@
     font-weight: 700;
 }
 
-.about-pill .bi {
+.about-pill svg {
     color: var(--color-gold-700);
 }
 
