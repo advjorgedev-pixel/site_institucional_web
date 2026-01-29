@@ -1,0 +1,30 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/services_site.css' %}">
+{% endblock %}
+
+{% block ld_json %}
+{% endblock %}
+
+
+{% block content %}
+{% translate "Um atendimento humano, direto ao ponto e com estratégia." as heroTitle %}
+{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto,consequuntur est veniam quam similique atque!" as heroText %}
+{% include 'components/_hero.html' %}
+
+
+
+
+{% translate "Agende sua consulta com segurança e clareza" as ctaTitle %}
+{% translate "Atendimento direto, orientação objetiva e estratégia personalizada para o seu caso." as ctaText %}
+{% include "components/_cta_final.html" with ctaTitle=ctaTitle ctaText=ctaText %}
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
