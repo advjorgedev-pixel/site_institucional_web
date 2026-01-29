@@ -113,7 +113,6 @@ h3,
 h4 {
     font-family: var(--font-display);
     color: var(--color-navy-900);
-    letter-spacing: 0.02em;
     line-height: 1.15;
     margin: 0 0 0.6rem;
 }
@@ -276,7 +275,6 @@ p {
 .section-kicker {
     color: var(--color-gold-700);
     font-weight: 700;
-    letter-spacing: .12em;
     text-transform: uppercase;
     margin-bottom: .35rem;
 }
@@ -319,7 +317,6 @@ p {
 .footer-kicker {
     font-family: var(--font-sans);
     font-size: 0.72rem;
-    letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--color-gold-700);
     font-weight: 600;
@@ -420,7 +417,6 @@ p {
     align-items: center;
     gap: .35rem;
     font-weight: 800;
-    letter-spacing: .06em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, .88);
     transition: transform .15s ease, background-color .2s ease, border-color .2s ease;
@@ -619,7 +615,6 @@ p {
 .footer-title {
     font-family: var(--font-sans);
     font-size: .85rem;
-    letter-spacing: .18em;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--color-gold-700);

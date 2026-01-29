@@ -47,7 +47,6 @@
 .hero-title {
     color: var(--color-white);
     text-transform: uppercase;
-    letter-spacing: .08em;
     line-height: 1.05;
     font-weight: 600;
     font-size: clamp(2.2rem, 4vw, 4.2rem);
