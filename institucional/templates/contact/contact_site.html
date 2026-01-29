@@ -1,0 +1,400 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/contac_site.css' %}">
+{% endblock %}
+
+{% block ld_json %}
+{% endblock %}
+
+
+{% block content %}
+{% translate "Como entrar em contato" as heroTitle %}
+{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto, consequuntur est veniam quam similique atque!" as heroText %}
+{% include 'components/_hero.html' %}
+
+<section id="contact" class="section">
+    <div class="container-custom">
+
+        <!-- Top cards -->
+        <div class="row g-4 mb-4 mb-lg-5">
+            <!-- Phone -->
+            <div class="col-12 col-lg-4" data-aos="fade-up">
+                <div class="card-base text-center ">
+                    <div class="contact-icon" aria-hidden="true">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+
+                    <h3 class="section-title">{% trans "Telefone" %}</h3>
+
+                    <a class="contact-link" href="tel:{{ CONTACT_PHONE_RAW|default:'+5500000000000' }}">
+                        {{ CONTACT_PHONE|default:"+55 (00) 00000-0000" }}
+                    </a>
+
+                    <a class="contact-whatsapp btn-primary mt-3"
+                        href="https://wa.me/{{ CONTACT_WHATSAPP_RAW|default:'5500000000000' }}" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp"></i>
+                        <span>{% trans "Chamar no WhatsApp" %}</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-base text-center">
+                    <div class="contact-icon" aria-hidden="true">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+
+                    <h3 class="section-title">{% trans "E-mail" %}</h3>
+
+                    <a class="contact-link" href="mailto:{{ CONTACT_EMAIL|default:'contato@exemplo.com' }}">
+                        {{ CONTACT_EMAIL|default:"contato@exemplo.com" }}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-base text-center">
+                    <div class="contact-icon" aria-hidden="true">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+
+                    <h3 class="section-title">{% trans "Localização" %}</h3>
+
+                    <p class="section-subtitle mb-0">
+                        {{ CONTACT_ADDRESS|default:"[ENDEREÇO COMPLETO]" }}<br>
+                        {{ CONTACT_CITY_UF|default:"[CIDADE-UF]" }}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info blocks -->
+        <div class="row g-4 g-lg-5">
+            <!-- Left: schedule + online -->
+            <div class="col-12 col-lg-6">
+                <div class="card-contact mb-4" data-aos="fade-right">
+                    <div class="d-flex gap-3 align-items-start">
+                        <div class="contact-icon contact-icon" aria-hidden="true">
+                            <i class="bi bi-clock-fill"></i>
+                        </div>
+
+                        <div class="flex-grow-1">
+                            <p class="section-kicker mb-2">{% trans "Horário de Atendimento" %}</p>
+
+                            <ul class="contact-hours list-unstyled mb-2">
+                                <li class="d-flex justify-content-between gap-3">
+                                    <span>{% trans "Segunda a Sexta:" %}</span>
+                                    <strong>9h às 18h</strong>
+                                </li>
+                                <li class="d-flex justify-content-between gap-3">
+                                    <span>{% trans "Final de semana:" %}</span>
+                                    <strong>{% trans "Fechado" %}</strong>
+                                </li>
+                            </ul>
+
+                            <p class="contact-note mb-0">
+                                {% trans "* Atendimento presencial mediante agendamento prévio" %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-contact" data-aos="fade-right" data-aos-delay="120">
+                    <h3 class="section-title mb-2">{% trans "Atendimento Online" %}</h3>
+
+                    <ul class="contact-check list-unstyled mb-0">
+                        <li><i class="bi bi-check2-circle"></i> {% trans "Mesma qualidade do atendimento presencial" %}
+                        </li>
+                        <li><i class="bi bi-check2-circle"></i> {% trans "Economia de tempo e deslocamento" %}</li>
+                        <li><i class="bi bi-check2-circle"></i> {% trans "Plataformas seguras e confidenciais" %}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: map -->
+            <div class="col-12 col-lg-6">
+                <div class="card-contact" data-aos="fade-left">
+                    <p class="section-kicker mb-2">{% trans "Como Chegar" %}</p>
+                    <h3 class="section-title h4 mb-3">{% trans "Encontre o escritório" %}</h3>
+
+                    <div class="rounded-4 overflow-hidden border" style="height: 260px;">
+                        <iframe class="w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.8144364644672!2d-48.607928400000006!3d-27.5992821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273913fba9669b%3A0x9e7e783983cf37ec!2sAthayde%20e%20Z%C3%A1rate%20Escrit%C3%B3rio%20de%20Advocacia%20%7C%20AZ%20Sociedade%20de%20Advogados%20%7C%20S%C3%A3o%20Jos%C3%A9%20Campinas%20%7C%20Advogado%20Especialista!5e0!3m2!1spt-BR!2sbr!4v1749153361435!5m2!1spt-BR!2sbr"
+                            style="border: 0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            aria-label="{% trans 'Localização do escritório' %}"></iframe>
+                    </div>
+
+                    <a class="contact-maps-link mt-4"
+                        href="https://maps.google.com/?q={{ CONTACT_MAPS_QUERY|urlencode|default:'[ENDEREÇO]' }}"
+                        target="_blank" rel="noopener noreferrer">
+                        <span>{% trans "Abrir no Google Maps" %}</span>
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+
+        <section id="contact-faq" class="py-5 section section--dark">
+            <div class="container-custom">
+                <div class="section-head mb-4" data-aos="fade-up">
+                    <p class="section-kicker mb-2">{% trans "Dúvidas" %}</p>
+                    <h2 class="section-title mb-2">{% trans "Perguntas frequentes" %}</h2>
+
+                    <p class="section-subtitle mb-0">
+                        {% blocktrans %}
+                        Respostas objetivas para as dúvidas mais comuns sobre atendimento e atuação.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+
+                <div class="accordion accordion-themed" id="contactFaqAccordion" data-aos="fade-up" data-aos-delay="80">
+                    <!-- 1 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading01">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse01" aria-expanded="false"
+                                aria-controls="contactFaqCollapse01">
+                                {% trans "Como funciona a primeira consulta?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse01" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading01" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                Você apresenta sua situação e os documentos disponíveis. Eu avalio o cenário, explico
+                                possibilidades,
+                                riscos e próximos passos. Se fizer sentido, definimos a estratégia e a forma de condução
+                                do
+                                caso.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading02">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse02" aria-expanded="false"
+                                aria-controls="contactFaqCollapse02">
+                                {% trans "Quais documentos devo levar para a consulta?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse02" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading02" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                Depende do tema, mas geralmente ajudam: RG/CPF, comprovantes, contratos, extratos,
+                                comunicações
+                                do banco/INSS,
+                                e qualquer documento que comprove a situação. Se faltar algo, eu oriento o que solicitar
+                                depois.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading03">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse03" aria-expanded="false"
+                                aria-controls="contactFaqCollapse03">
+                                {% trans "O atendimento pode ser online?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse03" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading03" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                Sim. O atendimento online é possível para a maioria dos casos, com envio de documentos
+                                digitalizados e
+                                reunião por vídeo/WhatsApp. Quando necessário, alinhamos atendimento presencial.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading04">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse04" aria-expanded="false"
+                                aria-controls="contactFaqCollapse04">
+                                {% trans "Quanto tempo demora um processo?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse04" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading04" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                O prazo varia conforme o caso, a urgência, o volume de provas e a resposta da outra
+                                parte/órgão.
+                                Na consulta, eu estimarei cenários de tempo e as alternativas para buscar maior
+                                agilidade.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading05">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse05" aria-expanded="false"
+                                aria-controls="contactFaqCollapse05">
+                                {% trans "O que é preciso para revisar juros abusivos ou contratos bancários?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse05" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading05" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                Normalmente precisamos do contrato, demonstrativos, extratos, comprovantes de pagamento
+                                e
+                                eventuais
+                                renegociações. Com isso, é possível avaliar a legalidade de taxas e cláusulas.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading06">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse06" aria-expanded="false"
+                                aria-controls="contactFaqCollapse06">
+                                {% trans "Posso pedir benefício previdenciário mesmo após indeferimento?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse06" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading06" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                Sim. Dependendo do motivo do indeferimento, podemos recorrer administrativamente ou
+                                ingressar
+                                com ação.
+                                Avalio o fundamento, documentos, laudos e histórico contributivo para definir a melhor
+                                estratégia.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading07">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse07" aria-expanded="false"
+                                aria-controls="contactFaqCollapse07">
+                                {% trans "Como funciona inventário e partilha?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse07" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading07" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                O inventário organiza bens, dívidas e herdeiros para formalizar a partilha. Pode ser
+                                judicial ou
+                                em cartório,
+                                conforme requisitos. Eu conduzo o processo e indico a via mais adequada para o seu
+                                cenário.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading08">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse08" aria-expanded="false"
+                                aria-controls="contactFaqCollapse08">
+                                {% trans "Quando vale a pena fazer testamento?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse08" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading08" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                O testamento é útil para organizar a vontade, reduzir conflitos e dar previsibilidade.
+                                Ele não
+                                elimina regras
+                                legais, mas ajuda muito no planejamento sucessório. Eu explico opções e limites de forma
+                                clara.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading09">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse09" aria-expanded="false"
+                                aria-controls="contactFaqCollapse09">
+                                {% trans "Quais são as formas de honorários?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse09" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading09" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                Os honorários variam conforme complexidade, urgência e modelo de atuação (consultivo,
+                                administrativo ou
+                                judicial). Eu apresento a proposta com clareza e alinhamos tudo antes de iniciar.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="contactFaqHeading10">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#contactFaqCollapse10" aria-expanded="false"
+                                aria-controls="contactFaqCollapse10">
+                                {% trans "Como posso agendar e qual o prazo para retorno?" %}
+                            </button>
+                        </h3>
+                        <div id="contactFaqCollapse10" class="accordion-collapse collapse"
+                            aria-labelledby="contactFaqHeading10" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body">
+                                {% blocktrans %}
+                                Você pode agendar pelo WhatsApp ou telefone. Normalmente retorno no mesmo dia útil, e em
+                                casos
+                                urgentes
+                                priorizo o atendimento conforme disponibilidade.
+                                {% endblocktrans %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</section>
+
+
+
+
+{% endblock %}
+
+
+
+{% block scripts %}
+<script src="{% static 'js/home_site.js' %}"></script>
+{% endblock %}

@@ -13,9 +13,7 @@
 
 {% block content %}
 {% translate "Um atendimento humano, direto ao ponto e com estratégia." as heroTitle %}
-{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas
-quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto, consequuntur est veniam quam similique
-atque!" as heroText %}
+{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto,consequuntur est veniam quam similique atque!" as heroText %}
 {% include 'components/_hero.html' %}
 
 <!-- FOTO + TEXTO -->
@@ -81,7 +79,7 @@ atque!" as heroText %}
                 <div class="row g-3 g-lg-4 mt-3" data-aos="fade-up" data-aos-delay="100">
 
                     <div class="col-12 col-lg-6">
-                        <div class="about-info-card h-100">
+                        <div class="card-base">
                             <h3 class="about-info-title">{% trans "Formação" %}</h3>
 
                             <ul class="about-info-list mb-0">
@@ -93,7 +91,7 @@ atque!" as heroText %}
                     </div>
 
                     <div class="col-12 col-lg-6">
-                        <div class="about-info-card h-100">
+                        <div class="card-base">
                             <h3 class="about-info-title">{% trans "Atendimento" %}</h3>
 
                             <ul class="about-info-list mb-0">

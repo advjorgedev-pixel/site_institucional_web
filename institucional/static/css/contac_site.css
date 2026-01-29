@@ -1,0 +1,187 @@
+/* =========================
+   Contact Section
+========================= */
+
+.contact-icon, .contact-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(242, 214, 128, .10);
+    border: 1px solid rgba(242, 214, 128, .18);
+    margin-bottom: .9rem;
+    color: var(--color-gold-700);
+}
+
+.contact-link {
+    display: inline-block;
+    color: var(--color-gold-700);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+/* =========================
+    Contact – Info blocks
+    (schedule + online + map)
+========================= */
+
+
+/* Ajuste geral dos cards do bloco */
+.card-contact {
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, .08);
+    box-shadow: 0 18px 60px rgba(0, 0, 0, .18);
+    transition: transform .18s ease, border-color .18s ease, background-color .18s ease;
+}
+
+.card-contact:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-gold-300);
+    background: rgba(255, 255, 255, .06);
+}
+
+
+/* Lista de horários */
+.contact-hours li {
+    padding: .55rem 0;
+    border-bottom: 1px dashed rgba(1, 13, 38, .18);
+}
+
+.contact-hours li:last-child {
+    border-bottom: none;
+}
+
+.contact-hours span {
+    color: rgba(1, 13, 38, .72);
+    font-weight: 600;
+}
+
+.contact-hours strong {
+    color: rgba(1, 13, 38, .92);
+    font-weight: 900;
+}
+
+.contact-hours li {
+    border-bottom-color: rgba(255, 255, 255, .12);
+}
+
+.contact-hours span {
+    color: rgba(255, 255, 255, .72);
+}
+
+.contact-hours strong {
+    color: rgba(255, 255, 255, .92);
+}
+
+
+.contact-note {
+    font-size: .92rem;
+    color: rgba(1, 13, 38, .60);
+}
+
+.contact-note {
+    color: rgba(255, 255, 255, .65);
+}
+
+
+
+/* Card “Atendimento Online” (refino) */
+.contact-card--dark {
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, .10);
+    background: linear-gradient(135deg, rgba(13, 20, 35, .92), rgba(26, 35, 50, .92));
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .30);
+}
+
+.contact-card--dark .contact-title {
+    font-family: var(--font-display);
+    color: var(--color-white);
+}
+
+.contact-card--dark .contact-text {
+    color: rgba(255, 255, 255, .76);
+}
+
+/* Lista com check */
+.contact-check li {
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    padding: .35rem 0;
+    color: var(--color-white-70);
+}
+
+.contact-check i {
+    margin-top: .1rem;
+    color: var(--color-gold-700);
+    font-size: 1.05rem;
+}
+
+/* Texto e link do mapa */
+.contact-maps-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-gold-700);
+}
+
+.contact-maps-link:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+
+    .contact-card {
+        padding: 1.75rem;
+    }
+}
+
+
+/* =========================
+    Accordion Themed for FAQ
+========================= */
+.accordion-themed .accordion-item {
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: .85rem;
+}
+
+.accordion-themed .accordion-button {
+    background: transparent;
+    color:var(--color-white-70);
+    font-weight: 800;
+    padding: 1rem 1.1rem;
+    box-shadow: none;
+}
+
+.accordion-themed .accordion-button.collapsed {
+    color: rgba(255, 255, 255, .92);
+}
+
+.accordion-themed .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(242, 214, 128, .25);
+}
+
+.accordion-themed .accordion-button::after {
+    filter: brightness(1.2);
+}
+
+.accordion-themed .accordion-body {
+    color: rgba(255, 255, 255, .74);
+    padding: 0 1.1rem 1.1rem;
+}
