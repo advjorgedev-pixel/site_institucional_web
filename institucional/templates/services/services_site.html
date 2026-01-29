@@ -13,10 +13,385 @@
 
 {% block content %}
 {% translate "Um atendimento humano, direto ao ponto e com estratégia." as heroTitle %}
-{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto,consequuntur est veniam quam similique atque!" as heroText %}
+{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas
+quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto,consequuntur est veniam quam similique
+atque!" as heroText %}
 {% include 'components/_hero.html' %}
 
+<section id="atuacao" class="py-5">
+    <div class="container-custom">
 
+        <article data-aos="fade-up">
+            <div class="row g-4 g-lg-5 align-items-center">
+                <!-- texto -->
+                <div class="col-12 col-lg-6">
+
+                    <div class="card-icon card-service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <path
+                                d="m8 0 6.61 3h.89v1H.5V3h.89L8 0ZM2 5h1v6H2V5Zm2 0h1v6H4V5Zm2 0h1v6H6V5Zm2 0h1v6H8V5Zm2 0h1v6h-1V5Zm2 0h1v6h-1V5ZM1 12h14v1H1v-1Zm-.5 2h15v1H.5v-1Z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="practice-title">{% trans "Direito Bancário" %}</h3>
+                    <p class="practice-text">
+                        {% blocktrans %}Defesa dos seus direitos em relações com instituições financeiras, cobranças e
+                        contratos.{% endblocktrans %}
+                    </p>
+
+                    <a href="#contato" class="btn-primary mt-2">
+                        {% trans "Agendar Consulta nesta Área" %}
+                    </a>
+                </div>
+
+                <!-- cards -->
+                <div class="col-12 col-lg-6">
+                    <div class="practice-cards">
+                        <div class="card-base">
+                            <p class="practice-card-title">{% trans "Como posso ajudar" %}</p>
+
+                            <ul class="practice-list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Revisão de contratos de financiamento e empréstimos" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Contestação de juros abusivos e tarifas ilegais" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Ações de repetição de indébito bancário" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Negociação e renegociação de dívidas" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Defesa em casos de inscrição indevida" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Análise de cédulas de crédito bancário" %}
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="card-base">
+                            <div class="practice-card-head">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                    class="bi bi-file-earmark-text" aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                                    <path
+                                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                </svg>
+                                <p class="practice-card-title mb-0">{% trans "Documentos úteis" %}</p>
+                            </div>
+                            <ul class="practice-list practice-list--muted">
+                                <li>{% trans "Contratos bancários (empréstimo, financiamento, cartão)" %}</li>
+                                <li>{% trans "Extratos bancários e faturas" %}</li>
+                                <li>{% trans "Comprovantes de pagamento" %}</li>
+                                <li>{% trans "Notificações de cobrança" %}</li>
+                                <li>{% trans "Documentos pessoais (RG, CPF, comprovante de residência)" %}</li>
+                            </ul>
+                            <small class="practice-note">{% blocktrans %}* Esta é uma lista geral. A documentação
+                                necessária pode variar conforme seu caso específico.{% endblocktrans %}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article data-aos="fade-up">
+            <div class="row g-4 g-lg-5 align-items-center">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="practice-cards">
+                        <div class="card-base">
+                            <p class="practice-card-title">{% trans "Como posso ajudar" %}</p>
+
+                            <ul class="practice-list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Aposentadorias (idade, tempo, especial e rural)" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Benefícios por incapacidade (auxílio e aposentadoria)" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Pensão por morte e auxílio-reclusão" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Revisão de benefício e cálculos previdenciários" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Recursos administrativos e ações judiciais" %}
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-base">
+                            <div class="practice-card-head">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                    class="bi bi-file-earmark-text" aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                                    <path
+                                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                </svg>
+                                <p class="practice-card-title mb-0">{% trans "Documentos úteis" %}</p>
+                            </div>
+
+                            <ul class="practice-list practice-list--muted">
+                                <li>{% trans "Documentos pessoais (RG, CPF, comprovante de residência)" %}</li>
+                                <li>{% trans "Carteira de trabalho (CTPS) e CNIS" %}</li>
+                                <li>{% trans "Comprovantes de contribuição (carnês/GUIA/holerites)" %}</li>
+                                <li>{% trans "Laudos e exames médicos (se aplicável)" %}</li>
+                                <li>{% trans "Carta de indeferimento e processo administrativo (se houver)" %}</li>
+                            </ul>
+
+                            <small class="practice-note">
+                                {% blocktrans %}* Esta é uma lista geral. A documentação necessária pode variar conforme
+                                seu caso específico.{% endblocktrans %}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div class="card-icon card-service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                            <path
+                                d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
+                        </svg>
+                    </div>
+
+                    <h3 class="practice-title">{% trans "Direito Previdenciário" %}</h3>
+                    <p class="practice-text">
+                        {% blocktrans %}Orientação e atuação em benefícios do INSS, revisões, recursos e ações para
+                        assegurar seus direitos.{% endblocktrans %}
+                    </p>
+
+                    <a href="#contato" class="btn-primary mt-2">
+                        {% trans "Agendar Consulta nesta Área" %}
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article data-aos="fade-up">
+            <div class="row g-4 g-lg-5 align-items-center">
+
+                <div class="col-12 col-lg-6">
+                    <div class="card-icon card-service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <path d="M5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 5 8.5Zm0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Z"/>
+                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm10 1H3a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z"/>
+                            <path d="M3 2.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H3.5a.5.5 0 0 1-.5-.5Z"/>
+                        </svg>
+                    </div>
+
+                    <h3 class="practice-title">{% trans "Sucessões" %}</h3>
+                    <p class="practice-text">
+                        {% blocktrans %}Planejamento e condução de inventários, partilhas e medidas para proteção do
+                        patrimônio familiar.{% endblocktrans %}
+                    </p>
+
+                    <a href="#contato" class="btn-primary mt-2">
+                        {% trans "Agendar Consulta nesta Área" %}
+                    </a>
+                </div>
+
+                <!-- cards -->
+                <div class="col-12 col-lg-6">
+                    <div class="practice-cards">
+                        <div class="card-base">
+                            <p class="practice-card-title">{% trans "Como posso ajudar" %}</p>
+
+                            <ul class="practice-list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Inventários judiciais e extrajudiciais" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Partilha de bens e acordos entre herdeiros" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Alvarás para levantamento de valores" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Testamentos e planejamento sucessório" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Reconhecimento de união estável para fins sucessórios" %}
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-base">
+                            <div class="practice-card-head">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                    class="bi bi-file-earmark-text" aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                                    <path
+                                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                </svg>
+                                <p class="practice-card-title mb-0">{% trans "Documentos úteis" %}</p>
+                            </div>
+
+                            <ul class="practice-list practice-list--muted">
+                                <li>{% trans "Certidão de óbito" %}</li>
+                                <li>{% trans "Documentos do falecido e herdeiros" %}</li>
+                                <li>{% trans "Certidões de bens (imóveis, veículos, investimentos)" %}</li>
+                                <li>{% trans "Certidão de casamento/união estável (se aplicável)" %}</li>
+                                <li>{% trans "Testamento (se houver)" %}</li>
+                            </ul>
+
+                            <small class="practice-note">
+                                {% blocktrans %}* Esta é uma lista geral. A documentação necessária pode variar conforme
+                                seu caso específico.{% endblocktrans %}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
 
 
 {% translate "Agende sua consulta com segurança e clareza" as ctaTitle %}
