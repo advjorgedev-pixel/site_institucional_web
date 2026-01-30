@@ -1,0 +1,31 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/blog_list.css' %}">
+{% endblock %}
+
+{% block ld_json %}
+{% endblock %}
+
+
+{% block content %}
+{% translate "Atualizaçõs" as heromintitle %}
+{% translate "Tudo o que você precisa saber sobre o seu caso" as heroTitle %}
+{% translate "Lorem ipsum dolor, sit amet consectetur quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto,consequuntur estatque!" as heroText %}
+{% include 'components/_hero.html' %}
+
+
+
+
+{% translate "Agende sua consulta com segurança e clareza" as ctaTitle %}
+{% translate "Atendimento direto, orientação objetiva e estratégia personalizada para o seu caso." as ctaText %}
+{% include "components/_cta_final.html" with ctaTitle=ctaTitle ctaText=ctaText %}
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
