@@ -1,0 +1,41 @@
+{% load static %}
+{% load i18n %}
+<section class="py-4">
+    <div class="container-custom">
+
+        {% if is_paginated %}
+        <nav class="mt-5" aria-label="{% trans 'Paginação do blog' %}">
+            <ul class="pagination pagination-themed justify-content-center">
+
+
+                {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link"
+                        href="?page={{ page_obj.previous_page_number }}&q={{ q|urlencode }}&area={{ area_selected|urlencode }}">
+                        {% trans "Anterior" %}
+                    </a>
+                </li>
+                {% endif %}
+
+                <li class="page-item page-status" aria-disabled="true">
+                    <span class="page-link">
+                        {% trans "Página" %} {{ page_obj.number }} {% trans "de" %} {{ page_obj.paginator.num_pages }}
+                    </span>
+                </li>
+
+
+                {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link"
+                        href="?page={{ page_obj.next_page_number }}&q={{ q|urlencode }}&area={{ area_selected|urlencode }}">
+                        {% trans "Próxima" %}
+                    </a>
+                </li>
+                {% endif %}
+
+            </ul>
+        </nav>
+        {% endif %}
+
+    </div>
+</section>

@@ -12,11 +12,20 @@
 
 
 {% block content %}
-{% translate "Atualizaçõs" as heromintitle %}
-{% translate "Tudo o que você precisa saber sobre o seu caso" as heroTitle %}
-{% translate "Lorem ipsum dolor, sit amet consectetur quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto,consequuntur estatque!" as heroText %}
+{% translate "Blog jurídico" as heromintitle %}
+{% translate "Atualizações" as heroTitle %}
+{% translate "Conteúdo jurídico em linguagem acessível para manter você informado sobre seus direitos." as heroText %}
 {% include 'components/_hero.html' %}
 
+{% if featured_post %}
+{% include 'blog/components/_featured_post.html' %}
+{% endif %}
+
+{% include 'blog/components/_filter_list_blog.html' %}
+
+{% include 'blog/components/_list_blog.html' %}
+
+{% include 'blog/components/_paginated_list_blog.html' %}
 
 
 
