@@ -57,10 +57,23 @@ class BlogPost(models.Model):
         DRAFT = "draft", "Rascunho"
         PUBLISHED = "published", "Publicado"
 
-    meta_title = models.CharField(max_length=60, blank=True, verbose_name="Meta title")
-    meta_description = models.CharField(max_length=160, blank=True, verbose_name="Meta description")
+    # SEO (por idioma)
+    meta_title_pt = models.CharField(max_length=60, blank=True, verbose_name="Meta title (PT-BR)")
+    meta_description_pt = models.CharField(max_length=160, blank=True, verbose_name="Meta description (PT-BR)")
+    meta_title_es = models.CharField(max_length=60, blank=True, verbose_name="Meta title (ES)")
+    meta_description_es = models.CharField(max_length=160, blank=True, verbose_name="Meta description (ES)")
 
-    title = models.CharField(max_length=120, verbose_name="Título")
+    # Conteúdo (por idioma)
+    title_pt = models.CharField(max_length=120, verbose_name="Título (PT-BR)")
+    title_es = models.CharField(max_length=120, blank=True, verbose_name="Título (ES)")
+
+    summary_pt = models.CharField(max_length=160, blank=True, verbose_name="Resumo (PT-BR)")
+    summary_es = models.CharField(max_length=160, blank=True, verbose_name="Resumo (ES)")
+
+    content_pt = models.TextField(verbose_name="Conteúdo (PT-BR)")
+    content_es = models.TextField(blank=True, verbose_name="Conteúdo (ES)")
+
+    # URL
     slug = models.SlugField(max_length=80, unique=True, blank=True, db_index=True, verbose_name="Slug")
 
     cover = models.ImageField(
@@ -69,9 +82,6 @@ class BlogPost(models.Model):
         null=True,
         verbose_name="Imagem de capa",
     )
-
-    summary = models.CharField(max_length=160, blank=True, verbose_name="Resumo")
-    content = models.TextField(verbose_name="Conteúdo")
 
     tags = models.ManyToManyField(Tag, blank=True, related_name="posts", verbose_name="Tags")
     area = models.ForeignKey(
@@ -108,7 +118,7 @@ class BlogPost(models.Model):
         ]
 
     def __str__(self) -> str:
-        return self.title
+        return self.title_pt
 
     def get_absolute_url(self):
         return reverse("blog_detail", kwargs={"slug": self.slug})
@@ -120,6 +130,7 @@ class BlogPost(models.Model):
     def clean(self):
         super().clean()
 
+        # valida imagem
         if self.cover:
             max_bytes = 2 * 1024 * 1024  # 2 MB
             if self.cover.size > max_bytes:
@@ -131,18 +142,32 @@ class BlogPost(models.Model):
             if ext and ext not in valid_ext:
                 raise ValidationError({"cover": "Formato inválido. Use JPG, PNG ou WEBP."})
 
+        # se publicar e não tiver data, seta agora
         if self.status == self.Status.PUBLISHED and not self.published_at:
             self.published_at = timezone.now()
 
-        # Defaults SEO
-        if not self.meta_title:
-            self.meta_title = self.title[:60]
-        if not self.meta_description and self.summary:
-            self.meta_description = self.summary[:160]
+        # SEO defaults (PT)
+        if not self.meta_title_pt:
+            self.meta_title_pt = (self.title_pt or "")[:60]
+        if not self.meta_description_pt and self.summary_pt:
+            self.meta_description_pt = self.summary_pt[:160]
+
+        # SEO defaults (ES) - só se tiver conteúdo em ES
+        if self.title_es:
+            if not self.meta_title_es:
+                self.meta_title_es = self.title_es[:60]
+            if not self.meta_description_es and self.summary_es:
+                self.meta_description_es = self.summary_es[:160]
+
+        # valida campos obrigatórios do PT
+        if not self.title_pt:
+            raise ValidationError({"title_pt": "Informe o título em PT-BR."})
+        if not self.content_pt:
+            raise ValidationError({"content_pt": "Informe o conteúdo em PT-BR."})
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            base = slugify(self.title)[:70] or str(uuid.uuid4())[:8]
+            base = slugify(self.title_pt)[:70] or str(uuid.uuid4())[:8]
             slug = base
             i = 2
             while BlogPost.objects.filter(slug=slug).exclude(pk=self.pk).exists():
