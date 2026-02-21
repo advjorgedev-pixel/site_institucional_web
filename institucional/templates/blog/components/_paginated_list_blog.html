@@ -1,6 +1,5 @@
 {% load static %}
 {% load i18n %}
-
 <section class="py-4">
     <div class="container-custom">
 
@@ -8,10 +7,11 @@
         <nav class="mt-5" aria-label="{% trans 'Paginação do blog' %}">
             <ul class="pagination pagination-themed justify-content-center">
 
+
                 {% if page_obj.has_previous %}
                 <li class="page-item">
                     <a class="page-link"
-                        href="{% url 'blog_list' %}?page={{ page_obj.previous_page_number }}{% if q %}&q={{ q|urlencode }}{% endif %}{% if area_selected %}&area={{ area_selected|urlencode }}{% endif %}">
+                        href="?page={{ page_obj.previous_page_number }}&q={{ q|urlencode }}&area={{ area_selected|urlencode }}">
                         {% trans "Anterior" %}
                     </a>
                 </li>
@@ -23,10 +23,11 @@
                     </span>
                 </li>
 
+
                 {% if page_obj.has_next %}
                 <li class="page-item">
                     <a class="page-link"
-                        href="{% url 'blog_list' %}?page={{ page_obj.next_page_number }}{% if q %}&q={{ q|urlencode }}{% endif %}{% if area_selected %}&area={{ area_selected|urlencode }}{% endif %}">
+                        href="?page={{ page_obj.next_page_number }}&q={{ q|urlencode }}&area={{ area_selected|urlencode }}">
                         {% trans "Próxima" %}
                     </a>
                 </li>

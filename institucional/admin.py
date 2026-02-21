@@ -24,29 +24,18 @@ class AreaOfPracticeAdmin(admin.ModelAdmin):
 
 @admin.register(BlogPost)
 class BlogPostAdmin(admin.ModelAdmin):
-    list_display = ("title_pt", "area", "status", "published_at", "created_at", "created_by")
+    list_display = ("title", "area", "status", "published_at", "created_at", "created_by")
     list_filter = ("status", "area", "tags", "created_at")
-    search_fields = (
-        "title_pt", "title_es",
-        "summary_pt", "summary_es",
-        "content_pt", "content_es",
-        "meta_title_pt", "meta_title_es",
-        "meta_description_pt", "meta_description_es",
-        "slug",
-    )
+    search_fields = ("title", "summary", "meta_title", "meta_description", "content", "slug")
     autocomplete_fields = ("area", "tags", "created_by")
     readonly_fields = ("created_at", "updated_at")
     date_hierarchy = "published_at"
     ordering = ("-published_at", "-created_at")
 
     fieldsets = (
-        ("Conteúdo (PT-BR)", {"fields": ("title_pt", "summary_pt", "content_pt")}),
-        ("Conteúdo (ES)", {"fields": ("title_es", "summary_es", "content_es")}),
-        ("Mídia", {"fields": ("cover",)}),
+        ("Conteúdo", {"fields": ("title", "slug", "summary", "content", "cover")}),
         ("Classificação", {"fields": ("area", "tags", "status", "published_at")}),
-        ("SEO (PT-BR)", {"fields": ("meta_title_pt", "meta_description_pt")}),
-        ("SEO (ES)", {"fields": ("meta_title_es", "meta_description_es")}),
-        ("URL", {"fields": ("slug",)}),
+        ("SEO", {"fields": ("meta_title", "meta_description")}),
         ("Auditoria", {"fields": ("created_by", "created_at", "updated_at")}),
     )
 

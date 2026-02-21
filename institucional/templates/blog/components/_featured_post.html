@@ -1,17 +1,14 @@
 {% load i18n %}
 {% load static %}
-{% get_current_language as CURRENT_LANG %}
 
 <section class="py-4">
     <div class="container-custom">
         <article class="card-base p-0 overflow-hidden" data-aos="fade-up" data-aos-delay="80">
             <div class="row g-0 align-items-stretch">
-
                 <div class="col-12 col-lg-6">
                     <div class="ratio ratio-16x9 h-100">
                         {% if featured_post.cover %}
-                        <img src="{{ featured_post.cover.url }}"
-                            alt="{% if CURRENT_LANG == 'es' and featured_post.title_es %}{{ featured_post.title_es }}{% else %}{{ featured_post.title_pt }}{% endif %}"
+                        <img src="{{ featured_post.cover.url }}" alt="{{ featured_post.title }}"
                             class="w-100 h-100 object-fit-cover">
                         {% else %}
                         <div class="w-100 h-100 d-flex align-items-center justify-content-center text-white-50">
@@ -23,70 +20,47 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="p-4 p-lg-5">
-
                         <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
                             <span class="badge rounded-pill text-bg-light">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-graph-up-arrow" viewBox="0 0 16 16" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
                                 </svg>
-                                {% trans "Em destaque" %}
-                            </span>
+                                {% trans "Em destaque" %}</span>
 
                             {% if featured_post.area %}
                             <span class="badge rounded-pill bg-secondary-custom">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-tag" viewBox="0 0 16 16" aria-hidden="true">
-                                    <path
-                                        d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0" />
-                                    <path
-                                        d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                                    <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0"/>
+                                    <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z"/>
                                 </svg>
                                 {{ featured_post.area.name }}
                             </span>
                             {% endif %}
                         </div>
 
-                        <h2 class="section-title mb-2">
-                            {% if CURRENT_LANG == "es" and featured_post.title_es %}
-                            {{ featured_post.title_es }}
-                            {% else %}
-                            {{ featured_post.title_pt }}
-                            {% endif %}
-                        </h2>
-
-                        {% if CURRENT_LANG == "es" and featured_post.summary_es %}
-                        <p class="section-subtitle mb-3">{{ featured_post.summary_es }}</p>
-                        {% elif featured_post.summary_pt %}
-                        <p class="section-subtitle mb-3">{{ featured_post.summary_pt }}</p>
+                        <h2 class="section-title mb-2">{{ featured_post.title }}</h2>
+                        {% if featured_post.summary %}
+                        <p class="section-subtitle mb-3">{{ featured_post.summary }}</p>
                         {% endif %}
 
                         <div class="d-flex flex-wrap gap-3 text-white-50 small blog-date mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-calendar4" viewBox="0 0 16 16" aria-hidden="true">
-                                <path
-                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4" viewBox="0 0 16 16">
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
                             </svg>
-
                             {% if featured_post.published_at %}
+
                             <span>{{ featured_post.published_at|date:"d/m/Y" }}</span>
                             {% endif %}
                         </div>
 
-                        <a class="btn-primary" href="{{ featured_post.get_absolute_url }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-journal-bookmark" viewBox="0 0 16 16" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8" />
-                                <path
-                                    d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
-                                <path
-                                    d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+                        <a class="btn-primary" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8"/>
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
                             </svg>
                             {% trans "Ler artigo" %}
                         </a>
-
                     </div>
                 </div>
 

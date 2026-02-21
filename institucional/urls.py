@@ -7,5 +7,4 @@ urlpatterns = [
     path('especialidades/', views.ServicesView.as_view(), name='services'),
     path('contato/', views.ContactView.as_view(), name='contact'),
     path('atualizacoes/', views.BlogPostListView.as_view(), name='blog_list'),
-    path("atualizacoes/<slug:slug>/", views.BlogPostDetailView.as_view(), name="blog_detail"),
 ]
