@@ -3,6 +3,9 @@ from pathlib import Path
 import os
 import environ
 
+from .utils.jazzmin import JAZZMIN_SETTINGS, JAZZMIN_UI_TWEAKS
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -21,12 +24,15 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'axes',
     
     'institucional',
 ]
@@ -41,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'axes.middleware.AxesMiddleware'
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -62,6 +69,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
+AUTHENTICATION_BACKENDS = [
+    'axes.backends.AxesStandaloneBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
 
 DATABASES = {
     'default': {
@@ -111,6 +122,10 @@ USE_I18N = True
 
 USE_TZ = True
 
+JAZZMIN_SETTINGS = JAZZMIN_SETTINGS
+
+JAZZMIN_UI_TWEAKS = JAZZMIN_UI_TWEAKS
+
 LOCALE_PATHS = [BASE_DIR / 'locale']
 
 SESSION_COOKIE_AGE = env.int('SESSION_COOKIE_AGE')
@@ -140,6 +155,11 @@ else:
     }
 
 WHITENOISE_MAX_AGE = 31536000
+
+
+AXES_FAILURE_LIMIT = env.int('AXES_FAILURE_LIMIT')
+AXES_COOLOFF_TIME = env.int('AXES_COOLOFF_TIME')
+AXES_LOCKOUT_TEMPLATE = '403.html'
 
 
 MEDIA_URL = '/media/'
