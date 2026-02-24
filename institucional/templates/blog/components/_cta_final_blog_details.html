@@ -1,11 +1,6 @@
 {% load static %}
 {% load i18n %}
 
-{# Texto do WhatsApp (com título do post + link) #}
-{% blocktrans trimmed with t=post_title u=request.build_absolute_uri asvar waText %}
-Olá! Li o artigo "{{ t }}" e gostaria de uma orientação sobre meu caso. Link: {{ u }}
-{% endblocktrans %}
-
 <section id="contac" class="py-5 cta-final">
     <div class="cta-wave cta-wave-top" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -26,7 +21,7 @@ Olá! Li o artigo "{{ t }}" e gostaria de uma orientação sobre meu caso. Link:
 
             <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center mt-3">
                 <a class="btn-primary d-inline-flex align-items-center"
-                    href="https://wa.me/5548988366235?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20em%20Sucess%C3%B5es%20%2F%20Invent%C3%A1rio.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%3A%20(invent%C3%A1rio%2Fpartilha%2Falvar%C3%A1%2Ftestamento%2Foutro).%20Pode%20me%20informar%20como%20funciona%20e%20quais%20documentos%20devo%20separar%3F"
+                    href="https://wa.me/5548988366235?text={% blocktrans trimmed with t=post_title u=request.build_absolute_uri %}Olá! Li o artigo &quot;{{ t }}&quot; e gostaria de uma orientação sobre meu caso. Link: {{ u }}{% endblocktrans %}|urlencode"
                     target="_blank" rel="noopener" aria-label="{% trans 'Falar no WhatsApp sobre este artigo' %}">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

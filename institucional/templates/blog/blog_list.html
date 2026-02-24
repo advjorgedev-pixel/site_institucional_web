@@ -4,8 +4,8 @@
 {% get_current_language as CURRENT_LANG %}
 
 {% block info %}
-<title></title>
-<meta name="description" content="">
+<title>{% translate "Blog Jurídico em São José SC | Direito Bancário, Previdenciário e Sucessões" %}</title>
+<meta name="description" content="{% translate 'Artigos jurídicos em São José - SC sobre Direito Bancário, Previdenciário e Sucessões. Conteúdo claro para orientar você sobre seus direitos.' %}">
 {% endblock %}
 
 {% block styles %}
@@ -17,9 +17,9 @@
 
 
 {% block content %}
-{% translate "Blog jurídico" as heromintitle %}
-{% translate "Atualizações" as heroTitle %}
-{% translate "Conteúdo jurídico em linguagem acessível para manter você informado sobre seus direitos." as heroText %}
+{% translate "Blog Jurídico" as heromintitle %}
+{% translate "Conteúdo jurídico atualizado em São José - SC" as heroTitle %}
+{% translate "Artigos sobre Direito Bancário, Previdenciário e Sucessões, com explicações claras para orientar você sobre seus direitos e decisões jurídicas." as heroText %}
 {% include 'components/_hero.html' %}
 
 {% if featured_post %}
@@ -34,8 +34,8 @@
 
 
 
-{% translate "Agende sua consulta com segurança e clareza" as ctaTitle %}
-{% translate "Atendimento direto, orientação objetiva e estratégia personalizada para o seu caso." as ctaText %}
+{% translate "Precisa de orientação jurídica em São José - SC?" as ctaTitle %}
+{% translate "Fale agora e receba atendimento estratégico em Direito Bancário, Previdenciário ou Sucessões." as ctaText %}
 {% include "components/_cta_final.html" with ctaTitle=ctaTitle ctaText=ctaText %}
 
 {% endblock %}
