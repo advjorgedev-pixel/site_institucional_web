@@ -1,5 +1,7 @@
 {% load static %}
 {% load i18n %}
+{% load static compress %}
+{% load compress %}
 {% get_current_language as CURRENT_LANG %}
 
 <!DOCTYPE html>
@@ -14,22 +16,21 @@
 
     <link rel="icon" href="{% static 'img//icon/logo_icon.ico' %}" type="image/x-icon">
 
-    <!-- Bootstrap grid -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
-
-
     <link rel="canonical" href="">
     <link rel="alternate" hreflang="es" href="">
 
     {% block ld_json %}
     {% endblock %}
 
+    {% compress css %}
+    <!-- Bootstrap grid -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
     <!-- CSS base global (cores + tipografia) -->
     <link rel="stylesheet" href="{% static 'css/base_site.css' %}">
     <!-- AOS -->
     <link rel="stylesheet" href="{% static 'css/aos.css' %}">
-    {% block styles %}
-    {% endblock %}
+    {% block styles %}{% endblock %}
+    {% endcompress %}
 
 </head>
 
@@ -44,16 +45,16 @@
     {% include 'components/_privacy_terms.html' %}
     {% include 'components/_footer.html' %}
 
+
+    {% compress js %}
     <!-- AOS JS -->
     <script src="{% static 'js/aos.js' %}"></script>
     <!-- UI components (modal, collapse, accordion) -->
     <script src="{% static 'js/ui_components.js' %}"></script>
-
     <!-- Script de animações -->
     <script src="{% static 'js/animation_script.js' %}"></script>
-
-    {% block scripts %}
-    {% endblock %}
+    {% block scripts %}{% endblock %}
+    {% endcompress %}
 </body>
 
 </html>

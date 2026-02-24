@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'axes',
+    'compressor',
     
     'institucional',
 ]
@@ -148,6 +149,17 @@ else:
     }
 
 WHITENOISE_MAX_AGE = 31536000
+
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "compressor.finders.CompressorFinder",
+]
+
+COMPRESS_ENABLED = not DEBUG
+COMPRESS_OFFLINE = not DEBUG
+COMPRESS_URL = STATIC_URL
+COMPRESS_ROOT = STATIC_ROOT
 
 
 AXES_FAILURE_LIMIT = env.int('AXES_FAILURE_LIMIT')
