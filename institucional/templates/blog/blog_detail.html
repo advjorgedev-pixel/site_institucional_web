@@ -1,0 +1,37 @@
+{% extends 'base_site.html' %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+
+{% block info %}
+<title>{{ meta_title }}</title>
+{% if meta_description %}
+<meta name="description" content="{{ meta_description }}">
+{% endif %}
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/blog_detail.css' %}">
+{% endblock %}
+
+{% block ld_json %}
+{% endblock %}
+
+{% block content %}
+
+<!-- HERO / TOP -->
+{% include 'blog/components/_hero_blog_details.html' %}
+
+<!-- COVER + CONTENT -->
+{% include 'blog/components/_blog_details.html' %}
+
+<!-- RELATED POSTS -->
+{% include 'blog/components/_related_posts_details.html' %}
+
+<!-- CALL TO ACTION FINAL -->
+{% include 'blog/components/_cta_final_blog_details.html' %}
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
