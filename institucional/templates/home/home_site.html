@@ -5,6 +5,14 @@
 
 {% block body_class %}page-home{% endblock %}
 
+{% block info %}
+    <title>
+        {% translate "Advogado em São José SC | Direito Bancário, Previdenciário e Sucessões" %}
+    </title>
+
+    <meta name="description" content="{% translate 'Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e Sucessões. Atendimento direto, estratégico e com foco em resultado. Agende sua consulta.' %}">
+{% endblock %}
+
 {% block styles %}
 <link rel="stylesheet" href="{% static 'css/home_site.css' %}">
 {% endblock %}
@@ -26,8 +34,8 @@
 
 {% include 'home/components/_faq_home.html' %}
 
-{% translate "Agende sua consulta com segurança e clareza" as ctaTitle %}
-{% translate "Atendimento direto, orientação objetiva e estratégia personalizada para o seu caso." as ctaText %}
+{% translate "Precisa de advogado em São José - SC?" as ctaTitle %}
+{% translate "Atendimento direto, análise estratégica e orientação clara para seu caso jurídico em São José e região." as ctaText %}
 {% include "components/_cta_final.html" with ctaTitle=ctaTitle ctaText=ctaText %}
 
 {% endblock %}
