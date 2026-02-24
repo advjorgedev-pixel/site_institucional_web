@@ -1,57 +1,120 @@
 {% load static %}
 {% load i18n %}
 
-<section class="py-4">
+<!-- HERO + CONTEÚDO DO POST (DETALHE) -->
+<section class="py-5 mt-4">
     <div class="container-custom">
         <article class="card-base p-0 overflow-hidden" data-aos="fade-up" data-aos-delay="80">
 
-            {% if post.cover %}
-            <div class="ratio ratio-21x9 blog-cover">
-                <img src="{{ post.cover.url }}" alt="{{ post_title }}" class="w-100 h-100 object-fit-cover">
-            </div>
-            {% endif %}
-
             <div class="p-4 p-lg-5">
 
-                <!-- Ações -->
-                <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mb-4">
-                    <a class="btn-outline" href="{% url 'blog_list' %}">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-left" viewBox="0 0 16 16" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8" />
-                        </svg>
-                        {% trans "Voltar" %}
-                    </a>
+                <!-- HERO (imagem à esquerda + infos à direita) -->
+                <div class="row g-4 g-lg-5 align-items-start">
 
-                    <div class="d-flex flex-wrap gap-2">
-                        <a class="btn-outline" href="https://wa.me/?text={{ request.build_absolute_uri|urlencode }}"
-                            target="_blank" rel="noopener">
-                            <i class="bi bi-whatsapp"></i> {% trans "Compartilhar" %}
-                        </a>
-                        <a class="btn-outline"
-                            href="https://www.linkedin.com/sharing/share-offsite/?url={{ request.build_absolute_uri|urlencode }}"
-                            target="_blank" rel="noopener">
-                            <i class="bi bi-linkedin"></i> {% trans "LinkedIn" %}
-                        </a>
+                    {% if post.cover %}
+                    <!-- Imagem -->
+                    <div class="col-12 col-lg-5">
+                        <figure class="blog-cover m-0 text-center text-lg-start">
+                            <img src="{{ post.cover.url }}" alt="{{ post_title }}" loading="lazy">
+                        </figure>
+                    </div>
+                    {% endif %}
+
+                    <!-- HERO (tags + título + resumo + meta + ações embaixo) -->
+                    <div class="col-12 col-lg-7">
+
+                        <!-- Área / Tags -->
+                        <div class="d-flex flex-wrap align-items-center mb-3 gap-2">
+                            {% if post.area %}
+                            <span class="badge rounded-pill text-bg-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-tag" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path
+                                        d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0" />
+                                    <path
+                                        d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z" />
+                                </svg>
+                                {{ post.area.name }}
+                            </span>
+                            {% endif %}
+
+                            {% for tag in post.tags.all %}
+                            <span class="badge rounded-pill bg-secondary-custom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-tags" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path
+                                        d="M3 2v4.586l7 7L14.586 9l-7-7zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586z" />
+                                    <path
+                                        d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1z" />
+                                </svg>
+                                {{ tag.name }}
+                            </span>
+                            {% endfor %}
+                        </div>
+
+                        <h1 class="section-title mb-2">{{ post_title }}</h1>
+
+                        {% if post_summary %}
+                        <p class="section-subtitle mb-3">{{ post_summary }}</p>
+                        {% endif %}
+
+                        <div class="text-white-50 small mb-4 d-flex flex-wrap gap-3">
+                            {% if post.published_at %}
+                            <span class="d-inline-flex align-items-center gap-1 blog-info-custom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar4" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                                </svg>
+                                <span>{{ post.published_at|date:"d/m/Y" }}</span>
+                            </span>
+                            {% endif %}
+
+                            {% if post.created_by %}
+                            <span class="d-inline-flex align-items-center gap-1 blog-info-custom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
+                                    <path
+                                        d="M8 9a5 5 0 0 0-4.546 2.916.5.5 0 0 0 .454.707h8.184a.5.5 0 0 0 .454-.707A5 5 0 0 0 8 9" />
+                                </svg>
+                                <span>{{ post.created_by.get_full_name|default:post.created_by.username }}</span>
+                            </span>
+                            {% endif %}
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Conteúdo -->
-                <div class="blog-content">
-                    {{ post_content|safe }}
-                </div>
+                <!-- Conteúdo (abaixo do hero) -->
+                <div class="mt-4">
 
-                <!-- Tags / Área -->
-                <hr class="my-4">
+                    <!-- Ações (embaixo do hero, como antes) -->
+                    <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mt-4 mb-4">
+                        <a class="btn-outline" href="{% url 'blog_list' %}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-left" viewBox="0 0 16 16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8" />
+                            </svg>
+                            {% trans "Voltar" %}
+                        </a>
 
-                <div class="d-flex flex-wrap gap-2 align-items-center">
-                    {% if post.area %}
-                    <span class="text-white-50 small">{% trans "Área:" %}</span>
-                    <a class="btn-outline" href="{% url 'blog_list' %}?area={{ post.area.slug|urlencode }}">
-                        {{ post.area.name }}
-                    </a>
-                    {% endif %}
+                        <div class="d-flex flex-wrap gap-2">
+                            <a class="btn-outline" href="https://wa.me/?text={{ request.build_absolute_uri|urlencode }}"
+                                target="_blank" rel="noopener">
+                                <i class="bi bi-whatsapp"></i> {% trans "Compartilhar" %}
+                            </a>
+                            <a class="btn-outline" href="https://www.linkedin.com/in/jorge-sarobe-05869a22/"
+                                target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin"></i>LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="blog-content">
+                        {{ post_content|safe }}
+                    </div>
                 </div>
 
             </div>

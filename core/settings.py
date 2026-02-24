@@ -3,8 +3,6 @@ from pathlib import Path
 import os
 import environ
 
-from .utils.jazzmin import JAZZMIN_SETTINGS, JAZZMIN_UI_TWEAKS
-
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -24,7 +22,6 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 
 INSTALLED_APPS = [
-    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -121,10 +118,6 @@ TIME_ZONE = 'America/Sao_Paulo'
 USE_I18N = True
 
 USE_TZ = True
-
-JAZZMIN_SETTINGS = JAZZMIN_SETTINGS
-
-JAZZMIN_UI_TWEAKS = JAZZMIN_UI_TWEAKS
 
 LOCALE_PATHS = [BASE_DIR / 'locale']
 

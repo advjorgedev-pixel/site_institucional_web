@@ -13,7 +13,9 @@
 {% block content %}
 {% translate "Contatos" as heromintitle %}
 {% translate "Como entrar em contato" as heroTitle %}
-{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto, consequuntur est veniam quam similique atque!" as heroText %}
+{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas
+quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto, consequuntur est veniam quam similique
+atque!" as heroText %}
 {% include 'components/_hero.html' %}
 
 <section id="contact" class="section">
@@ -35,13 +37,12 @@
 
                     <h3 class="section-title">{% trans "Telefone" %}</h3>
 
-                    <a class="contact-link" href="tel:{{ CONTACT_PHONE_RAW|default:'+5500000000000' }}">
-                        {{ CONTACT_PHONE|default:"+55 (00) 00000-0000" }}
+                    <a class="contact-link" href="tel:+5548988366235">+55 (48) 98836-6235
                     </a>
 
                     <a class="contact-whatsapp btn-primary mt-3 d-inline-flex align-items-center"
-                        href="https://wa.me/{{ CONTACT_WHATSAPP_RAW|default:'5500000000000' }}" target="_blank"
-                        rel="noopener noreferrer">
+                        href="https://wa.me/5548988366235?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20em%20Sucess%C3%B5es%20%2F%20Invent%C3%A1rio.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%3A%20(invent%C3%A1rio%2Fpartilha%2Falvar%C3%A1%2Ftestamento%2Foutro).%20Pode%20me%20informar%20como%20funciona%20e%20quais%20documentos%20devo%20separar%3F"
+                        target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             viewBox="0 0 16 16" class="me-2 flex-shrink-0" aria-hidden="true" focusable="false">
                             <path
@@ -69,8 +70,7 @@
 
                     <h3 class="section-title">{% trans "E-mail" %}</h3>
 
-                    <a class="contact-link" href="mailto:{{ CONTACT_EMAIL|default:'contato@exemplo.com' }}">
-                        {{ CONTACT_EMAIL|default:"contato@exemplo.com" }}
+                    <a class="contact-link" href="mailto:jrsarobe@gmail.com">jrsarobe@gmail.com
                     </a>
                 </div>
             </div>
@@ -90,8 +90,8 @@
                     <h3 class="section-title">{% trans "Localização" %}</h3>
 
                     <p class="section-subtitle mb-0">
-                        {{ CONTACT_ADDRESS|default:"[ENDEREÇO COMPLETO]" }}<br>
-                        {{ CONTACT_CITY_UF|default:"[CIDADE-UF]" }}
+                        Rua Victor Meireles, 7, Sl 3 - Campinas,88101-170 <br>
+                        São josé - sc
                     </p>
                 </div>
             </div>
@@ -105,9 +105,11 @@
                     <div class="d-flex gap-3 align-items-start">
                         <div class="card-icon card-icon" aria-hidden="true">
                             <!-- bi-clock-fill -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-clock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
                             </svg>
                         </div>
 
@@ -137,23 +139,32 @@
 
                     <ul class="contact-check list-unstyled mb-0">
                         <li class="about-pill">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                <path
+                                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
                             </svg>
                             {% trans "Mesma qualidade do atendimento presencial" %}
                         </li>
                         <li class="about-pill">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                <path
+                                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
                             </svg>
                             {% trans "Economia de tempo e deslocamento" %}
                         </li>
                         <li class="about-pill">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                <path
+                                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
                             </svg>
                             {% trans "Plataformas seguras e confidenciais" %}
                         </li>
