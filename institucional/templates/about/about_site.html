@@ -4,8 +4,8 @@
 {% get_current_language as CURRENT_LANG %}
 
 {% block info %}
-<title></title>
-<meta name="description" content="">
+<title>{% translate "Advogado em São José SC | Jorge R. Sarobe - Direito Bancário, Previdenciário e Sucessões" %}</title>
+<meta name="description" content="{% translate 'Conheça Jorge R. Sarobe, advogado em São José - SC, com atuação em Direito Bancário, Previdenciário e Sucessões. Atendimento estratégico, direto e personalizado.' %}">
 {% endblock %}
 
 {% block styles %}
@@ -18,10 +18,8 @@
 
 {% block content %}
 {% translate "Sobre" as heromintitle %}
-{% translate "Conheça o escritorio" as heroTitle %}
-{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas
-quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto,consequuntur est veniam quam similique
-atque!" as heroText %}
+{% translate "Advogado em São José - SC" as heroTitle %}
+{% translate "Conheça a trajetória, formação e atuação de Jorge R. Sarobe, advogado com foco em Direito Bancário, Previdenciário e Sucessões em São José e região." as heroText %}
 {% include 'components/_hero.html' %}
 
 <!-- FOTO + TEXTO -->
@@ -56,22 +54,12 @@ atque!" as heroText %}
                 <div class="about-text">
                     <p>
                         {% blocktrans %}
-                        Advogado – OAB/SC Profissional graduado pela Universidade Estácio de Sá (2020), com sólida base
-                        prática no Poder Judiciário. Atuou como Conciliador Judicial no Fórum de São José/SC,
-                        desenvolvendo habilidades em mediação e resolução de conflitos junto ao Juizado Especial
-                        Criminal. Atualmente, contribui ativamente para o fortalecimento da classe como integrante da
-                        Comissão de Direito Bancário da OAB/SC (Subseção São José).
-
-
+                        Advogado inscrito na OAB/SC 74.996, graduado pela Universidade Estácio de Sá (2020), com sólida formação prática no Poder Judiciário. Atuou como Conciliador Judicial no Fórum de São José/SC, desenvolvendo experiência em mediação e resolução de conflitos no Juizado Especial Criminal. Integra a Comissão de Direito Bancário da OAB/SC – Subseção São José, contribuindo ativamente para o fortalecimento da advocacia na região.
                         {% endblocktrans %}
                     </p>
                     <p>
                         {% blocktrans %}
-                        Atualmente, aprofunda sua expertise técnica através de pós-graduações em Direito Bancário (área
-                        em que integra a Comissão da OAB São José/SC desde 2025) e em Direito Previdenciário pela
-                        Faculdade Legale. Especialista em Inventários e Direito Sucessório pelo curso Familiariza, une o
-                        conhecimento acadêmico à experiência prática adquirida como Conciliador Judicial no Fórum de São
-                        José. Focado em soluções jurídicas estratégicas e especializadas.
+                        Aprofunda sua atuação técnica por meio de pós-graduação em Direito Bancário e em Direito Previdenciário pela Faculdade Legale, além de especialização em Inventários e Direito Sucessório. Une conhecimento acadêmico à prática forense adquirida em São José/SC, oferecendo soluções jurídicas estratégicas, seguras e personalizadas para cada cliente.
                         {% endblocktrans %}
                     </p>
                 </div>
@@ -164,8 +152,8 @@ atque!" as heroText %}
     </div>
 </section>
 
-{% translate "Agende sua consulta com segurança e clareza" as ctaTitle %}
-{% translate "Atendimento direto, orientação objetiva e estratégia personalizada para o seu caso." as ctaText %}
+{% translate "Precisa de advogado em São José - SC?" as ctaTitle %}
+{% translate "Atendimento jurídico estratégico em São José e região. Fale agora e receba orientação clara sobre seu caso." as ctaText %}
 {% include "components/_cta_final.html" with ctaTitle=ctaTitle ctaText=ctaText %}
 
 {% endblock %}
