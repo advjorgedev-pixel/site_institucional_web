@@ -4,8 +4,8 @@
 {% get_current_language as CURRENT_LANG %}
 
 {% block info %}
-<title></title>
-<meta name="description" content="">
+<title>{% translate "Advogado em São José SC | Direito Bancário, Previdenciário e Sucessões" %}</title>
+<meta name="description" content="{% translate 'Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e Sucessões. Atendimento estratégico, personalizado e focado em resultado.' %}">
 {% endblock %}
 
 {% block styles %}
@@ -17,10 +17,9 @@
 
 
 {% block content %}
-{% translate "Areas de atuação" as heromintitle %}
-{% translate "Um atendimento humano, direto ao ponto e com estratégia." as heroTitle %}
-{% translate "Lorem ipsum dolor, sit amet consectetur quae, exercitationem aliquam impedit minima pariatur harum aliquid
-ad architecto,consequuntur estatque!" as heroText %}
+{% translate "Áreas de Atuação" as heromintitle %}
+{% translate "Advocacia estratégica em São José - SC" as heroTitle %}
+{% translate "Atuação em Direito Bancário, Previdenciário e Sucessões, com atendimento direto, análise técnica e soluções jurídicas personalizadas em São José e região." as heroText %}
 {% include 'components/_hero.html' %}
 
 <section id="services" class="py-5">
@@ -41,8 +40,7 @@ ad architecto,consequuntur estatque!" as heroText %}
 
                     <h3 class="practice-title">{% trans "Direito Bancário" %}</h3>
                     <p class="practice-text">
-                        {% blocktrans %}Defesa dos seus direitos em relações com instituições financeiras, cobranças e
-                        contratos.{% endblocktrans %}
+                        {% blocktrans %}Atuação em São José - SC na defesa dos seus direitos frente a bancos e instituições financeiras, com análise de contratos, cobrança de juros abusivos e revisão de financiamentos.{% endblocktrans %}
                     </p>
 
                     <a href="https://wa.me/5548988366235?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20em%20Direito%20Banc%C3%A1rio.%20Meu%20caso%20envolve%3A%20(juros%2Fcobran%C3%A7a%2Ffinanciamento%2Fcart%C3%A3o%2Foutro).%20Pode%20me%20orientar%20sobre%20os%20pr%C3%B3ximos%20passos%3F"
@@ -262,8 +260,7 @@ ad architecto,consequuntur estatque!" as heroText %}
 
                     <h3 class="practice-title">{% trans "Direito Previdenciário" %}</h3>
                     <p class="practice-text">
-                        {% blocktrans %}Orientação e atuação em benefícios do INSS, revisões, recursos e ações para
-                        assegurar seus direitos.{% endblocktrans %}
+                        {% blocktrans %}Atuação em São José - SC na concessão de aposentadorias e benefícios do INSS, revisões previdenciárias e recursos administrativos ou judiciais para garantir seus direitos.{% endblocktrans %}
                     </p>
 
                     <a href="https://wa.me/5548988366235?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20em%20Direito%20Previdenci%C3%A1rio%20(INSS).%20Meu%20objetivo%20%C3%A9%3A%20(aposentadoria%2Fbenef%C3%ADcio%2Frevis%C3%A3o%2Frecurso).%20Posso%20enviar%20meus%20documentos%20para%20uma%20an%C3%A1lise%20inicial%3F"
@@ -292,8 +289,7 @@ ad architecto,consequuntur estatque!" as heroText %}
 
                     <h3 class="practice-title">{% trans "Sucessões" %}</h3>
                     <p class="practice-text">
-                        {% blocktrans %}Planejamento e condução de inventários, partilhas e medidas para proteção do
-                        patrimônio familiar.{% endblocktrans %}
+                        {% blocktrans %}Inventários judiciais e extrajudiciais em São José - SC, partilha de bens e planejamento sucessório com segurança jurídica e organização patrimonial familiar.{% endblocktrans %}
                     </p>
 
                     <a href="https://wa.me/5548988366235?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20em%20Sucess%C3%B5es%20%2F%20Invent%C3%A1rio.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%3A%20(invent%C3%A1rio%2Fpartilha%2Falvar%C3%A1%2Ftestamento%2Foutro).%20Pode%20me%20informar%20como%20funciona%20e%20quais%20documentos%20devo%20separar%3F"
@@ -406,8 +402,8 @@ ad architecto,consequuntur estatque!" as heroText %}
 </section>
 
 
-{% translate "Agende sua consulta com segurança e clareza" as ctaTitle %}
-{% translate "Atendimento direto, orientação objetiva e estratégia personalizada para o seu caso." as ctaText %}
+{% translate "Precisa de advogado em São José - SC?" as ctaTitle %}
+{% translate "Fale agora e receba orientação jurídica estratégica em São José e região." as ctaText %}
 {% include "components/_cta_final.html" with ctaTitle=ctaTitle ctaText=ctaText %}
 
 {% endblock %}
