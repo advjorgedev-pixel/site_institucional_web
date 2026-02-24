@@ -4,10 +4,12 @@
 {% get_current_language as CURRENT_LANG %}
 
 
+
 {% block info %}
-<title></title>
-<meta name="description" content="">
+    <title>{% translate "Advogado em São José SC | Contato Jurídico" %}</title>
+    <meta name="description" content="{% translate 'Entre em contato com advogado em São José - SC para atendimento em Direito Bancário, Previdenciário e Sucessões. Atendimento presencial e online.' %}">
 {% endblock %}
+
 
 {% block styles %}
 <link rel="stylesheet" href="{% static 'css/contac_site.css' %}">
@@ -17,11 +19,9 @@
 {% endblock %}
 
 {% block content %}
-{% translate "Contatos" as heromintitle %}
-{% translate "Como entrar em contato" as heroTitle %}
-{% translate "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, facere dolores. Corporis fugiat quas
-quae, exercitationem aliquam impedit minima pariatur harum aliquid ad architecto, consequuntur est veniam quam similique
-atque!" as heroText %}
+{% translate "Contato" as heromintitle %}
+{% translate "Advogado em São José - SC" as heroTitle %}
+{% translate "Atendimento jurídico em São José e região, com atuação em Direito Bancário, Previdenciário e Sucessões. Fale agora para receber orientação clara sobre seu caso." as heroText %}
 {% include 'components/_hero.html' %}
 
 <section id="contact" class="section">
