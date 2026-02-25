@@ -1,63 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: site_institucional_web\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 12:07-0300\n"
-"PO-Revision-Date: 2026-01-27 00:00+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2026-02-25 12:18-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
 #: .\core\settings.py:117
 msgid "Português (Brasil)"
-msgstr "Portugués (Brasil)"
+msgstr ""
+"PortuguÃªs (Brasil)"
 
 #: .\core\settings.py:118
 msgid "Español"
-msgstr "Español"
+msgstr ""
+"EspaÃ±ol"
 
 #: .\core\validators.py:10
 msgid "A senha deve conter pelo menos uma letra maiúscula."
-msgstr "La contraseña debe contener al menos una letra mayúscula."
+msgstr ""
+"A senha deve conter pelo menos uma letra maiÃºscula."
 
 #: .\core\validators.py:15
 msgid "Sua senha deve conter pelo menos uma letra maiúscula."
-msgstr "Tu contraseña debe contener al menos una letra mayúscula."
+msgstr ""
+"Sua senha deve conter pelo menos uma letra maiÃºscula."
 
 #: .\core\validators.py:22
 msgid "A senha deve conter pelo menos uma letra minúscula."
-msgstr "La contraseña debe contener al menos una letra minúscula."
+msgstr ""
+"A senha deve conter pelo menos uma letra minÃºscula."
 
 #: .\core\validators.py:27
 msgid "Sua senha deve conter pelo menos uma letra minúscula."
-msgstr "Tu contraseña debe contener al menos una letra minúscula."
+msgstr ""
+"Sua senha deve conter pelo menos uma letra minÃºscula."
 
 #: .\core\validators.py:34
 msgid "A senha deve conter pelo menos um caractere especial."
-msgstr "La contraseña debe contener al menos un carácter especial."
+msgstr ""
+"La contraseña debe contener al menos un carácter especial."
 
 #: .\core\validators.py:39
 msgid "Sua senha deve conter pelo menos um caractere especial."
-msgstr "Tu contraseña debe contener al menos un carácter especial."
+msgstr ""
+"Tu contraseña debe contener al menos un carácter especial."
 
 #: .\core\validators.py:46
 msgid "A senha deve conter pelo menos um número."
-msgstr "La contraseña debe contener al menos un número."
+msgstr ""
+"A senha deve conter pelo menos um nÃºmero."
 
 #: .\core\validators.py:51
 msgid "Sua senha deve conter pelo menos um número."
-msgstr "Tu contraseña debe contener al menos un número."
+msgstr ""
+"Sua senha deve conter pelo menos um nÃºmero."
 
 #: .\institucional\templates\about\about_site.html:7
 #: .\institucional\templates\about\components\_ld_json_about.html:13
 msgid ""
 "Advogado em São José SC | Jorge R. Sarobe - Direito Bancário, Previdenciário "
 "e Sucessões"
-msgstr "Advogado em São José SC | Jorge R. Sarobe - Direito Bancário, Previdenciário ""e Sucessões"
+msgstr ""
+"Abogado em SÃ£o JosÃ© SC | Jorge R. Sarobe - Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes"
 
 #: .\institucional\templates\about\about_site.html:8
 #: .\institucional\templates\about\components\_ld_json_about.html:14
@@ -65,7 +81,8 @@ msgid ""
 "Conheça Jorge R. Sarobe, advogado em São José - SC, com atuação em Direito "
 "Bancário, Previdenciário e Sucessões. Atendimento estratégico, direto e "
 "personalizado."
-msgstr "Conheça Jorge R. Sarobe, advogado em São José - SC, com atuação em Direito ""Bancário, Previdenciário e Sucessões. Atendimento estratégico, direto e ""personalizado."
+msgstr ""
+"ConheÃ§a Jorge R. Sarobe, abogado em SÃ£o JosÃ© - SC, com atuaÃ§Ã£o em Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes. Atención estratÃ©gico, directo y personalizado."
 
 #: .\institucional\templates\about\about_site.html:21
 #: .\institucional\templates\about\components\_ld_json_about.html:81
@@ -74,27 +91,32 @@ msgstr "Conheça Jorge R. Sarobe, advogado em São José - SC, com atuação em 
 #: .\institucional\templates\home\components\_about_home.html:10
 #: .\institucional\templates\home\components\_about_home.html:28
 msgid "Sobre"
-msgstr "Sobre"
+msgstr ""
+"Sobre"
 
 #: .\institucional\templates\about\about_site.html:22
 #: .\institucional\templates\contact\contact_site.html:24
 msgid "Advogado em São José - SC"
-msgstr "Advogado em São José - SC"
+msgstr ""
+"Abogado em SÃ£o JosÃ© - SC"
 
 #: .\institucional\templates\about\about_site.html:23
 msgid ""
 "Conheça a trajetória, formação e atuação de Jorge R. Sarobe, advogado com "
 "foco em Direito Bancário, Previdenciário e Sucessões em São José e região."
-msgstr "Conheça a trajetória, formação e atuação de Jorge R. Sarobe, advogado com ""foco em Direito Bancário, Previdenciário e Sucessões em São José e região."
+msgstr ""
+"ConheÃ§a a trajetÃ³ria, formaÃ§Ã£o y atuaÃ§Ã£o de Jorge R. Sarobe, abogado com foco em Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes em SÃ£o JosÃ© y regiÃ£o."
 
 #: .\institucional\templates\about\about_site.html:33
 #: .\institucional\templates\about\about_site.html:51
 msgid "Perfil"
-msgstr "Perfil"
+msgstr ""
+"Perfil"
 
 #: .\institucional\templates\about\about_site.html:41
 msgid "Foto do cliente"
-msgstr "Foto do cliente"
+msgstr ""
+"Foto do cliente"
 
 #: .\institucional\templates\about\about_site.html:57
 msgid ""
@@ -107,7 +129,10 @@ msgid ""
 "Subseção São José, contribuindo ativamente para o fortalecimento da "
 "advocacia na região.\n"
 "                        "
-msgstr "\n""                        Advogado inscrito na OAB/SC 74.996, graduado pela ""Universidade Estácio de Sá (2020), com sólida formação prática no Poder ""Judiciário. Atuou como Conciliador Judicial no Fórum de São José/SC, ""desenvolvendo experiência em mediação e resolução de conflitos no Juizado ""Especial Criminal. Integra a Comissão de Direito Bancário da OAB/SC – ""Subseção São José, contribuindo ativamente para o fortalecimento da ""advocacia na região.\n""                        "
+msgstr ""
+"\n"
+"                        Abogado inscrito na OAB/SC 74.996, graduado pela Universidade EstÃ¡cio de SÃ¡ (2020), com sÃ³lida formaÃ§Ã£o prÃ¡tica no Poder JudiciÃ¡rio. Atuou como Conciliador Judicial no FÃ³rum de SÃ£o JosÃ©/SC, desenvolvendo experiÃªncia em mediaÃ§Ã£o y resoluÃ§Ã£o de conflitos no Juizado Especial Criminal. Integra a ComissÃ£o de Derecho BancÃ¡rio da OAB/SC â SubseÃ§Ã£o SÃ£o JosÃ©, contribuindo ativamente para o fortalecimento da advocacia na regiÃ£o.\n"
+"                        "
 
 #: .\institucional\templates\about\about_site.html:62
 msgid ""
@@ -119,63 +144,71 @@ msgid ""
 "oferecendo soluções jurídicas estratégicas, seguras e personalizadas para "
 "cada cliente.\n"
 "                        "
-msgstr "\n""                        Aprofunda sua atuação técnica por meio de pós-""graduação em Direito Bancário e em Direito Previdenciário pela Faculdade ""Legale, além de especialização em Inventários e Direito Sucessório. Une ""conhecimento acadêmico à prática forense adquirida em São José/SC, ""oferecendo soluções jurídicas estratégicas, seguras e personalizadas para ""cada cliente.\n""                        "
+msgstr ""
+"\n"
+"                        Aprofunda sua atuaÃ§Ã£o tÃ©cnica por meio de pÃ³s-graduaÃ§Ã£o em Derecho BancÃ¡rio y em Derecho PrevidenciÃ¡rio pela Faculdade Legale, alÃ©m de especializaÃ§Ã£o em InventÃ¡rios y Derecho SucessÃ³rio. Une conhecimento acadÃªmico Ã  prÃ¡tica forense adquirida em SÃ£o JosÃ©/SC, oferecendo soluÃ§Ãµes jurÃ­dicas estratÃ©gicas, seguras y personalizadas para cada cliente.\n"
+"                        "
 
 #: .\institucional\templates\about\about_site.html:91
 msgid "Bacharel em Direito"
-msgstr "Bacharel em Direito"
+msgstr ""
+"Bacharel em Derecho"
 
 #: .\institucional\templates\about\about_site.html:112
-#, fuzzy
-#| msgid "Atuação"
 msgid "Formação"
-msgstr "Actuación"
+msgstr ""
+"FormaÃ§Ã£o"
 
 #: .\institucional\templates\about\about_site.html:115
 msgid "Bacharel em Direito - Estácio de Sá "
-msgstr "Bacharel em Direito - Estácio de Sá "
+msgstr ""
+"Bacharel em Derecho - EstÃ¡cio de SÃ¡ "
 
 #: .\institucional\templates\about\about_site.html:116
-#, fuzzy
-#| msgid "Direito Bancário"
 msgid "Pós-graduação em Direito Bancário"
-msgstr "Derecho Bancario"
+msgstr ""
+"PÃ³s-graduaÃ§Ã£o em Derecho BancÃ¡rio"
 
 #: .\institucional\templates\about\about_site.html:123
-#, fuzzy
-#| msgid "Atendimento direto"
 msgid "Atendimento"
-msgstr "Atención directa"
+msgstr ""
+"Atención"
 
 #: .\institucional\templates\about\about_site.html:126
 msgid "Presencial em São José/SC"
-msgstr "Presencial em São José/SC"
+msgstr ""
+"Presencial em SÃ£o JosÃ©/SC"
 
 #: .\institucional\templates\about\about_site.html:127
 msgid "Online (videoconferência)"
-msgstr "Online (videoconferência)"
+msgstr ""
+"Online (videoconferÃªncia)"
 
 #: .\institucional\templates\about\about_site.html:128
 msgid "Idiomas: Português/Espanhol"
-msgstr "Idiomas: Português/Espanhol"
+msgstr ""
+"Idiomas: PortuguÃªs/Espanhol"
 
 #: .\institucional\templates\about\about_site.html:139
 #: .\institucional\templates\about\about_site.html:147
 #: .\institucional\templates\home\components\_hero_home.html:39
 msgid "Falar agora"
-msgstr "Hablar ahora"
+msgstr ""
+"Falar agora"
 
 #: .\institucional\templates\about\about_site.html:156
 #: .\institucional\templates\home\home_site.html:37
 #: .\institucional\templates\services\services_site.html:405
 msgid "Precisa de advogado em São José - SC?"
-msgstr "Precisa de advogado em São José - SC?"
+msgstr ""
+"Precisa de abogado em SÃ£o JosÃ© - SC?"
 
 #: .\institucional\templates\about\about_site.html:157
 msgid ""
 "Atendimento jurídico estratégico em São José e região. Fale agora e receba "
 "orientação clara sobre seu caso."
-msgstr "Atendimento jurídico estratégico em São José e região. Fale agora e receba ""orientação clara sobre seu caso."
+msgstr ""
+"Atención jurÃ­dico estratÃ©gico em SÃ£o JosÃ© y regiÃ£o. Fale agora y receba orientaÃ§Ã£o clara sobre seu caso."
 
 #: .\institucional\templates\about\components\_ld_json_about.html:23
 #: .\institucional\templates\contact\components\_ld_json_contact.html:22
@@ -183,7 +216,8 @@ msgstr "Atendimento jurídico estratégico em São José e região. Fale agora e
 #: .\institucional\templates\home\components\_ld_json_home.html:20
 #: .\institucional\templates\home\components\_ld_json_home.html:27
 msgid "Jorge R. Sarobe - Advogado em São José SC"
-msgstr "Jorge R. Sarobe - Advogado em São José SC"
+msgstr ""
+"Jorge R. Sarobe - Abogado em SÃ£o JosÃ© SC"
 
 #: .\institucional\templates\about\components\_ld_json_about.html:42
 #: .\institucional\templates\about\components\_ld_json_about.html:56
@@ -193,7 +227,8 @@ msgstr "Jorge R. Sarobe - Advogado em São José SC"
 #: .\institucional\templates\home\components\_ld_json_home.html:46
 #: .\institucional\templates\services\services_site.html:41
 msgid "Direito Bancário"
-msgstr "Derecho Bancario"
+msgstr ""
+"Derecho BancÃ¡rio"
 
 #: .\institucional\templates\about\components\_ld_json_about.html:43
 #: .\institucional\templates\about\components\_ld_json_about.html:57
@@ -203,7 +238,8 @@ msgstr "Derecho Bancario"
 #: .\institucional\templates\home\components\_ld_json_home.html:47
 #: .\institucional\templates\services\services_site.html:261
 msgid "Direito Previdenciário"
-msgstr "Derecho Previsional"
+msgstr ""
+"Derecho PrevidenciÃ¡rio"
 
 #: .\institucional\templates\about\components\_ld_json_about.html:44
 #: .\institucional\templates\about\components\_ld_json_about.html:58
@@ -212,182 +248,209 @@ msgstr "Derecho Previsional"
 #: .\institucional\templates\home\components\_ld_json_home.html:48
 #: .\institucional\templates\services\services_site.html:290
 msgid "Sucessões"
-msgstr "Sucesiones"
+msgstr ""
+"SucessÃµes"
 
 #: .\institucional\templates\about\components\_ld_json_about.html:52
 #: .\institucional\templates\contact\components\_ld_json_contact.html:76
 #: .\institucional\templates\home\components\_ld_json_home.html:60
 msgid "Advogado"
-msgstr "Advogado"
+msgstr ""
+"Abogado"
 
 #: .\institucional\templates\about\components\_ld_json_about.html:75
 #: .\institucional\templates\blog\components\_ld_json_blog_details.html:70
 #: .\institucional\templates\blog\components\_ld_json_blog_list.html:74
 msgid "Início"
-msgstr "Início"
+msgstr ""
+"InÃ­cio"
 
 #: .\institucional\templates\blog\blog_list.html:7
 #: .\institucional\templates\blog\components\_ld_json_blog_list.html:13
 msgid ""
 "Blog Jurídico em São José SC | Direito Bancário, Previdenciário e Sucessões"
-msgstr "Blog Jurídico em São José SC | Direito Bancário, Previdenciário e Sucessões"
+msgstr ""
+"Blog JurÃ­dico em SÃ£o JosÃ© SC | Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes"
 
 #: .\institucional\templates\blog\blog_list.html:8
 #: .\institucional\templates\blog\components\_ld_json_blog_list.html:14
 msgid ""
 "Artigos jurídicos em São José - SC sobre Direito Bancário, Previdenciário e "
 "Sucessões. Conteúdo claro para orientar você sobre seus direitos."
-msgstr "Artigos jurídicos em São José - SC sobre Direito Bancário, Previdenciário e ""Sucessões. Conteúdo claro para orientar você sobre seus direitos."
+msgstr ""
+"Artigos jurÃ­dicos em SÃ£o JosÃ© - SC sobre Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes. ConteÃºdo claro para orientar vocÃª sobre seus direitos."
 
 #: .\institucional\templates\blog\blog_list.html:21
 #: .\institucional\templates\blog\components\_ld_json_blog_list.html:24
 msgid "Blog Jurídico"
-msgstr "Blog Jurídico"
+msgstr ""
+"Blog JurÃ­dico"
 
 #: .\institucional\templates\blog\blog_list.html:22
 msgid "Conteúdo jurídico atualizado em São José - SC"
-msgstr "Conteúdo jurídico atualizado em São José - SC"
+msgstr ""
+"ConteÃºdo jurÃ­dico atualizado em SÃ£o JosÃ© - SC"
 
 #: .\institucional\templates\blog\blog_list.html:23
 msgid ""
 "Artigos sobre Direito Bancário, Previdenciário e Sucessões, com explicações "
 "claras para orientar você sobre seus direitos e decisões jurídicas."
-msgstr "Artigos sobre Direito Bancário, Previdenciário e Sucessões, com explicações ""claras para orientar você sobre seus direitos e decisões jurídicas."
+msgstr ""
+"Artigos sobre Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes, com explicaÃ§Ãµes claras para orientar vocÃª sobre seus direitos y decisÃµes jurÃ­dicas."
 
 #: .\institucional\templates\blog\blog_list.html:38
 msgid "Precisa de orientação jurídica em São José - SC?"
-msgstr "Precisa de orientação jurídica em São José - SC?"
+msgstr ""
+"Precisa de orientaÃ§Ã£o jurÃ­dica em SÃ£o JosÃ© - SC?"
 
 #: .\institucional\templates\blog\blog_list.html:39
 msgid ""
 "Fale agora e receba atendimento estratégico em Direito Bancário, "
 "Previdenciário ou Sucessões."
-msgstr "Fale agora e receba atendimento estratégico em Direito Bancário, ""Previdenciário ou Sucessões."
+msgstr ""
+"Fale agora y receba atención estratÃ©gico em Derecho BancÃ¡rio, PrevidenciÃ¡rio ou SucessÃµes."
 
 #: .\institucional\templates\blog\components\_blog_details.html:100
 msgid "Voltar"
-msgstr "Voltar"
+msgstr ""
+"Voltar"
 
 #: .\institucional\templates\blog\components\_blog_details.html:106
-#, fuzzy
-#| msgid "4. Compartilhamento"
 msgid "Compartilhar"
-msgstr "4. Compartición"
+msgstr ""
+"Compartilhar"
 
 #: .\institucional\templates\blog\components\_cta_final_blog_details.html:15
-#, fuzzy
-#| msgid "O que é preciso para revisar juros abusivos ou contratos bancários?"
 msgid "Precisa de ajuda com seu contrato bancário?"
-msgstr "Precisa de ajuda com seu contrato bancário?"
-"¿Qué se necesita para revisar intereses abusivos o contratos bancarios?"
+msgstr ""
+"Precisa de ajuda com seu contrato bancÃ¡rio?"
 
 #: .\institucional\templates\blog\components\_cta_final_blog_details.html:19
 msgid ""
 "Envie uma mensagem no WhatsApp com o link deste artigo e uma breve descrição "
 "do seu caso."
-msgstr "Envie uma mensagem no WhatsApp com o link deste artigo e uma breve descrição ""do seu caso."
+msgstr ""
+"Envie uma mensagem no WhatsApp com o link deste artigo y uma breve descriÃ§Ã£o do seu caso."
 
 #: .\institucional\templates\blog\components\_cta_final_blog_details.html:24
 #, python-format
 msgid ""
 "Olá! Li o artigo &quot;%(t)s&quot; e gostaria de uma orientação sobre meu "
 "caso. Link: %(u)s"
-msgstr "Olá! Li o artigo &quot;%(t)s&quot; e gostaria de uma orientação sobre meu ""caso. Link: %(u)s"
+msgstr ""
+"OlÃ¡! Li o artigo &quot;%(t)s&quot; y gostaria de uma orientaÃ§Ã£o sobre meu caso. Link: %(u)s"
 
 #: .\institucional\templates\blog\components\_cta_final_blog_details.html:25
-#, fuzzy
-#| msgid "Falar no WhatsApp"
 msgid "Falar no WhatsApp sobre este artigo"
-msgstr "Hablar por WhatsApp"
+msgstr ""
+"Falar no WhatsApp sobre este artigo"
 
 #: .\institucional\templates\blog\components\_cta_final_blog_details.html:33
 #: .\institucional\templates\components\_cta_final.html:26
 #: .\institucional\templates\components\_cta_final.html:38
 msgid "Falar no WhatsApp"
-msgstr "Hablar por WhatsApp"
+msgstr ""
+"Falar no WhatsApp"
 
 #: .\institucional\templates\blog\components\_featured_post.html:18
 #: .\institucional\templates\blog\components\_list_blog.html:22
 #: .\institucional\templates\blog\components\_related_posts_details.html:24
 msgid "Sem imagem"
-msgstr "Sem imagem"
+msgstr ""
+"Sem imagem"
 
 #: .\institucional\templates\blog\components\_featured_post.html:34
 msgid "Em destaque"
-msgstr "Em destaque"
+msgstr ""
+"Em destaque"
 
 #: .\institucional\templates\blog\components\_featured_post.html:87
 msgid "Ler artigo"
-msgstr "Ler artigo"
+msgstr ""
+"Ler artigo"
 
 #: .\institucional\templates\blog\components\_filter_list_blog.html:10
 msgid "Buscar no título"
-msgstr "Buscar no título"
+msgstr ""
+"Buscar no tÃ­tulo"
 
 #: .\institucional\templates\blog\components\_filter_list_blog.html:12
 msgid "Ex: ação revisional"
-msgstr "Ex: ação revisional"
+msgstr ""
+"Ex: aÃ§Ã£o revisional"
 
 #: .\institucional\templates\blog\components\_filter_list_blog.html:14
 msgid "Separe por espaço. Todas as palavras devem aparecer no título."
-msgstr "Separe por espaço. Todas as palavras devem aparecer no título."
+msgstr ""
+"Separe por espaÃ§o. Todas as palavras devem aparecer no tÃ­tulo."
 
 #: .\institucional\templates\blog\components\_filter_list_blog.html:25
 msgid "Filtrar"
-msgstr "Filtrar"
+msgstr ""
+"Filtrar"
 
 #: .\institucional\templates\blog\components\_filter_list_blog.html:35
 msgid "Todas"
-msgstr "Todas"
+msgstr ""
+"Todas"
 
 #: .\institucional\templates\blog\components\_ld_json_blog_details.html:42
 #: .\institucional\templates\components\_header.html:12
 msgid "Jorge R. Sarobe"
-msgstr "Jorge R. Sarobe"
+msgstr ""
+"Jorge R. Sarobe"
 
 #: .\institucional\templates\blog\components\_ld_json_blog_details.html:76
 #: .\institucional\templates\blog\components\_ld_json_blog_list.html:80
 msgid "Blog"
-msgstr "Blog"
+msgstr ""
+"Blog"
 
 #: .\institucional\templates\blog\components\_ld_json_blog_details.html:93
 #: .\institucional\templates\blog\components\_related_posts_details.html:9
 msgid "Conteúdos relacionados"
-msgstr "Conteúdos relacionados"
+msgstr ""
+"ConteÃºdos relacionados"
 
 #: .\institucional\templates\blog\components\_list_blog.html:76
 msgid "Nenhum resultado encontrado."
-msgstr "Nenhum resultado encontrado."
+msgstr ""
+"Nenhum resultado encontrado."
 
 #: .\institucional\templates\blog\components\_list_blog.html:77
 msgid "Tente ajustar os filtros."
-msgstr "Tente ajustar os filtros."
+msgstr ""
+"Tente ajustar os filtros."
 
 #: .\institucional\templates\blog\components\_paginated_list_blog.html:8
 msgid "Paginação do blog"
-msgstr "Paginação do blog"
+msgstr ""
+"PaginaÃ§Ã£o do blog"
 
 #: .\institucional\templates\blog\components\_paginated_list_blog.html:15
 msgid "Anterior"
-msgstr "Anterior"
+msgstr ""
+"Anterior"
 
 #: .\institucional\templates\blog\components\_paginated_list_blog.html:22
 msgid "Página"
-msgstr "Página"
+msgstr ""
+"PÃ¡gina"
 
 #: .\institucional\templates\blog\components\_paginated_list_blog.html:22
-#, fuzzy
-#| msgid "dec"
 msgid "de"
-msgstr "dec"
+msgstr ""
+"de"
 
 #: .\institucional\templates\blog\components\_paginated_list_blog.html:30
 msgid "Próxima"
-msgstr "Próxima"
+msgstr ""
+"PrÃ³xima"
 
 #: .\institucional\templates\blog\components\_related_posts_details.html:8
 msgid "Veja também"
-msgstr "Veja também"
+msgstr ""
+"Veja tambÃ©m"
 
 #: .\institucional\templates\components\_cta_final.html:41
 #: .\institucional\templates\components\_cta_final.html:42
@@ -395,102 +458,121 @@ msgstr "Veja também"
 #: .\institucional\templates\components\_header.html:65
 #: .\institucional\templates\contact\contact_site.html:23
 msgid "Contato"
-msgstr "Contacto"
+msgstr ""
+"Contacto"
 
 #: .\institucional\templates\components\_footer.html:15
 #: .\institucional\templates\components\_header.html:16
 msgid "ADVOCACIA"
-msgstr "ABOGACÍA"
+msgstr ""
+"ADVOCACIA"
 
 #: .\institucional\templates\components\_footer.html:21
 msgid ""
 "Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e "
 "Sucessões. Atendimento personalizado e estratégico."
-msgstr "Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e ""Sucessões. Atendimento personalizado e estratégico."
+msgstr ""
+"Abogado em SÃ£o JosÃ© - SC com atuaÃ§Ã£o em Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes. Atención personalizado y estratÃ©gico."
 
 #: .\institucional\templates\components\_footer.html:50
 msgid "NAVEGAÇÃO"
-msgstr "NAVEGACIÓN"
+msgstr ""
+"NAVEGAÃÃO"
 
 #: .\institucional\templates\components\_footer.html:52
 #: .\institucional\templates\components\_header.html:36
 msgid "Home"
-msgstr "Inicio"
+msgstr ""
+"Home"
 
 #: .\institucional\templates\components\_footer.html:54
 #: .\institucional\templates\components\_header.html:51
 #: .\institucional\templates\home\components\_areas_home.html:7
 msgid "Especialidades"
-msgstr "Especialidades"
+msgstr ""
+"Especialidades"
 
 #: .\institucional\templates\components\_footer.html:55
 #: .\institucional\templates\components\_header.html:58
 msgid "Atualizações"
-msgstr "Actualizaciones"
+msgstr ""
+"AtualizaÃ§Ãµes"
 
 #: .\institucional\templates\components\_footer.html:62
 msgid "ÁREAS DE ATUAÇÃO"
-msgstr "ÁREAS DE ACTUACIÓN"
+msgstr ""
+"ÃREAS DE ATUAÃÃO"
 
 #: .\institucional\templates\components\_footer.html:66
 msgid "Direito Sucessório"
-msgstr "Derecho Sucesorio"
+msgstr ""
+"Derecho SucessÃ³rio"
 
 #: .\institucional\templates\components\_footer.html:72
 msgid "CONTATO"
-msgstr "CONTACTO"
+msgstr ""
+"CONTATO"
 
 #: .\institucional\templates\components\_footer.html:112
 #: .\institucional\templates\components\_header.html:101
 msgid "Agendar consulta via WhatsApp"
-msgstr "Agendar consulta por WhatsApp"
+msgstr ""
+"Agendar consulta via WhatsApp"
 
 #: .\institucional\templates\components\_footer.html:120
 #: .\institucional\templates\components\_header.html:108
 msgid "Agendar Consulta"
-msgstr "Agendar consulta"
+msgstr ""
+"Agendar Consulta"
 
 #: .\institucional\templates\components\_footer.html:133
 #: .\institucional\templates\contact\contact_site.html:193
 msgid "Localização do escritório"
-msgstr "Ubicación del despacho"
+msgstr ""
+"LocalizaÃ§Ã£o do escritÃ³rio"
 
 #: .\institucional\templates\components\_footer.html:143
 msgid "Todos os direitos reservados."
-msgstr "Todos los derechos reservados."
+msgstr ""
+"Todos os direitos reservados."
 
 #: .\institucional\templates\components\_footer.html:149
 msgid "Política de Privacidade"
-msgstr "Política de Privacidad"
+msgstr ""
+"PolÃ­tica de Privacidade"
 
 #: .\institucional\templates\components\_footer.html:152
 msgid "Termos de Uso"
-msgstr "Términos de Uso"
+msgstr ""
+"Termos de Uso"
 
 #: .\institucional\templates\components\_header.html:24
 msgid "Abrir menu"
-msgstr "Abrir menú"
+msgstr ""
+"Abrir menu"
 
 #: .\institucional\templates\components\_header.html:78
-#, fuzzy
-#| msgid "Português (Brasil)"
 msgid "Mudar idioma para Português (Brasil)"
-msgstr "Portugués (Brasil)"
+msgstr ""
+"Mudar idioma para PortuguÃªs (Brasil)"
 
 #: .\institucional\templates\components\_header.html:88
 msgid "Mudar idioma para Espanhol"
-msgstr "Mudar idioma para Espanhol"
+msgstr ""
+"Mudar idioma para Espanhol"
 
 #: .\institucional\templates\components\_privacy_terms.html:10
 msgid "Política de Privacidade — Advocacia Jorge R. Sarobe"
-msgstr "Política de Privacidad — Abogacía Jorge R. Sarobe"
+msgstr ""
+"PolÃ­tica de Privacidade â Advocacia Jorge R. Sarobe"
 
 #: .\institucional\templates\components\_privacy_terms.html:13
 #: .\institucional\templates\components\_privacy_terms.html:102
 #: .\institucional\templates\components\_privacy_terms.html:119
 #: .\institucional\templates\components\_privacy_terms.html:199
 msgid "Fechar"
-msgstr "Cerrar"
+msgstr ""
+"Fechar"
 
 #: .\institucional\templates\components\_privacy_terms.html:18
 msgid ""
@@ -500,17 +582,17 @@ msgid ""
 "                    com a\n"
 "                    <strong>LGPD (Lei nº 13.709/2018)</strong>.\n"
 "                    "
-msgstr "\n""                    Respeitamos sua privacidade e tratamos dados pessoais ""com segurança, transparência e em conformidade\n""                    com a\n""                    <strong>LGPD (Lei nº 13.709/2018)</strong>.\n""                    "
+msgstr ""
 "\n"
-"                    Respetamos tu privacidad y tratamos los datos personales "
-"con seguridad, transparencia y de conformidad\n"
-"                    con la\n"
-"                    <strong>LGPD (Ley nº 13.709/2018)</strong>.\n"
+"                    Respeitamos sua privacidade y tratamos dados pessoais com seguranÃ§a, transparÃªncia y em conformidade\n"
+"                    com a\n"
+"                    <strong>LGPD (Lei nÂº 13.709/2018)</strong>.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:25
 msgid "1. Dados coletados"
-msgstr "1. Datos recopilados"
+msgstr ""
+"1. Dados coletados"
 
 #: .\institucional\templates\components\_privacy_terms.html:27
 msgid ""
@@ -524,41 +606,44 @@ msgid ""
 "                    (ex.: IP, dispositivo e páginas visitadas) para fins de "
 "segurança e estatística.\n"
 "                    "
-msgstr "\n""                    Podemos coletar dados fornecidos por você (ex.: nome, ""telefone, e-mail, mensagem) ao preencher\n""                    formulários,\n""                    entrar em contato via WhatsApp ou agendar atendimento. ""Também podemos coletar dados técnicos de\n""                    navegação\n""                    (ex.: IP, dispositivo e páginas visitadas) para fins de ""segurança e estatística.\n""                    "
+msgstr ""
 "\n"
-"                    Podemos recopilar los datos que nos proporcionas (p. "
-"ej.: nombre, teléfono, correo, mensaje) al completar\n"
-"                    formularios,\n"
-"                    contactar por WhatsApp o agendar una atención. También "
-"podemos recopilar datos técnicos de\n"
-"                    navegación\n"
-"                    (p. ej.: IP, dispositivo y páginas visitadas) con fines "
-"de seguridad y estadística.\n"
+"                    Podemos coletar dados fornecidos por vocÃª (ex.: nome, telefone, y-mail, mensagem) ao preencher\n"
+"                    formulÃ¡rios,\n"
+"                    entrar em contacto via WhatsApp ou agendar atención. TambÃ©m podemos coletar dados tÃ©cnicos de\n"
+"                    navegaÃ§Ã£o\n"
+"                    (ex.: IP, dispositivo y pÃ¡ginas visitadas) para fins de seguranÃ§a y estatÃ­stica.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:36
 msgid "2. Finalidades do tratamento"
-msgstr "2. Finalidades del tratamiento"
+msgstr ""
+"2. Finalidades do tratamento"
 
 #: .\institucional\templates\components\_privacy_terms.html:38
 msgid "Responder solicitações, dúvidas e pedidos de orçamento/consulta."
-msgstr "Responder solicitudes, dudas y pedidos de presupuesto/consulta."
+msgstr ""
+"Responder solicitaÃ§Ãµes, dÃºvidas y pedidos de orÃ§amento/consulta."
 
 #: .\institucional\templates\components\_privacy_terms.html:39
 msgid "Agendar e conduzir atendimentos."
-msgstr "Agendar y realizar atenciones."
+msgstr ""
+"Agendar y conduzir atendimentos."
 
 #: .\institucional\templates\components\_privacy_terms.html:40
 msgid "Cumprir obrigações legais e regulatórias aplicáveis."
-msgstr "Cumplir obligaciones legales y regulatorias aplicables."
+msgstr ""
+"Cumprir obrigaÃ§Ãµes legais y regulatÃ³rias aplicÃ¡veis."
 
 #: .\institucional\templates\components\_privacy_terms.html:41
 msgid "Garantir segurança do site e prevenção a fraudes."
-msgstr "Garantizar la seguridad del sitio y la prevención de fraudes."
+msgstr ""
+"Garantir seguranÃ§a do site y prevenÃ§Ã£o a fraudes."
 
 #: .\institucional\templates\components\_privacy_terms.html:44
 msgid "3. Cookies e métricas"
-msgstr "3. Cookies y métricas"
+msgstr ""
+"3. Cookies y mÃ©tricas"
 
 #: .\institucional\templates\components\_privacy_terms.html:46
 msgid ""
@@ -569,18 +654,17 @@ msgid ""
 "                    para análise agregada de uso, sem finalidade de "
 "identificação direta do visitante.\n"
 "                    "
-msgstr "\n""                    Este site pode utilizar cookies estritamente necessários ""e/ou ferramentas de métricas (ex.: Google\n""                    Analytics)\n""                    para análise agregada de uso, sem finalidade de ""identificação direta do visitante.\n""                    "
+msgstr ""
 "\n"
-"                    Este sitio puede utilizar cookies estrictamente "
-"necesarias y/o herramientas de métricas (p. ej.: Google\n"
+"                    Este site pode utilizar cookies estritamente necessÃ¡rios y/ou ferramentas de mÃ©tricas (ex.: Google\n"
 "                    Analytics)\n"
-"                    para el análisis agregado de uso, sin finalidad de "
-"identificación directa del visitante.\n"
+"                    para anÃ¡lise agregada de uso, sem finalidade de identificaÃ§Ã£o direta do visitante.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:53
 msgid "4. Compartilhamento"
-msgstr "4. Compartición"
+msgstr ""
+"4. Compartilhamento"
 
 #: .\institucional\templates\components\_privacy_terms.html:55
 msgid ""
@@ -593,20 +677,18 @@ msgid ""
 "hospedagem/infraestrutura), sempre no mínimo\n"
 "                    necessário.\n"
 "                    "
-msgstr "\n""                    Não vendemos dados. Poderemos compartilhar informações ""apenas quando necessário para:\n""                    <strong>cumprimento legal</strong>, <strong>exercício ""regular de direitos</strong> ou com\n""                    <strong>fornecedores essenciais</strong> (ex.: ""hospedagem/infraestrutura), sempre no mínimo\n""                    necessário.\n""                    "
+msgstr ""
 "\n"
-"                    No vendemos datos. Podemos compartir información solo "
-"cuando sea necesario para:\n"
-"                    <strong>cumplimiento legal</strong>, <strong>ejercicio "
-"regular de derechos</strong> o con\n"
-"                    <strong>proveedores esenciales</strong> (p. ej.: hosting/"
-"infraestructura), siempre en el mínimo\n"
-"                    necesario.\n"
+"                    NÃ£o vendemos dados. Poderemos compartilhar informaÃ§Ãµes apenas quando necessÃ¡rio para:\n"
+"                    <strong>cumprimento legal</strong>, <strong>exercÃ­cio regular de direitos</strong> ou com\n"
+"                    <strong>fornecedores essenciais</strong> (ex.: hospedagem/infraestrutura), sempre no mÃ­nimo\n"
+"                    necessÃ¡rio.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:63
 msgid "5. Direitos do titular"
-msgstr "5. Derechos del titular"
+msgstr ""
+"5. Derechos do titular"
 
 #: .\institucional\templates\components\_privacy_terms.html:65
 msgid ""
@@ -616,17 +698,17 @@ msgid ""
 "                    informações sobre\n"
 "                    compartilhamento, conforme a LGPD, quando aplicável.\n"
 "                    "
-msgstr "\n""                    Você pode solicitar confirmação, acesso, correção, ""anonimização, portabilidade, eliminação e\n""                    informações sobre\n""                    compartilhamento, conforme a LGPD, quando aplicável.\n""                    "
+msgstr ""
 "\n"
-"                    Puedes solicitar confirmación, acceso, corrección, "
-"anonimización, portabilidad, eliminación e\n"
-"                    información sobre\n"
-"                    compartición, conforme la LGPD, cuando corresponda.\n"
+"                    VocÃª pode solicitar confirmaÃ§Ã£o, acesso, correÃ§Ã£o, anonimizaÃ§Ã£o, portabilidade, eliminaÃ§Ã£o y\n"
+"                    informaÃ§Ãµes sobre\n"
+"                    compartilhamento, conforme a LGPD, quando aplicÃ¡vel.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:72
 msgid "6. Segurança e retenção"
-msgstr "6. Seguridad y retención"
+msgstr ""
+"6. SeguranÃ§a y retenÃ§Ã£o"
 
 #: .\institucional\templates\components\_privacy_terms.html:74
 msgid ""
@@ -636,41 +718,46 @@ msgid ""
 "                    tempo\n"
 "                    necessário às finalidades e obrigações legais.\n"
 "                    "
-msgstr "\n""                    Adotamos medidas técnicas e administrativas para ""proteger os dados. Mantemos informações apenas pelo\n""                    tempo\n""                    necessário às finalidades e obrigações legais.\n""                    "
+msgstr ""
 "\n"
-"                    Adoptamos medidas técnicas y administrativas para "
-"proteger los datos. Conservamos la información solo por el\n"
-"                    tiempo\n"
-"                    necesario para las finalidades y obligaciones legales.\n"
+"                    Adotamos medidas tÃ©cnicas y administrativas para proteger os dados. Mantemos informaÃ§Ãµes apenas pelo\n"
+"                    tempo\n"
+"                    necessÃ¡rio Ã s finalidades y obrigaÃ§Ãµes legais.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:81
 #: .\institucional\templates\components\_privacy_terms.html:178
 msgid "7. Contato"
-msgstr "7. Contacto"
+msgstr ""
+"7. Contacto"
 
 #: .\institucional\templates\components\_privacy_terms.html:84
 #: .\institucional\templates\components\_privacy_terms.html:181
 msgid "Telefone/WhatsApp:"
-msgstr "Teléfono/WhatsApp:"
+msgstr ""
+"Telefone/WhatsApp:"
 
 #: .\institucional\templates\components\_privacy_terms.html:90
 #: .\institucional\templates\components\_privacy_terms.html:187
 msgid "E-mail:"
-msgstr "Correo:"
+msgstr ""
+"E-mail:"
 
 #: .\institucional\templates\components\_privacy_terms.html:94
 #: .\institucional\templates\components\_privacy_terms.html:191
 msgid "Cidade:"
-msgstr "Ciudad:"
+msgstr ""
+"Cidade:"
 
 #: .\institucional\templates\components\_privacy_terms.html:116
 msgid "Termos de Uso — Advocacia Jorge R. Sarobe"
-msgstr "Términos de Uso — Abogacía Jorge R. Sarobe"
+msgstr ""
+"Termos de Uso â Advocacia Jorge R. Sarobe"
 
 #: .\institucional\templates\components\_privacy_terms.html:123
 msgid "1. Aceitação"
-msgstr "1. Aceptación"
+msgstr ""
+"1. AceitaÃ§Ã£o"
 
 #: .\institucional\templates\components\_privacy_terms.html:125
 msgid ""
@@ -678,15 +765,15 @@ msgid ""
 "                    Ao acessar este site, você concorda com estes Termos. Se "
 "não concordar, interrompa a navegação.\n"
 "                    "
-msgstr "\n""                    Ao acessar este site, você concorda com estes Termos. Se ""não concordar, interrompa a navegação.\n""                    "
+msgstr ""
 "\n"
-"                    Al acceder a este sitio, aceptas estos Términos. Si no "
-"estás de acuerdo, interrumpe la navegación.\n"
+"                    Ao acessar este site, vocÃª concorda com estes Termos. Se nÃ£o concordar, interrompa a navegaÃ§Ã£o.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:130
 msgid "2. Finalidade do conteúdo"
-msgstr "2. Finalidad del contenido"
+msgstr ""
+"2. Finalidade do conteÃºdo"
 
 #: .\institucional\templates\components\_privacy_terms.html:132
 msgid ""
@@ -697,18 +784,17 @@ msgid ""
 "                    O envio de mensagens por este site/WhatsApp não cria, "
 "por si só, relação advogado-cliente.\n"
 "                    "
-msgstr "\n""                    O conteúdo tem caráter <strong>informativo</strong> e ""não substitui consulta jurídica\n""                    individualizada.\n""                    O envio de mensagens por este site/WhatsApp não cria, ""por si só, relação advogado-cliente.\n""                    "
+msgstr ""
 "\n"
-"                    El contenido tiene carácter <strong>informativo</strong> "
-"y no sustituye una consulta jurídica\n"
+"                    O conteÃºdo tem carÃ¡ter <strong>informativo</strong> y nÃ£o substitui consulta jurÃ­dica\n"
 "                    individualizada.\n"
-"                    El envío de mensajes por este sitio/WhatsApp no crea, "
-"por sí solo, una relación abogado-cliente.\n"
+"                    O envio de mensagens por este site/WhatsApp nÃ£o cria, por si sÃ³, relaÃ§Ã£o abogado-cliente.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:139
 msgid "3. Uso permitido"
-msgstr "3. Uso permitido"
+msgstr ""
+"3. Uso permitido"
 
 #: .\institucional\templates\components\_privacy_terms.html:142
 msgid ""
@@ -717,22 +803,21 @@ msgid ""
 "ataques, exploração de falhas ou violação\n"
 "                        de direitos.\n"
 "                        "
-msgstr "\n""                        É proibido usar o site para práticas ilícitas, SPAM, ""ataques, exploração de falhas ou violação\n""                        de direitos.\n""                        "
+msgstr ""
 "\n"
-"                        Está prohibido usar el sitio para prácticas "
-"ilícitas, SPAM, ataques, explotación de fallos o violación\n"
-"                        de derechos.\n"
+"                        Ã proibido usar o site para prÃ¡ticas ilÃ­citas, SPAM, ataques, exploraÃ§Ã£o de falhas ou violaÃ§Ã£o\n"
+"                        de direitos.\n"
 "                        "
 
 #: .\institucional\templates\components\_privacy_terms.html:148
 msgid "É vedada a reprodução do conteúdo sem autorização, quando aplicável."
-msgstr "É vedada a reprodução do conteúdo sem autorização, quando aplicável."
-"Se prohíbe la reproducción del contenido sin autorización, cuando "
-"corresponda."
+msgstr ""
+"Ã vedada a reproduÃ§Ã£o do conteÃºdo sem autorizaÃ§Ã£o, quando aplicÃ¡vel."
 
 #: .\institucional\templates\components\_privacy_terms.html:152
 msgid "4. Privacidade"
-msgstr "4. Privacidad"
+msgstr ""
+"4. Privacidade"
 
 #: .\institucional\templates\components\_privacy_terms.html:154
 msgid ""
@@ -742,17 +827,17 @@ msgid ""
 "                    coleta,\n"
 "                    finalidades e direitos.\n"
 "                    "
-msgstr "\n""                    O tratamento de dados pessoais segue a LGPD. Consulte a ""Política de Privacidade para detalhes sobre\n""                    coleta,\n""                    finalidades e direitos.\n""                    "
+msgstr ""
 "\n"
-"                    El tratamiento de datos personales sigue la LGPD. "
-"Consulta la Política de Privacidad para detalles sobre\n"
-"                    recopilación,\n"
-"                    finalidades y derechos.\n"
+"                    O tratamento de dados pessoais segue a LGPD. Consulte a PolÃ­tica de Privacidade para detalhes sobre\n"
+"                    coleta,\n"
+"                    finalidades y direitos.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:161
 msgid "5. Limitação de responsabilidade"
-msgstr "5. Limitación de responsabilidad"
+msgstr ""
+"5. LimitaÃ§Ã£o de responsabilidade"
 
 #: .\institucional\templates\components\_privacy_terms.html:163
 msgid ""
@@ -763,18 +848,17 @@ msgid ""
 "                    Links externos são de responsabilidade de seus "
 "respectivos provedores.\n"
 "                    "
-msgstr "\n""                    Empregamos boas práticas de segurança, mas não ""garantimos disponibilidade ininterrupta ou ausência\n""                    total de falhas.\n""                    Links externos são de responsabilidade de seus ""respectivos provedores.\n""                    "
+msgstr ""
 "\n"
-"                    Aplicamos buenas prácticas de seguridad, pero no "
-"garantizamos disponibilidad ininterrumpida ni ausencia\n"
-"                    total de fallos.\n"
-"                    Los enlaces externos son responsabilidad de sus "
-"respectivos proveedores.\n"
+"                    Empregamos boas prÃ¡ticas de seguranÃ§a, mas nÃ£o garantimos disponibilidade ininterrupta ou ausÃªncia\n"
+"                    total de falhas.\n"
+"                    Links externos sÃ£o de responsabilidade de seus respectivos provedores.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:170
 msgid "6. Alterações"
-msgstr "6. Cambios"
+msgstr ""
+"6. AlteraÃ§Ãµes"
 
 #: .\institucional\templates\components\_privacy_terms.html:172
 msgid ""
@@ -783,463 +867,308 @@ msgid ""
 "Privacidade a qualquer momento. A versão vigente é a\n"
 "                    exibida neste modal.\n"
 "                    "
-msgstr "\n""                    Podemos atualizar estes Termos e a Política de ""Privacidade a qualquer momento. A versão vigente é a\n""                    exibida neste modal.\n""                    "
+msgstr ""
 "\n"
-"                    Podemos actualizar estos Términos y la Política de "
-"Privacidad en cualquier momento. La versión vigente es la\n"
-"                    mostrada en este modal.\n"
+"                    Podemos atualizar estes Termos y a PolÃ­tica de Privacidade a qualquer momento. A versÃ£o vigente Ã© a\n"
+"                    exibida neste modal.\n"
 "                    "
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:13
 #: .\institucional\templates\contact\contact_site.html:9
 msgid "Advogado em São José SC | Contato Jurídico"
-msgstr "Advogado em São José SC | Contato Jurídico"
+msgstr ""
+"Abogado em SÃ£o JosÃ© SC | Contacto JurÃ­dico"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:14
 #: .\institucional\templates\contact\contact_site.html:10
 msgid ""
 "Entre em contato com advogado em São José - SC para atendimento em Direito "
 "Bancário, Previdenciário e Sucessões. Atendimento presencial e online."
-msgstr "Entre em contato com advogado em São José - SC para atendimento em Direito ""Bancário, Previdenciário e Sucessões. Atendimento presencial e online."
+msgstr ""
+"Entre em contacto com abogado em SÃ£o JosÃ© - SC para atención em Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes. Atención presencial y online."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:88
 #: .\institucional\templates\contact\contact_site.html:236
 #: .\institucional\templates\home\components\_faq_home.html:22
 #: .\institucional\templates\home\components\_ld_json_home.html:71
 msgid "Como funciona a primeira consulta?"
-msgstr "¿Cómo funciona la primera consulta?"
+msgstr ""
+"Como funciona a primeira consulta?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:89
 #: .\institucional\templates\home\components\_ld_json_home.html:74
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Você apresenta sua situação e os documentos "
-#| "disponíveis. Eu avalio o cenário, explico\n"
-#| "                        possibilidades,\n"
-#| "                        riscos e próximos passos. Se fizer sentido, "
-#| "definimos a estratégia e a forma de condução do\n"
-#| "                        caso.\n"
-#| "                        "
 msgid ""
 "Você apresenta sua situação e os documentos disponíveis. Eu avalio o "
 "cenário, explico possibilidades, riscos e próximos passos. Se fizer sentido, "
 "definimos a estratégia e a forma de condução do caso."
-msgstr "Você apresenta sua situação e os documentos disponíveis. Eu avalio o ""cenário, explico possibilidades, riscos e próximos passos. Se fizer sentido, ""definimos a estratégia e a forma de condução do caso."
-"\n"
-"                        Presentas tu situación y los documentos disponibles. "
-"Yo evalúo el escenario, explico\n"
-"                        posibilidades,\n"
-"                        riesgos y próximos pasos. Si tiene sentido, "
-"definimos la estrategia y la forma de llevar el\n"
-"                        caso.\n"
-"                        "
+msgstr ""
+"VocÃª apresenta sua situaÃ§Ã£o y os documentos disponÃ­veis. Eu avalio o cenÃ¡rio, explico possibilidades, riscos y prÃ³ximos passos. Se fizer sentido, definimos a estratÃ©gia y a forma de conduÃ§Ã£o do caso."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:93
 #: .\institucional\templates\contact\contact_site.html:259
 #: .\institucional\templates\home\components\_faq_home.html:43
 #: .\institucional\templates\home\components\_ld_json_home.html:79
 msgid "Quais documentos devo levar para a consulta?"
-msgstr "¿Qué documentos debo llevar a la consulta?"
+msgstr ""
+"Quais documentos devo levar para a consulta?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:94
 #: .\institucional\templates\home\components\_ld_json_home.html:82
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Depende do tema, mas geralmente ajudam: RG/CPF, "
-#| "comprovantes, contratos, extratos, comunicações\n"
-#| "                        do banco/INSS,\n"
-#| "                        e qualquer documento que comprove a situação. Se "
-#| "faltar algo, eu oriento o que solicitar depois.\n"
-#| "                        "
 msgid ""
 "Depende do tema, mas geralmente ajudam: RG/CPF, comprovantes, contratos, "
 "extratos, comunicações do banco/INSS, e qualquer documento que comprove a "
 "situação. Se faltar algo, eu oriento o que solicitar depois."
-msgstr "Depende do tema, mas geralmente ajudam: RG/CPF, comprovantes, contratos, ""extratos, comunicações do banco/INSS, e qualquer documento que comprove a ""situação. Se faltar algo, eu oriento o que solicitar depois."
-"\n"
-"                        Depende del tema, pero generalmente ayudan: RG/CPF, "
-"comprobantes, contratos, extractos, comunicaciones\n"
-"                        del banco/INSS,\n"
-"                        y cualquier documento que acredite la situación. Si "
-"falta algo, te indico qué solicitar después.\n"
-"                        "
+msgstr ""
+"Depende do tema, mas geralmente ajudam: RG/CPF, comprovantes, contratos, extratos, comunicaÃ§Ãµes do banco/INSS, y qualquer documento que comprove a situaÃ§Ã£o. Se faltar algo, eu oriento o que solicitar depois."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:98
 #: .\institucional\templates\contact\contact_site.html:282
 #: .\institucional\templates\home\components\_faq_home.html:63
 #: .\institucional\templates\home\components\_ld_json_home.html:87
 msgid "O atendimento pode ser online?"
-msgstr "¿La atención puede ser en línea?"
+msgstr ""
+"O atención pode ser online?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:99
 #: .\institucional\templates\home\components\_ld_json_home.html:90
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Sim. O atendimento online é possível para a "
-#| "maioria dos casos, com envio de documentos\n"
-#| "                        digitalizados e\n"
-#| "                        reunião por vídeo/WhatsApp. Quando necessário, "
-#| "alinhamos atendimento presencial.\n"
-#| "                        "
 msgid ""
 "Sim. O atendimento online é possível para a maioria dos casos, com envio de "
 "documentos digitalizados e reunião por vídeo/WhatsApp. Quando necessário, "
 "alinhamos atendimento presencial."
-msgstr "Sim. O atendimento online é possível para a maioria dos casos, com envio de ""documentos digitalizados e reunião por vídeo/WhatsApp. Quando necessário, ""alinhamos atendimento presencial."
-"\n"
-"                        Sí. La atención en línea es posible para la mayoría "
-"de los casos, con envío de documentos\n"
-"                        digitalizados y\n"
-"                        reunión por video/WhatsApp. Cuando sea necesario, "
-"coordinamos atención presencial.\n"
-"                        "
+msgstr ""
+"Sim. O atención online Ã© possÃ­vel para a maioria dos casos, com envio de documentos digitalizados y reuniÃ£o por vÃ­deo/WhatsApp. Quando necessÃ¡rio, alinhamos atención presencial."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:103
 #: .\institucional\templates\contact\contact_site.html:303
 #: .\institucional\templates\home\components\_faq_home.html:83
 #: .\institucional\templates\home\components\_ld_json_home.html:95
 msgid "Quanto tempo demora um processo?"
-msgstr "¿Cuánto tiempo tarda un proceso?"
+msgstr ""
+"Quanto tempo demora um processo?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:104
 #: .\institucional\templates\home\components\_ld_json_home.html:98
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        O prazo varia conforme o caso, a urgência, o "
-#| "volume de provas e a resposta da outra parte/órgão.\n"
-#| "                        Na consulta, eu estimarei cenários de tempo e as "
-#| "alternativas para buscar maior agilidade.\n"
-#| "                        "
 msgid ""
 "O prazo varia conforme o caso, a urgência, o volume de provas e a resposta "
 "da outra parte/órgão. Na consulta, eu estimarei cenários de tempo e as "
 "alternativas para buscar maior agilidade."
-msgstr "O prazo varia conforme o caso, a urgência, o volume de provas e a resposta ""da outra parte/órgão. Na consulta, eu estimarei cenários de tempo e as ""alternativas para buscar maior agilidade."
-"\n"
-"                        El plazo varía según el caso, la urgencia, el "
-"volumen de pruebas y la respuesta de la otra parte/organismo.\n"
-"                        En la consulta, estimaré escenarios de tiempo y "
-"alternativas para buscar mayor agilidad.\n"
-"                        "
+msgstr ""
+"O prazo varia conforme o caso, a urgÃªncia, o volume de provas y a resposta da outra parte/Ã³rgÃ£o. Na consulta, eu estimarei cenÃ¡rios de tempo y as alternativas para buscar maior agilidade."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:108
 #: .\institucional\templates\contact\contact_site.html:325
 #: .\institucional\templates\home\components\_faq_home.html:102
 #: .\institucional\templates\home\components\_ld_json_home.html:103
 msgid "O que é preciso para revisar juros abusivos ou contratos bancários?"
-msgstr "O que é preciso para revisar juros abusivos ou contratos bancários?"
-"¿Qué se necesita para revisar intereses abusivos o contratos bancarios?"
+msgstr ""
+"O que Ã© preciso para revisar intereses abusivos ou contratos bancÃ¡rios?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:109
 #: .\institucional\templates\home\components\_ld_json_home.html:106
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Normalmente precisamos do contrato, "
-#| "demonstrativos, extratos, comprovantes de pagamento e\n"
-#| "                        eventuais\n"
-#| "                        renegociações. Com isso, é possível avaliar a "
-#| "legalidade de taxas e cláusulas.\n"
-#| "                        "
 msgid ""
 "Normalmente precisamos do contrato, demonstrativos, extratos, comprovantes "
 "de pagamento e eventuais renegociações. Com isso, é possível avaliar a "
 "legalidade de taxas e cláusulas."
-msgstr "Normalmente precisamos do contrato, demonstrativos, extratos, comprovantes ""de pagamento e eventuais renegociações. Com isso, é possível avaliar a ""legalidade de taxas e cláusulas."
-"\n"
-"                        Normalmente necesitamos el contrato, comprobantes, "
-"extractos, comprobantes de pago y\n"
-"                        eventuales\n"
-"                        renegociaciones. Con eso, es posible evaluar la "
-"legalidad de tasas y cláusulas.\n"
-"                        "
+msgstr ""
+"Normalmente precisamos do contrato, demonstrativos, extratos, comprovantes de pagamento y eventuais renegociaÃ§Ãµes. Com isso, Ã© possÃ­vel avaliar a legalidade de taxas y clÃ¡usulas."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:113
 #: .\institucional\templates\contact\contact_site.html:347
 #: .\institucional\templates\home\components\_faq_home.html:122
 #: .\institucional\templates\home\components\_ld_json_home.html:111
 msgid "Posso pedir benefício previdenciário mesmo após indeferimento?"
-msgstr "Posso pedir benefício previdenciário mesmo após indeferimento?"
-"¿Puedo solicitar un beneficio previsional incluso después de un rechazo?"
+msgstr ""
+"Posso pedir benefÃ­cio previdenciÃ¡rio mesmo apÃ³s indeferimento?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:114
 #: .\institucional\templates\home\components\_ld_json_home.html:114
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Sim. Dependendo do motivo do indeferimento, "
-#| "podemos recorrer administrativamente ou ingressar\n"
-#| "                        com ação.\n"
-#| "                        Avalio o fundamento, documentos, laudos e "
-#| "histórico contributivo para definir a melhor\n"
-#| "                        estratégia.\n"
-#| "                        "
 msgid ""
 "Sim. Dependendo do motivo do indeferimento, podemos recorrer "
 "administrativamente ou ingressar com ação. Avalio o fundamento, documentos, "
 "laudos e histórico contributivo para definir a melhor estratégia."
-msgstr "Sim. Dependendo do motivo do indeferimento, podemos recorrer ""administrativamente ou ingressar com ação. Avalio o fundamento, documentos, ""laudos e histórico contributivo para definir a melhor estratégia."
-"\n"
-"                        Sí. Dependiendo del motivo del rechazo, podemos "
-"recurrir administrativamente o iniciar\n"
-"                        una acción.\n"
-"                        Evalúo el fundamento, documentos, informes y el "
-"historial contributivo para definir la mejor\n"
-"                        estrategia.\n"
-"                        "
+msgstr ""
+"Sim. Dependendo do motivo do indeferimento, podemos recorrer administrativamente ou ingressar com aÃ§Ã£o. Avalio o fundamento, documentos, laudos y histÃ³rico contributivo para definir a melhor estratÃ©gia."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:118
 #: .\institucional\templates\contact\contact_site.html:370
 #: .\institucional\templates\home\components\_faq_home.html:143
 #: .\institucional\templates\home\components\_ld_json_home.html:119
 msgid "Como funciona inventário e partilha?"
-msgstr "¿Cómo funciona el inventario y la partición?"
+msgstr ""
+"Como funciona inventÃ¡rio y partilha?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:119
 #: .\institucional\templates\home\components\_ld_json_home.html:122
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        O inventário organiza bens, dívidas e herdeiros "
-#| "para formalizar a partilha. Pode ser judicial ou\n"
-#| "                        em cartório,\n"
-#| "                        conforme requisitos. Eu conduzo o processo e "
-#| "indico a via mais adequada para o seu cenário.\n"
-#| "                        "
 msgid ""
 "O inventário organiza bens, dívidas e herdeiros para formalizar a partilha. "
 "Pode ser judicial ou em cartório, conforme requisitos. Eu conduzo o processo "
 "e indico a via mais adequada para o seu cenário."
-msgstr "O inventário organiza bens, dívidas e herdeiros para formalizar a partilha. ""Pode ser judicial ou em cartório, conforme requisitos. Eu conduzo o processo ""e indico a via mais adequada para o seu cenário."
-"\n"
-"                        El inventario organiza bienes, deudas y herederos "
-"para formalizar la partición. Puede ser judicial o\n"
-"                        notarial,\n"
-"                        según los requisitos. Conduzco el proceso e indico "
-"la vía más adecuada para tu escenario.\n"
-"                        "
+msgstr ""
+"O inventÃ¡rio organiza bens, dÃ­vidas y herdeiros para formalizar a partilha. Pode ser judicial ou em cartÃ³rio, conforme requisitos. Eu conduzo o processo y indico a via mais adequada para o seu cenÃ¡rio."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:123
 #: .\institucional\templates\contact\contact_site.html:393
 #: .\institucional\templates\home\components\_faq_home.html:163
 #: .\institucional\templates\home\components\_ld_json_home.html:127
 msgid "Quando vale a pena fazer testamento?"
-msgstr "¿Cuándo vale la pena hacer testamento?"
+msgstr ""
+"Quando vale a pena fazer testamento?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:124
 #: .\institucional\templates\home\components\_ld_json_home.html:130
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        O testamento é útil para organizar a vontade, "
-#| "reduzir conflitos e dar previsibilidade. Ele não\n"
-#| "                        elimina regras\n"
-#| "                        legais, mas ajuda muito no planejamento "
-#| "sucessório. Eu explico opções e limites de forma clara.\n"
-#| "                        "
 msgid ""
 "O testamento é útil para organizar a vontade, reduzir conflitos e dar "
 "previsibilidade. Ele não elimina regras legais, mas ajuda muito no "
 "planejamento sucessório. Eu explico opções e limites de forma clara."
-msgstr "O testamento é útil para organizar a vontade, reduzir conflitos e dar ""previsibilidade. Ele não elimina regras legais, mas ajuda muito no ""planejamento sucessório. Eu explico opções e limites de forma clara."
-"\n"
-"                        El testamento es útil para organizar la voluntad, "
-"reducir conflictos y dar previsibilidad. No\n"
-"                        elimina las reglas\n"
-"                        legales, pero ayuda mucho en la planificación "
-"sucesoria. Explico opciones y límites de forma clara.\n"
-"                        "
+msgstr ""
+"O testamento Ã© Ãºtil para organizar a vontade, reduzir conflitos y dar previsibilidade. Ele nÃ£o elimina regras legais, mas ajuda muito no planejamento sucessÃ³rio. Eu explico opÃ§Ãµes y limites de forma clara."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:128
 #: .\institucional\templates\contact\contact_site.html:416
 #: .\institucional\templates\home\components\_faq_home.html:183
 #: .\institucional\templates\home\components\_ld_json_home.html:135
 msgid "Quais são as formas de honorários?"
-msgstr "¿Cuáles son las modalidades de honorarios?"
+msgstr ""
+"Quais sÃ£o as formas de honorÃ¡rios?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:129
 #: .\institucional\templates\home\components\_ld_json_home.html:138
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Os honorários variam conforme complexidade, "
-#| "urgência e modelo de atuação (consultivo,\n"
-#| "                        administrativo ou\n"
-#| "                        judicial). Eu apresento a proposta com clareza e "
-#| "alinhamos tudo antes de iniciar.\n"
-#| "                        "
 msgid ""
 "Os honorários variam conforme complexidade, urgência e modelo de atuação "
 "(consultivo, administrativo ou judicial). Eu apresento a proposta com "
 "clareza e alinhamos tudo antes de iniciar."
-msgstr "Os honorários variam conforme complexidade, urgência e modelo de atuação ""(consultivo, administrativo ou judicial). Eu apresento a proposta com ""clareza e alinhamos tudo antes de iniciar."
-"\n"
-"                        Los honorarios varían según la complejidad, la "
-"urgencia y el modelo de actuación (consultivo,\n"
-"                        administrativo o\n"
-"                        judicial). Presento la propuesta con claridad y lo "
-"alineamos todo antes de iniciar.\n"
-"                        "
+msgstr ""
+"Os honorÃ¡rios variam conforme complexidade, urgÃªncia y modelo de atuaÃ§Ã£o (consultivo, administrativo ou judicial). Eu apresento a proposta com clareza y alinhamos tudo antes de iniciar."
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:133
 #: .\institucional\templates\contact\contact_site.html:437
 #: .\institucional\templates\home\components\_faq_home.html:203
 #: .\institucional\templates\home\components\_ld_json_home.html:143
 msgid "Como posso agendar e qual o prazo para retorno?"
-msgstr "¿Cómo puedo agendar y cuál es el plazo de respuesta?"
+msgstr ""
+"Como posso agendar y qual o prazo para retorno?"
 
 #: .\institucional\templates\contact\components\_ld_json_contact.html:134
 #: .\institucional\templates\home\components\_ld_json_home.html:146
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Você pode agendar pelo WhatsApp ou telefone. "
-#| "Normalmente retorno no mesmo dia útil, e em casos\n"
-#| "                        urgentes\n"
-#| "                        priorizo o atendimento conforme disponibilidade.\n"
-#| "                        "
 msgid ""
 "Você pode agendar pelo WhatsApp ou telefone. Normalmente retorno no mesmo "
 "dia útil, e em casos urgentes priorizo o atendimento conforme "
 "disponibilidade."
-msgstr "Você pode agendar pelo WhatsApp ou telefone. Normalmente retorno no mesmo ""dia útil, e em casos urgentes priorizo o atendimento conforme ""disponibilidade."
-"\n"
-"                        Puedes agendar por WhatsApp o por teléfono. "
-"Normalmente respondo el mismo día hábil y, en casos\n"
-"                        urgentes,\n"
-"                        priorizo la atención según disponibilidad.\n"
-"                        "
+msgstr ""
+"VocÃª pode agendar pelo WhatsApp ou telefone. Normalmente retorno no mesmo dia Ãºtil, y em casos urgentes priorizo o atención conforme disponibilidade."
 
 #: .\institucional\templates\contact\contact_site.html:25
 msgid ""
 "Atendimento jurídico em São José e região, com atuação em Direito Bancário, "
 "Previdenciário e Sucessões. Fale agora para receber orientação clara sobre "
 "seu caso."
-msgstr "Atendimento jurídico em São José e região, com atuação em Direito Bancário, ""Previdenciário e Sucessões. Fale agora para receber orientação clara sobre ""seu caso."
+msgstr ""
+"Atención jurÃ­dico em SÃ£o JosÃ© y regiÃ£o, com atuaÃ§Ã£o em Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes. Fale agora para receber orientaÃ§Ã£o clara sobre seu caso."
 
 #: .\institucional\templates\contact\contact_site.html:45
-#, fuzzy
-#| msgid "Telefone/WhatsApp:"
 msgid "Telefone"
-msgstr "Teléfono/WhatsApp:"
+msgstr ""
+"Telefone"
 
 #: .\institucional\templates\contact\contact_site.html:58
-#, fuzzy
-#| msgid "Falar no WhatsApp"
 msgid "Chamar no WhatsApp"
-msgstr "Hablar por WhatsApp"
+msgstr ""
+"Chamar no WhatsApp"
 
 #: .\institucional\templates\contact\contact_site.html:78
-#, fuzzy
-#| msgid "E-mail:"
 msgid "E-mail"
-msgstr "Correo:"
+msgstr ""
+"E-mail"
 
 #: .\institucional\templates\contact\contact_site.html:97
-#, fuzzy
-#| msgid "Localização do escritório"
 msgid "Localização"
-msgstr "Ubicación del despacho"
+msgstr ""
+"LocalizaÃ§Ã£o"
 
 #: .\institucional\templates\contact\contact_site.html:124
 msgid "Horário de Atendimento"
-msgstr "Horário de Atendimento"
+msgstr ""
+"HorÃ¡rio de Atención"
 
 #: .\institucional\templates\contact\contact_site.html:128
 msgid "Segunda a Sexta:"
-msgstr "Segunda a Sexta:"
+msgstr ""
+"Segunda a Sexta:"
 
 #: .\institucional\templates\contact\contact_site.html:132
 msgid "Final de semana:"
-msgstr "Final de semana:"
+msgstr ""
+"Final de semana:"
 
 #: .\institucional\templates\contact\contact_site.html:133
-#, fuzzy
-#| msgid "Fechar"
 msgid "Fechado"
-msgstr "Cerrar"
+msgstr ""
+"Fechado"
 
 #: .\institucional\templates\contact\contact_site.html:138
 msgid "* Atendimento presencial mediante agendamento prévio"
-msgstr "* Atendimento presencial mediante agendamento prévio"
+msgstr ""
+"* Atención presencial mediante agendamento prÃ©vio"
 
 #: .\institucional\templates\contact\contact_site.html:145
-#, fuzzy
-#| msgid "Atendimento direto"
 msgid "Atendimento Online"
-msgstr "Atención directa"
+msgstr ""
+"Atención Online"
 
 #: .\institucional\templates\contact\contact_site.html:156
 msgid "Mesma qualidade do atendimento presencial"
-msgstr "Mesma qualidade do atendimento presencial"
+msgstr ""
+"Mesma qualidade do atención presencial"
 
 #: .\institucional\templates\contact\contact_site.html:166
 msgid "Economia de tempo e deslocamento"
-msgstr "Economia de tempo e deslocamento"
+msgstr ""
+"Economia de tempo y deslocamento"
 
 #: .\institucional\templates\contact\contact_site.html:176
 msgid "Plataformas seguras e confidenciais"
-msgstr "Plataformas seguras e confidenciais"
+msgstr ""
+"Plataformas seguras y confidenciais"
 
 #: .\institucional\templates\contact\contact_site.html:185
 msgid "Como Chegar"
-msgstr "Como Chegar"
+msgstr ""
+"Como Chegar"
 
 #: .\institucional\templates\contact\contact_site.html:186
-#, fuzzy
-#| msgid "Localização do escritório"
 msgid "Encontre o escritório"
-msgstr "Ubicación del despacho"
+msgstr ""
+"Encontre o escritÃ³rio"
 
 #: .\institucional\templates\contact\contact_site.html:199
-#, fuzzy
-#| msgid "Ver no Google"
 msgid "Abrir no Google Maps"
-msgstr "Ver en Google"
+msgstr ""
+"Abrir no Google Maps"
 
 #: .\institucional\templates\contact\contact_site.html:219
 #: .\institucional\templates\home\components\_faq_home.html:6
 msgid "Dúvidas"
-msgstr "Dudas"
+msgstr ""
+"DÃºvidas"
 
 #: .\institucional\templates\contact\contact_site.html:220
 #: .\institucional\templates\home\components\_faq_home.html:7
 msgid "Perguntas frequentes"
-msgstr "Preguntas frecuentes"
+msgstr ""
+"Perguntas frequentes"
 
 #: .\institucional\templates\contact\contact_site.html:223
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                Respostas objetivas para as dúvidas mais comuns sobre "
-#| "atendimento e atuação.\n"
-#| "                "
 msgid ""
 "\n"
 "                        Respostas objetivas para as dúvidas mais comuns "
 "sobre atendimento e atuação.\n"
 "                        "
-msgstr "\n""                        Respostas objetivas para as dúvidas mais comuns ""sobre atendimento e atuação.\n""                        "
+msgstr ""
 "\n"
-"                Respuestas objetivas para las dudas más comunes sobre "
-"atención y actuación.\n"
-"                "
+"                        Respostas objetivas para as dÃºvidas mais comuns sobre atención y atuaÃ§Ã£o.\n"
+"                        "
 
 #: .\institucional\templates\contact\contact_site.html:242
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Você apresenta sua situação e os documentos "
-#| "disponíveis. Eu avalio o cenário, explico\n"
-#| "                        possibilidades,\n"
-#| "                        riscos e próximos passos. Se fizer sentido, "
-#| "definimos a estratégia e a forma de condução do\n"
-#| "                        caso.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                Você apresenta sua situação e os documentos "
@@ -1250,26 +1179,16 @@ msgid ""
 "                                do\n"
 "                                caso.\n"
 "                                "
-msgstr "\n""                                Você apresenta sua situação e os documentos ""disponíveis. Eu avalio o cenário, explico\n""                                possibilidades,\n""                                riscos e próximos passos. Se fizer sentido, ""definimos a estratégia e a forma de condução\n""                                do\n""                                caso.\n""                                "
+msgstr ""
 "\n"
-"                        Presentas tu situación y los documentos disponibles. "
-"Yo evalúo el escenario, explico\n"
-"                        posibilidades,\n"
-"                        riesgos y próximos pasos. Si tiene sentido, "
-"definimos la estrategia y la forma de llevar el\n"
-"                        caso.\n"
-"                        "
+"                                VocÃª apresenta sua situaÃ§Ã£o y os documentos disponÃ­veis. Eu avalio o cenÃ¡rio, explico\n"
+"                                possibilidades,\n"
+"                                riscos y prÃ³ximos passos. Se fizer sentido, definimos a estratÃ©gia y a forma de conduÃ§Ã£o\n"
+"                                do\n"
+"                                caso.\n"
+"                                "
 
 #: .\institucional\templates\contact\contact_site.html:265
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Depende do tema, mas geralmente ajudam: RG/CPF, "
-#| "comprovantes, contratos, extratos, comunicações\n"
-#| "                        do banco/INSS,\n"
-#| "                        e qualquer documento que comprove a situação. Se "
-#| "faltar algo, eu oriento o que solicitar depois.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                Depende do tema, mas geralmente ajudam: RG/"
@@ -1280,25 +1199,16 @@ msgid ""
 "situação. Se faltar algo, eu oriento o que solicitar\n"
 "                                depois.\n"
 "                                "
-msgstr "\n""                                Depende do tema, mas geralmente ajudam: RG/""CPF, comprovantes, contratos, extratos,\n""                                comunicações\n""                                do banco/INSS,\n""                                e qualquer documento que comprove a ""situação. Se faltar algo, eu oriento o que solicitar\n""                                depois.\n""                                "
+msgstr ""
 "\n"
-"                        Depende del tema, pero generalmente ayudan: RG/CPF, "
-"comprobantes, contratos, extractos, comunicaciones\n"
-"                        del banco/INSS,\n"
-"                        y cualquier documento que acredite la situación. Si "
-"falta algo, te indico qué solicitar después.\n"
-"                        "
+"                                Depende do tema, mas geralmente ajudam: RG/CPF, comprovantes, contratos, extratos,\n"
+"                                comunicaÃ§Ãµes\n"
+"                                do banco/INSS,\n"
+"                                y qualquer documento que comprove a situaÃ§Ã£o. Se faltar algo, eu oriento o que solicitar\n"
+"                                depois.\n"
+"                                "
 
 #: .\institucional\templates\contact\contact_site.html:288
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Sim. O atendimento online é possível para a "
-#| "maioria dos casos, com envio de documentos\n"
-#| "                        digitalizados e\n"
-#| "                        reunião por vídeo/WhatsApp. Quando necessário, "
-#| "alinhamos atendimento presencial.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                Sim. O atendimento online é possível para a "
@@ -1307,24 +1217,14 @@ msgid ""
 "                                reunião por vídeo/WhatsApp. Quando "
 "necessário, alinhamos atendimento presencial.\n"
 "                                "
-msgstr "\n""                                Sim. O atendimento online é possível para a ""maioria dos casos, com envio de documentos\n""                                digitalizados e\n""                                reunião por vídeo/WhatsApp. Quando ""necessário, alinhamos atendimento presencial.\n""                                "
+msgstr ""
 "\n"
-"                        Sí. La atención en línea es posible para la mayoría "
-"de los casos, con envío de documentos\n"
-"                        digitalizados y\n"
-"                        reunión por video/WhatsApp. Cuando sea necesario, "
-"coordinamos atención presencial.\n"
-"                        "
+"                                Sim. O atención online Ã© possÃ­vel para a maioria dos casos, com envio de documentos\n"
+"                                digitalizados y\n"
+"                                reuniÃ£o por vÃ­deo/WhatsApp. Quando necessÃ¡rio, alinhamos atención presencial.\n"
+"                                "
 
 #: .\institucional\templates\contact\contact_site.html:309
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        O prazo varia conforme o caso, a urgência, o "
-#| "volume de provas e a resposta da outra parte/órgão.\n"
-#| "                        Na consulta, eu estimarei cenários de tempo e as "
-#| "alternativas para buscar maior agilidade.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                O prazo varia conforme o caso, a urgência, o "
@@ -1334,24 +1234,15 @@ msgid ""
 "e as alternativas para buscar maior\n"
 "                                agilidade.\n"
 "                                "
-msgstr "\n""                                O prazo varia conforme o caso, a urgência, o ""volume de provas e a resposta da outra\n""                                parte/órgão.\n""                                Na consulta, eu estimarei cenários de tempo ""e as alternativas para buscar maior\n""                                agilidade.\n""                                "
+msgstr ""
 "\n"
-"                        El plazo varía según el caso, la urgencia, el "
-"volumen de pruebas y la respuesta de la otra parte/organismo.\n"
-"                        En la consulta, estimaré escenarios de tiempo y "
-"alternativas para buscar mayor agilidad.\n"
-"                        "
+"                                O prazo varia conforme o caso, a urgÃªncia, o volume de provas y a resposta da outra\n"
+"                                parte/Ã³rgÃ£o.\n"
+"                                Na consulta, eu estimarei cenÃ¡rios de tempo y as alternativas para buscar maior\n"
+"                                agilidade.\n"
+"                                "
 
 #: .\institucional\templates\contact\contact_site.html:331
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Normalmente precisamos do contrato, "
-#| "demonstrativos, extratos, comprovantes de pagamento e\n"
-#| "                        eventuais\n"
-#| "                        renegociações. Com isso, é possível avaliar a "
-#| "legalidade de taxas e cláusulas.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                Normalmente precisamos do contrato, "
@@ -1361,26 +1252,15 @@ msgid ""
 "                                renegociações. Com isso, é possível avaliar "
 "a legalidade de taxas e cláusulas.\n"
 "                                "
-msgstr "\n""                                Normalmente precisamos do contrato, ""demonstrativos, extratos, comprovantes de pagamento\n""                                e\n""                                eventuais\n""                                renegociações. Com isso, é possível avaliar ""a legalidade de taxas e cláusulas.\n""                                "
+msgstr ""
 "\n"
-"                        Normalmente necesitamos el contrato, comprobantes, "
-"extractos, comprobantes de pago y\n"
-"                        eventuales\n"
-"                        renegociaciones. Con eso, es posible evaluar la "
-"legalidad de tasas y cláusulas.\n"
-"                        "
+"                                Normalmente precisamos do contrato, demonstrativos, extratos, comprovantes de pagamento\n"
+"                                y\n"
+"                                eventuais\n"
+"                                renegociaÃ§Ãµes. Com isso, Ã© possÃ­vel avaliar a legalidade de taxas y clÃ¡usulas.\n"
+"                                "
 
 #: .\institucional\templates\contact\contact_site.html:353
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Sim. Dependendo do motivo do indeferimento, "
-#| "podemos recorrer administrativamente ou ingressar\n"
-#| "                        com ação.\n"
-#| "                        Avalio o fundamento, documentos, laudos e "
-#| "histórico contributivo para definir a melhor\n"
-#| "                        estratégia.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                Sim. Dependendo do motivo do indeferimento, "
@@ -1391,26 +1271,16 @@ msgid ""
 "histórico contributivo para definir a melhor\n"
 "                                estratégia.\n"
 "                                "
-msgstr "\n""                                Sim. Dependendo do motivo do indeferimento, ""podemos recorrer administrativamente ou\n""                                ingressar\n""                                com ação.\n""                                Avalio o fundamento, documentos, laudos e ""histórico contributivo para definir a melhor\n""                                estratégia.\n""                                "
+msgstr ""
 "\n"
-"                        Sí. Dependiendo del motivo del rechazo, podemos "
-"recurrir administrativamente o iniciar\n"
-"                        una acción.\n"
-"                        Evalúo el fundamento, documentos, informes y el "
-"historial contributivo para definir la mejor\n"
-"                        estrategia.\n"
-"                        "
+"                                Sim. Dependendo do motivo do indeferimento, podemos recorrer administrativamente ou\n"
+"                                ingressar\n"
+"                                com aÃ§Ã£o.\n"
+"                                Avalio o fundamento, documentos, laudos y histÃ³rico contributivo para definir a melhor\n"
+"                                estratÃ©gia.\n"
+"                                "
 
 #: .\institucional\templates\contact\contact_site.html:376
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        O inventário organiza bens, dívidas e herdeiros "
-#| "para formalizar a partilha. Pode ser judicial ou\n"
-#| "                        em cartório,\n"
-#| "                        conforme requisitos. Eu conduzo o processo e "
-#| "indico a via mais adequada para o seu cenário.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                O inventário organiza bens, dívidas e "
@@ -1421,25 +1291,16 @@ msgid ""
 "indico a via mais adequada para o seu\n"
 "                                cenário.\n"
 "                                "
-msgstr "\n""                                O inventário organiza bens, dívidas e ""herdeiros para formalizar a partilha. Pode ser\n""                                judicial ou\n""                                em cartório,\n""                                conforme requisitos. Eu conduzo o processo e ""indico a via mais adequada para o seu\n""                                cenário.\n""                                "
+msgstr ""
 "\n"
-"                        El inventario organiza bienes, deudas y herederos "
-"para formalizar la partición. Puede ser judicial o\n"
-"                        notarial,\n"
-"                        según los requisitos. Conduzco el proceso e indico "
-"la vía más adecuada para tu escenario.\n"
-"                        "
+"                                O inventÃ¡rio organiza bens, dÃ­vidas y herdeiros para formalizar a partilha. Pode ser\n"
+"                                judicial ou\n"
+"                                em cartÃ³rio,\n"
+"                                conforme requisitos. Eu conduzo o processo y indico a via mais adequada para o seu\n"
+"                                cenÃ¡rio.\n"
+"                                "
 
 #: .\institucional\templates\contact\contact_site.html:399
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        O testamento é útil para organizar a vontade, "
-#| "reduzir conflitos e dar previsibilidade. Ele não\n"
-#| "                        elimina regras\n"
-#| "                        legais, mas ajuda muito no planejamento "
-#| "sucessório. Eu explico opções e limites de forma clara.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                O testamento é útil para organizar a "
@@ -1450,25 +1311,16 @@ msgid ""
 "sucessório. Eu explico opções e limites de forma\n"
 "                                clara.\n"
 "                                "
-msgstr "\n""                                O testamento é útil para organizar a ""vontade, reduzir conflitos e dar previsibilidade.\n""                                Ele não\n""                                elimina regras\n""                                legais, mas ajuda muito no planejamento ""sucessório. Eu explico opções e limites de forma\n""                                clara.\n""                                "
+msgstr ""
 "\n"
-"                        El testamento es útil para organizar la voluntad, "
-"reducir conflictos y dar previsibilidad. No\n"
-"                        elimina las reglas\n"
-"                        legales, pero ayuda mucho en la planificación "
-"sucesoria. Explico opciones y límites de forma clara.\n"
-"                        "
+"                                O testamento Ã© Ãºtil para organizar a vontade, reduzir conflitos y dar previsibilidade.\n"
+"                                Ele nÃ£o\n"
+"                                elimina regras\n"
+"                                legais, mas ajuda muito no planejamento sucessÃ³rio. Eu explico opÃ§Ãµes y limites de forma\n"
+"                                clara.\n"
+"                                "
 
 #: .\institucional\templates\contact\contact_site.html:422
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Os honorários variam conforme complexidade, "
-#| "urgência e modelo de atuação (consultivo,\n"
-#| "                        administrativo ou\n"
-#| "                        judicial). Eu apresento a proposta com clareza e "
-#| "alinhamos tudo antes de iniciar.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                Os honorários variam conforme complexidade, "
@@ -1477,24 +1329,14 @@ msgid ""
 "                                judicial). Eu apresento a proposta com "
 "clareza e alinhamos tudo antes de iniciar.\n"
 "                                "
-msgstr "\n""                                Os honorários variam conforme complexidade, ""urgência e modelo de atuação (consultivo,\n""                                administrativo ou\n""                                judicial). Eu apresento a proposta com ""clareza e alinhamos tudo antes de iniciar.\n""                                "
+msgstr ""
 "\n"
-"                        Los honorarios varían según la complejidad, la "
-"urgencia y el modelo de actuación (consultivo,\n"
-"                        administrativo o\n"
-"                        judicial). Presento la propuesta con claridad y lo "
-"alineamos todo antes de iniciar.\n"
-"                        "
+"                                Os honorÃ¡rios variam conforme complexidade, urgÃªncia y modelo de atuaÃ§Ã£o (consultivo,\n"
+"                                administrativo ou\n"
+"                                judicial). Eu apresento a proposta com clareza y alinhamos tudo antes de iniciar.\n"
+"                                "
 
 #: .\institucional\templates\contact\contact_site.html:443
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Você pode agendar pelo WhatsApp ou telefone. "
-#| "Normalmente retorno no mesmo dia útil, e em casos\n"
-#| "                        urgentes\n"
-#| "                        priorizo o atendimento conforme disponibilidade.\n"
-#| "                        "
 msgid ""
 "\n"
 "                                Você pode agendar pelo WhatsApp ou telefone. "
@@ -1504,17 +1346,18 @@ msgid ""
 "                                priorizo o atendimento conforme "
 "disponibilidade.\n"
 "                                "
-msgstr "\n""                                Você pode agendar pelo WhatsApp ou telefone. ""Normalmente retorno no mesmo dia útil, e em\n""                                casos\n""                                urgentes\n""                                priorizo o atendimento conforme ""disponibilidade.\n""                                "
+msgstr ""
 "\n"
-"                        Puedes agendar por WhatsApp o por teléfono. "
-"Normalmente respondo el mismo día hábil y, en casos\n"
-"                        urgentes,\n"
-"                        priorizo la atención según disponibilidad.\n"
-"                        "
+"                                VocÃª pode agendar pelo WhatsApp ou telefone. Normalmente retorno no mesmo dia Ãºtil, y em\n"
+"                                casos\n"
+"                                urgentes\n"
+"                                priorizo o atención conforme disponibilidade.\n"
+"                                "
 
 #: .\institucional\templates\home\components\_about_home.html:19
 msgid "Foto de Jorge R. Sarobe"
-msgstr "Foto de Jorge R. Sarobe"
+msgstr ""
+"Foto de Jorge R. Sarobe"
 
 #: .\institucional\templates\home\components\_about_home.html:34
 msgid ""
@@ -1527,16 +1370,15 @@ msgid ""
 "conflitos junto ao Juizado Especial\n"
 "                        Criminal.\n"
 "                        "
-msgstr "\n""                        Advogado – OAB/SC Profissional graduado pela ""Universidade Estácio de Sá (2020), com sólida base\n""                        prática no Poder Judiciário. Atuou como Conciliador ""Judicial no Fórum de São José/SC,\n""                        desenvolvendo habilidades em mediação e resolução de ""conflitos junto ao Juizado Especial\n""                        Criminal.\n""                        "
+msgstr ""
+"\n"
+"                        Abogado â OAB/SC Profissional graduado pela Universidade EstÃ¡cio de SÃ¡ (2020), com sÃ³lida base\n"
+"                        prÃ¡tica no Poder JudiciÃ¡rio. Atuou como Conciliador Judicial no FÃ³rum de SÃ£o JosÃ©/SC,\n"
+"                        desenvolvendo habilidades em mediaÃ§Ã£o y resoluÃ§Ã£o de conflitos junto ao Juizado Especial\n"
+"                        Criminal.\n"
+"                        "
 
 #: .\institucional\templates\home\components\_about_home.html:42
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Atendimento excelente, explicou tudo com clareza "
-#| "e me deu segurança em cada etapa.\n"
-#| "                        Recomendo.\n"
-#| "                        "
 msgid ""
 "\n"
 "                        Atualmente, contribui ativamente para o "
@@ -1544,64 +1386,53 @@ msgid ""
 "                        Comissão de Direito Bancário da OAB/SC (Subseção São "
 "José).\n"
 "                        "
-msgstr "\n""                        Atualmente, contribui ativamente para o ""fortalecimento da classe como integrante da\n""                        Comissão de Direito Bancário da OAB/SC (Subseção São ""José).\n""                        "
+msgstr ""
 "\n"
-"                        Atención excelente, explicó todo con claridad y me "
-"dio seguridad en cada etapa.\n"
-"                        Lo recomiendo.\n"
+"                        Atualmente, contribui ativamente para o fortalecimento da classe como integrante da\n"
+"                        ComissÃ£o de Derecho BancÃ¡rio da OAB/SC (SubseÃ§Ã£o SÃ£o JosÃ©).\n"
 "                        "
 
 #: .\institucional\templates\home\components\_about_home.html:58
 msgid "Atendimento direto"
-msgstr "Atención directa"
+msgstr ""
+"Atención directo"
 
 #: .\institucional\templates\home\components\_about_home.html:69
 msgid "Estratégia e clareza"
-msgstr "Estrategia y claridad"
+msgstr ""
+"EstratÃ©gia y clareza"
 
 #: .\institucional\templates\home\components\_about_home.html:80
 msgid "Foco em resultado"
-msgstr "Enfoque en resultados"
+msgstr ""
+"Foco em resultado"
 
 #: .\institucional\templates\home\components\_about_home.html:88
 #: .\institucional\templates\home\components\_about_home.html:95
 msgid "Agendar consulta"
-msgstr "Agendar consulta"
+msgstr ""
+"Agendar consulta"
 
 #: .\institucional\templates\home\components\_areas_home.html:8
 #: .\institucional\templates\services\services_site.html:20
 msgid "Áreas de Atuação"
-msgstr "Áreas de Actuación"
+msgstr ""
+"Ãreas de AtuaÃ§Ã£o"
 
 #: .\institucional\templates\home\components\_areas_home.html:11
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                Atuação focada em três frentes essenciais, com orientação "
-#| "clara e estratégia desde o primeiro\n"
-#| "                atendimento.\n"
-#| "                "
 msgid ""
 "\n"
 "                Atuação jurídica em São José - SC com foco em três frentes "
 "essenciais, oferecendo estratégia, clareza e\n"
 "                acompanhamento completo desde o primeiro atendimento.\n"
 "                "
-msgstr "\n""                Atuação jurídica em São José - SC com foco em três frentes ""essenciais, oferecendo estratégia, clareza e\n""                acompanhamento completo desde o primeiro atendimento.\n""                "
+msgstr ""
 "\n"
-"                Actuación enfocada en tres frentes esenciales, con "
-"orientación clara y estrategia desde el primer\n"
-"                contacto.\n"
+"                AtuaÃ§Ã£o jurÃ­dica em SÃ£o JosÃ© - SC com foco em trÃªs frentes essenciais, oferecendo estratÃ©gia, clareza y\n"
+"                acompanhamento completo desde o primeiro atención.\n"
 "                "
 
 #: .\institucional\templates\home\components\_areas_home.html:33
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Revisão de contratos, juros abusivos, "
-#| "renegociação e medidas para proteção do consumidor em\n"
-#| "                        relações bancárias.\n"
-#| "                        "
 msgid ""
 "\n"
 "                        Atuação em São José - SC na revisão de contratos, "
@@ -1609,11 +1440,10 @@ msgid ""
 "                        dívidas e defesa do consumidor em relações com "
 "bancos e instituições financeiras.\n"
 "                        "
-msgstr "\n""                        Atuação em São José - SC na revisão de contratos, ""análise de juros abusivos, renegociação de\n""                        dívidas e defesa do consumidor em relações com ""bancos e instituições financeiras.\n""                        "
+msgstr ""
 "\n"
-"                        Revisión de contratos, intereses abusivos, "
-"renegociación y medidas para la protección del consumidor en\n"
-"                        relaciones bancarias.\n"
+"                        AtuaÃ§Ã£o em SÃ£o JosÃ© - SC na revisÃ£o de contratos, anÃ¡lise de intereses abusivos, renegociaÃ§Ã£o de\n"
+"                        dÃ­vidas y defesa do consumidor em relaÃ§Ãµes com bancos y instituiÃ§Ãµes financeiras.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_areas_home.html:39
@@ -1623,16 +1453,10 @@ msgstr "\n""                        Atuação em São José - SC na revisão de 
 #: .\institucional\templates\home\components\_areas_home.html:106
 #: .\institucional\templates\home\components\_areas_home.html:107
 msgid "Falar com o advogado"
-msgstr "Hablar con el abogado"
+msgstr ""
+"Falar com o abogado"
 
 #: .\institucional\templates\home\components\_areas_home.html:65
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Planejamento e requerimento de benefícios, "
-#| "revisões e acompanhamento completo para segurança\n"
-#| "                        jurídica.\n"
-#| "                        "
 msgid ""
 "\n"
 "                        Planejamento e requerimento de aposentadorias e "
@@ -1640,61 +1464,58 @@ msgid ""
 "                        administrativo e judicial para clientes de São José "
 "e região.\n"
 "                        "
-msgstr "\n""                        Planejamento e requerimento de aposentadorias e ""benefícios do INSS, revisões e acompanhamento\n""                        administrativo e judicial para clientes de São José ""e região.\n""                        "
+msgstr ""
 "\n"
-"                        Planificación y solicitud de beneficios, revisiones "
-"y acompañamiento completo para seguridad\n"
-"                        jurídica.\n"
+"                        Planejamento y requerimento de aposentadorias y benefÃ­cios do INSS, revisÃµes y acompanhamento\n"
+"                        administrativo y judicial para clientes de SÃ£o JosÃ© y regiÃ£o.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_areas_home.html:100
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Planejamento e requerimento de benefícios, "
-#| "revisões e acompanhamento completo para segurança\n"
-#| "                        jurídica.\n"
-#| "                        "
 msgid ""
 "\n"
 "                        Inventário judicial e extrajudicial, partilha de "
 "bens, testamentos e planejamento sucessório com\n"
 "                        segurança jurídica e discrição em São José - SC.\n"
 "                        "
-msgstr "\n""                        Inventário judicial e extrajudicial, partilha de ""bens, testamentos e planejamento sucessório com\n""                        segurança jurídica e discrição em São José - SC.\n""                        "
+msgstr ""
 "\n"
-"                        Planificación y solicitud de beneficios, revisiones "
-"y acompañamiento completo para seguridad\n"
-"                        jurídica.\n"
+"                        InventÃ¡rio judicial y extrajudicial, partilha de bens, testamentos y planejamento sucessÃ³rio com\n"
+"                        seguranÃ§a jurÃ­dica y discriÃ§Ã£o em SÃ£o JosÃ© - SC.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_assessment_home.html:8
 msgid "Avaliações"
-msgstr "Reseñas"
+msgstr ""
+"AvaliaÃ§Ãµes"
 
 #: .\institucional\templates\home\components\_assessment_home.html:9
 msgid "O que dizem no Google"
-msgstr "Lo que dicen en Google"
+msgstr ""
+"O que dizem no Google"
 
 #: .\institucional\templates\home\components\_assessment_home.html:11
 msgid "Transparência e confiança no atendimento."
-msgstr "Transparencia y confianza en la atención."
+msgstr ""
+"TransparÃªncia y confianÃ§a no atención."
 
 #: .\institucional\templates\home\components\_assessment_home.html:18
 #: .\institucional\templates\home\components\_assessment_home.html:45
 #: .\institucional\templates\home\components\_assessment_home.html:67
 #: .\institucional\templates\home\components\_assessment_home.html:89
 msgid "5 de 5"
-msgstr "5 de 5"
+msgstr ""
+"5 de 5"
 
 #: .\institucional\templates\home\components\_assessment_home.html:25
 msgid "Baseado em <strong>+30</strong> avaliações"
-msgstr "Basado en <strong>+30</strong> reseñas"
+msgstr ""
+"Baseado em <strong>+30</strong> avaliaÃ§Ãµes"
 
 #: .\institucional\templates\home\components\_assessment_home.html:29
 #: .\institucional\templates\home\components\_assessment_home.html:33
 msgid "Ver no Google"
-msgstr "Ver en Google"
+msgstr ""
+"Ver no Google"
 
 #: .\institucional\templates\home\components\_assessment_home.html:53
 #: .\institucional\templates\home\components\_assessment_home.html:75
@@ -1705,11 +1526,10 @@ msgid ""
 "me deu segurança em cada etapa.\n"
 "                        Recomendo.\n"
 "                        "
-msgstr "\n""                        Atendimento excelente, explicou tudo com clareza e ""me deu segurança em cada etapa.\n""                        Recomendo.\n""                        "
+msgstr ""
 "\n"
-"                        Atención excelente, explicó todo con claridad y me "
-"dio seguridad en cada etapa.\n"
-"                        Lo recomiendo.\n"
+"                        Atención excelente, explicou tudo com clareza y me deu seguranÃ§a em cada etapa.\n"
+"                        Recomendo.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:10
@@ -1718,7 +1538,10 @@ msgid ""
 "                Dúvidas comuns de clientes que buscam advogado em São José - "
 "SC para causas bancárias, previdenciárias e sucessórias.\n"
 "                "
-msgstr "\n""                Dúvidas comuns de clientes que buscam advogado em São José - ""SC para causas bancárias, previdenciárias e sucessórias.\n""                "
+msgstr ""
+"\n"
+"                DÃºvidas comuns de clientes que buscam abogado em SÃ£o JosÃ© - SC para causas bancÃ¡rias, previdenciÃ¡rias y sucessÃ³rias.\n"
+"                "
 
 #: .\institucional\templates\home\components\_faq_home.html:28
 msgid ""
@@ -1730,13 +1553,11 @@ msgid ""
 "definimos a estratégia e a forma de condução do\n"
 "                        caso.\n"
 "                        "
-msgstr "\n""                        Você apresenta sua situação e os documentos ""disponíveis. Eu avalio o cenário, explico\n""                        possibilidades,\n""                        riscos e próximos passos. Se fizer sentido, ""definimos a estratégia e a forma de condução do\n""                        caso.\n""                        "
+msgstr ""
 "\n"
-"                        Presentas tu situación y los documentos disponibles. "
-"Yo evalúo el escenario, explico\n"
-"                        posibilidades,\n"
-"                        riesgos y próximos pasos. Si tiene sentido, "
-"definimos la estrategia y la forma de llevar el\n"
+"                        VocÃª apresenta sua situaÃ§Ã£o y os documentos disponÃ­veis. Eu avalio o cenÃ¡rio, explico\n"
+"                        possibilidades,\n"
+"                        riscos y prÃ³ximos passos. Se fizer sentido, definimos a estratÃ©gia y a forma de conduÃ§Ã£o do\n"
 "                        caso.\n"
 "                        "
 
@@ -1749,13 +1570,11 @@ msgid ""
 "                        e qualquer documento que comprove a situação. Se "
 "faltar algo, eu oriento o que solicitar depois.\n"
 "                        "
-msgstr "\n""                        Depende do tema, mas geralmente ajudam: RG/CPF, ""comprovantes, contratos, extratos, comunicações\n""                        do banco/INSS,\n""                        e qualquer documento que comprove a situação. Se ""faltar algo, eu oriento o que solicitar depois.\n""                        "
+msgstr ""
 "\n"
-"                        Depende del tema, pero generalmente ayudan: RG/CPF, "
-"comprobantes, contratos, extractos, comunicaciones\n"
-"                        del banco/INSS,\n"
-"                        y cualquier documento que acredite la situación. Si "
-"falta algo, te indico qué solicitar después.\n"
+"                        Depende do tema, mas geralmente ajudam: RG/CPF, comprovantes, contratos, extratos, comunicaÃ§Ãµes\n"
+"                        do banco/INSS,\n"
+"                        y qualquer documento que comprove a situaÃ§Ã£o. Se faltar algo, eu oriento o que solicitar depois.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:69
@@ -1767,13 +1586,11 @@ msgid ""
 "                        reunião por vídeo/WhatsApp. Quando necessário, "
 "alinhamos atendimento presencial.\n"
 "                        "
-msgstr "\n""                        Sim. O atendimento online é possível para a maioria ""dos casos, com envio de documentos\n""                        digitalizados e\n""                        reunião por vídeo/WhatsApp. Quando necessário, ""alinhamos atendimento presencial.\n""                        "
+msgstr ""
 "\n"
-"                        Sí. La atención en línea es posible para la mayoría "
-"de los casos, con envío de documentos\n"
+"                        Sim. O atención online Ã© possÃ­vel para a maioria dos casos, com envio de documentos\n"
 "                        digitalizados y\n"
-"                        reunión por video/WhatsApp. Cuando sea necesario, "
-"coordinamos atención presencial.\n"
+"                        reuniÃ£o por vÃ­deo/WhatsApp. Quando necessÃ¡rio, alinhamos atención presencial.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:89
@@ -1784,12 +1601,10 @@ msgid ""
 "                        Na consulta, eu estimarei cenários de tempo e as "
 "alternativas para buscar maior agilidade.\n"
 "                        "
-msgstr "\n""                        O prazo varia conforme o caso, a urgência, o volume ""de provas e a resposta da outra parte/órgão.\n""                        Na consulta, eu estimarei cenários de tempo e as ""alternativas para buscar maior agilidade.\n""                        "
+msgstr ""
 "\n"
-"                        El plazo varía según el caso, la urgencia, el "
-"volumen de pruebas y la respuesta de la otra parte/organismo.\n"
-"                        En la consulta, estimaré escenarios de tiempo y "
-"alternativas para buscar mayor agilidad.\n"
+"                        O prazo varia conforme o caso, a urgÃªncia, o volume de provas y a resposta da outra parte/Ã³rgÃ£o.\n"
+"                        Na consulta, eu estimarei cenÃ¡rios de tempo y as alternativas para buscar maior agilidade.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:108
@@ -1801,13 +1616,11 @@ msgid ""
 "                        renegociações. Com isso, é possível avaliar a "
 "legalidade de taxas e cláusulas.\n"
 "                        "
-msgstr "\n""                        Normalmente precisamos do contrato, demonstrativos, ""extratos, comprovantes de pagamento e\n""                        eventuais\n""                        renegociações. Com isso, é possível avaliar a ""legalidade de taxas e cláusulas.\n""                        "
+msgstr ""
 "\n"
-"                        Normalmente necesitamos el contrato, comprobantes, "
-"extractos, comprobantes de pago y\n"
-"                        eventuales\n"
-"                        renegociaciones. Con eso, es posible evaluar la "
-"legalidad de tasas y cláusulas.\n"
+"                        Normalmente precisamos do contrato, demonstrativos, extratos, comprovantes de pagamento y\n"
+"                        eventuais\n"
+"                        renegociaÃ§Ãµes. Com isso, Ã© possÃ­vel avaliar a legalidade de taxas y clÃ¡usulas.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:128
@@ -1820,14 +1633,12 @@ msgid ""
 "contributivo para definir a melhor\n"
 "                        estratégia.\n"
 "                        "
-msgstr "\n""                        Sim. Dependendo do motivo do indeferimento, podemos ""recorrer administrativamente ou ingressar\n""                        com ação.\n""                        Avalio o fundamento, documentos, laudos e histórico ""contributivo para definir a melhor\n""                        estratégia.\n""                        "
+msgstr ""
 "\n"
-"                        Sí. Dependiendo del motivo del rechazo, podemos "
-"recurrir administrativamente o iniciar\n"
-"                        una acción.\n"
-"                        Evalúo el fundamento, documentos, informes y el "
-"historial contributivo para definir la mejor\n"
-"                        estrategia.\n"
+"                        Sim. Dependendo do motivo do indeferimento, podemos recorrer administrativamente ou ingressar\n"
+"                        com aÃ§Ã£o.\n"
+"                        Avalio o fundamento, documentos, laudos y histÃ³rico contributivo para definir a melhor\n"
+"                        estratÃ©gia.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:149
@@ -1839,13 +1650,11 @@ msgid ""
 "                        conforme requisitos. Eu conduzo o processo e indico "
 "a via mais adequada para o seu cenário.\n"
 "                        "
-msgstr "\n""                        O inventário organiza bens, dívidas e herdeiros para ""formalizar a partilha. Pode ser judicial ou\n""                        em cartório,\n""                        conforme requisitos. Eu conduzo o processo e indico ""a via mais adequada para o seu cenário.\n""                        "
+msgstr ""
 "\n"
-"                        El inventario organiza bienes, deudas y herederos "
-"para formalizar la partición. Puede ser judicial o\n"
-"                        notarial,\n"
-"                        según los requisitos. Conduzco el proceso e indico "
-"la vía más adecuada para tu escenario.\n"
+"                        O inventÃ¡rio organiza bens, dÃ­vidas y herdeiros para formalizar a partilha. Pode ser judicial ou\n"
+"                        em cartÃ³rio,\n"
+"                        conforme requisitos. Eu conduzo o processo y indico a via mais adequada para o seu cenÃ¡rio.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:169
@@ -1857,13 +1666,11 @@ msgid ""
 "                        legais, mas ajuda muito no planejamento sucessório. "
 "Eu explico opções e limites de forma clara.\n"
 "                        "
-msgstr "\n""                        O testamento é útil para organizar a vontade, ""reduzir conflitos e dar previsibilidade. Ele não\n""                        elimina regras\n""                        legais, mas ajuda muito no planejamento sucessório. ""Eu explico opções e limites de forma clara.\n""                        "
+msgstr ""
 "\n"
-"                        El testamento es útil para organizar la voluntad, "
-"reducir conflictos y dar previsibilidad. No\n"
-"                        elimina las reglas\n"
-"                        legales, pero ayuda mucho en la planificación "
-"sucesoria. Explico opciones y límites de forma clara.\n"
+"                        O testamento Ã© Ãºtil para organizar a vontade, reduzir conflitos y dar previsibilidade. Ele nÃ£o\n"
+"                        elimina regras\n"
+"                        legais, mas ajuda muito no planejamento sucessÃ³rio. Eu explico opÃ§Ãµes y limites de forma clara.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:189
@@ -1875,13 +1682,11 @@ msgid ""
 "                        judicial). Eu apresento a proposta com clareza e "
 "alinhamos tudo antes de iniciar.\n"
 "                        "
-msgstr "\n""                        Os honorários variam conforme complexidade, urgência ""e modelo de atuação (consultivo,\n""                        administrativo ou\n""                        judicial). Eu apresento a proposta com clareza e ""alinhamos tudo antes de iniciar.\n""                        "
+msgstr ""
 "\n"
-"                        Los honorarios varían según la complejidad, la "
-"urgencia y el modelo de actuación (consultivo,\n"
-"                        administrativo o\n"
-"                        judicial). Presento la propuesta con claridad y lo "
-"alineamos todo antes de iniciar.\n"
+"                        Os honorÃ¡rios variam conforme complexidade, urgÃªncia y modelo de atuaÃ§Ã£o (consultivo,\n"
+"                        administrativo ou\n"
+"                        judicial). Eu apresento a proposta com clareza y alinhamos tudo antes de iniciar.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:209
@@ -1892,27 +1697,19 @@ msgid ""
 "                        urgentes\n"
 "                        priorizo o atendimento conforme disponibilidade.\n"
 "                        "
-msgstr "\n""                        Você pode agendar pelo WhatsApp ou telefone. ""Normalmente retorno no mesmo dia útil, e em casos\n""                        urgentes\n""                        priorizo o atendimento conforme disponibilidade.\n""                        "
+msgstr ""
 "\n"
-"                        Puedes agendar por WhatsApp o por teléfono. "
-"Normalmente respondo el mismo día hábil y, en casos\n"
-"                        urgentes,\n"
-"                        priorizo la atención según disponibilidad.\n"
+"                        VocÃª pode agendar pelo WhatsApp ou telefone. Normalmente retorno no mesmo dia Ãºtil, y em casos\n"
+"                        urgentes\n"
+"                        priorizo o atención conforme disponibilidade.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_hero_home.html:11
 msgid "Atuação estratégica e atendimento humanizado"
-msgstr "Actuación estratégica y atención humanizada"
+msgstr ""
+"AtuaÃ§Ã£o estratÃ©gica y atención humanizado"
 
 #: .\institucional\templates\home\components\_hero_home.html:15
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                        Soluções jurídicas para <span class=\"text-"
-#| "gold\">bancário</span>, <span\n"
-#| "                            class=\"text-gold\">previdenciário</span> e "
-#| "<span class=\"text-gold\">sucessões</span>\n"
-#| "                        "
 msgid ""
 "\n"
 "                        Advogado em <span class=\"text-gold\">São José - SC</"
@@ -1921,12 +1718,11 @@ msgid ""
 "class=\"text-gold\">previdenciárias</span> e <span\n"
 "                            class=\"text-gold\">sucessórias</span>\n"
 "                        "
-msgstr "\n""                        Advogado em <span class=\"text-gold\">São José - SC</""span> para causas <span\n""                            class=\"text-gold\">bancárias</span>, <span ""class=\"text-gold\">previdenciárias</span> e <span\n""                            class=\"text-gold\">sucessórias</span>\n""                        "
+msgstr ""
 "\n"
-"                        Soluciones jurídicas para <span class=\"text-"
-"gold\">bancario</span>, <span\n"
-"                            class=\"text-gold\">previsional</span> y <span "
-"class=\"text-gold\">sucesiones</span>\n"
+"                        Abogado em <span class=\"text-gold\">SÃ£o JosÃ© - SC</span> para causas <span\n"
+"                            class=\"text-gold\">bancÃ¡rias</span>, <span class=\"text-gold\">previdenciÃ¡rias</span> y <span\n"
+"                            class=\"text-gold\">sucessÃ³rias</span>\n"
 "                        "
 
 #: .\institucional\templates\home\components\_hero_home.html:23
@@ -1937,1350 +1733,287 @@ msgid ""
 "                        inicial até a solução do seu caso, com estratégia, "
 "segurança e agilidade.\n"
 "                        "
-msgstr "\n""                        Atendimento jurídico personalizado em São José e ""região. Orientação clara desde a análise\n""                        inicial até a solução do seu caso, com estratégia, ""segurança e agilidade.\n""                        "
+msgstr ""
+"\n"
+"                        Atención jurÃ­dico personalizado em SÃ£o JosÃ© y regiÃ£o. OrientaÃ§Ã£o clara desde a anÃ¡lise\n"
+"                        inicial atÃ© a soluÃ§Ã£o do seu caso, com estratÃ©gia, seguranÃ§a y agilidade.\n"
+"                        "
 
 #: .\institucional\templates\home\components\_hero_home.html:33
 msgid "Falar agora no WhatsApp"
-msgstr "Hablar ahora por WhatsApp"
+msgstr ""
+"Falar agora no WhatsApp"
 
 #: .\institucional\templates\home\components\_hero_home.html:42
 #: .\institucional\templates\home\components\_hero_home.html:43
 msgid "Ver áreas de atuação"
-msgstr "Ver áreas de actuación"
+msgstr ""
+"Ver Ã¡reas de atuaÃ§Ã£o"
 
 #: .\institucional\templates\home\components\_ld_json_home.html:30
 msgid ""
 "Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e "
 "Sucessões. Atendimento estratégico e personalizado."
-msgstr "Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e ""Sucessões. Atendimento estratégico e personalizado."
+msgstr ""
+"Abogado em SÃ£o JosÃ© - SC com atuaÃ§Ã£o em Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes. Atención estratÃ©gico y personalizado."
 
 #: .\institucional\templates\home\home_site.html:10
 #: .\institucional\templates\services\services_site.html:7
 msgid "Advogado em São José SC | Direito Bancário, Previdenciário e Sucessões"
-msgstr "Advogado em São José SC | Direito Bancário, Previdenciário e Sucessões"
+msgstr ""
+"Abogado em SÃ£o JosÃ© SC | Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes"
 
 #: .\institucional\templates\home\home_site.html:12
 msgid ""
 "Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e "
 "Sucessões. Atendimento direto, estratégico e com foco em resultado. Agende "
 "sua consulta."
-msgstr "Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e ""Sucessões. Atendimento direto, estratégico e com foco em resultado. Agende ""sua consulta."
+msgstr ""
+"Abogado em SÃ£o JosÃ© - SC com atuaÃ§Ã£o em Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes. Atención directo, estratÃ©gico y com foco em resultado. Agende sua consulta."
 
 #: .\institucional\templates\home\home_site.html:38
 msgid ""
 "Atendimento direto, análise estratégica e orientação clara para seu caso "
 "jurídico em São José e região."
-msgstr "Atendimento direto, análise estratégica e orientação clara para seu caso ""jurídico em São José e região."
+msgstr ""
+"Atención directo, anÃ¡lise estratÃ©gica y orientaÃ§Ã£o clara para seu caso jurÃ­dico em SÃ£o JosÃ© y regiÃ£o."
 
 #: .\institucional\templates\services\services_site.html:8
 msgid ""
 "Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e "
 "Sucessões. Atendimento estratégico, personalizado e focado em resultado."
-msgstr "Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e ""Sucessões. Atendimento estratégico, personalizado e focado em resultado."
+msgstr ""
+"Abogado em SÃ£o JosÃ© - SC com atuaÃ§Ã£o em Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes. Atención estratÃ©gico, personalizado y focado em resultado."
 
 #: .\institucional\templates\services\services_site.html:21
 msgid "Advocacia estratégica em São José - SC"
-msgstr "Advocacia estratégica em São José - SC"
+msgstr ""
+"Advocacia estratÃ©gica em SÃ£o JosÃ© - SC"
 
 #: .\institucional\templates\services\services_site.html:22
 msgid ""
 "Atuação em Direito Bancário, Previdenciário e Sucessões, com atendimento "
 "direto, análise técnica e soluções jurídicas personalizadas em São José e "
 "região."
-msgstr "Atuação em Direito Bancário, Previdenciário e Sucessões, com atendimento ""direto, análise técnica e soluções jurídicas personalizadas em São José e ""região."
+msgstr ""
+"AtuaÃ§Ã£o em Derecho BancÃ¡rio, PrevidenciÃ¡rio y SucessÃµes, com atención directo, anÃ¡lise tÃ©cnica y soluÃ§Ãµes jurÃ­dicas personalizadas em SÃ£o JosÃ© y regiÃ£o."
 
 #: .\institucional\templates\services\services_site.html:43
 msgid ""
 "Atuação em São José - SC na defesa dos seus direitos frente a bancos e "
 "instituições financeiras, com análise de contratos, cobrança de juros "
 "abusivos e revisão de financiamentos."
-msgstr "Atuação em São José - SC na defesa dos seus direitos frente a bancos e ""instituições financeiras, com análise de contratos, cobrança de juros ""abusivos e revisão de financiamentos."
+msgstr ""
+"AtuaÃ§Ã£o em SÃ£o JosÃ© - SC na defesa dos seus direitos frente a bancos y instituiÃ§Ãµes financeiras, com anÃ¡lise de contratos, cobranÃ§a de intereses abusivos y revisÃ£o de financiamentos."
 
 #: .\institucional\templates\services\services_site.html:49
 #: .\institucional\templates\services\services_site.html:269
 #: .\institucional\templates\services\services_site.html:298
-#, fuzzy
-#| msgid "Agendar Consulta"
 msgid "Agendar Consulta nesta Área"
-msgstr "Agendar consulta"
+msgstr ""
+"Agendar Consulta nesta Ãrea"
 
 #: .\institucional\templates\services\services_site.html:57
 #: .\institucional\templates\services\services_site.html:160
 #: .\institucional\templates\services\services_site.html:306
 msgid "Como posso ajudar"
-msgstr "Como posso ajudar"
+msgstr ""
+"Como posso ajudar"
 
 #: .\institucional\templates\services\services_site.html:68
 msgid "Revisão de contratos de financiamento e empréstimos"
-msgstr "Revisão de contratos de financiamento e empréstimos"
+msgstr ""
+"RevisÃ£o de contratos de financiamento y emprÃ©stimos"
 
 #: .\institucional\templates\services\services_site.html:79
 msgid "Contestação de juros abusivos e tarifas ilegais"
-msgstr "Contestação de juros abusivos e tarifas ilegais"
+msgstr ""
+"ContestaÃ§Ã£o de intereses abusivos y tarifas ilegais"
 
 #: .\institucional\templates\services\services_site.html:90
 msgid "Ações de repetição de indébito bancário"
-msgstr "Ações de repetição de indébito bancário"
+msgstr ""
+"AÃ§Ãµes de repetiÃ§Ã£o de indÃ©bito bancÃ¡rio"
 
 #: .\institucional\templates\services\services_site.html:101
 msgid "Negociação e renegociação de dívidas"
-msgstr "Negociação e renegociação de dívidas"
+msgstr ""
+"NegociaÃ§Ã£o y renegociaÃ§Ã£o de dÃ­vidas"
 
 #: .\institucional\templates\services\services_site.html:112
 msgid "Defesa em casos de inscrição indevida"
-msgstr "Defesa em casos de inscrição indevida"
+msgstr ""
+"Defesa em casos de inscriÃ§Ã£o indevida"
 
 #: .\institucional\templates\services\services_site.html:123
 msgid "Análise de cédulas de crédito bancário"
-msgstr "Análise de cédulas de crédito bancário"
+msgstr ""
+"AnÃ¡lise de cÃ©dulas de crÃ©dito bancÃ¡rio"
 
 #: .\institucional\templates\services\services_site.html:138
 #: .\institucional\templates\services\services_site.html:234
 #: .\institucional\templates\services\services_site.html:380
 msgid "Documentos úteis"
-msgstr "Documentos úteis"
+msgstr ""
+"Documentos Ãºteis"
 
 #: .\institucional\templates\services\services_site.html:141
 msgid "Contratos bancários (empréstimo, financiamento, cartão)"
-msgstr "Contratos bancários (empréstimo, financiamento, cartão)"
+msgstr ""
+"Contratos bancÃ¡rios (emprÃ©stimo, financiamento, cartÃ£o)"
 
 #: .\institucional\templates\services\services_site.html:142
 msgid "Extratos bancários e faturas"
-msgstr "Extratos bancários e faturas"
+msgstr ""
+"Extratos bancÃ¡rios y faturas"
 
 #: .\institucional\templates\services\services_site.html:143
 msgid "Comprovantes de pagamento"
-msgstr "Comprovantes de pagamento"
+msgstr ""
+"Comprovantes de pagamento"
 
 #: .\institucional\templates\services\services_site.html:144
 msgid "Notificações de cobrança"
-msgstr "Notificações de cobrança"
+msgstr ""
+"NotificaÃ§Ãµes de cobranÃ§a"
 
 #: .\institucional\templates\services\services_site.html:145
 #: .\institucional\templates\services\services_site.html:238
 msgid "Documentos pessoais (RG, CPF, comprovante de residência)"
-msgstr "Documentos pessoais (RG, CPF, comprovante de residência)"
+msgstr ""
+"Documentos pessoais (RG, CPF, comprovante de residÃªncia)"
 
 #: .\institucional\templates\services\services_site.html:147
 msgid ""
 "* Esta é uma lista geral. A documentação\n"
 "                                necessária pode variar conforme seu caso "
 "específico."
-msgstr "* Esta é uma lista geral. A documentação\n""                                necessária pode variar conforme seu caso ""específico."
+msgstr ""
+"* Esta Ã© uma lista geral. A documentaÃ§Ã£o\n"
+"                                necessÃ¡ria pode variar conforme seu caso especÃ­fico."
 
 #: .\institucional\templates\services\services_site.html:172
 msgid "Aposentadorias (idade, tempo, especial e rural)"
-msgstr "Aposentadorias (idade, tempo, especial e rural)"
+msgstr ""
+"Aposentadorias (idade, tempo, especial y rural)"
 
 #: .\institucional\templates\services\services_site.html:184
 msgid "Benefícios por incapacidade (auxílio e aposentadoria)"
-msgstr "Benefícios por incapacidade (auxílio e aposentadoria)"
+msgstr ""
+"BenefÃ­cios por incapacidade (auxÃ­lio y aposentadoria)"
 
 #: .\institucional\templates\services\services_site.html:196
 msgid "Pensão por morte e auxílio-reclusão"
-msgstr "Pensão por morte e auxílio-reclusão"
+msgstr ""
+"PensÃ£o por morte y auxÃ­lio-reclusÃ£o"
 
 #: .\institucional\templates\services\services_site.html:208
 msgid "Revisão de benefício e cálculos previdenciários"
-msgstr "Revisão de benefício e cálculos previdenciários"
+msgstr ""
+"RevisÃ£o de benefÃ­cio y cÃ¡lculos previdenciÃ¡rios"
 
 #: .\institucional\templates\services\services_site.html:220
 msgid "Recursos administrativos e ações judiciais"
-msgstr "Recursos administrativos e ações judiciais"
+msgstr ""
+"Recursos administrativos y aÃ§Ãµes judiciais"
 
 #: .\institucional\templates\services\services_site.html:239
 msgid "Carteira de trabalho (CTPS) e CNIS"
-msgstr "Carteira de trabalho (CTPS) e CNIS"
+msgstr ""
+"Carteira de trabalho (CTPS) y CNIS"
 
 #: .\institucional\templates\services\services_site.html:240
 msgid "Comprovantes de contribuição (carnês/GUIA/holerites)"
-msgstr "Comprovantes de contribuição (carnês/GUIA/holerites)"
+msgstr ""
+"Comprovantes de contribuiÃ§Ã£o (carnÃªs/GUIA/holerites)"
 
 #: .\institucional\templates\services\services_site.html:241
 msgid "Laudos e exames médicos (se aplicável)"
-msgstr "Laudos e exames médicos (se aplicável)"
+msgstr ""
+"Laudos y exames mÃ©dicos (se aplicÃ¡vel)"
 
 #: .\institucional\templates\services\services_site.html:242
 msgid "Carta de indeferimento e processo administrativo (se houver)"
-msgstr "Carta de indeferimento e processo administrativo (se houver)"
+msgstr ""
+"Carta de indeferimento y processo administrativo (se houver)"
 
 #: .\institucional\templates\services\services_site.html:246
 #: .\institucional\templates\services\services_site.html:392
 msgid ""
 "* Esta é uma lista geral. A documentação necessária pode variar conforme\n"
 "                                seu caso específico."
-msgstr "* Esta é uma lista geral. A documentação necessária pode variar conforme\n""                                seu caso específico."
+msgstr ""
+"* Esta Ã© uma lista geral. A documentaÃ§Ã£o necessÃ¡ria pode variar conforme\n"
+"                                seu caso especÃ­fico."
 
 #: .\institucional\templates\services\services_site.html:263
 msgid ""
 "Atuação em São José - SC na concessão de aposentadorias e benefícios do "
 "INSS, revisões previdenciárias e recursos administrativos ou judiciais para "
 "garantir seus direitos."
-msgstr "Atuação em São José - SC na concessão de aposentadorias e benefícios do ""INSS, revisões previdenciárias e recursos administrativos ou judiciais para ""garantir seus direitos."
+msgstr ""
+"AtuaÃ§Ã£o em SÃ£o JosÃ© - SC na concessÃ£o de aposentadorias y benefÃ­cios do INSS, revisÃµes previdenciÃ¡rias y recursos administrativos ou judiciais para garantir seus direitos."
 
 #: .\institucional\templates\services\services_site.html:292
 msgid ""
 "Inventários judiciais e extrajudiciais em São José - SC, partilha de bens e "
 "planejamento sucessório com segurança jurídica e organização patrimonial "
 "familiar."
-msgstr "Inventários judiciais e extrajudiciais em São José - SC, partilha de bens e ""planejamento sucessório com segurança jurídica e organização patrimonial ""familiar."
+msgstr ""
+"InventÃ¡rios judiciais y extrajudiciais em SÃ£o JosÃ© - SC, partilha de bens y planejamento sucessÃ³rio com seguranÃ§a jurÃ­dica y organizaÃ§Ã£o patrimonial familiar."
 
 #: .\institucional\templates\services\services_site.html:318
 msgid "Inventários judiciais e extrajudiciais"
-msgstr "Inventários judiciais e extrajudiciais"
+msgstr ""
+"InventÃ¡rios judiciais y extrajudiciais"
 
 #: .\institucional\templates\services\services_site.html:330
 msgid "Partilha de bens e acordos entre herdeiros"
-msgstr "Partilha de bens e acordos entre herdeiros"
+msgstr ""
+"Partilha de bens y acordos entre herdeiros"
 
 #: .\institucional\templates\services\services_site.html:342
 msgid "Alvarás para levantamento de valores"
-msgstr "Alvarás para levantamento de valores"
+msgstr ""
+"AlvarÃ¡s para levantamento de valores"
 
 #: .\institucional\templates\services\services_site.html:354
 msgid "Testamentos e planejamento sucessório"
-msgstr "Testamentos e planejamento sucessório"
+msgstr ""
+"Testamentos y planejamento sucessÃ³rio"
 
 #: .\institucional\templates\services\services_site.html:366
 msgid "Reconhecimento de união estável para fins sucessórios"
-msgstr "Reconhecimento de união estável para fins sucessórios"
+msgstr ""
+"Reconhecimento de uniÃ£o estÃ¡vel para fins sucessÃ³rios"
 
 #: .\institucional\templates\services\services_site.html:384
 msgid "Certidão de óbito"
-msgstr "Certidão de óbito"
+msgstr ""
+"CertidÃ£o de Ã³bito"
 
 #: .\institucional\templates\services\services_site.html:385
 msgid "Documentos do falecido e herdeiros"
-msgstr "Documentos do falecido e herdeiros"
+msgstr ""
+"Documentos do falecido y herdeiros"
 
 #: .\institucional\templates\services\services_site.html:386
 msgid "Certidões de bens (imóveis, veículos, investimentos)"
-msgstr "Certidões de bens (imóveis, veículos, investimentos)"
+msgstr ""
+"CertidÃµes de bens (imÃ³veis, veÃ­culos, investimentos)"
 
 #: .\institucional\templates\services\services_site.html:387
 msgid "Certidão de casamento/união estável (se aplicável)"
-msgstr "Certidão de casamento/união estável (se aplicável)"
+msgstr ""
+"CertidÃ£o de casamento/uniÃ£o estÃ¡vel (se aplicÃ¡vel)"
 
 #: .\institucional\templates\services\services_site.html:388
 msgid "Testamento (se houver)"
-msgstr "Testamento (se houver)"
+msgstr ""
+"Testamento (se houver)"
 
 #: .\institucional\templates\services\services_site.html:406
 msgid ""
 "Fale agora e receba orientação jurídica estratégica em São José e região."
-msgstr "Fale agora e receba orientação jurídica estratégica em São José e região."
-
-#~ msgid "Agende sua consulta com segurança e clareza"
-#~ msgstr "Agenda tu consulta con seguridad y claridad"
-
-#~ msgid ""
-#~ "Atendimento direto, orientação objetiva e estratégia personalizada para o "
-#~ "seu caso."
-#~ msgstr ""
-#~ "Atención directa, orientación objetiva y estrategia personalizada para tu "
-#~ "caso."
-
-#~ msgid "Ligar agora"
-#~ msgstr "Llamar ahora"
-
-#~ msgid ""
-#~ "Assessoria e consultoria jurídica com atendimento personalizado, "
-#~ "estratégia clara e condução segura."
-#~ msgstr ""
-#~ "Asesoría y consultoría jurídica con atención personalizada, estrategia "
-#~ "clara y conducción segura."
-
-#~ msgid "LinkedIn"
-#~ msgstr "LinkedIn"
-
-#~ msgid "Instagram"
-#~ msgstr "Instagram"
-
-#~ msgid ""
-#~ "\n"
-#~ "                        Lorem ipsum dolor sit amet consectetur "
-#~ "adipisicing elit. Quis commodi quasi, totam\n"
-#~ "                        recusandae nisi, blanditiis magnam qui dolores "
-#~ "sit corporis vel suscipit inventore expedita.\n"
-#~ "                        "
-#~ msgstr ""
-#~ "\n"
-#~ "                        Lorem ipsum dolor sit amet consectetur "
-#~ "adipisicing elit. Quis commodi quasi, totam\n"
-#~ "                        recusandae nisi, blanditiis magnam qui dolores "
-#~ "sit corporis vel suscipit inventore expedita.\n"
-#~ "                        "
-
-#~ msgid ""
-#~ "\n"
-#~ "                        Lorem ipsum dolor, sit amet consectetur "
-#~ "adipisicing elit. Sequi eveniet est tempore\n"
-#~ "                        laborum laudantium nisi, perferendis, aperiam "
-#~ "ducimus sint cum commodi.\n"
-#~ "                        "
-#~ msgstr ""
-#~ "\n"
-#~ "                        Lorem ipsum dolor, sit amet consectetur "
-#~ "adipisicing elit. Sequi eveniet est tempore\n"
-#~ "                        laborum laudantium nisi, perferendis, aperiam "
-#~ "ducimus sint cum commodi.\n"
-#~ "                        "
-
-#~ msgid ""
-#~ "\n"
-#~ "                        Inventário, partilha, testamentos e organização "
-#~ "patrimonial com discrição, clareza e eficiência.\n"
-#~ "                        "
-#~ msgstr ""
-#~ "\n"
-#~ "                        Inventario, partición, testamentos y organización "
-#~ "patrimonial con discreción, claridad y eficiencia.\n"
-#~ "                        "
-
-#~ msgid ""
-#~ "\n"
-#~ "                        Orientação clara do início ao fim, com foco em "
-#~ "segurança, agilidade e resultado.Entenda seu caso e os próximos passos.\n"
-#~ "                        "
-#~ msgstr ""
-#~ "\n"
-#~ "                        Orientación clara de principio a fin, con enfoque "
-#~ "en seguridad, agilidad y resultado. Comprende tu caso y los próximos "
-#~ "pasos.\n"
-#~ "                        "
-
-#~ msgid "Messages"
-#~ msgstr "Mensajes"
-
-#~ msgid "Site Maps"
-#~ msgstr "Mapas del sitio"
-
-#~ msgid "Static Files"
-#~ msgstr "Archivos estáticos"
-
-#~ msgid "Syndication"
-#~ msgstr "Sindicación"
-
-#~ msgid "…"
-#~ msgstr "…"
-
-#~ msgid "That page number is not an integer"
-#~ msgstr "Ese número de página no es un entero"
-
-#~ msgid "That page number is less than 1"
-#~ msgstr "Ese número de página es menor que 1"
-
-#~ msgid "That page contains no results"
-#~ msgstr "Esa página no contiene resultados"
-
-#~ msgid "Enter a valid value."
-#~ msgstr "Introduce un valor válido."
-
-#~ msgid "Enter a valid domain name."
-#~ msgstr "Introduce un nombre de dominio válido."
-
-#~ msgid "Enter a valid URL."
-#~ msgstr "Introduce una URL válida."
-
-#~ msgid "Enter a valid integer."
-#~ msgstr "Introduce un entero válido."
-
-#~ msgid "Enter a valid email address."
-#~ msgstr "Introduce una dirección de correo válida."
-
-#~ msgid ""
-#~ "Enter a valid “slug” consisting of letters, numbers, underscores or "
-#~ "hyphens."
-#~ msgstr ""
-#~ "Enter a valid “slug” consisting of letters, numbers, underscores or "
-#~ "hyphens."
-
-#~ msgid ""
-#~ "Enter a valid “slug” consisting of Unicode letters, numbers, underscores, "
-#~ "or hyphens."
-#~ msgstr ""
-#~ "Enter a valid “slug” consisting of Unicode letters, numbers, underscores, "
-#~ "or hyphens."
-
-#, python-format
-#~ msgid "Enter a valid %(protocol)s address."
-#~ msgstr "Enter a valid %(protocol)s address."
-
-#~ msgid "IPv4"
-#~ msgstr "IPv4"
-
-#~ msgid "IPv6"
-#~ msgstr "IPv6"
-
-#~ msgid "IPv4 or IPv6"
-#~ msgstr "IPv4 or IPv6"
-
-#~ msgid "Enter only digits separated by commas."
-#~ msgstr "Enter only digits separated by commas."
-
-#, python-format
-#~ msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-#~ msgstr "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-
-#, python-format
-#~ msgid "Ensure this value is less than or equal to %(limit_value)s."
-#~ msgstr "Ensure this value is less than or equal to %(limit_value)s."
-
-#, python-format
-#~ msgid "Ensure this value is greater than or equal to %(limit_value)s."
-#~ msgstr "Ensure this value is greater than or equal to %(limit_value)s."
-
-#, python-format
-#~ msgid "Ensure this value is a multiple of step size %(limit_value)s."
-#~ msgstr "Ensure this value is a multiple of step size %(limit_value)s."
-
-#, python-format
-#~ msgid ""
-#~ "Ensure this value is a multiple of step size %(limit_value)s, starting "
-#~ "from %(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and "
-#~ "so on."
-#~ msgstr ""
-#~ "Ensure this value is a multiple of step size %(limit_value)s, starting "
-#~ "from %(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and "
-#~ "so on."
-
-#, python-format
-#~ msgid ""
-#~ "Ensure this value has at least %(limit_value)d character (it has "
-#~ "%(show_value)d)."
-#~ msgid_plural ""
-#~ "Ensure this value has at least %(limit_value)d characters (it has "
-#~ "%(show_value)d)."
-#~ msgstr[0] ""
-#~ "Ensure this value has at least %(limit_value)d characters (it has "
-#~ "%(show_value)d)."
-#~ msgstr[1] ""
-#~ "Ensure this value has at least %(limit_value)d characters (it has "
-#~ "%(show_value)d)."
-
-#, python-format
-#~ msgid ""
-#~ "Ensure this value has at most %(limit_value)d character (it has "
-#~ "%(show_value)d)."
-#~ msgid_plural ""
-#~ "Ensure this value has at most %(limit_value)d characters (it has "
-#~ "%(show_value)d)."
-#~ msgstr[0] ""
-#~ "Ensure this value has at most %(limit_value)d characters (it has "
-#~ "%(show_value)d)."
-#~ msgstr[1] ""
-#~ "Ensure this value has at most %(limit_value)d characters (it has "
-#~ "%(show_value)d)."
-
-#~ msgid "Enter a number."
-#~ msgstr "Enter a number."
-
-#, python-format
-#~ msgid "Ensure that there are no more than %(max)s digit in total."
-#~ msgid_plural "Ensure that there are no more than %(max)s digits in total."
-#~ msgstr[0] "Ensure that there are no more than %(max)s digits in total."
-#~ msgstr[1] "Ensure that there are no more than %(max)s digits in total."
-
-#, python-format
-#~ msgid "Ensure that there are no more than %(max)s decimal place."
-#~ msgid_plural "Ensure that there are no more than %(max)s decimal places."
-#~ msgstr[0] "Ensure that there are no more than %(max)s decimal places."
-#~ msgstr[1] "Ensure that there are no more than %(max)s decimal places."
-
-#, python-format
-#~ msgid ""
-#~ "Ensure that there are no more than %(max)s digit before the decimal point."
-#~ msgid_plural ""
-#~ "Ensure that there are no more than %(max)s digits before the decimal "
-#~ "point."
-#~ msgstr[0] ""
-#~ "Ensure that there are no more than %(max)s digits before the decimal "
-#~ "point."
-#~ msgstr[1] ""
-#~ "Ensure that there are no more than %(max)s digits before the decimal "
-#~ "point."
-
-#, python-format
-#~ msgid ""
-#~ "File extension “%(extension)s” is not allowed. Allowed extensions are: "
-#~ "%(allowed_extensions)s."
-#~ msgstr ""
-#~ "File extension “%(extension)s” is not allowed. Allowed extensions are: "
-#~ "%(allowed_extensions)s."
-
-#~ msgid "Null characters are not allowed."
-#~ msgstr "Null characters are not allowed."
-
-#~ msgid "and"
-#~ msgstr "and"
-
-#, python-format
-#~ msgid "%(model_name)s with this %(field_labels)s already exists."
-#~ msgstr "%(model_name)s with this %(field_labels)s already exists."
-
-#, python-format
-#~ msgid "Constraint “%(name)s” is violated."
-#~ msgstr "Constraint “%(name)s” is violated."
-
-#, python-format
-#~ msgid "Value %(value)r is not a valid choice."
-#~ msgstr "Value %(value)r is not a valid choice."
-
-#~ msgid "This field cannot be null."
-#~ msgstr "This field cannot be null."
-
-#~ msgid "This field cannot be blank."
-#~ msgstr "This field cannot be blank."
-
-#, python-format
-#~ msgid "%(model_name)s with this %(field_label)s already exists."
-#~ msgstr "%(model_name)s with this %(field_label)s already exists."
-
-#, python-format
-#~ msgid ""
-#~ "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
-#~ msgstr ""
-#~ "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
-
-#, python-format
-#~ msgid "Field of type: %(field_type)s"
-#~ msgstr "Field of type: %(field_type)s"
-
-#, python-format
-#~ msgid "“%(value)s” value must be either True or False."
-#~ msgstr "“%(value)s” value must be either True or False."
-
-#, python-format
-#~ msgid "“%(value)s” value must be either True, False, or None."
-#~ msgstr "“%(value)s” value must be either True, False, or None."
-
-#~ msgid "Boolean (Either True or False)"
-#~ msgstr "Boolean (Either True or False)"
-
-#, python-format
-#~ msgid "String (up to %(max_length)s)"
-#~ msgstr "String (up to %(max_length)s)"
-
-#~ msgid "String (unlimited)"
-#~ msgstr "String (unlimited)"
-
-#~ msgid "Comma-separated integers"
-#~ msgstr "Comma-separated integers"
-
-#, python-format
-#~ msgid ""
-#~ "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
-#~ "format."
-#~ msgstr ""
-#~ "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
-#~ "format."
-
-#, python-format
-#~ msgid ""
-#~ "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an "
-#~ "invalid date."
-#~ msgstr ""
-#~ "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an "
-#~ "invalid date."
-
-#~ msgid "Date (without time)"
-#~ msgstr "Date (without time)"
-
-#, python-format
-#~ msgid ""
-#~ "“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
-#~ "HH:MM[:ss[.uuuuuu]][TZ] format."
-#~ msgstr ""
-#~ "“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
-#~ "HH:MM[:ss[.uuuuuu]][TZ] format."
-
-#, python-format
-#~ msgid ""
-#~ "“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-#~ "[TZ]) but it is an invalid date/time."
-#~ msgstr ""
-#~ "“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-#~ "[TZ]) but it is an invalid date/time."
-
-#~ msgid "Date (with time)"
-#~ msgstr "Date (with time)"
-
-#, python-format
-#~ msgid "“%(value)s” value must be a decimal number."
-#~ msgstr "“%(value)s” value must be a decimal number."
-
-#~ msgid "Decimal number"
-#~ msgstr "Decimal number"
-
-#, python-format
-#~ msgid ""
-#~ "“%(value)s” value has an invalid format. It must be in [DD] "
-#~ "[[HH:]MM:]ss[.uuuuuu] format."
-#~ msgstr ""
-#~ "“%(value)s” value has an invalid format. It must be in [DD] "
-#~ "[[HH:]MM:]ss[.uuuuuu] format."
-
-#~ msgid "Duration"
-#~ msgstr "Duration"
-
-#~ msgid "Email address"
-#~ msgstr "Email address"
-
-#~ msgid "File path"
-#~ msgstr "File path"
-
-#, python-format
-#~ msgid "“%(value)s” value must be a float."
-#~ msgstr "“%(value)s” value must be a float."
-
-#~ msgid "Floating point number"
-#~ msgstr "Floating point number"
-
-#, python-format
-#~ msgid "“%(value)s” value must be an integer."
-#~ msgstr "“%(value)s” value must be an integer."
-
-#~ msgid "Integer"
-#~ msgstr "Integer"
-
-#~ msgid "Big (8 byte) integer"
-#~ msgstr "Big (8 byte) integer"
-
-#~ msgid "Small integer"
-#~ msgstr "Small integer"
-
-#~ msgid "IPv4 address"
-#~ msgstr "IPv4 address"
-
-#~ msgid "IP address"
-#~ msgstr "IP address"
-
-#, python-format
-#~ msgid "“%(value)s” value must be either None, True or False."
-#~ msgstr "“%(value)s” value must be either None, True or False."
-
-#~ msgid "Boolean (Either True, False or None)"
-#~ msgstr "Boolean (Either True, False or None)"
-
-#~ msgid "Positive big integer"
-#~ msgstr "Positive big integer"
-
-#~ msgid "Positive integer"
-#~ msgstr "Positive integer"
-
-#~ msgid "Positive small integer"
-#~ msgstr "Positive small integer"
-
-#, python-format
-#~ msgid "Slug (up to %(max_length)s)"
-#~ msgstr "Slug (up to %(max_length)s)"
-
-#~ msgid "Text"
-#~ msgstr "Text"
-
-#, python-format
-#~ msgid ""
-#~ "“%(value)s” value has an invalid format. It must be in "
-#~ "HH:MM[:ss[.uuuuuu]] format."
-#~ msgstr ""
-#~ "“%(value)s” value has an invalid format. It must be in "
-#~ "HH:MM[:ss[.uuuuuu]] format."
-
-#, python-format
-#~ msgid ""
-#~ "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is "
-#~ "an invalid time."
-#~ msgstr ""
-#~ "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is "
-#~ "an invalid time."
-
-#~ msgid "Time"
-#~ msgstr "Time"
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
-#~ msgid "Raw binary data"
-#~ msgstr "Raw binary data"
-
-#, python-format
-#~ msgid "“%(value)s” is not a valid UUID."
-#~ msgstr "“%(value)s” is not a valid UUID."
-
-#~ msgid "Universally unique identifier"
-#~ msgstr "Universally unique identifier"
-
-#~ msgid "File"
-#~ msgstr "File"
-
-#~ msgid "Image"
-#~ msgstr "Image"
-
-#~ msgid "A JSON object"
-#~ msgstr "A JSON object"
-
-#~ msgid "Value must be valid JSON."
-#~ msgstr "Value must be valid JSON."
-
-#, python-format
-#~ msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
-#~ msgstr "%(model)s instance with %(field)s %(value)r is not a valid choice."
-
-#~ msgid "Foreign Key (type determined by related field)"
-#~ msgstr "Foreign Key (type determined by related field)"
-
-#~ msgid "One-to-one relationship"
-#~ msgstr "One-to-one relationship"
-
-#, python-format
-#~ msgid "%(from)s-%(to)s relationship"
-#~ msgstr "%(from)s-%(to)s relationship"
-
-#, python-format
-#~ msgid "%(from)s-%(to)s relationships"
-#~ msgstr "%(from)s-%(to)s relationships"
-
-#~ msgid "Many-to-many relationship"
-#~ msgstr "Many-to-many relationship"
-
-#~ msgid ":?.!"
-#~ msgstr ":?.!"
-
-#~ msgid "This field is required."
-#~ msgstr "This field is required."
-
-#~ msgid "Enter a whole number."
-#~ msgstr "Enter a whole number."
-
-#~ msgid "Enter a valid date."
-#~ msgstr "Enter a valid date."
-
-#~ msgid "Enter a valid time."
-#~ msgstr "Enter a valid time."
-
-#~ msgid "Enter a valid date/time."
-#~ msgstr "Enter a valid date/time."
-
-#~ msgid "Enter a valid duration."
-#~ msgstr "Enter a valid duration."
-
-#, python-brace-format
-#~ msgid "The number of days must be between {min_days} and {max_days}."
-#~ msgstr "The number of days must be between {min_days} and {max_days}."
-
-#~ msgid "No file was submitted. Check the encoding type on the form."
-#~ msgstr "No file was submitted. Check the encoding type on the form."
-
-#~ msgid "No file was submitted."
-#~ msgstr "No file was submitted."
-
-#~ msgid "The submitted file is empty."
-#~ msgstr "The submitted file is empty."
-
-#, python-format
-#~ msgid ""
-#~ "Ensure this filename has at most %(max)d character (it has %(length)d)."
-#~ msgid_plural ""
-#~ "Ensure this filename has at most %(max)d characters (it has %(length)d)."
-#~ msgstr[0] ""
-#~ "Ensure this filename has at most %(max)d characters (it has %(length)d)."
-#~ msgstr[1] ""
-#~ "Ensure this filename has at most %(max)d characters (it has %(length)d)."
-
-#~ msgid "Please either submit a file or check the clear checkbox, not both."
-#~ msgstr "Please either submit a file or check the clear checkbox, not both."
-
-#~ msgid ""
-#~ "Upload a valid image. The file you uploaded was either not an image or a "
-#~ "corrupted image."
-#~ msgstr ""
-#~ "Upload a valid image. The file you uploaded was either not an image or a "
-#~ "corrupted image."
-
-#, python-format
-#~ msgid ""
-#~ "Select a valid choice. %(value)s is not one of the available choices."
-#~ msgstr ""
-#~ "Select a valid choice. %(value)s is not one of the available choices."
-
-#~ msgid "Enter a list of values."
-#~ msgstr "Enter a list of values."
-
-#~ msgid "Enter a complete value."
-#~ msgstr "Enter a complete value."
-
-#~ msgid "Enter a valid UUID."
-#~ msgstr "Enter a valid UUID."
-
-#~ msgid "Enter a valid JSON."
-#~ msgstr "Enter a valid JSON."
-
-#~ msgid ":"
-#~ msgstr ":"
-
-#, python-format
-#~ msgid "(Hidden field %(name)s) %(error)s"
-#~ msgstr "(Hidden field %(name)s) %(error)s"
-
-#, python-format
-#~ msgid ""
-#~ "ManagementForm data is missing or has been tampered with. Missing fields: "
-#~ "%(field_names)s. You may need to file a bug report if the issue persists."
-#~ msgstr ""
-#~ "ManagementForm data is missing or has been tampered with. Missing fields: "
-#~ "%(field_names)s. You may need to file a bug report if the issue persists."
-
-#, python-format
-#~ msgid "Please submit at most %(num)d form."
-#~ msgid_plural "Please submit at most %(num)d forms."
-#~ msgstr[0] "Please submit at most %(num)d forms."
-#~ msgstr[1] "Please submit at most %(num)d forms."
-
-#, python-format
-#~ msgid "Please submit at least %(num)d form."
-#~ msgid_plural "Please submit at least %(num)d forms."
-#~ msgstr[0] "Please submit at least %(num)d forms."
-#~ msgstr[1] "Please submit at least %(num)d forms."
-
-#~ msgid "Order"
-#~ msgstr "Order"
-
-#~ msgid "Delete"
-#~ msgstr "Delete"
-
-#, python-format
-#~ msgid "Please correct the duplicate data for %(field)s."
-#~ msgstr "Please correct the duplicate data for %(field)s."
-
-#, python-format
-#~ msgid ""
-#~ "Please correct the duplicate data for %(field)s, which must be unique."
-#~ msgstr ""
-#~ "Please correct the duplicate data for %(field)s, which must be unique."
-
-#, python-format
-#~ msgid ""
-#~ "Please correct the duplicate data for %(field_name)s which must be unique "
-#~ "for the %(lookup)s in %(date_field)s."
-#~ msgstr ""
-#~ "Please correct the duplicate data for %(field_name)s which must be unique "
-#~ "for the %(lookup)s in %(date_field)s."
-
-#~ msgid "Please correct the duplicate values below."
-#~ msgstr "Please correct the duplicate values below."
-
-#~ msgid "The inline value did not match the parent instance."
-#~ msgstr "The inline value did not match the parent instance."
-
-#~ msgid ""
-#~ "Select a valid choice. That choice is not one of the available choices."
-#~ msgstr ""
-#~ "Select a valid choice. That choice is not one of the available choices."
-
-#, python-format
-#~ msgid "“%(pk)s” is not a valid value."
-#~ msgstr "“%(pk)s” is not a valid value."
-
-#, python-format
-#~ msgid ""
-#~ "%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; "
-#~ "it may be ambiguous or it may not exist."
-#~ msgstr ""
-#~ "%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; "
-#~ "it may be ambiguous or it may not exist."
-
-#~ msgid "Clear"
-#~ msgstr "Borrar"
-
-#~ msgid "Currently"
-#~ msgstr "Actualmente"
-
-#~ msgid "Change"
-#~ msgstr "Cambiar"
-
-#~ msgid "Unknown"
-#~ msgstr "Desconocido"
-
-#~ msgid "Yes"
-#~ msgstr "Sí"
-
-#~ msgid "No"
-#~ msgstr "No"
-
-#~ msgctxt "Task"
-#~ msgid "Ready"
-#~ msgstr "Ready"
-
-#~ msgctxt "Task"
-#~ msgid "Running"
-#~ msgstr "Running"
-
-#~ msgctxt "Task"
-#~ msgid "Failed"
-#~ msgstr "Failed"
-
-#~ msgctxt "Task"
-#~ msgid "Successful"
-#~ msgstr "Successful"
-
-#~ msgid "yes,no,maybe"
-#~ msgstr "yes,no,maybe"
-
-#, python-format
-#~ msgid "%(size)d byte"
-#~ msgid_plural "%(size)d bytes"
-#~ msgstr[0] "%(size)d bytes"
-#~ msgstr[1] "%(size)d bytes"
-
-#, python-format
-#~ msgid "%s KB"
-#~ msgstr "%s KB"
-
-#, python-format
-#~ msgid "%s MB"
-#~ msgstr "%s MB"
-
-#, python-format
-#~ msgid "%s GB"
-#~ msgstr "%s GB"
-
-#, python-format
-#~ msgid "%s TB"
-#~ msgstr "%s TB"
-
-#, python-format
-#~ msgid "%s PB"
-#~ msgstr "%s PB"
-
-#~ msgid "p.m."
-#~ msgstr "p.m."
-
-#~ msgid "a.m."
-#~ msgstr "a.m."
-
-#~ msgid "PM"
-#~ msgstr "PM"
-
-#~ msgid "AM"
-#~ msgstr "AM"
-
-#~ msgid "midnight"
-#~ msgstr "midnight"
-
-#~ msgid "noon"
-#~ msgstr "noon"
-
-#~ msgid "Monday"
-#~ msgstr "Monday"
-
-#~ msgid "Tuesday"
-#~ msgstr "Tuesday"
-
-#~ msgid "Wednesday"
-#~ msgstr "Wednesday"
-
-#~ msgid "Thursday"
-#~ msgstr "Thursday"
-
-#~ msgid "Friday"
-#~ msgstr "Friday"
-
-#~ msgid "Saturday"
-#~ msgstr "Saturday"
-
-#~ msgid "Sunday"
-#~ msgstr "Sunday"
-
-#~ msgid "Mon"
-#~ msgstr "Mon"
-
-#~ msgid "Tue"
-#~ msgstr "Tue"
-
-#~ msgid "Wed"
-#~ msgstr "Wed"
-
-#~ msgid "Thu"
-#~ msgstr "Thu"
-
-#~ msgid "Fri"
-#~ msgstr "Fri"
-
-#~ msgid "Sat"
-#~ msgstr "Sat"
-
-#~ msgid "Sun"
-#~ msgstr "Sun"
-
-#~ msgid "January"
-#~ msgstr "January"
-
-#~ msgid "February"
-#~ msgstr "February"
-
-#~ msgid "March"
-#~ msgstr "March"
-
-#~ msgid "April"
-#~ msgstr "April"
-
-#~ msgid "May"
-#~ msgstr "May"
-
-#~ msgid "June"
-#~ msgstr "June"
-
-#~ msgid "July"
-#~ msgstr "July"
-
-#~ msgid "August"
-#~ msgstr "August"
-
-#~ msgid "September"
-#~ msgstr "September"
-
-#~ msgid "October"
-#~ msgstr "October"
-
-#~ msgid "November"
-#~ msgstr "November"
-
-#~ msgid "December"
-#~ msgstr "December"
-
-#~ msgid "jan"
-#~ msgstr "jan"
-
-#~ msgid "feb"
-#~ msgstr "feb"
-
-#~ msgid "mar"
-#~ msgstr "mar"
-
-#~ msgid "apr"
-#~ msgstr "apr"
-
-#~ msgid "may"
-#~ msgstr "may"
-
-#~ msgid "jun"
-#~ msgstr "jun"
-
-#~ msgid "jul"
-#~ msgstr "jul"
-
-#~ msgid "aug"
-#~ msgstr "aug"
-
-#~ msgid "sep"
-#~ msgstr "sep"
-
-#~ msgid "oct"
-#~ msgstr "oct"
-
-#~ msgid "nov"
-#~ msgstr "nov"
-
-#~ msgctxt "abbrev. month"
-#~ msgid "Jan."
-#~ msgstr "Jan."
-
-#~ msgctxt "abbrev. month"
-#~ msgid "Feb."
-#~ msgstr "Feb."
-
-#~ msgctxt "abbrev. month"
-#~ msgid "March"
-#~ msgstr "March"
-
-#~ msgctxt "abbrev. month"
-#~ msgid "April"
-#~ msgstr "April"
-
-#~ msgctxt "abbrev. month"
-#~ msgid "May"
-#~ msgstr "May"
-
-#~ msgctxt "abbrev. month"
-#~ msgid "June"
-#~ msgstr "June"
-
-#~ msgctxt "abbrev. month"
-#~ msgid "July"
-#~ msgstr "July"
-
-#~ msgctxt "abbrev. month"
-#~ msgid "Aug."
-#~ msgstr "Aug."
-
-#~ msgctxt "abbrev. month"
-#~ msgid "Sept."
-#~ msgstr "Sept."
-
-#~ msgctxt "abbrev. month"
-#~ msgid "Oct."
-#~ msgstr "Oct."
-
-#~ msgctxt "abbrev. month"
-#~ msgid "Nov."
-#~ msgstr "Nov."
-
-#~ msgctxt "abbrev. month"
-#~ msgid "Dec."
-#~ msgstr "Dec."
-
-#~ msgctxt "alt. month"
-#~ msgid "January"
-#~ msgstr "January"
-
-#~ msgctxt "alt. month"
-#~ msgid "February"
-#~ msgstr "February"
-
-#~ msgctxt "alt. month"
-#~ msgid "March"
-#~ msgstr "March"
-
-#~ msgctxt "alt. month"
-#~ msgid "April"
-#~ msgstr "April"
-
-#~ msgctxt "alt. month"
-#~ msgid "May"
-#~ msgstr "May"
-
-#~ msgctxt "alt. month"
-#~ msgid "June"
-#~ msgstr "June"
-
-#~ msgctxt "alt. month"
-#~ msgid "July"
-#~ msgstr "July"
-
-#~ msgctxt "alt. month"
-#~ msgid "August"
-#~ msgstr "August"
-
-#~ msgctxt "alt. month"
-#~ msgid "September"
-#~ msgstr "September"
-
-#~ msgctxt "alt. month"
-#~ msgid "October"
-#~ msgstr "October"
-
-#~ msgctxt "alt. month"
-#~ msgid "November"
-#~ msgstr "November"
-
-#~ msgctxt "alt. month"
-#~ msgid "December"
-#~ msgstr "December"
-
-#~ msgid "This is not a valid IPv6 address."
-#~ msgstr "This is not a valid IPv6 address."
-
-#, python-format
-#~ msgctxt "String to return when truncating text"
-#~ msgid "%(truncated_text)s…"
-#~ msgstr "%(truncated_text)s…"
-
-#~ msgid "or"
-#~ msgstr "or"
-
-#~ msgid ", "
-#~ msgstr ", "
-
-#, python-format
-#~ msgid "%(num)d year"
-#~ msgid_plural "%(num)d years"
-#~ msgstr[0] "%(num)d years"
-#~ msgstr[1] "%(num)d years"
-
-#, python-format
-#~ msgid "%(num)d month"
-#~ msgid_plural "%(num)d months"
-#~ msgstr[0] "%(num)d months"
-#~ msgstr[1] "%(num)d months"
-
-#, python-format
-#~ msgid "%(num)d week"
-#~ msgid_plural "%(num)d weeks"
-#~ msgstr[0] "%(num)d weeks"
-#~ msgstr[1] "%(num)d weeks"
-
-#, python-format
-#~ msgid "%(num)d day"
-#~ msgid_plural "%(num)d days"
-#~ msgstr[0] "%(num)d days"
-#~ msgstr[1] "%(num)d days"
-
-#, python-format
-#~ msgid "%(num)d hour"
-#~ msgid_plural "%(num)d hours"
-#~ msgstr[0] "%(num)d hours"
-#~ msgstr[1] "%(num)d hours"
-
-#, python-format
-#~ msgid "%(num)d minute"
-#~ msgid_plural "%(num)d minutes"
-#~ msgstr[0] "%(num)d minutes"
-#~ msgstr[1] "%(num)d minutes"
-
-#~ msgid "Forbidden"
-#~ msgstr "Forbidden"
-
-#~ msgid "CSRF verification failed. Request aborted."
-#~ msgstr "CSRF verification failed. Request aborted."
-
-#~ msgid ""
-#~ "You are seeing this message because this HTTPS site requires a “Referer "
-#~ "header” to be sent by your web browser, but none was sent. This header is "
-#~ "required for security reasons, to ensure that your browser is not being "
-#~ "hijacked by third parties."
-#~ msgstr ""
-#~ "You are seeing this message because this HTTPS site requires a “Referer "
-#~ "header” to be sent by your web browser, but none was sent. This header is "
-#~ "required for security reasons, to ensure that your browser is not being "
-#~ "hijacked by third parties."
-
-#~ msgid ""
-#~ "If you have configured your browser to disable “Referer” headers, please "
-#~ "re-enable them, at least for this site, or for HTTPS connections, or for "
-#~ "“same-origin” requests."
-#~ msgstr ""
-#~ "If you have configured your browser to disable “Referer” headers, please "
-#~ "re-enable them, at least for this site, or for HTTPS connections, or for "
-#~ "“same-origin” requests."
-
-#~ msgid ""
-#~ "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag "
-#~ "or including the “Referrer-Policy: no-referrer” header, please remove "
-#~ "them. The CSRF protection requires the “Referer” header to do strict "
-#~ "referer checking. If you’re concerned about privacy, use alternatives "
-#~ "like <a rel=\"noreferrer\" …> for links to third-party sites."
-#~ msgstr ""
-#~ "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag "
-#~ "or including the “Referrer-Policy: no-referrer” header, please remove "
-#~ "them. The CSRF protection requires the “Referer” header to do strict "
-#~ "referer checking. If you’re concerned about privacy, use alternatives "
-#~ "like <a rel=\"noreferrer\" …> for links to third-party sites."
-
-#~ msgid ""
-#~ "You are seeing this message because this site requires a CSRF cookie when "
-#~ "submitting forms. This cookie is required for security reasons, to ensure "
-#~ "that your browser is not being hijacked by third parties."
-#~ msgstr ""
-#~ "You are seeing this message because this site requires a CSRF cookie when "
-#~ "submitting forms. This cookie is required for security reasons, to ensure "
-#~ "that your browser is not being hijacked by third parties."
-
-#~ msgid ""
-#~ "If you have configured your browser to disable cookies, please re-enable "
-#~ "them, at least for this site, or for “same-origin” requests."
-#~ msgstr ""
-#~ "If you have configured your browser to disable cookies, please re-enable "
-#~ "them, at least for this site, or for “same-origin” requests."
-
-#~ msgid "More information is available with DEBUG=True."
-#~ msgstr "More information is available with DEBUG=True."
-
-#~ msgid "No year specified"
-#~ msgstr "No year specified"
-
-#~ msgid "Date out of range"
-#~ msgstr "Date out of range"
-
-#~ msgid "No month specified"
-#~ msgstr "No month specified"
-
-#~ msgid "No day specified"
-#~ msgstr "No day specified"
-
-#~ msgid "No week specified"
-#~ msgstr "No week specified"
-
-#, python-format
-#~ msgid "No %(verbose_name_plural)s available"
-#~ msgstr "No %(verbose_name_plural)s available"
-
-#, python-format
-#~ msgid ""
-#~ "Future %(verbose_name_plural)s not available because "
-#~ "%(class_name)s.allow_future is False."
-#~ msgstr ""
-#~ "Future %(verbose_name_plural)s not available because "
-#~ "%(class_name)s.allow_future is False."
-
-#, python-format
-#~ msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
-#~ msgstr "Invalid date string “%(datestr)s” given format “%(format)s”"
-
-#, python-format
-#~ msgid "No %(verbose_name)s found matching the query"
-#~ msgstr "No %(verbose_name)s found matching the query"
-
-#~ msgid "Page is not “last”, nor can it be converted to an int."
-#~ msgstr "Page is not “last”, nor can it be converted to an int."
-
-#, python-format
-#~ msgid "Invalid page (%(page_number)s): %(message)s"
-#~ msgstr "Invalid page (%(page_number)s): %(message)s"
-
-#, python-format
-#~ msgid "Empty list and “%(class_name)s.allow_empty” is False."
-#~ msgstr "Empty list and “%(class_name)s.allow_empty” is False."
-
-#~ msgid "Directory indexes are not allowed here."
-#~ msgstr "Directory indexes are not allowed here."
-
-#, python-format
-#~ msgid "“%(path)s” does not exist"
-#~ msgstr "“%(path)s” does not exist"
-
-#, python-format
-#~ msgid "Index of %(directory)s"
-#~ msgstr "Index of %(directory)s"
-
-#~ msgid "The install worked successfully! Congratulations!"
-#~ msgstr "The install worked successfully! Congratulations!"
-
-#, python-format
-#~ msgid ""
-#~ "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
-#~ "target=\"_blank\" rel=\"noopener\">release notes</a> for Django "
-#~ "%(version)s"
-#~ msgstr ""
-#~ "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
-#~ "target=\"_blank\" rel=\"noopener\">release notes</a> for Django "
-#~ "%(version)s"
-
-#, python-format
-#~ msgid ""
-#~ "You are seeing this page because <a href=\"https://docs.djangoproject.com/"
-#~ "en/%(version)s/ref/settings/#debug\" target=\"_blank\" "
-#~ "rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-#~ "configured any URLs."
-#~ msgstr ""
-#~ "You are seeing this page because <a href=\"https://docs.djangoproject.com/"
-#~ "en/%(version)s/ref/settings/#debug\" target=\"_blank\" "
-#~ "rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-#~ "configured any URLs."
-
-#~ msgid "Django Documentation"
-#~ msgstr "Django Documentation"
-
-#~ msgid "Topics, references, &amp; how-to’s"
-#~ msgstr "Topics, references, &amp; how-to’s"
-
-#~ msgid "Tutorial: A Polling App"
-#~ msgstr "Tutorial: A Polling App"
-
-#~ msgid "Get started with Django"
-#~ msgstr "Get started with Django"
-
-#~ msgid "Django Community"
-#~ msgstr "Django Community"
-
-#~ msgid "Connect, get help, or contribute"
-#~ msgstr "Connect, get help, or contribute"
+msgstr ""
+"Fale agora y receba orientaÃ§Ã£o jurÃ­dica estratÃ©gica em SÃ£o JosÃ© y regiÃ£o."

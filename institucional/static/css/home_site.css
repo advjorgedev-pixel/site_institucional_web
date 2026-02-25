@@ -145,6 +145,23 @@
     color: var(--color-white);
 }
 
+#areas .card-base{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+#areas .area-text{
+    flex: 1 1 auto;
+}
+
+#areas .area-link{
+    margin-top: auto;
+}
+
 .about-photo {
     max-width: 350px;
     margin: 0 auto;
