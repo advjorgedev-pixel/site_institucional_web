@@ -6,6 +6,11 @@ from django.conf.urls.i18n import i18n_patterns
 from django.contrib.sitemaps.views import sitemap
 from django.views.generic import TemplateView
 from institucional.sitemap import StaticViewMultilangSitemap, BlogPostMultilangSitemap
+from django.conf.urls import handler404, handler500, handler403
+
+handler404 = "django.views.defaults.page_not_found"
+handler500 = "django.views.defaults.server_error"
+handler403 = "django.views.defaults.permission_denied"
 
 
 sitemaps = {
