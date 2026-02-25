@@ -1,0 +1,87 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "{{ request.build_absolute_uri }}#collectionpage",
+      "url": "{{ request.build_absolute_uri }}",
+      "name": "{% filter escapejs %}{% trans 'Blog Jurídico em São José SC | Direito Bancário, Previdenciário e Sucessões' %}{% endfilter %}",
+      "description": "{% filter escapejs %}{% trans 'Artigos jurídicos em São José - SC sobre Direito Bancário, Previdenciário e Sucessões. Conteúdo claro para orientar você sobre seus direitos.' %}{% endfilter %}",
+      "inLanguage": "{{ CURRENT_LANG }}",
+      "isPartOf": { "@id": "{{ request.scheme }}://{{ request.get_host }}#website" },
+      "about": { "@id": "{{ request.scheme }}://{{ request.get_host }}#legalservice" },
+      "mainEntity": { "@id": "{{ request.build_absolute_uri }}#itemlist" }
+    },
+
+    {
+      "@type": "Blog",
+      "@id": "{{ request.build_absolute_uri }}#blog",
+      "name": "{% filter escapejs %}{% trans 'Blog Jurídico' %}{% endfilter %}",
+      "url": "{{ request.build_absolute_uri }}",
+      "inLanguage": "{{ CURRENT_LANG }}",
+      "publisher": { "@id": "{{ request.scheme }}://{{ request.get_host }}#legalservice" }
+    },
+
+    {
+      "@type": "ItemList",
+      "@id": "{{ request.build_absolute_uri }}#itemlist",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": {{ posts|length }},
+      "itemListElement": [
+        {% for post in posts %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.counter }},
+          "url": "{{ request.scheme }}://{{ request.get_host }}{{ post.get_absolute_url }}",
+          "item": {
+            "@type": "BlogPosting",
+            "@id": "{{ request.scheme }}://{{ request.get_host }}{{ post.get_absolute_url }}#blogposting",
+            "mainEntityOfPage": "{{ request.scheme }}://{{ request.get_host }}{{ post.get_absolute_url }}",
+            "headline": "{% filter escapejs %}{% if CURRENT_LANG == 'es' and post.title_es %}{{ post.title_es }}{% else %}{{ post.title_pt }}{% endif %}{% endfilter %}",
+            {% if CURRENT_LANG == "es" and post.summary_es %}
+            "description": "{% filter escapejs %}{{ post.summary_es }}{% endfilter %}",
+            {% elif post.summary_pt %}
+            "description": "{% filter escapejs %}{{ post.summary_pt }}{% endfilter %}",
+            {% endif %}
+            "datePublished": "{% if post.published_at %}{{ post.published_at|date:'c' }}{% endif %}",
+            "inLanguage": "{{ CURRENT_LANG }}",
+            "author": { "@id": "{{ request.scheme }}://{{ request.get_host }}#person" },
+            "publisher": { "@id": "{{ request.scheme }}://{{ request.get_host }}#legalservice" }
+            {% if post.cover %}
+            ,"image": "{{ request.scheme }}://{{ request.get_host }}{{ post.cover.url }}"
+            {% endif %}
+            {% if post.area %}
+            ,"articleSection": "{% filter escapejs %}{{ post.area.name }}{% endfilter %}"
+            {% endif %}
+          }
+        }{% if not forloop.last %},{% endif %}
+        {% endfor %}
+      ]
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ request.build_absolute_uri }}#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "{% filter escapejs %}{% trans 'Início' %}{% endfilter %}",
+          "item": "{{ request.scheme }}://{{ request.get_host }}{% url 'home' %}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{% filter escapejs %}{% trans 'Blog' %}{% endfilter %}",
+          "item": "{{ request.build_absolute_uri }}"
+        }
+      ]
+    }
+  ]
+}
+</script>

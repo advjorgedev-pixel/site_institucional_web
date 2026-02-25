@@ -1,0 +1,109 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ request.build_absolute_uri }}#webpage",
+      "url": "{{ request.build_absolute_uri }}",
+      "name": "{% filter escapejs %}{{ meta_title }}{% endfilter %}",
+      {% if meta_description %}
+      "description": "{% filter escapejs %}{{ meta_description }}{% endfilter %}",
+      {% endif %}
+      "inLanguage": "{{ CURRENT_LANG }}",
+      "isPartOf": { "@id": "{{ request.scheme }}://{{ request.get_host }}#website" },
+      "about": { "@id": "{{ request.scheme }}://{{ request.get_host }}#legalservice" },
+      "mainEntity": { "@id": "{{ request.build_absolute_uri }}#blogposting" }
+    },
+
+    {
+      "@type": "BlogPosting",
+      "@id": "{{ request.build_absolute_uri }}#blogposting",
+      "mainEntityOfPage": "{{ request.build_absolute_uri }}",
+      "headline": "{% filter escapejs %}{{ post_title }}{% endfilter %}",
+      {% if post_summary %}
+      "description": "{% filter escapejs %}{{ post_summary }}{% endfilter %}",
+      {% endif %}
+      {% if post.published_at %}
+      "datePublished": "{{ post.published_at|date:'c' }}",
+      {% endif %}
+      {% if post.updated_at %}
+      "dateModified": "{{ post.updated_at|date:'c' }}",
+      {% elif post.modified_at %}
+      "dateModified": "{{ post.modified_at|date:'c' }}",
+      {% endif %}
+      "inLanguage": "{{ CURRENT_LANG }}",
+      "author": {
+        "@type": "Person",
+        "name": "{% if post.created_by %}{% filter escapejs %}{{ post.created_by.get_full_name|default:post.created_by.username }}{% endfilter %}{% else %}{% filter escapejs %}{% trans 'Jorge R. Sarobe' %}{% endfilter %}{% endif %}"
+      },
+      "publisher": { "@id": "{{ request.scheme }}://{{ request.get_host }}#legalservice" }
+      {% if post.cover %}
+      ,"image": {
+        "@type": "ImageObject",
+        "url": "{{ request.scheme }}://{{ request.get_host }}{{ post.cover.url }}"
+      }
+      {% endif %}
+      {% if post.area %}
+      ,"articleSection": "{% filter escapejs %}{{ post.area.name }}{% endfilter %}"
+      {% endif %}
+      {% if post.tags.all %}
+      ,"keywords": [
+        {% for tag in post.tags.all %}
+          "{% filter escapejs %}{{ tag.name }}{% endfilter %}"{% if not forloop.last %},{% endif %}
+        {% endfor %}
+      ]
+      {% endif %}
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ request.build_absolute_uri }}#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "{% filter escapejs %}{% trans 'Início' %}{% endfilter %}",
+          "item": "{{ request.scheme }}://{{ request.get_host }}{% url 'home' %}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{% filter escapejs %}{% trans 'Blog' %}{% endfilter %}",
+          "item": "{{ request.scheme }}://{{ request.get_host }}{% url 'blog_list' %}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{% filter escapejs %}{{ post_title }}{% endfilter %}",
+          "item": "{{ request.build_absolute_uri }}"
+        }
+      ]
+    }
+
+    {% if related_posts %}
+    ,
+    {
+      "@type": "ItemList",
+      "@id": "{{ request.build_absolute_uri }}#related",
+      "name": "{% filter escapejs %}{% trans 'Conteúdos relacionados' %}{% endfilter %}",
+      "itemListOrder": "https://schema.org/ItemListOrderUnordered",
+      "numberOfItems": {{ related_posts|length }},
+      "itemListElement": [
+        {% for item in related_posts %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.counter }},
+          "url": "{{ request.scheme }}://{{ request.get_host }}{{ item.get_absolute_url }}"
+        }{% if not forloop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+    {% endif %}
+  ]
+}
+</script>

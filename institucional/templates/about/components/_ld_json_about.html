@@ -1,0 +1,88 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "{{ request.build_absolute_uri }}#aboutpage",
+      "url": "{{ request.build_absolute_uri }}",
+      "name": "{% filter escapejs %}{% trans 'Advogado em São José SC | Jorge R. Sarobe - Direito Bancário, Previdenciário e Sucessões' %}{% endfilter %}",
+      "description": "{% filter escapejs %}{% trans 'Conheça Jorge R. Sarobe, advogado em São José - SC, com atuação em Direito Bancário, Previdenciário e Sucessões. Atendimento estratégico, direto e personalizado.' %}{% endfilter %}",
+      "inLanguage": "{{ CURRENT_LANG }}",
+      "mainEntity": { "@id": "{{ request.build_absolute_uri }}#person" },
+      "about": { "@id": "{{ request.build_absolute_uri }}#legalservice" }
+    },
+
+    {
+      "@type": "LegalService",
+      "@id": "{{ request.build_absolute_uri }}#legalservice",
+      "name": "{% filter escapejs %}{% trans 'Jorge R. Sarobe - Advogado em São José SC' %}{% endfilter %}",
+      "url": "{{ request.build_absolute_uri }}",
+      "image": "{{ request.scheme }}://{{ request.get_host }}{% static 'img/photos/jorge_sem_fundo.webp' %}",
+      "telephone": "+55-48-98836-6235",
+      "email": "jrsarobe@gmail.com",
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "City",
+        "name": "São José",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São José",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "serviceOffered": [
+        { "@type": "Service", "name": "{% filter escapejs %}{% trans 'Direito Bancário' %}{% endfilter %}" },
+        { "@type": "Service", "name": "{% filter escapejs %}{% trans 'Direito Previdenciário' %}{% endfilter %}" },
+        { "@type": "Service", "name": "{% filter escapejs %}{% trans 'Sucessões' %}{% endfilter %}" }
+      ]
+    },
+
+    {
+      "@type": "Person",
+      "@id": "{{ request.build_absolute_uri }}#person",
+      "name": "Jorge R. Sarobe",
+      "jobTitle": "{% filter escapejs %}{% trans 'Advogado' %}{% endfilter %}",
+      "image": "{{ request.scheme }}://{{ request.get_host }}{% static 'img/photos/jorge_sem_fundo.webp' %}",
+      "worksFor": { "@id": "{{ request.build_absolute_uri }}#legalservice" },
+      "knowsAbout": [
+        "{% filter escapejs %}{% trans 'Direito Bancário' %}{% endfilter %}",
+        "{% filter escapejs %}{% trans 'Direito Previdenciário' %}{% endfilter %}",
+        "{% filter escapejs %}{% trans 'Sucessões' %}{% endfilter %}"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São José",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      }
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ request.build_absolute_uri }}#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "{% filter escapejs %}{% trans 'Início' %}{% endfilter %}",
+          "item": "{{ request.scheme }}://{{ request.get_host }}{% url 'home' %}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{% filter escapejs %}{% trans 'Sobre' %}{% endfilter %}",
+          "item": "{{ request.build_absolute_uri }}"
+        }
+      ]
+    }
+  ]
+}
+</script>

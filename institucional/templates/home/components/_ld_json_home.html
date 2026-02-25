@@ -1,0 +1,153 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANG %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ request.build_absolute_uri }}#website",
+      "url": "{{ request.build_absolute_uri }}",
+      "name": "{% filter escapejs %}{% trans 'Jorge R. Sarobe - Advogado em São José SC' %}{% endfilter %}",
+      "inLanguage": "{{ CURRENT_LANG }}"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{ request.build_absolute_uri }}#webpage",
+      "url": "{{ request.build_absolute_uri }}",
+      "name": "{% filter escapejs %}{% trans 'Jorge R. Sarobe - Advogado em São José SC' %}{% endfilter %}",
+      "isPartOf": { "@id": "{{ request.build_absolute_uri }}#website" },
+      "inLanguage": "{{ CURRENT_LANG }}"
+    },
+    {
+      "@type": "LegalService",
+      "@id": "{{ request.build_absolute_uri }}#legalservice",
+      "name": "{% filter escapejs %}{% trans 'Jorge R. Sarobe - Advogado em São José SC' %}{% endfilter %}",
+      "url": "{{ request.build_absolute_uri }}",
+      "image": "{{ request.scheme }}://{{ request.get_host }}{% static 'img/photos/jorge_sem_fundo.webp' %}",
+      "description": "{% filter escapejs %}{% trans 'Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e Sucessões. Atendimento estratégico e personalizado.' %}{% endfilter %}",
+      "telephone": "+55-48-98836-6235",
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "City",
+        "name": "São José",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São José",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "serviceOffered": [
+        { "@type": "Service", "name": "{% filter escapejs %}{% trans 'Direito Bancário' %}{% endfilter %}" },
+        { "@type": "Service", "name": "{% filter escapejs %}{% trans 'Direito Previdenciário' %}{% endfilter %}" },
+        { "@type": "Service", "name": "{% filter escapejs %}{% trans 'Sucessões' %}{% endfilter %}" }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "30"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ request.build_absolute_uri }}#person",
+      "name": "Jorge R. Sarobe",
+      "jobTitle": "{% filter escapejs %}{% trans 'Advogado' %}{% endfilter %}",
+      "worksFor": { "@id": "{{ request.build_absolute_uri }}#legalservice" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "{{ request.build_absolute_uri }}#faq",
+      "isPartOf": { "@id": "{{ request.build_absolute_uri }}#webpage" },
+      "inLanguage": "{{ CURRENT_LANG }}",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'Como funciona a primeira consulta?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}Você apresenta sua situação e os documentos disponíveis. Eu avalio o cenário, explico possibilidades, riscos e próximos passos. Se fizer sentido, definimos a estratégia e a forma de condução do caso.{% endblocktrans %}{% endfilter %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'Quais documentos devo levar para a consulta?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}Depende do tema, mas geralmente ajudam: RG/CPF, comprovantes, contratos, extratos, comunicações do banco/INSS, e qualquer documento que comprove a situação. Se faltar algo, eu oriento o que solicitar depois.{% endblocktrans %}{% endfilter %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'O atendimento pode ser online?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}Sim. O atendimento online é possível para a maioria dos casos, com envio de documentos digitalizados e reunião por vídeo/WhatsApp. Quando necessário, alinhamos atendimento presencial.{% endblocktrans %}{% endfilter %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'Quanto tempo demora um processo?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}O prazo varia conforme o caso, a urgência, o volume de provas e a resposta da outra parte/órgão. Na consulta, eu estimarei cenários de tempo e as alternativas para buscar maior agilidade.{% endblocktrans %}{% endfilter %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'O que é preciso para revisar juros abusivos ou contratos bancários?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}Normalmente precisamos do contrato, demonstrativos, extratos, comprovantes de pagamento e eventuais renegociações. Com isso, é possível avaliar a legalidade de taxas e cláusulas.{% endblocktrans %}{% endfilter %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'Posso pedir benefício previdenciário mesmo após indeferimento?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}Sim. Dependendo do motivo do indeferimento, podemos recorrer administrativamente ou ingressar com ação. Avalio o fundamento, documentos, laudos e histórico contributivo para definir a melhor estratégia.{% endblocktrans %}{% endfilter %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'Como funciona inventário e partilha?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}O inventário organiza bens, dívidas e herdeiros para formalizar a partilha. Pode ser judicial ou em cartório, conforme requisitos. Eu conduzo o processo e indico a via mais adequada para o seu cenário.{% endblocktrans %}{% endfilter %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'Quando vale a pena fazer testamento?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}O testamento é útil para organizar a vontade, reduzir conflitos e dar previsibilidade. Ele não elimina regras legais, mas ajuda muito no planejamento sucessório. Eu explico opções e limites de forma clara.{% endblocktrans %}{% endfilter %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'Quais são as formas de honorários?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}Os honorários variam conforme complexidade, urgência e modelo de atuação (consultivo, administrativo ou judicial). Eu apresento a proposta com clareza e alinhamos tudo antes de iniciar.{% endblocktrans %}{% endfilter %}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "{% filter escapejs %}{% trans 'Como posso agendar e qual o prazo para retorno?' %}{% endfilter %}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{% filter escapejs %}{% blocktrans %}Você pode agendar pelo WhatsApp ou telefone. Normalmente retorno no mesmo dia útil, e em casos urgentes priorizo o atendimento conforme disponibilidade.{% endblocktrans %}{% endfilter %}"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
