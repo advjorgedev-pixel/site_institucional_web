@@ -2,7 +2,7 @@
 {% load i18n %}
 {% get_current_language as CURRENT_LANG %}
 
-<header class="site-header fixed-top">
+<header id="siteHeader" class="site-header fixed-top">
     <nav class="navbar navbar-expand-md navbar-dark header-navbar">
         <div class="container">
             <!-- Logo -->
@@ -26,7 +26,7 @@
             </button>
 
             <!-- Menu (desktop + mobile) -->
-            <div class="collapse navbar-collapse justify-content-end text-center header-collapse" id="mainNavbar">
+            <div class="collapse navbar-collapse justify-content-end text-center header-collapse" id="mainNavbar" hidden>
                 {% with current=request.resolver_match.url_name %}
                 <ul class="navbar-nav align-items-md-center gap-md-3">
                     <li class="nav-item">

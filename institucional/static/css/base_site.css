@@ -34,7 +34,7 @@
 
     --color-gold-300: #F2D680;
     --color-gold-500: #BF9F63;
-    --color-gold-700: #8C6D46;
+    --color-gold-700: #8d6e47;
 
     /* Neutrals */
     --color-white: #FFFFFF;
@@ -274,7 +274,7 @@ p {
 
 /* titulos e sub titulos */
 .section-kicker {
-    color: var(--color-gold-700);
+    color: var(--color-gold-500);
     letter-spacing: .12em;
     font-weight: 700;
     text-transform: uppercase;

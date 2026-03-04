@@ -38,8 +38,9 @@
 
     const setCollapseState = (collapseEl, expanded) => {
         if (!collapseEl) return;
+
         collapseEl.classList.toggle("show", expanded);
-        collapseEl.setAttribute("aria-hidden", expanded ? "false" : "true");
+
         if (expanded) {
             collapseEl.removeAttribute("hidden");
         } else {
