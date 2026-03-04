@@ -54,7 +54,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,8 +127,27 @@ SESSION_COOKIE_AGE = env.int('SESSION_COOKIE_AGE')
 SESSION_SAVE_EVERY_REQUEST = env.bool('SESSION_SAVE_EVERY_REQUEST') 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = env.bool('SESSION_EXPIRE_AT_BROWSER_CLOSE') 
 
+
+if not DEBUG:
+    #Https settings
+    SECURE_SSL_REDIRECT = True
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    CSRF_TRUSTED_ORIGINS = env.list("CSRF_TRUSTED_ORIGINS", default=[])
+
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    SECURE_REFERRER_POLICY = "same-origin"
+    X_FRAME_OPTIONS = "DENY"
+
+AXES_FAILURE_LIMIT = env.int('AXES_FAILURE_LIMIT')
+AXES_COOLOFF_TIME = env.int('AXES_COOLOFF_TIME')
+AXES_LOCKOUT_TEMPLATE = '403.html'
+
+
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 STATICFILES_FINDERS = [
@@ -142,11 +161,18 @@ COMPRESS_OFFLINE = not DEBUG
 COMPRESS_URL = STATIC_URL
 COMPRESS_ROOT = STATIC_ROOT
 
+COMPRESS_TEMPLATES = [os.path.join(BASE_DIR, "templates")]
+COMPRESS_OFFLINE_IGNORE_PATTERNS = [
+    r".*/admin/.*",
+    r"^admin/.*",
+]
 
-AXES_FAILURE_LIMIT = env.int('AXES_FAILURE_LIMIT')
-AXES_COOLOFF_TIME = env.int('AXES_COOLOFF_TIME')
-AXES_LOCKOUT_TEMPLATE = '403.html'
+COMPRESS_OFFLINE_CONTEXT = [
+    {"STATIC_URL": STATIC_URL}
+]
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
