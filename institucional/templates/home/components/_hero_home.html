@@ -2,7 +2,12 @@
 {% load i18n %}
 
 {% block content %}
-<section class="hero-home py-5" style="--hero-bg: url('{% static 'img/photos/jorge_com_ fundo.webp' %}');">
+<section class="hero-home py-5">
+    <div class="hero-home__bg" aria-hidden="true">
+        <img src="{% static 'img/photos/jorge_com_fundo.webp' %}" alt="" loading="eager" decoding="async"
+            fetchpriority="high">
+    </div>
+
     <div class="container-custom h-100">
         <div class="row g-0 h-100 align-items-end align-items-lg-center">
             <div class="col-12 col-lg-7">

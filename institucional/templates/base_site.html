@@ -2,6 +2,7 @@
 {% load i18n %}
 {% load seo_i18n %}
 {% load compress %}
+{% load static compress %}
 {% load seo_i18n %}
 {% get_current_language as CURRENT_LANG %}
 
@@ -27,15 +28,17 @@
     {% block ld_json %}
     {% endblock %}
 
-    {% compress css %}
-    <!-- Bootstrap grid -->
+    {% compress css inline %}
     <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
-    <!-- CSS base global (cores + tipografia) -->
     <link rel="stylesheet" href="{% static 'css/base_site.css' %}">
-    <!-- AOS -->
-    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
     {% block styles %}{% endblock %}
     {% endcompress %}
+
+    <link rel="preload" as="style" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    </noscript>
 
 </head>
 
