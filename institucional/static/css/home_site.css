@@ -76,7 +76,7 @@
 
 @media (max-width: 991.98px) {
     .hero-home__bg img {
-        background-position: 72% 20%;
+        object-position: 90% 20%;
     }
 
     .hero-home::after {
