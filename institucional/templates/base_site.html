@@ -18,6 +18,11 @@
 
     <link rel="icon" href="{% static 'img//icon/logo_icon.ico' %}" type="image/x-icon">
 
+    <!-- fonts -->
+    <link rel="preload" href="{% static 'fonts/Manrope-VariableFont_wght.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/CormorantGaramond-VariableFont_wght.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/CormorantGaramond-Italic-VariableFont_wght.woff2' %}" as="font" type="font/woff2" crossorigin>
+
     <!-- canonical e alternate -->
     <link rel="canonical" href="{{ request.build_absolute_uri }}">
     <link rel="alternate" hreflang="pt-br" href="{% hreflang_url 'pt-br' %}">

@@ -38,14 +38,7 @@
 
     const setCollapseState = (collapseEl, expanded) => {
         if (!collapseEl) return;
-
         collapseEl.classList.toggle("show", expanded);
-
-        if (expanded) {
-            collapseEl.removeAttribute("hidden");
-        } else {
-            collapseEl.setAttribute("hidden", "");
-        }
     };
 
     const closeCollapseSiblings = (collapseEl) => {
