@@ -13,15 +13,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {% if IS_PROD and GTM_ID %}
+    <script>
+        window.__GTM_ID__ = "{{ GTM_ID|escapejs }}";
+    </script>
+    {% endif %}
+
     {% block info %}
     {% endblock %}
 
     <link rel="icon" href="{% static 'img//icon/logo_icon.ico' %}" type="image/x-icon">
-
-    <!-- fonts -->
-    <link rel="preload" href="{% static 'fonts/Manrope-VariableFont_wght.woff2' %}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{% static 'fonts/CormorantGaramond-VariableFont_wght.woff2' %}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{% static 'fonts/CormorantGaramond-Italic-VariableFont_wght.woff2' %}" as="font" type="font/woff2" crossorigin>
 
     <!-- canonical e alternate -->
     <link rel="canonical" href="{{ request.build_absolute_uri }}">
@@ -50,6 +51,7 @@
 <body class="d-flex flex-column min-vh-100 {% block body_class %}{% endblock %}">
 
     {% include 'components/_header.html' %}
+    {% include 'components/_cookie_banner.html' %}
     <main class="flex-grow-1 ">
         {% block content %}
         {% endblock %}

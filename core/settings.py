@@ -13,13 +13,14 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
-DEBUG = env('DEBUG')
+DEBUG = env.bool("DEBUG", default=False)
 
 SECRET_KEY = env('SECRET_KEY')
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
-
+IS_PROD = not DEBUG
+GTM_ID = os.getenv("GTM_ID", "")
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -61,6 +62,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                "institucional.context_processors.env_flags",
             ],
         },
     },

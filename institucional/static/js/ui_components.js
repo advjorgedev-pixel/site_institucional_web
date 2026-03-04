@@ -204,3 +204,92 @@
 
     initCollapseState();
 })();
+
+// ======================================================================
+// Cookies (consent) + GTM (carrega somente após aceite)
+// ======================================================================
+
+const CONSENT_KEY = "cookie_consent_v1"; // versiona se mudar regra
+
+function hasCookieConsent() {
+    try {
+        return localStorage.getItem(CONSENT_KEY) === "accepted";
+    } catch (_) {
+        return false;
+    }
+}
+
+function setCookieConsent() {
+    try {
+        localStorage.setItem(CONSENT_KEY, "accepted");
+    } catch (_) {
+        // sem storage (ex: modo restrito) => não quebra
+    }
+}
+
+function loadGTM() {
+    const gtmId = window.__GTM_ID__;
+    if (!gtmId) return;
+
+    // evita duplicar
+    if (window.__GTM_LOADED__) return;
+    window.__GTM_LOADED__ = true;
+
+    // dataLayer
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+
+    // injeta o script (equivalente ao snippet do Google)
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(gtmId)}`;
+    document.head.appendChild(script);
+}
+
+function setupCookieBanner() {
+    const banner = document.getElementById("cookieBanner");
+    const acceptBtn = document.getElementById("cookieAcceptBtn");
+    if (!banner || !acceptBtn) return;
+
+    const backdrop = banner.querySelector('[data-cookie-close="true"]');
+    const panel = banner.querySelector(".cookie-banner__panel");
+
+    const openBanner = () => {
+        banner.hidden = false;
+        document.body.classList.add("cookie-banner-open");
+        panel?.focus?.();
+    };
+
+    const closeBanner = () => {
+        banner.hidden = true;
+        document.body.classList.remove("cookie-banner-open");
+    };
+
+    // já aceitou: não mostra e carrega GTM
+    if (hasCookieConsent()) {
+        closeBanner();
+        loadGTM();
+        return;
+    }
+
+    // não aceitou: mostra (e NÃO carrega GTM)
+    openBanner();
+
+    // fechar clicando fora (sem aceitar)
+    backdrop?.addEventListener("click", closeBanner);
+
+    // fechar com ESC (sem aceitar)
+    const onKeyDown = (e) => {
+        if (e.key === "Escape") closeBanner();
+    };
+    document.addEventListener("keydown", onKeyDown, { passive: true });
+
+    // aceitar => salva + carrega GTM
+    acceptBtn.addEventListener("click", () => {
+        setCookieConsent();
+        closeBanner();
+        loadGTM();
+    });
+}
+
+setupCookieBanner();
