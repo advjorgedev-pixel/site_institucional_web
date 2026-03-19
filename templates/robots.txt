@@ -1,4 +1,7 @@
 User-agent: *
+Disallow: /admin/
+Disallow: /static/
+Disallow: /media/
 Allow: /
 
 Sitemap: {{ request.scheme }}://{{ request.get_host }}/sitemap.xml
