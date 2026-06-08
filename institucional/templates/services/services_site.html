@@ -4,8 +4,8 @@
 {% get_current_language as CURRENT_LANG %}
 
 {% block info %}
-<title>{% translate "Advogado em São José SC | Direito Bancário, Previdenciário e Sucessões" %}</title>
-<meta name="description" content="{% translate 'Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e Sucessões. Atendimento estratégico, personalizado e focado em resultado.' %}">
+<title>{% translate "Advogado em São José SC | Bancário, Previdenciário, Sucessões e Migratório" %}</title>
+<meta name="description" content="{% translate 'Advogado em São José - SC com atuação em Direito Bancário, Previdenciário, Sucessões e Direito Migratório para residência e naturalização no Brasil.' %}">
 {% endblock %}
 
 {% block styles %}
@@ -13,13 +13,14 @@
 {% endblock %}
 
 {% block ld_json %}
+{% include 'json/_ld_json_services.html' %}
 {% endblock %}
 
 
 {% block content %}
 {% translate "Áreas de Atuação" as heromintitle %}
 {% translate "Advocacia estratégica em São José - SC" as heroTitle %}
-{% translate "Atuação em Direito Bancário, Previdenciário e Sucessões, com atendimento direto, análise técnica e soluções jurídicas personalizadas em São José e região." as heroText %}
+{% translate "Atuação em Direito Bancário, Previdenciário, Sucessões e Direito Migratório, incluindo residência no Brasil e naturalização brasileira, com atendimento direto e análise técnica." as heroText %}
 {% include 'components/_hero.html' %}
 
 <section id="services" class="py-5">
@@ -397,6 +398,277 @@
                 </div>
             </div>
         </article>
+
+        <article data-aos="fade-up" class="mt-5 mt-lg-0" id="residencia-brasil">
+            <div class="row g-4 g-lg-5 align-items-center">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="practice-cards">
+                        <div class="card-base">
+                            <p class="practice-card-title">{% trans "Como posso ajudar" %}</p>
+
+                            <ul class="practice-list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Análise da categoria adequada de autorização de residência" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Orientação sobre visto prévio ou pedido direto no Brasil" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Organização de documentos estrangeiros legalizados ou apostilados" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Orientação sobre tradução pública juramentada para o português" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Protocolo e acompanhamento perante a Polícia Federal" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Regularização migratória para viver, trabalhar, estudar ou formar família no Brasil" %}
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-base">
+                            <div class="practice-card-head">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                    class="bi bi-file-earmark-text" aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                                    <path
+                                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                </svg>
+                                <p class="practice-card-title mb-0">{% trans "Documentos úteis" %}</p>
+                            </div>
+
+                            <ul class="practice-list practice-list--muted">
+                                <li>{% trans "Passaporte ou documento de identidade" %}</li>
+                                <li>{% trans "Certidão de nascimento ou casamento" %}</li>
+                                <li>{% trans "Antecedentes criminais" %}</li>
+                                <li>{% trans "Comprovante de vínculo familiar, profissional, acadêmico ou financeiro" %}</li>
+                                <li>{% trans "Formulário da Polícia Federal" %}</li>
+                                <li>{% trans "Traduções juramentadas, quando exigidas" %}</li>
+                            </ul>
+
+                            <small class="practice-note">
+                                {% blocktrans %}* O prazo pode variar conforme a categoria e a localidade de protocolo. Em geral, a análise pode levar de 30 a 180 dias.{% endblocktrans %}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 order-1 order-lg-2 text-center text-lg-start">
+                    <div class="card-icon card-service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-house-door" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <path
+                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 2 8h1v6a1 1 0 0 0 1 1h3.5a.5.5 0 0 0 .5-.5V11h1v3.5a.5.5 0 0 0 .5.5H13a1 1 0 0 0 1-1V8h1a.5.5 0 0 0 .354-.854zM13 7.793V14h-3v-3.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5V14H4V7.793l4-4z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="practice-title">{% trans "Tramitação de Residência no Brasil" %}</h3>
+                    <p class="practice-text">
+                        {% blocktrans %}Estrangeiros que desejam viver legalmente no Brasil por mais de 90 dias precisam solicitar autorização de residência, com documentos regularizados, tradução juramentada quando necessária e atenção aos critérios da Lei de Migração.{% endblocktrans %}
+                    </p>
+
+                    <a href="https://wa.me/5548988366235?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20sobre%20Resid%C3%AAncia%20no%20Brasil.%20Meu%20caso%20envolve%3A%20%28casamento%2Festudo%2Ftrabalho%2Finvestimento%2Fref%C3%BAgio%2Foutro%29.%20Pode%20me%20orientar%20sobre%20documentos%20e%20pr%C3%B3ximos%20passos%3F"
+                        class="btn-primary mt-2" target="_blank" rel="noopener"
+                        aria-label="Agendar consulta no WhatsApp — Tramitação de Residência no Brasil">
+                        {% trans "Agendar Consulta nesta Área" %}
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article data-aos="fade-up" class="mt-5 mt-lg-0" id="naturalizacao-brasileira">
+            <div class="row g-4 g-lg-5 align-items-center">
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <div class="card-icon card-service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-person-check" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <path
+                                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493a.5.5 0 0 1 .707.707l-2.25 2.25a.5.5 0 0 1-.707 0l-1-1a.5.5 0 0 1 .707-.707l.646.647z" />
+                            <path
+                                d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                            <path
+                                d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="practice-title">{% trans "Tramitação de Naturalização Brasileira" %}</h3>
+                    <p class="practice-text">
+                        {% blocktrans %}A naturalização brasileira é o procedimento pelo qual o estrangeiro pode adquirir a nacionalidade brasileira, observando a Constituição Federal, a Lei de Migração e os requisitos de cada modalidade.{% endblocktrans %}
+                    </p>
+
+                    <a href="https://wa.me/5548988366235?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20sobre%20Naturaliza%C3%A7%C3%A3o%20Brasileira.%20Quero%20entender%20qual%20modalidade%20se%20aplica%20ao%20meu%20caso%20e%20quais%20documentos%20devo%20separar."
+                        class="btn-primary mt-2" target="_blank" rel="noopener"
+                        aria-label="Agendar consulta no WhatsApp — Tramitação de Naturalização Brasileira">
+                        {% trans "Agendar Consulta nesta Área" %}
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="practice-cards">
+                        <div class="card-base">
+                            <p class="practice-card-title">{% trans "Modalidades e requisitos" %}</p>
+
+                            <ul class="practice-list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Naturalização ordinária, com análise do tempo de residência e demais requisitos" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Naturalização extraordinária para residência prolongada no Brasil" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Naturalização especial em situações previstas na legislação migratória" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Naturalização provisória para estrangeiros que chegaram ao Brasil ainda crianças" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Análise de redução de prazo por casamento, filho brasileiro ou outras hipóteses legais" %}
+                                </li>
+
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2-circle" viewBox="0 0 16 16" aria-hidden="true"
+                                        focusable="false">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                    </svg>
+                                    {% trans "Preparação e acompanhamento do pedido de nacionalidade brasileira" %}
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-base">
+                            <div class="practice-card-head">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                    class="bi bi-file-earmark-text" aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                                    <path
+                                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                </svg>
+                                <p class="practice-card-title mb-0">{% trans "Documentos úteis" %}</p>
+                            </div>
+
+                            <ul class="practice-list practice-list--muted">
+                                <li>{% trans "Documento de identificação e registro migratório" %}</li>
+                                <li>{% trans "Comprovantes de residência no Brasil" %}</li>
+                                <li>{% trans "Certidões e antecedentes criminais" %}</li>
+                                <li>{% trans "Comprovantes de vínculo familiar, quando aplicável" %}</li>
+                                <li>{% trans "Documentos que comprovem comunicação em português, quando exigido" %}</li>
+                                <li>{% trans "Certidões estrangeiras traduzidas por tradutor público juramentado, quando necessário" %}</li>
+                            </ul>
+
+                            <small class="practice-note">
+                                {% blocktrans %}* Esta é uma lista geral. A documentação e os requisitos podem variar conforme a modalidade de naturalização e o histórico migratório do requerente.{% endblocktrans %}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
 
     </div>
 </section>
