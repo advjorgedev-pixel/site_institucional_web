@@ -8,63 +8,178 @@
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "{{ request.build_absolute_uri }}#website",
-      "url": "{{ request.build_absolute_uri }}",
+      "@id": "{{ request.scheme|escapejs }}://{{ request.get_host|escapejs }}/#website",
+      "url": "{{ request.scheme|escapejs }}://{{ request.get_host|escapejs }}/",
       "name": "{% filter escapejs %}{% trans 'Jorge R. Sarobe - Advogado em São José SC' %}{% endfilter %}",
-      "inLanguage": "{{ CURRENT_LANG }}"
+      "inLanguage": "{{ CURRENT_LANG|escapejs }}"
     },
     {
       "@type": "WebPage",
-      "@id": "{{ request.build_absolute_uri }}#webpage",
-      "url": "{{ request.build_absolute_uri }}",
-      "name": "{% filter escapejs %}{% trans 'Jorge R. Sarobe - Advogado em São José SC' %}{% endfilter %}",
-      "isPartOf": { "@id": "{{ request.build_absolute_uri }}#website" },
-      "inLanguage": "{{ CURRENT_LANG }}"
+      "@id": "{{ request.build_absolute_uri|escapejs }}#webpage",
+      "url": "{{ request.build_absolute_uri|escapejs }}",
+      "name": "{% filter escapejs %}{% trans 'Advogado em São José SC | Bancário, Previdenciário, Sucessões e Migratório' %}{% endfilter %}",
+      "description": "{% filter escapejs %}{% trans 'Advogado em São José - SC com atuação em Direito Bancário, Previdenciário, Sucessões e Direito Migratório, incluindo residência no Brasil e naturalização brasileira.' %}{% endfilter %}",
+      "isPartOf": { "@id": "{{ request.scheme|escapejs }}://{{ request.get_host|escapejs }}/#website" },
+      "about": { "@id": "{{ request.build_absolute_uri|escapejs }}#legalservice" },
+      "mainEntity": [
+        { "@id": "{{ request.build_absolute_uri|escapejs }}#legalservice" },
+        { "@id": "{{ request.build_absolute_uri|escapejs }}#areas-list" },
+        { "@id": "{{ request.build_absolute_uri|escapejs }}#faq" }
+      ],
+      "inLanguage": "{{ CURRENT_LANG|escapejs }}"
     },
     {
       "@type": "LegalService",
-      "@id": "{{ request.build_absolute_uri }}#legalservice",
+      "@id": "{{ request.build_absolute_uri|escapejs }}#legalservice",
       "name": "{% filter escapejs %}{% trans 'Jorge R. Sarobe - Advogado em São José SC' %}{% endfilter %}",
-      "url": "{{ request.build_absolute_uri }}",
-      "image": "{{ request.scheme }}://{{ request.get_host }}{% static 'img/photos/jorge_sem_fundo.webp' %}",
-      "description": "{% filter escapejs %}{% trans 'Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e Sucessões. Atendimento estratégico e personalizado.' %}{% endfilter %}",
-      "telephone": "+55-48-98836-6235",
-      "priceRange": "$$",
-      "areaServed": {
-        "@type": "City",
-        "name": "São José",
-        "addressRegion": "SC",
-        "addressCountry": "BR"
-      },
+      "url": "{{ request.build_absolute_uri|escapejs }}",
+      "image": "{{ request.scheme|escapejs }}://{{ request.get_host|escapejs }}{% static 'img/photos/jorge_sem_fundo.webp' %}",
+      "description": "{% filter escapejs %}{% trans 'Advocacia em São José - SC com atuação em Direito Bancário, Direito Previdenciário, Sucessões e Direito Migratório para residência no Brasil e naturalização brasileira.' %}{% endfilter %}",
+      "telephone": "+55 48 98836-6235",
+      "priceRange": "Sob consulta",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "São José",
+          "addressRegion": "SC",
+          "addressCountry": "BR"
+        },
+        {
+          "@type": "State",
+          "name": "Santa Catarina",
+          "addressCountry": "BR"
+        },
+        {
+          "@type": "Country",
+          "name": "Brasil"
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "São José",
         "addressRegion": "SC",
         "addressCountry": "BR"
       },
-      "serviceOffered": [
-        { "@type": "Service", "name": "{% filter escapejs %}{% trans 'Direito Bancário' %}{% endfilter %}" },
-        { "@type": "Service", "name": "{% filter escapejs %}{% trans 'Direito Previdenciário' %}{% endfilter %}" },
-        { "@type": "Service", "name": "{% filter escapejs %}{% trans 'Sucessões' %}{% endfilter %}" }
+      "knowsAbout": [
+        "Direito Bancário",
+        "Direito Previdenciário",
+        "Sucessões",
+        "Direito Migratório",
+        "Autorização de residência no Brasil",
+        "Naturalização brasileira"
       ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "30"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "{% filter escapejs %}{% trans 'Áreas de atuação jurídica' %}{% endfilter %}",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% filter escapejs %}{% trans 'Direito Bancário' %}{% endfilter %}",
+              "serviceType": "Atuação em Direito Bancário",
+              "description": "{% filter escapejs %}{% trans 'Revisão de contratos, análise de juros abusivos, renegociação de dívidas e defesa do consumidor em relações com bancos e instituições financeiras.' %}{% endfilter %}",
+              "areaServed": { "@type": "City", "name": "São José" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% filter escapejs %}{% trans 'Direito Previdenciário' %}{% endfilter %}",
+              "serviceType": "Atuação em Direito Previdenciário",
+              "description": "{% filter escapejs %}{% trans 'Planejamento e requerimento de aposentadorias e benefícios do INSS, revisões e acompanhamento administrativo e judicial.' %}{% endfilter %}",
+              "areaServed": { "@type": "City", "name": "São José" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% filter escapejs %}{% trans 'Sucessões' %}{% endfilter %}",
+              "serviceType": "Inventário, partilha e planejamento sucessório",
+              "description": "{% filter escapejs %}{% trans 'Inventário judicial e extrajudicial, partilha de bens, testamentos e planejamento sucessório.' %}{% endfilter %}",
+              "areaServed": { "@type": "City", "name": "São José" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% filter escapejs %}{% trans 'Tramitação de Residência no Brasil' %}{% endfilter %}",
+              "serviceType": "Autorização de residência para estrangeiros no Brasil",
+              "description": "{% filter escapejs %}{% trans 'Orientação para estrangeiros que desejam viver legalmente no Brasil por mais de 90 dias, com análise documental, traduções juramentadas e acompanhamento do pedido.' %}{% endfilter %}",
+              "areaServed": { "@type": "Country", "name": "Brasil" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% filter escapejs %}{% trans 'Tramitação de Naturalização Brasileira' %}{% endfilter %}",
+              "serviceType": "Naturalização brasileira para estrangeiros",
+              "description": "{% filter escapejs %}{% trans 'Orientação em pedidos de naturalização ordinária, extraordinária, especial e provisória, com análise de requisitos, documentos e histórico migratório.' %}{% endfilter %}",
+              "areaServed": { "@type": "Country", "name": "Brasil" }
+            }
+          }
+        ]
       }
     },
     {
       "@type": "Person",
-      "@id": "{{ request.build_absolute_uri }}#person",
+      "@id": "{{ request.build_absolute_uri|escapejs }}#person",
       "name": "Jorge R. Sarobe",
       "jobTitle": "{% filter escapejs %}{% trans 'Advogado' %}{% endfilter %}",
-      "worksFor": { "@id": "{{ request.build_absolute_uri }}#legalservice" }
+      "worksFor": { "@id": "{{ request.build_absolute_uri|escapejs }}#legalservice" },
+      "knowsAbout": [
+        "Direito Bancário",
+        "Direito Previdenciário",
+        "Sucessões",
+        "Direito Migratório"
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "{{ request.build_absolute_uri|escapejs }}#areas-list",
+      "name": "{% filter escapejs %}{% trans 'Especialidades jurídicas' %}{% endfilter %}",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "{% filter escapejs %}{% trans 'Direito Bancário' %}{% endfilter %}",
+          "url": "{{ request.build_absolute_uri|escapejs }}#direito-bancario"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{% filter escapejs %}{% trans 'Direito Previdenciário' %}{% endfilter %}",
+          "url": "{{ request.build_absolute_uri|escapejs }}#direito-previdenciario"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{% filter escapejs %}{% trans 'Sucessões' %}{% endfilter %}",
+          "url": "{{ request.build_absolute_uri|escapejs }}#sucessoes"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "{% filter escapejs %}{% trans 'Tramitação de Residência no Brasil' %}{% endfilter %}",
+          "url": "{{ request.build_absolute_uri|escapejs }}#residencia-brasil"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "{% filter escapejs %}{% trans 'Tramitação de Naturalização Brasileira' %}{% endfilter %}",
+          "url": "{{ request.build_absolute_uri|escapejs }}#naturalizacao-brasileira"
+        }
+      ]
     },
     {
       "@type": "FAQPage",
-      "@id": "{{ request.build_absolute_uri }}#faq",
-      "isPartOf": { "@id": "{{ request.build_absolute_uri }}#webpage" },
-      "inLanguage": "{{ CURRENT_LANG }}",
+      "@id": "{{ request.build_absolute_uri|escapejs }}#faq",
+      "isPartOf": { "@id": "{{ request.build_absolute_uri|escapejs }}#webpage" },
+      "inLanguage": "{{ CURRENT_LANG|escapejs }}",
       "mainEntity": [
         {
           "@type": "Question",
