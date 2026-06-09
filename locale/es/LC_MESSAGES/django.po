@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 14:11-0300\n"
+"POT-Creation-Date: 2026-06-09 06:41-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
-#: .\core\settings.py:117
+#: .\core\settings.py:116
 msgid "Português (Brasil)"
 msgstr "Portugués (Brasil)"
 
-#: .\core\settings.py:118
+#: .\core\settings.py:117
 msgid "Español"
 msgstr "Español"
 
@@ -59,31 +59,26 @@ msgid "Sua senha deve conter pelo menos um número."
 msgstr "Tu contraseña debe contener al menos un número."
 
 #: .\institucional\templates\about\about_site.html:7
-#: .\institucional\templates\about\components\_ld_json_about.html:13
+#: .\institucional\templates\json\_ld_json_about.html:13
 msgid ""
 "Advogado em São José SC | Jorge R. Sarobe - Direito Bancário, Previdenciário "
 "e Sucessões"
-msgstr ""
-"Abogado en São José (SC) | Jorge R. Sarobe - Derecho Bancario, Previsional "
-"y Sucesiones"
+msgstr "Abogado en São José (SC) | Jorge R. Sarobe - Derecho Bancario, Previsional y Sucesiones"
 
 #: .\institucional\templates\about\about_site.html:8
-#: .\institucional\templates\about\components\_ld_json_about.html:14
+#: .\institucional\templates\json\_ld_json_about.html:14
 msgid ""
 "Conheça Jorge R. Sarobe, advogado em São José - SC, com atuação em Direito "
 "Bancário, Previdenciário e Sucessões. Atendimento estratégico, direto e "
 "personalizado."
-msgstr ""
-"Conoce a Jorge R. Sarobe, abogado en São José (SC), con actuación en Derecho "
-"Bancario, Previsional y Sucesiones. Atención estratégica, directa y "
-"personalizada."
+msgstr "Conoce a Jorge R. Sarobe, abogado en São José (SC), con actuación en Derecho Bancario, Previsional y Sucesiones. Atención estratégica, directa y personalizada."
 
 #: .\institucional\templates\about\about_site.html:21
-#: .\institucional\templates\about\components\_ld_json_about.html:81
 #: .\institucional\templates\components\_footer.html:53
 #: .\institucional\templates\components\_header.html:44
 #: .\institucional\templates\home\components\_about_home.html:10
-#: .\institucional\templates\home\components\_about_home.html:28
+#: .\institucional\templates\home\components\_about_home.html:29
+#: .\institucional\templates\json\_ld_json_about.html:81
 msgid "Sobre"
 msgstr "Sobre"
 
@@ -96,9 +91,7 @@ msgstr "Abogado en São José (SC)"
 msgid ""
 "Conheça a trajetória, formação e atuação de Jorge R. Sarobe, advogado com "
 "foco em Direito Bancário, Previdenciário e Sucessões em São José e região."
-msgstr ""
-"Conoce la trayectoria, formación y actuación de Jorge R. Sarobe, abogado con "
-"enfoque en Derecho Bancario, Previsional y Sucesiones en São José y la región."
+msgstr "Conoce la trayectoria, formación y actuación de Jorge R. Sarobe, abogado con enfoque en Derecho Bancario, Previsional y Sucesiones en São José y la región."
 
 #: .\institucional\templates\about\about_site.html:33
 #: .\institucional\templates\about\about_site.html:51
@@ -122,13 +115,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Abogado inscrito en la OAB/SC 74.996, graduado por la "
-"Universidad Estácio de Sá (2020), con sólida formación práctica en el Poder "
-"Judicial. Actuó como Conciliador Judicial en el Foro de São José/SC, "
-"desarrollando experiencia en mediación y resolución de conflictos en el "
-"Juzgado Especial Penal. Integra la Comisión de Derecho Bancario de la OAB/SC – "
-"Subsección São José, contribuyendo activamente al fortalecimiento de la "
-"abogacía en la región.\n"
+"                        Abogado inscrito en la OAB/SC 74.996, graduado por la Universidad Estácio de Sá (2020), con sólida formación práctica en el Poder Judicial. Actuó como Conciliador Judicial en el Foro de São José/SC, desarrollando experiencia en mediación y resolución de conflictos en el Juzgado Especial Penal. Integra la Comisión de Derecho Bancario de la OAB/SC – Subsección São José, contribuyendo activamente al fortalecimiento de la abogacía en la región.\n"
 "                        "
 
 #: .\institucional\templates\about\about_site.html:62
@@ -143,11 +130,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Profundiza su actuación técnica mediante posgrado en "
-"Derecho Bancario y en Derecho Previsional por la Facultad Legale, además de "
-"especialización en Inventarios y Derecho Sucesorio. Une el conocimiento "
-"académico a la práctica forense adquirida en São José/SC, ofreciendo "
-"soluciones jurídicas estratégicas, seguras y personalizadas para cada cliente.\n"
+"                        Profundiza su actuación técnica mediante posgrado en Derecho Bancario y en Derecho Previsional por la Facultad Legale, además de especialización en Inventarios y Derecho Sucesorio. Une el conocimiento académico a la práctica forense adquirida en São José/SC, ofreciendo soluciones jurídicas estratégicas, seguras y personalizadas para cada cliente.\n"
 "                        "
 
 #: .\institucional\templates\about\about_site.html:91
@@ -184,13 +167,13 @@ msgstr "Idiomas: Portugués/Español"
 
 #: .\institucional\templates\about\about_site.html:139
 #: .\institucional\templates\about\about_site.html:147
-#: .\institucional\templates\home\components\_hero_home.html:39
+#: .\institucional\templates\home\components\_hero_home.html:44
 msgid "Falar agora"
 msgstr "Hablar ahora"
 
 #: .\institucional\templates\about\about_site.html:156
 #: .\institucional\templates\home\home_site.html:37
-#: .\institucional\templates\services\services_site.html:405
+#: .\institucional\templates\services\services_site.html:677
 msgid "Precisa de advogado em São José - SC?"
 msgstr "¿Necesitas un abogado en São José (SC)?"
 
@@ -198,77 +181,23 @@ msgstr "¿Necesitas un abogado en São José (SC)?"
 msgid ""
 "Atendimento jurídico estratégico em São José e região. Fale agora e receba "
 "orientação clara sobre seu caso."
-msgstr ""
-"Atención jurídica estratégica en São José y la región. Habla ahora y recibe "
-"una orientación clara sobre tu caso."
-
-#: .\institucional\templates\about\components\_ld_json_about.html:23
-#: .\institucional\templates\contact\components\_ld_json_contact.html:22
-#: .\institucional\templates\home\components\_ld_json_home.html:13
-#: .\institucional\templates\home\components\_ld_json_home.html:20
-#: .\institucional\templates\home\components\_ld_json_home.html:27
-msgid "Jorge R. Sarobe - Advogado em São José SC"
-msgstr "Jorge R. Sarobe - Abogado en São José (SC)"
-
-#: .\institucional\templates\about\components\_ld_json_about.html:42
-#: .\institucional\templates\about\components\_ld_json_about.html:56
-#: .\institucional\templates\components\_footer.html:64
-#: .\institucional\templates\contact\components\_ld_json_contact.html:66
-#: .\institucional\templates\home\components\_areas_home.html:30
-#: .\institucional\templates\home\components\_ld_json_home.html:46
-#: .\institucional\templates\services\services_site.html:41
-msgid "Direito Bancário"
-msgstr "Derecho Bancario"
-
-#: .\institucional\templates\about\components\_ld_json_about.html:43
-#: .\institucional\templates\about\components\_ld_json_about.html:57
-#: .\institucional\templates\components\_footer.html:65
-#: .\institucional\templates\contact\components\_ld_json_contact.html:67
-#: .\institucional\templates\home\components\_areas_home.html:62
-#: .\institucional\templates\home\components\_ld_json_home.html:47
-#: .\institucional\templates\services\services_site.html:261
-msgid "Direito Previdenciário"
-msgstr "Derecho Previsional"
-
-#: .\institucional\templates\about\components\_ld_json_about.html:44
-#: .\institucional\templates\about\components\_ld_json_about.html:58
-#: .\institucional\templates\contact\components\_ld_json_contact.html:68
-#: .\institucional\templates\home\components\_areas_home.html:97
-#: .\institucional\templates\home\components\_ld_json_home.html:48
-#: .\institucional\templates\services\services_site.html:290
-msgid "Sucessões"
-msgstr "Sucesiones"
-
-#: .\institucional\templates\about\components\_ld_json_about.html:52
-#: .\institucional\templates\contact\components\_ld_json_contact.html:76
-#: .\institucional\templates\home\components\_ld_json_home.html:60
-msgid "Advogado"
-msgstr "Abogado"
-
-#: .\institucional\templates\about\components\_ld_json_about.html:75
-#: .\institucional\templates\blog\components\_ld_json_blog_details.html:70
-#: .\institucional\templates\blog\components\_ld_json_blog_list.html:74
-msgid "Início"
-msgstr "Inicio"
+msgstr "Atención jurídica estratégica en São José y la región. Habla ahora y recibe una orientación clara sobre tu caso."
 
 #: .\institucional\templates\blog\blog_list.html:7
-#: .\institucional\templates\blog\components\_ld_json_blog_list.html:13
+#: .\institucional\templates\json\_ld_json_blog_list.html:13
 msgid ""
 "Blog Jurídico em São José SC | Direito Bancário, Previdenciário e Sucessões"
-msgstr ""
-"Blog Jurídico en São José (SC) | Derecho Bancario, Previsional y Sucesiones"
+msgstr "Blog Jurídico en São José (SC) | Derecho Bancario, Previsional y Sucesiones"
 
 #: .\institucional\templates\blog\blog_list.html:8
-#: .\institucional\templates\blog\components\_ld_json_blog_list.html:14
+#: .\institucional\templates\json\_ld_json_blog_list.html:14
 msgid ""
 "Artigos jurídicos em São José - SC sobre Direito Bancário, Previdenciário e "
 "Sucessões. Conteúdo claro para orientar você sobre seus direitos."
-msgstr ""
-"Artículos jurídicos en São José (SC) sobre Derecho Bancario, Previsional y "
-"Sucesiones. Contenido claro para orientarte sobre tus derechos."
+msgstr "Artículos jurídicos en São José (SC) sobre Derecho Bancario, Previsional y Sucesiones. Contenido claro para orientarte sobre tus derechos."
 
 #: .\institucional\templates\blog\blog_list.html:21
-#: .\institucional\templates\blog\components\_ld_json_blog_list.html:24
+#: .\institucional\templates\json\_ld_json_blog_list.html:24
 msgid "Blog Jurídico"
 msgstr "Blog Jurídico"
 
@@ -280,9 +209,7 @@ msgstr "Contenido jurídico actualizado en São José (SC)"
 msgid ""
 "Artigos sobre Direito Bancário, Previdenciário e Sucessões, com explicações "
 "claras para orientar você sobre seus direitos e decisões jurídicas."
-msgstr ""
-"Artículos sobre Derecho Bancario, Previsional y Sucesiones, con explicaciones "
-"claras para orientarte sobre tus derechos y decisiones jurídicas."
+msgstr "Artículos sobre Derecho Bancario, Previsional y Sucesiones, con explicaciones claras para orientarte sobre tus derechos y decisiones jurídicas."
 
 #: .\institucional\templates\blog\blog_list.html:38
 msgid "Precisa de orientação jurídica em São José - SC?"
@@ -292,9 +219,7 @@ msgstr "¿Necesitas orientación jurídica en São José (SC)?"
 msgid ""
 "Fale agora e receba atendimento estratégico em Direito Bancário, "
 "Previdenciário ou Sucessões."
-msgstr ""
-"Habla ahora y recibe atención estratégica en Derecho Bancario, "
-"Previsional o Sucesiones."
+msgstr "Habla ahora y recibe atención estratégica en Derecho Bancario, Previsional o Sucesiones."
 
 #: .\institucional\templates\blog\components\_blog_details.html:100
 msgid "Voltar"
@@ -312,26 +237,27 @@ msgstr "¿Necesitas ayuda con tu contrato bancario?"
 msgid ""
 "Envie uma mensagem no WhatsApp com o link deste artigo e uma breve descrição "
 "do seu caso."
-msgstr ""
-"Envía un mensaje por WhatsApp con el enlace de este artículo y una breve "
-"descripción de tu caso."
+msgstr "Envía un mensaje por WhatsApp con el enlace de este artículo y una breve descripción de tu caso."
 
 #: .\institucional\templates\blog\components\_cta_final_blog_details.html:24
 #, python-format
 msgid ""
 "Olá! Li o artigo &quot;%(t)s&quot; e gostaria de uma orientação sobre meu "
 "caso. Link: %(u)s"
-msgstr ""
-"¡Hola! Leí el artículo &quot;%(t)s&quot; y me gustaría recibir orientación "
-"sobre mi caso. Enlace: %(u)s"
+msgstr "¡Hola! Leí el artículo &quot;%(t)s&quot; y me gustaría recibir orientación sobre mi caso. Enlace: %(u)s"
 
 #: .\institucional\templates\blog\components\_cta_final_blog_details.html:25
 msgid "Falar no WhatsApp sobre este artigo"
 msgstr "Hablar por WhatsApp sobre este artículo"
 
 #: .\institucional\templates\blog\components\_cta_final_blog_details.html:33
-#: .\institucional\templates\components\_cta_final.html:26
-#: .\institucional\templates\components\_cta_final.html:38
+#: .\institucional\templates\components\_cta_final.html:27
+#: .\institucional\templates\components\_cta_final.html:39
+#: .\institucional\templates\home\components\_areas_home.html:41
+#: .\institucional\templates\home\components\_areas_home.html:73
+#: .\institucional\templates\home\components\_areas_home.html:108
+#: .\institucional\templates\home\components\_areas_home.html:140
+#: .\institucional\templates\home\components\_areas_home.html:176
 msgid "Falar no WhatsApp"
 msgstr "Hablar por WhatsApp"
 
@@ -369,21 +295,6 @@ msgstr "Filtrar"
 msgid "Todas"
 msgstr "Todas"
 
-#: .\institucional\templates\blog\components\_ld_json_blog_details.html:42
-#: .\institucional\templates\components\_header.html:12
-msgid "Jorge R. Sarobe"
-msgstr "Jorge R. Sarobe"
-
-#: .\institucional\templates\blog\components\_ld_json_blog_details.html:76
-#: .\institucional\templates\blog\components\_ld_json_blog_list.html:80
-msgid "Blog"
-msgstr "Blog"
-
-#: .\institucional\templates\blog\components\_ld_json_blog_details.html:93
-#: .\institucional\templates\blog\components\_related_posts_details.html:9
-msgid "Conteúdos relacionados"
-msgstr "Contenidos relacionados"
-
 #: .\institucional\templates\blog\components\_list_blog.html:76
 msgid "Nenhum resultado encontrado."
 msgstr "No se encontraron resultados."
@@ -416,8 +327,13 @@ msgstr "Siguiente"
 msgid "Veja também"
 msgstr "Ver también"
 
-#: .\institucional\templates\components\_cta_final.html:41
+#: .\institucional\templates\blog\components\_related_posts_details.html:9
+#: .\institucional\templates\json\_ld_json_blog_details.html:93
+msgid "Conteúdos relacionados"
+msgstr "Contenidos relacionados"
+
 #: .\institucional\templates\components\_cta_final.html:42
+#: .\institucional\templates\components\_cta_final.html:43
 #: .\institucional\templates\components\_footer.html:56
 #: .\institucional\templates\components\_header.html:65
 #: .\institucional\templates\contact\contact_site.html:23
@@ -433,9 +349,7 @@ msgstr "ABOGACÍA"
 msgid ""
 "Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e "
 "Sucessões. Atendimento personalizado e estratégico."
-msgstr ""
-"Abogado en São José (SC) con actuación en Derecho Bancario, Previsional y "
-"Sucesiones. Atención personalizada y estratégica."
+msgstr "Abogado en São José (SC) con actuación en Derecho Bancario, Previsional y Sucesiones. Atención personalizada y estratégica."
 
 #: .\institucional\templates\components\_footer.html:50
 msgid "NAVEGAÇÃO"
@@ -460,6 +374,28 @@ msgstr "Actualizaciones"
 #: .\institucional\templates\components\_footer.html:62
 msgid "ÁREAS DE ATUAÇÃO"
 msgstr "ÁREAS DE ACTUACIÓN"
+
+#: .\institucional\templates\components\_footer.html:64
+#: .\institucional\templates\home\components\_areas_home.html:30
+#: .\institucional\templates\json\_ld_json_about.html:42
+#: .\institucional\templates\json\_ld_json_about.html:56
+#: .\institucional\templates\json\_ld_json_contact.html:66
+#: .\institucional\templates\json\_ld_json_home.html:79
+#: .\institucional\templates\json\_ld_json_home.html:149
+#: .\institucional\templates\services\services_site.html:42
+msgid "Direito Bancário"
+msgstr "Derecho Bancario"
+
+#: .\institucional\templates\components\_footer.html:65
+#: .\institucional\templates\home\components\_areas_home.html:62
+#: .\institucional\templates\json\_ld_json_about.html:43
+#: .\institucional\templates\json\_ld_json_about.html:57
+#: .\institucional\templates\json\_ld_json_contact.html:67
+#: .\institucional\templates\json\_ld_json_home.html:89
+#: .\institucional\templates\json\_ld_json_home.html:155
+#: .\institucional\templates\services\services_site.html:262
+msgid "Direito Previdenciário"
+msgstr "Derecho Previsional"
 
 #: .\institucional\templates\components\_footer.html:66
 msgid "Direito Sucessório"
@@ -496,6 +432,11 @@ msgstr "Política de Privacidad"
 msgid "Termos de Uso"
 msgstr "Términos de Uso"
 
+#: .\institucional\templates\components\_header.html:12
+#: .\institucional\templates\json\_ld_json_blog_details.html:42
+msgid "Jorge R. Sarobe"
+msgstr "Jorge R. Sarobe"
+
 #: .\institucional\templates\components\_header.html:24
 msgid "Abrir menu"
 msgstr "Abrir menú"
@@ -513,9 +454,7 @@ msgid "Política de Privacidade — Advocacia Jorge R. Sarobe"
 msgstr "Política de Privacidad — Abogacía Jorge R. Sarobe"
 
 #: .\institucional\templates\components\_privacy_terms.html:13
-#: .\institucional\templates\components\_privacy_terms.html:102
-#: .\institucional\templates\components\_privacy_terms.html:119
-#: .\institucional\templates\components\_privacy_terms.html:199
+#: .\institucional\templates\components\_privacy_terms.html:112
 msgid "Fechar"
 msgstr "Cerrar"
 
@@ -529,8 +468,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    Respetamos tu privacidad y tratamos los datos personales "
-"con seguridad, transparencia y en conformidad\n"
+"                    Respetamos tu privacidad y tratamos los datos personales con seguridad, transparencia y en conformidad\n"
 "                    con la\n"
 "                    <strong>LGPD (Ley nº 13.709/2018)</strong>.\n"
 "                    "
@@ -553,14 +491,11 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    Podemos recopilar datos proporcionados por ti (p. ej.: nombre, "
-"teléfono, correo electrónico, mensaje) al completar\n"
+"                    Podemos recopilar datos proporcionados por ti (p. ej.: nombre, teléfono, correo electrónico, mensaje) al completar\n"
 "                    formularios,\n"
-"                    contactarnos por WhatsApp o agendar atención. "
-"También podemos recopilar datos técnicos de\n"
+"                    contactarnos por WhatsApp o agendar atención. También podemos recopilar datos técnicos de\n"
 "                    navegación\n"
-"                    (p. ej.: IP, dispositivo y páginas visitadas) con fines de "
-"seguridad y estadística.\n"
+"                    (p. ej.: IP, dispositivo y páginas visitadas) con fines de seguridad y estadística.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:36
@@ -598,11 +533,9 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    Este sitio puede utilizar cookies estrictamente necesarias "
-"y/o herramientas de métricas (p. ej.: Google\n"
+"                    Este sitio puede utilizar cookies estrictamente necesarias y/o herramientas de métricas (p. ej.: Google\n"
 "                    Analytics)\n"
-"                    para análisis agregado de uso, sin finalidad de "
-"identificación directa del visitante.\n"
+"                    para análisis agregado de uso, sin finalidad de identificación directa del visitante.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:53
@@ -622,12 +555,9 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    No vendemos datos. Podremos compartir información "
-"solo cuando sea necesario para:\n"
-"                    <strong>cumplimiento legal</strong>, <strong>ejercicio "
-"regular de derechos</strong> o con\n"
-"                    <strong>proveedores esenciales</strong> (p. ej.: "
-"hosting/infraestructura), siempre en el mínimo\n"
+"                    No vendemos datos. Podremos compartir información solo cuando sea necesario para:\n"
+"                    <strong>cumplimiento legal</strong>, <strong>ejercicio regular de derechos</strong> o con\n"
+"                    <strong>proveedores esenciales</strong> (p. ej.: hosting/infraestructura), siempre en el mínimo\n"
 "                    necesario.\n"
 "                    "
 
@@ -645,8 +575,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    Puedes solicitar confirmación, acceso, corrección, "
-"anonimización, portabilidad, eliminación e\n"
+"                    Puedes solicitar confirmación, acceso, corrección, anonimización, portabilidad, eliminación e\n"
 "                    información sobre\n"
 "                    compartición, conforme a la LGPD, cuando sea aplicable.\n"
 "                    "
@@ -665,41 +594,40 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    Adoptamos medidas técnicas y administrativas para "
-"proteger los datos. Conservamos la información solo por el\n"
+"                    Adoptamos medidas técnicas y administrativas para proteger los datos. Conservamos la información solo por el\n"
 "                    tiempo\n"
 "                    necesario para las finalidades y obligaciones legales.\n"
 "                    "
 
 #: .\institucional\templates\components\_privacy_terms.html:81
-#: .\institucional\templates\components\_privacy_terms.html:178
+#: .\institucional\templates\components\_privacy_terms.html:171
 msgid "7. Contato"
 msgstr "7. Contacto"
 
 #: .\institucional\templates\components\_privacy_terms.html:84
-#: .\institucional\templates\components\_privacy_terms.html:181
+#: .\institucional\templates\components\_privacy_terms.html:174
 msgid "Telefone/WhatsApp:"
 msgstr "Teléfono/WhatsApp:"
 
-#: .\institucional\templates\components\_privacy_terms.html:90
-#: .\institucional\templates\components\_privacy_terms.html:187
+#: .\institucional\templates\components\_privacy_terms.html:89
+#: .\institucional\templates\components\_privacy_terms.html:179
 msgid "E-mail:"
 msgstr "Correo electrónico:"
 
-#: .\institucional\templates\components\_privacy_terms.html:94
-#: .\institucional\templates\components\_privacy_terms.html:191
+#: .\institucional\templates\components\_privacy_terms.html:93
+#: .\institucional\templates\components\_privacy_terms.html:183
 msgid "Cidade:"
 msgstr "Ciudad:"
 
-#: .\institucional\templates\components\_privacy_terms.html:116
+#: .\institucional\templates\components\_privacy_terms.html:109
 msgid "Termos de Uso — Advocacia Jorge R. Sarobe"
 msgstr "Términos de Uso — Abogacía Jorge R. Sarobe"
 
-#: .\institucional\templates\components\_privacy_terms.html:123
+#: .\institucional\templates\components\_privacy_terms.html:116
 msgid "1. Aceitação"
 msgstr "1. Aceptación"
 
-#: .\institucional\templates\components\_privacy_terms.html:125
+#: .\institucional\templates\components\_privacy_terms.html:118
 msgid ""
 "\n"
 "                    Ao acessar este site, você concorda com estes Termos. Se "
@@ -707,15 +635,14 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    Al acceder a este sitio, aceptas estos Términos. Si "
-"no estás de acuerdo, interrumpe la navegación.\n"
+"                    Al acceder a este sitio, aceptas estos Términos. Si no estás de acuerdo, interrumpe la navegación.\n"
 "                    "
 
-#: .\institucional\templates\components\_privacy_terms.html:130
+#: .\institucional\templates\components\_privacy_terms.html:123
 msgid "2. Finalidade do conteúdo"
 msgstr "2. Finalidad del contenido"
 
-#: .\institucional\templates\components\_privacy_terms.html:132
+#: .\institucional\templates\components\_privacy_terms.html:125
 msgid ""
 "\n"
 "                    O conteúdo tem caráter <strong>informativo</strong> e "
@@ -726,18 +653,16 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    El contenido tiene carácter <strong>informativo</strong> y "
-"no sustituye una consulta jurídica\n"
+"                    El contenido tiene carácter <strong>informativo</strong> y no sustituye una consulta jurídica\n"
 "                    individualizada.\n"
-"                    El envío de mensajes por este sitio/WhatsApp no crea, "
-"por sí solo, una relación abogado-cliente.\n"
+"                    El envío de mensajes por este sitio/WhatsApp no crea, por sí solo, una relación abogado-cliente.\n"
 "                    "
 
-#: .\institucional\templates\components\_privacy_terms.html:139
+#: .\institucional\templates\components\_privacy_terms.html:132
 msgid "3. Uso permitido"
 msgstr "3. Uso permitido"
 
-#: .\institucional\templates\components\_privacy_terms.html:142
+#: .\institucional\templates\components\_privacy_terms.html:135
 msgid ""
 "\n"
 "                        É proibido usar o site para práticas ilícitas, SPAM, "
@@ -746,20 +671,19 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Está prohibido usar el sitio para prácticas ilícitas, SPAM, "
-"ataques, explotación de fallas o vulneración\n"
+"                        Está prohibido usar el sitio para prácticas ilícitas, SPAM, ataques, explotación de fallas o vulneración\n"
 "                        de derechos.\n"
 "                        "
 
-#: .\institucional\templates\components\_privacy_terms.html:148
+#: .\institucional\templates\components\_privacy_terms.html:141
 msgid "É vedada a reprodução do conteúdo sem autorização, quando aplicável."
 msgstr "Se prohíbe la reproducción del contenido sin autorización, cuando corresponda."
 
-#: .\institucional\templates\components\_privacy_terms.html:152
+#: .\institucional\templates\components\_privacy_terms.html:145
 msgid "4. Privacidade"
 msgstr "4. Privacidad"
 
-#: .\institucional\templates\components\_privacy_terms.html:154
+#: .\institucional\templates\components\_privacy_terms.html:147
 msgid ""
 "\n"
 "                    O tratamento de dados pessoais segue a LGPD. Consulte a "
@@ -769,17 +693,16 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    El tratamiento de datos personales sigue la LGPD. Consulta la "
-"Política de Privacidad para detalles sobre\n"
+"                    El tratamiento de datos personales sigue la LGPD. Consulta la Política de Privacidad para detalles sobre\n"
 "                    recopilación,\n"
 "                    finalidades y derechos.\n"
 "                    "
 
-#: .\institucional\templates\components\_privacy_terms.html:161
+#: .\institucional\templates\components\_privacy_terms.html:154
 msgid "5. Limitação de responsabilidade"
 msgstr "5. Limitación de responsabilidad"
 
-#: .\institucional\templates\components\_privacy_terms.html:163
+#: .\institucional\templates\components\_privacy_terms.html:156
 msgid ""
 "\n"
 "                    Empregamos boas práticas de segurança, mas não "
@@ -790,18 +713,16 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    Aplicamos buenas prácticas de seguridad, pero no "
-"garantizamos disponibilidad ininterrumpida ni ausencia\n"
+"                    Aplicamos buenas prácticas de seguridad, pero no garantizamos disponibilidad ininterrumpida ni ausencia\n"
 "                    total de fallas.\n"
-"                    Los enlaces externos son responsabilidad de sus "
-"respectivos proveedores.\n"
+"                    Los enlaces externos son responsabilidad de sus respectivos proveedores.\n"
 "                    "
 
-#: .\institucional\templates\components\_privacy_terms.html:170
+#: .\institucional\templates\components\_privacy_terms.html:163
 msgid "6. Alterações"
 msgstr "6. Cambios"
 
-#: .\institucional\templates\components\_privacy_terms.html:172
+#: .\institucional\templates\components\_privacy_terms.html:165
 msgid ""
 "\n"
 "                    Podemos atualizar estes Termos e a Política de "
@@ -810,214 +731,28 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    Podemos actualizar estos Términos y la Política de "
-"Privacidad en cualquier momento. La versión vigente es la\n"
+"                    Podemos actualizar estos Términos y la Política de Privacidad en cualquier momento. La versión vigente es la\n"
 "                    mostrada en este modal.\n"
 "                    "
 
-#: .\institucional\templates\contact\components\_ld_json_contact.html:13
 #: .\institucional\templates\contact\contact_site.html:9
+#: .\institucional\templates\json\_ld_json_contact.html:13
 msgid "Advogado em São José SC | Contato Jurídico"
 msgstr "Abogado en São José (SC) | Contacto Jurídico"
 
-#: .\institucional\templates\contact\components\_ld_json_contact.html:14
 #: .\institucional\templates\contact\contact_site.html:10
+#: .\institucional\templates\json\_ld_json_contact.html:14
 msgid ""
 "Entre em contato com advogado em São José - SC para atendimento em Direito "
 "Bancário, Previdenciário e Sucessões. Atendimento presencial e online."
-msgstr ""
-"Contacta con un abogado en São José (SC) para atención en Derecho "
-"Bancario, Previsional y Sucesiones. Atención presencial y online."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:88
-#: .\institucional\templates\contact\contact_site.html:236
-#: .\institucional\templates\home\components\_faq_home.html:22
-#: .\institucional\templates\home\components\_ld_json_home.html:71
-msgid "Como funciona a primeira consulta?"
-msgstr "¿Cómo funciona la primera consulta?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:89
-#: .\institucional\templates\home\components\_ld_json_home.html:74
-msgid ""
-"Você apresenta sua situação e os documentos disponíveis. Eu avalio o "
-"cenário, explico possibilidades, riscos e próximos passos. Se fizer sentido, "
-"definimos a estratégia e a forma de condução do caso."
-msgstr ""
-"Presentas tu situación y los documentos disponibles. Yo evalúo el "
-"escenario, explico posibilidades, riesgos y próximos pasos. Si tiene sentido, "
-"definimos la estrategia y la forma de llevar el caso."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:93
-#: .\institucional\templates\contact\contact_site.html:259
-#: .\institucional\templates\home\components\_faq_home.html:43
-#: .\institucional\templates\home\components\_ld_json_home.html:79
-msgid "Quais documentos devo levar para a consulta?"
-msgstr "¿Qué documentos debo llevar a la consulta?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:94
-#: .\institucional\templates\home\components\_ld_json_home.html:82
-msgid ""
-"Depende do tema, mas geralmente ajudam: RG/CPF, comprovantes, contratos, "
-"extratos, comunicações do banco/INSS, e qualquer documento que comprove a "
-"situação. Se faltar algo, eu oriento o que solicitar depois."
-msgstr ""
-"Depende del tema, pero por lo general ayudan: RG/CPF, comprobantes, contratos, "
-"extractos, comunicaciones del banco/INSS y cualquier documento que acredite la "
-"situación. Si falta algo, te indico qué solicitar después."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:98
-#: .\institucional\templates\contact\contact_site.html:282
-#: .\institucional\templates\home\components\_faq_home.html:63
-#: .\institucional\templates\home\components\_ld_json_home.html:87
-msgid "O atendimento pode ser online?"
-msgstr "¿La atención puede ser online?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:99
-#: .\institucional\templates\home\components\_ld_json_home.html:90
-msgid ""
-"Sim. O atendimento online é possível para a maioria dos casos, com envio de "
-"documentos digitalizados e reunião por vídeo/WhatsApp. Quando necessário, "
-"alinhamos atendimento presencial."
-msgstr ""
-"Sí. La atención online es posible para la mayoría de los casos, con envío de "
-"documentos digitalizados y reunión por video/WhatsApp. Cuando sea necesario, "
-"coordinamos atención presencial."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:103
-#: .\institucional\templates\contact\contact_site.html:303
-#: .\institucional\templates\home\components\_faq_home.html:83
-#: .\institucional\templates\home\components\_ld_json_home.html:95
-msgid "Quanto tempo demora um processo?"
-msgstr "¿Cuánto tiempo tarda un proceso?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:104
-#: .\institucional\templates\home\components\_ld_json_home.html:98
-msgid ""
-"O prazo varia conforme o caso, a urgência, o volume de provas e a resposta "
-"da outra parte/órgão. Na consulta, eu estimarei cenários de tempo e as "
-"alternativas para buscar maior agilidade."
-msgstr ""
-"El plazo varía según el caso, la urgencia, el volumen de pruebas y la respuesta "
-"de la otra parte/órgano. En la consulta, estimaré escenarios de tiempo y "
-"alternativas para buscar mayor agilidad."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:108
-#: .\institucional\templates\contact\contact_site.html:325
-#: .\institucional\templates\home\components\_faq_home.html:102
-#: .\institucional\templates\home\components\_ld_json_home.html:103
-msgid "O que é preciso para revisar juros abusivos ou contratos bancários?"
-msgstr "¿Qué se necesita para revisar intereses abusivos o contratos bancarios?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:109
-#: .\institucional\templates\home\components\_ld_json_home.html:106
-msgid ""
-"Normalmente precisamos do contrato, demonstrativos, extratos, comprovantes "
-"de pagamento e eventuais renegociações. Com isso, é possível avaliar a "
-"legalidade de taxas e cláusulas."
-msgstr ""
-"Normalmente necesitamos el contrato, estados, extractos, comprobantes "
-"de pago y eventuales renegociaciones. Con eso, es posible evaluar la "
-"legalidad de tasas y cláusulas."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:113
-#: .\institucional\templates\contact\contact_site.html:347
-#: .\institucional\templates\home\components\_faq_home.html:122
-#: .\institucional\templates\home\components\_ld_json_home.html:111
-msgid "Posso pedir benefício previdenciário mesmo após indeferimento?"
-msgstr "¿Puedo solicitar un beneficio previsional incluso después de una denegación?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:114
-#: .\institucional\templates\home\components\_ld_json_home.html:114
-msgid ""
-"Sim. Dependendo do motivo do indeferimento, podemos recorrer "
-"administrativamente ou ingressar com ação. Avalio o fundamento, documentos, "
-"laudos e histórico contributivo para definir a melhor estratégia."
-msgstr ""
-"Sí. Dependiendo del motivo de la denegación, podemos recurrir "
-"administrativamente o presentar una demanda. Evalúo el fundamento, documentos, "
-"informes y el historial contributivo para definir la mejor estrategia."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:118
-#: .\institucional\templates\contact\contact_site.html:370
-#: .\institucional\templates\home\components\_faq_home.html:143
-#: .\institucional\templates\home\components\_ld_json_home.html:119
-msgid "Como funciona inventário e partilha?"
-msgstr "¿Cómo funciona el inventario y la partición?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:119
-#: .\institucional\templates\home\components\_ld_json_home.html:122
-msgid ""
-"O inventário organiza bens, dívidas e herdeiros para formalizar a partilha. "
-"Pode ser judicial ou em cartório, conforme requisitos. Eu conduzo o processo "
-"e indico a via mais adequada para o seu cenário."
-msgstr ""
-"El inventario organiza bienes, deudas y herederos para formalizar la partición. "
-"Puede ser judicial o ante notario, según los requisitos. Yo conduzco el proceso "
-"y te indico la vía más adecuada para tu escenario."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:123
-#: .\institucional\templates\contact\contact_site.html:393
-#: .\institucional\templates\home\components\_faq_home.html:163
-#: .\institucional\templates\home\components\_ld_json_home.html:127
-msgid "Quando vale a pena fazer testamento?"
-msgstr "¿Cuándo vale la pena hacer un testamento?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:124
-#: .\institucional\templates\home\components\_ld_json_home.html:130
-msgid ""
-"O testamento é útil para organizar a vontade, reduzir conflitos e dar "
-"previsibilidade. Ele não elimina regras legais, mas ajuda muito no "
-"planejamento sucessório. Eu explico opções e limites de forma clara."
-msgstr ""
-"El testamento es útil para organizar la voluntad, reducir conflictos y dar "
-"previsibilidad. No elimina reglas legales, pero ayuda mucho en la "
-"planificación sucesoria. Explico opciones y límites de forma clara."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:128
-#: .\institucional\templates\contact\contact_site.html:416
-#: .\institucional\templates\home\components\_faq_home.html:183
-#: .\institucional\templates\home\components\_ld_json_home.html:135
-msgid "Quais são as formas de honorários?"
-msgstr "¿Cuáles son las formas de honorarios?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:129
-#: .\institucional\templates\home\components\_ld_json_home.html:138
-msgid ""
-"Os honorários variam conforme complexidade, urgência e modelo de atuação "
-"(consultivo, administrativo ou judicial). Eu apresento a proposta com "
-"clareza e alinhamos tudo antes de iniciar."
-msgstr ""
-"Los honorarios varían según la complejidad, la urgencia y el modelo de actuación "
-"(consultivo, administrativo o judicial). Presento la propuesta con "
-"claridad y lo alineamos todo antes de iniciar."
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:133
-#: .\institucional\templates\contact\contact_site.html:437
-#: .\institucional\templates\home\components\_faq_home.html:203
-#: .\institucional\templates\home\components\_ld_json_home.html:143
-msgid "Como posso agendar e qual o prazo para retorno?"
-msgstr "¿Cómo puedo agendar y cuál es el plazo de respuesta?"
-
-#: .\institucional\templates\contact\components\_ld_json_contact.html:134
-#: .\institucional\templates\home\components\_ld_json_home.html:146
-msgid ""
-"Você pode agendar pelo WhatsApp ou telefone. Normalmente retorno no mesmo "
-"dia útil, e em casos urgentes priorizo o atendimento conforme "
-"disponibilidade."
-msgstr ""
-"Puedes agendar por WhatsApp o teléfono. Normalmente respondo el mismo "
-"día hábil y, en casos urgentes, priorizo la atención según la "
-"disponibilidad."
+msgstr "Contacta con un abogado en São José (SC) para atención en Derecho Bancario, Previsional y Sucesiones. Atención presencial y online."
 
 #: .\institucional\templates\contact\contact_site.html:25
 msgid ""
 "Atendimento jurídico em São José e região, com atuação em Direito Bancário, "
 "Previdenciário e Sucessões. Fale agora para receber orientação clara sobre "
 "seu caso."
-msgstr ""
-"Atención jurídica en São José y la región, con actuación en Derecho Bancario, "
-"Previsional y Sucesiones. Habla ahora para recibir una orientación clara sobre "
-"tu caso."
+msgstr "Atención jurídica en São José y la región, con actuación en Derecho Bancario, Previsional y Sucesiones. Habla ahora para recibir una orientación clara sobre tu caso."
 
 #: .\institucional\templates\contact\contact_site.html:45
 msgid "Telefone"
@@ -1101,9 +836,15 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Respuestas objetivas a las dudas más comunes "
-"sobre atención y actuación.\n"
+"                        Respuestas objetivas a las dudas más comunes sobre atención y actuación.\n"
 "                        "
+
+#: .\institucional\templates\contact\contact_site.html:236
+#: .\institucional\templates\home\components\_faq_home.html:22
+#: .\institucional\templates\json\_ld_json_contact.html:88
+#: .\institucional\templates\json\_ld_json_home.html:186
+msgid "Como funciona a primeira consulta?"
+msgstr "¿Cómo funciona la primera consulta?"
 
 #: .\institucional\templates\contact\contact_site.html:242
 msgid ""
@@ -1118,14 +859,19 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                Presentas tu situación y los documentos "
-"disponibles. Yo evalúo el escenario, explico\n"
+"                                Presentas tu situación y los documentos disponibles. Yo evalúo el escenario, explico\n"
 "                                posibilidades,\n"
-"                                riesgos y próximos pasos. Si tiene sentido, "
-"definimos la estrategia y la forma de llevar\n"
+"                                riesgos y próximos pasos. Si tiene sentido, definimos la estrategia y la forma de llevar\n"
 "                                el\n"
 "                                caso.\n"
 "                                "
+
+#: .\institucional\templates\contact\contact_site.html:259
+#: .\institucional\templates\home\components\_faq_home.html:43
+#: .\institucional\templates\json\_ld_json_contact.html:93
+#: .\institucional\templates\json\_ld_json_home.html:194
+msgid "Quais documentos devo levar para a consulta?"
+msgstr "¿Qué documentos debo llevar a la consulta?"
 
 #: .\institucional\templates\contact\contact_site.html:265
 msgid ""
@@ -1140,14 +886,19 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                Depende del tema, pero por lo general ayudan: RG/"
-"CPF, comprobantes, contratos, extractos,\n"
+"                                Depende del tema, pero por lo general ayudan: RG/CPF, comprobantes, contratos, extractos,\n"
 "                                comunicaciones\n"
 "                                del banco/INSS,\n"
-"                                y cualquier documento que acredite la "
-"situación. Si falta algo, te indico qué solicitar\n"
+"                                y cualquier documento que acredite la situación. Si falta algo, te indico qué solicitar\n"
 "                                después.\n"
 "                                "
+
+#: .\institucional\templates\contact\contact_site.html:282
+#: .\institucional\templates\home\components\_faq_home.html:63
+#: .\institucional\templates\json\_ld_json_contact.html:98
+#: .\institucional\templates\json\_ld_json_home.html:202
+msgid "O atendimento pode ser online?"
+msgstr "¿La atención puede ser online?"
 
 #: .\institucional\templates\contact\contact_site.html:288
 msgid ""
@@ -1160,12 +911,17 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                Sí. La atención online es posible para la "
-"mayoría de los casos, con envío de documentos\n"
+"                                Sí. La atención online es posible para la mayoría de los casos, con envío de documentos\n"
 "                                digitalizados y\n"
-"                                reunión por video/WhatsApp. Cuando sea "
-"necesario, coordinamos atención presencial.\n"
+"                                reunión por video/WhatsApp. Cuando sea necesario, coordinamos atención presencial.\n"
 "                                "
+
+#: .\institucional\templates\contact\contact_site.html:303
+#: .\institucional\templates\home\components\_faq_home.html:83
+#: .\institucional\templates\json\_ld_json_contact.html:103
+#: .\institucional\templates\json\_ld_json_home.html:210
+msgid "Quanto tempo demora um processo?"
+msgstr "¿Cuánto tiempo tarda un proceso?"
 
 #: .\institucional\templates\contact\contact_site.html:309
 msgid ""
@@ -1179,13 +935,18 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                El plazo varía según el caso, la urgencia, el "
-"volumen de pruebas y la respuesta de la otra\n"
+"                                El plazo varía según el caso, la urgencia, el volumen de pruebas y la respuesta de la otra\n"
 "                                parte/órgano.\n"
-"                                En la consulta, estimaré escenarios de tiempo "
-"y alternativas para buscar mayor\n"
+"                                En la consulta, estimaré escenarios de tiempo y alternativas para buscar mayor\n"
 "                                agilidad.\n"
 "                                "
+
+#: .\institucional\templates\contact\contact_site.html:325
+#: .\institucional\templates\home\components\_faq_home.html:102
+#: .\institucional\templates\json\_ld_json_contact.html:108
+#: .\institucional\templates\json\_ld_json_home.html:218
+msgid "O que é preciso para revisar juros abusivos ou contratos bancários?"
+msgstr "¿Qué se necesita para revisar intereses abusivos o contratos bancarios?"
 
 #: .\institucional\templates\contact\contact_site.html:331
 msgid ""
@@ -1199,13 +960,18 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                Normalmente necesitamos el contrato, "
-"estados, extractos, comprobantes de pago\n"
+"                                Normalmente necesitamos el contrato, estados, extractos, comprobantes de pago\n"
 "                                y\n"
 "                                eventuales\n"
-"                                renegociaciones. Con eso, es posible evaluar "
-"la legalidad de tasas y cláusulas.\n"
+"                                renegociaciones. Con eso, es posible evaluar la legalidad de tasas y cláusulas.\n"
 "                                "
+
+#: .\institucional\templates\contact\contact_site.html:347
+#: .\institucional\templates\home\components\_faq_home.html:122
+#: .\institucional\templates\json\_ld_json_contact.html:113
+#: .\institucional\templates\json\_ld_json_home.html:226
+msgid "Posso pedir benefício previdenciário mesmo após indeferimento?"
+msgstr "¿Puedo solicitar un beneficio previsional incluso después de una denegación?"
 
 #: .\institucional\templates\contact\contact_site.html:353
 msgid ""
@@ -1220,14 +986,19 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                Sí. Dependiendo del motivo de la denegación, "
-"podemos recurrir administrativamente o\n"
+"                                Sí. Dependiendo del motivo de la denegación, podemos recurrir administrativamente o\n"
 "                                presentar\n"
 "                                una demanda.\n"
-"                                Evalúo el fundamento, documentos, informes y "
-"el historial contributivo para definir la mejor\n"
+"                                Evalúo el fundamento, documentos, informes y el historial contributivo para definir la mejor\n"
 "                                estrategia.\n"
 "                                "
+
+#: .\institucional\templates\contact\contact_site.html:370
+#: .\institucional\templates\home\components\_faq_home.html:143
+#: .\institucional\templates\json\_ld_json_contact.html:118
+#: .\institucional\templates\json\_ld_json_home.html:234
+msgid "Como funciona inventário e partilha?"
+msgstr "¿Cómo funciona el inventario y la partición?"
 
 #: .\institucional\templates\contact\contact_site.html:376
 msgid ""
@@ -1242,14 +1013,19 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                El inventario organiza bienes, deudas y "
-"herederos para formalizar la partición. Puede ser\n"
+"                                El inventario organiza bienes, deudas y herederos para formalizar la partición. Puede ser\n"
 "                                judicial o\n"
 "                                ante notario,\n"
-"                                según los requisitos. Yo conduzco el proceso y "
-"te indico la vía más adecuada para tu\n"
+"                                según los requisitos. Yo conduzco el proceso y te indico la vía más adecuada para tu\n"
 "                                escenario.\n"
 "                                "
+
+#: .\institucional\templates\contact\contact_site.html:393
+#: .\institucional\templates\home\components\_faq_home.html:163
+#: .\institucional\templates\json\_ld_json_contact.html:123
+#: .\institucional\templates\json\_ld_json_home.html:242
+msgid "Quando vale a pena fazer testamento?"
+msgstr "¿Cuándo vale la pena hacer un testamento?"
 
 #: .\institucional\templates\contact\contact_site.html:399
 msgid ""
@@ -1264,14 +1040,19 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                El testamento es útil para organizar la "
-"voluntad, reducir conflictos y dar previsibilidad.\n"
+"                                El testamento es útil para organizar la voluntad, reducir conflictos y dar previsibilidad.\n"
 "                                No\n"
 "                                elimina reglas\n"
-"                                legales, pero ayuda mucho en la planificación "
-"sucesoria. Explico opciones y límites de forma\n"
+"                                legales, pero ayuda mucho en la planificación sucesoria. Explico opciones y límites de forma\n"
 "                                clara.\n"
 "                                "
+
+#: .\institucional\templates\contact\contact_site.html:416
+#: .\institucional\templates\home\components\_faq_home.html:183
+#: .\institucional\templates\json\_ld_json_contact.html:128
+#: .\institucional\templates\json\_ld_json_home.html:250
+msgid "Quais são as formas de honorários?"
+msgstr "¿Cuáles son las formas de honorarios?"
 
 #: .\institucional\templates\contact\contact_site.html:422
 msgid ""
@@ -1284,12 +1065,17 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                Los honorarios varían según la complejidad, "
-"urgencia y modelo de actuación (consultivo,\n"
+"                                Los honorarios varían según la complejidad, urgencia y modelo de actuación (consultivo,\n"
 "                                administrativo o\n"
-"                                judicial). Presento la propuesta con "
-"claridad y lo alineamos todo antes de iniciar.\n"
+"                                judicial). Presento la propuesta con claridad y lo alineamos todo antes de iniciar.\n"
 "                                "
+
+#: .\institucional\templates\contact\contact_site.html:437
+#: .\institucional\templates\home\components\_faq_home.html:203
+#: .\institucional\templates\json\_ld_json_contact.html:133
+#: .\institucional\templates\json\_ld_json_home.html:258
+msgid "Como posso agendar e qual o prazo para retorno?"
+msgstr "¿Cómo puedo agendar y cuál es el plazo de respuesta?"
 
 #: .\institucional\templates\contact\contact_site.html:443
 msgid ""
@@ -1303,19 +1089,17 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                Puedes agendar por WhatsApp o teléfono. "
-"Normalmente respondo el mismo día hábil y, en\n"
+"                                Puedes agendar por WhatsApp o teléfono. Normalmente respondo el mismo día hábil y, en\n"
 "                                casos\n"
 "                                urgentes,\n"
-"                                priorizo la atención según la "
-"disponibilidad.\n"
+"                                priorizo la atención según la disponibilidad.\n"
 "                                "
 
 #: .\institucional\templates\home\components\_about_home.html:19
 msgid "Foto de Jorge R. Sarobe"
 msgstr "Foto de Jorge R. Sarobe"
 
-#: .\institucional\templates\home\components\_about_home.html:34
+#: .\institucional\templates\home\components\_about_home.html:35
 msgid ""
 "\n"
 "                        Advogado – OAB/SC Profissional graduado pela "
@@ -1328,16 +1112,13 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Abogado – OAB/SC, profesional graduado por la "
-"Universidad Estácio de Sá (2020), con sólida base\n"
-"                        práctica en el Poder Judicial. Actuó como Conciliador "
-"Judicial en el Foro de São José/SC,\n"
-"                        desarrollando habilidades en mediación y resolución de "
-"conflictos junto al Juzgado Especial\n"
+"                        Abogado – OAB/SC, profesional graduado por la Universidad Estácio de Sá (2020), con sólida base\n"
+"                        práctica en el Poder Judicial. Actuó como Conciliador Judicial en el Foro de São José/SC,\n"
+"                        desarrollando habilidades en mediación y resolución de conflictos junto al Juzgado Especial\n"
 "                        Penal.\n"
 "                        "
 
-#: .\institucional\templates\home\components\_about_home.html:42
+#: .\institucional\templates\home\components\_about_home.html:43
 msgid ""
 "\n"
 "                        Atualmente, contribui ativamente para o "
@@ -1347,45 +1128,43 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Actualmente, contribuye activamente al "
-"fortalecimiento del gremio como integrante de la\n"
-"                        Comisión de Derecho Bancario de la OAB/SC (Subsección São "
-"José).\n"
+"                        Actualmente, contribuye activamente al fortalecimiento del gremio como integrante de la\n"
+"                        Comisión de Derecho Bancario de la OAB/SC (Subsección São José).\n"
 "                        "
 
-#: .\institucional\templates\home\components\_about_home.html:58
+#: .\institucional\templates\home\components\_about_home.html:59
 msgid "Atendimento direto"
 msgstr "Atención directa"
 
-#: .\institucional\templates\home\components\_about_home.html:69
+#: .\institucional\templates\home\components\_about_home.html:70
 msgid "Estratégia e clareza"
 msgstr "Estrategia y claridad"
 
-#: .\institucional\templates\home\components\_about_home.html:80
+#: .\institucional\templates\home\components\_about_home.html:81
 msgid "Foco em resultado"
 msgstr "Enfoque en resultados"
 
-#: .\institucional\templates\home\components\_about_home.html:88
-#: .\institucional\templates\home\components\_about_home.html:95
+#: .\institucional\templates\home\components\_about_home.html:89
+#: .\institucional\templates\home\components\_about_home.html:96
 msgid "Agendar consulta"
 msgstr "Agendar consulta"
 
 #: .\institucional\templates\home\components\_areas_home.html:8
-#: .\institucional\templates\services\services_site.html:20
+#: .\institucional\templates\services\services_site.html:21
 msgid "Áreas de Atuação"
 msgstr "Áreas de Actuación"
 
 #: .\institucional\templates\home\components\_areas_home.html:11
 msgid ""
 "\n"
-"                Atuação jurídica em São José - SC com foco em três frentes "
-"essenciais, oferecendo estratégia, clareza e\n"
-"                acompanhamento completo desde o primeiro atendimento.\n"
+"                Atuação jurídica em São José - SC com estratégia, clareza e "
+"acompanhamento completo em Direito Bancário,\n"
+"                Previdenciário, Sucessões e Direito Migratório para "
+"residência no Brasil e naturalização brasileira.\n"
 "                "
 msgstr ""
 "\n"
-"                Actuación jurídica en São José (SC) con enfoque en tres frentes "
-"esenciales, ofreciendo estrategia, claridad y\n"
+"                Actuación jurídica en São José (SC) con enfoque en tres frentes esenciales, ofreciendo estrategia, claridad y\n"
 "                acompañamiento completo desde la primera atención.\n"
 "                "
 
@@ -1399,20 +1178,13 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Actuación en São José (SC) en la revisión de contratos, "
-"análisis de intereses abusivos, renegociación de\n"
-"                        deudas y defensa del consumidor en relaciones con "
-"bancos e instituciones financieras.\n"
+"                        Actuación en São José (SC) en la revisión de contratos, análisis de intereses abusivos, renegociación de\n"
+"                        deudas y defensa del consumidor en relaciones con bancos e instituciones financieras.\n"
 "                        "
 
-#: .\institucional\templates\home\components\_areas_home.html:39
 #: .\institucional\templates\home\components\_areas_home.html:40
-#: .\institucional\templates\home\components\_areas_home.html:71
-#: .\institucional\templates\home\components\_areas_home.html:72
-#: .\institucional\templates\home\components\_areas_home.html:106
-#: .\institucional\templates\home\components\_areas_home.html:107
-msgid "Falar com o advogado"
-msgstr "Hablar con el abogado"
+msgid "Falar com advogado sobre Direito Bancário"
+msgstr "Posgrado en Derecho Bancario"
 
 #: .\institucional\templates\home\components\_areas_home.html:65
 msgid ""
@@ -1424,11 +1196,23 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Planificación y solicitud de jubilaciones y "
-"beneficios del INSS, revisiones y acompañamiento\n"
-"                        administrativo y judicial para clientes de São José "
-"y la región.\n"
+"                        Planificación y solicitud de jubilaciones y beneficios del INSS, revisiones y acompañamiento\n"
+"                        administrativo y judicial para clientes de São José y la región.\n"
 "                        "
+
+#: .\institucional\templates\home\components\_areas_home.html:72
+msgid "Falar com advogado sobre Direito Previdenciário"
+msgstr "Derecho Previsional"
+
+#: .\institucional\templates\home\components\_areas_home.html:97
+#: .\institucional\templates\json\_ld_json_about.html:44
+#: .\institucional\templates\json\_ld_json_about.html:58
+#: .\institucional\templates\json\_ld_json_contact.html:68
+#: .\institucional\templates\json\_ld_json_home.html:99
+#: .\institucional\templates\json\_ld_json_home.html:161
+#: .\institucional\templates\services\services_site.html:291
+msgid "Sucessões"
+msgstr "Sucesiones"
 
 #: .\institucional\templates\home\components\_areas_home.html:100
 msgid ""
@@ -1439,10 +1223,63 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Inventario judicial y extrajudicial, partición de "
-"bienes, testamentos y planificación sucesoria con\n"
+"                        Inventario judicial y extrajudicial, partición de bienes, testamentos y planificación sucesoria con\n"
 "                        seguridad jurídica y discreción en São José (SC).\n"
 "                        "
+
+#: .\institucional\templates\home\components\_areas_home.html:107
+msgid "Falar com advogado sobre Sucessões"
+msgstr "Hablar con el abogado"
+
+#: .\institucional\templates\home\components\_areas_home.html:129
+#: .\institucional\templates\json\_ld_json_home.html:109
+#: .\institucional\templates\json\_ld_json_home.html:167
+#: .\institucional\templates\services\services_site.html:521
+msgid "Tramitação de Residência no Brasil"
+msgstr "Tramitación de residencia en Brasil"
+
+#: .\institucional\templates\home\components\_areas_home.html:132
+msgid ""
+"\n"
+"                        Orientação para estrangeiros que desejam viver "
+"legalmente no Brasil por mais de 90 dias, com\n"
+"                        análise de documentos, tradução juramentada quando "
+"necessária e acompanhamento do pedido.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Orientación para extranjeros que desean vivir legalmente en Brasil por más de 90 días, con\n"
+"                        análisis de documentos, traducción jurada cuando sea necesaria y seguimiento de la solicitud.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_areas_home.html:139
+msgid "Falar com advogado sobre residência no Brasil"
+msgstr "Hablar con un abogado sobre residencia en Brasil"
+
+#: .\institucional\templates\home\components\_areas_home.html:165
+#: .\institucional\templates\json\_ld_json_home.html:119
+#: .\institucional\templates\json\_ld_json_home.html:173
+#: .\institucional\templates\services\services_site.html:550
+msgid "Tramitação de Naturalização Brasileira"
+msgstr "Tramitación de naturalización brasileña"
+
+#: .\institucional\templates\home\components\_areas_home.html:168
+msgid ""
+"\n"
+"                        Análise da modalidade aplicável, requisitos legais, "
+"tempo de residência, vínculos familiares,\n"
+"                        documentos estrangeiros e acompanhamento do pedido "
+"de nacionalidade brasileira.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Análisis de la modalidad aplicable, requisitos legales, tiempo de residencia, vínculos familiares,\n"
+"                        documentos extranjeros y seguimiento de la solicitud de nacionalidad brasileña.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_areas_home.html:175
+msgid "Falar com advogado sobre naturalização brasileira"
+msgstr "Hablar con un abogado sobre naturalización brasileña"
 
 #: .\institucional\templates\home\components\_assessment_home.html:8
 msgid "Avaliações"
@@ -1456,16 +1293,9 @@ msgstr "Lo que dicen en Google"
 msgid "Transparência e confiança no atendimento."
 msgstr "Transparencia y confianza en la atención."
 
-#: .\institucional\templates\home\components\_assessment_home.html:18
-#: .\institucional\templates\home\components\_assessment_home.html:45
-#: .\institucional\templates\home\components\_assessment_home.html:67
-#: .\institucional\templates\home\components\_assessment_home.html:89
-msgid "5 de 5"
-msgstr "5 de 5"
-
 #: .\institucional\templates\home\components\_assessment_home.html:25
-msgid "Baseado em <strong>+30</strong> avaliações"
-msgstr "Basado en <strong>+30</strong> reseñas"
+msgid "Baseado em <strong>+15</strong> avaliações"
+msgstr "Basado en <strong>+15</strong> reseñas"
 
 #: .\institucional\templates\home\components\_assessment_home.html:29
 #: .\institucional\templates\home\components\_assessment_home.html:33
@@ -1473,19 +1303,37 @@ msgid "Ver no Google"
 msgstr "Ver en Google"
 
 #: .\institucional\templates\home\components\_assessment_home.html:53
-#: .\institucional\templates\home\components\_assessment_home.html:75
-#: .\institucional\templates\home\components\_assessment_home.html:97
 msgid ""
 "\n"
-"                        Atendimento excelente, explicou tudo com clareza e "
-"me deu segurança em cada etapa.\n"
-"                        Recomendo.\n"
+"                        Profissional competente, serviço de qualidade, "
+"atendimento humanizado, super indico\n"
 "                        "
 msgstr ""
 "\n"
-"                        Atención excelente, explicó todo con claridad y "
-"me dio seguridad en cada etapa.\n"
-"                        Lo recomiendo.\n"
+"                        Respuestas objetivas a las dudas más comunes sobre atención y actuación.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_assessment_home.html:74
+msgid ""
+"\n"
+"                        Recomendo muito , Dr Jorge , atencioso responde "
+"nossas questões rápido, tira nossas dúvidas com clareza, ótimo "
+"profissional.\n"
+"                        "
+msgstr ""
+"\n"
+"                        Respuestas objetivas a las dudas más comunes sobre atención y actuación.\n"
+"                        "
+
+#: .\institucional\templates\home\components\_assessment_home.html:95
+msgid ""
+"\n"
+"                        Grande proficional de muita confiança e com vasto "
+"conhecimento e experiência em todas as áreas do Direito e Contabilidade\n"
+"                        "
+msgstr ""
+"\n"
+"                        Gran profesional, de mucha confianza y con amplios conocimientos y experiencia en todas las áreas del Derecho y la Contabilidad\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:10
@@ -1496,8 +1344,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                Dudas comunes de clientes que buscan abogado en São José (SC) "
-"para causas bancarias, previsionales y sucesorias.\n"
+"                Dudas comunes de clientes que buscan abogado en São José (SC) para causas bancarias, previsionales y sucesorias.\n"
 "                "
 
 #: .\institucional\templates\home\components\_faq_home.html:28
@@ -1512,11 +1359,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Presentas tu situación y los documentos "
-"disponibles. Yo evalúo el escenario, explico\n"
+"                        Presentas tu situación y los documentos disponibles. Yo evalúo el escenario, explico\n"
 "                        posibilidades,\n"
-"                        riesgos y próximos pasos. Si tiene sentido, "
-"definimos la estrategia y la forma de llevar el\n"
+"                        riesgos y próximos pasos. Si tiene sentido, definimos la estrategia y la forma de llevar el\n"
 "                        caso.\n"
 "                        "
 
@@ -1531,11 +1376,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Depende del tema, pero por lo general ayudan: RG/CPF, "
-"comprobantes, contratos, extractos, comunicaciones\n"
+"                        Depende del tema, pero por lo general ayudan: RG/CPF, comprobantes, contratos, extractos, comunicaciones\n"
 "                        del banco/INSS,\n"
-"                        y cualquier documento que acredite la situación. Si "
-"falta algo, te indico qué solicitar después.\n"
+"                        y cualquier documento que acredite la situación. Si falta algo, te indico qué solicitar después.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:69
@@ -1549,11 +1392,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Sí. La atención online es posible para la mayoría "
-"de los casos, con envío de documentos\n"
+"                        Sí. La atención online es posible para la mayoría de los casos, con envío de documentos\n"
 "                        digitalizados y\n"
-"                        reunión por video/WhatsApp. Cuando sea necesario, "
-"coordinamos atención presencial.\n"
+"                        reunión por video/WhatsApp. Cuando sea necesario, coordinamos atención presencial.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:89
@@ -1566,10 +1407,8 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        El plazo varía según el caso, la urgencia, el volumen "
-"de pruebas y la respuesta de la otra parte/órgano.\n"
-"                        En la consulta, estimaré escenarios de tiempo y "
-"alternativas para buscar mayor agilidad.\n"
+"                        El plazo varía según el caso, la urgencia, el volumen de pruebas y la respuesta de la otra parte/órgano.\n"
+"                        En la consulta, estimaré escenarios de tiempo y alternativas para buscar mayor agilidad.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:108
@@ -1583,11 +1422,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Normalmente necesitamos el contrato, estados, "
-"extractos, comprobantes de pago y\n"
+"                        Normalmente necesitamos el contrato, estados, extractos, comprobantes de pago y\n"
 "                        eventuales\n"
-"                        renegociaciones. Con eso, es posible evaluar la "
-"legalidad de tasas y cláusulas.\n"
+"                        renegociaciones. Con eso, es posible evaluar la legalidad de tasas y cláusulas.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:128
@@ -1602,11 +1439,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Sí. Dependiendo del motivo de la denegación, podemos "
-"recurrir administrativamente o presentar\n"
+"                        Sí. Dependiendo del motivo de la denegación, podemos recurrir administrativamente o presentar\n"
 "                        una demanda.\n"
-"                        Evalúo el fundamento, documentos, informes y el historial "
-"contributivo para definir la mejor\n"
+"                        Evalúo el fundamento, documentos, informes y el historial contributivo para definir la mejor\n"
 "                        estrategia.\n"
 "                        "
 
@@ -1621,11 +1456,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        El inventario organiza bienes, deudas y herederos para "
-"formalizar la partición. Puede ser judicial o\n"
+"                        El inventario organiza bienes, deudas y herederos para formalizar la partición. Puede ser judicial o\n"
 "                        ante notario,\n"
-"                        según los requisitos. Yo conduzco el proceso y te indico "
-"la vía más adecuada para tu escenario.\n"
+"                        según los requisitos. Yo conduzco el proceso y te indico la vía más adecuada para tu escenario.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:169
@@ -1639,11 +1472,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        El testamento es útil para organizar la voluntad, "
-"reducir conflictos y dar previsibilidad. No\n"
+"                        El testamento es útil para organizar la voluntad, reducir conflictos y dar previsibilidad. No\n"
 "                        elimina reglas\n"
-"                        legales, pero ayuda mucho en la planificación sucesoria. "
-"Explico opciones y límites de forma clara.\n"
+"                        legales, pero ayuda mucho en la planificación sucesoria. Explico opciones y límites de forma clara.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:189
@@ -1657,11 +1488,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Los honorarios varían según la complejidad, la urgencia "
-"y el modelo de actuación (consultivo,\n"
+"                        Los honorarios varían según la complejidad, la urgencia y el modelo de actuación (consultivo,\n"
 "                        administrativo o\n"
-"                        judicial). Presento la propuesta con claridad y "
-"lo alineamos todo antes de iniciar.\n"
+"                        judicial). Presento la propuesta con claridad y lo alineamos todo antes de iniciar.\n"
 "                        "
 
 #: .\institucional\templates\home\components\_faq_home.html:209
@@ -1674,17 +1503,16 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Puedes agendar por WhatsApp o teléfono. "
-"Normalmente respondo el mismo día hábil y, en casos\n"
+"                        Puedes agendar por WhatsApp o teléfono. Normalmente respondo el mismo día hábil y, en casos\n"
 "                        urgentes,\n"
 "                        priorizo la atención según la disponibilidad.\n"
 "                        "
 
-#: .\institucional\templates\home\components\_hero_home.html:11
+#: .\institucional\templates\home\components\_hero_home.html:16
 msgid "Atuação estratégica e atendimento humanizado"
 msgstr "Actuación estratégica y atención humanizada"
 
-#: .\institucional\templates\home\components\_hero_home.html:15
+#: .\institucional\templates\home\components\_hero_home.html:20
 msgid ""
 "\n"
 "                        Advogado em <span class=\"text-gold\">São José - SC</"
@@ -1695,14 +1523,12 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Abogado en <span class=\"text-gold\">São José - SC</"
-"span> para causas <span\n"
-"                            class=\"text-gold\">bancarias</span>, <span "
-"class=\"text-gold\">previsionales</span> y <span\n"
+"                        Abogado en <span class=\"text-gold\">São José - SC</span> para causas <span\n"
+"                            class=\"text-gold\">bancarias</span>, <span class=\"text-gold\">previsionales</span> y <span\n"
 "                            class=\"text-gold\">sucesorias</span>\n"
 "                        "
 
-#: .\institucional\templates\home\components\_hero_home.html:23
+#: .\institucional\templates\home\components\_hero_home.html:28
 msgid ""
 "\n"
 "                        Atendimento jurídico personalizado em São José e "
@@ -1712,195 +1538,335 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                        Atención jurídica personalizada en São José y la "
-"región. Orientación clara desde el análisis\n"
-"                        inicial hasta la solución de tu caso, con estrategia, "
-"seguridad y agilidad.\n"
+"                        Atención jurídica personalizada en São José y la región. Orientación clara desde el análisis\n"
+"                        inicial hasta la solución de tu caso, con estrategia, seguridad y agilidad.\n"
 "                        "
 
-#: .\institucional\templates\home\components\_hero_home.html:33
+#: .\institucional\templates\home\components\_hero_home.html:38
 msgid "Falar agora no WhatsApp"
 msgstr "Hablar ahora por WhatsApp"
 
-#: .\institucional\templates\home\components\_hero_home.html:42
-#: .\institucional\templates\home\components\_hero_home.html:43
+#: .\institucional\templates\home\components\_hero_home.html:47
+#: .\institucional\templates\home\components\_hero_home.html:48
 msgid "Ver áreas de atuação"
 msgstr "Ver áreas de actuación"
 
-#: .\institucional\templates\home\components\_ld_json_home.html:30
-msgid ""
-"Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e "
-"Sucessões. Atendimento estratégico e personalizado."
-msgstr ""
-"Abogado en São José (SC) con actuación en Derecho Bancario, Previsional y "
-"Sucesiones. Atención estratégica y personalizada."
-
 #: .\institucional\templates\home\home_site.html:10
+#: .\institucional\templates\json\_ld_json_home.html:20
 #: .\institucional\templates\services\services_site.html:7
-msgid "Advogado em São José SC | Direito Bancário, Previdenciário e Sucessões"
+msgid ""
+"Advogado em São José SC | Bancário, Previdenciário, Sucessões e Migratório"
 msgstr "Abogado en São José (SC) | Derecho Bancario, Previsional y Sucesiones"
 
 #: .\institucional\templates\home\home_site.html:12
+#: .\institucional\templates\services\services_site.html:8
 msgid ""
-"Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e "
-"Sucessões. Atendimento direto, estratégico e com foco em resultado. Agende "
-"sua consulta."
-msgstr ""
-"Abogado en São José (SC) con actuación en Derecho Bancario, Previsional y "
-"Sucesiones. Atención directa, estratégica y enfocada en resultados. Agenda "
-"tu consulta."
+"Advogado em São José - SC com atuação em Direito Bancário, Previdenciário, "
+"Sucessões e Direito Migratório para residência e naturalização no Brasil."
+msgstr "Abogado en São José (SC) con actuación en Derecho Bancario, Previsional y Sucesiones. Atención estratégica y personalizada."
 
 #: .\institucional\templates\home\home_site.html:38
 msgid ""
 "Atendimento direto, análise estratégica e orientação clara para seu caso "
 "jurídico em São José e região."
-msgstr ""
-"Atención directa, análisis estratégico y orientación clara para tu caso "
-"jurídico en São José y la región."
+msgstr "Atención directa, análisis estratégico y orientación clara para tu caso jurídico en São José y la región."
 
-#: .\institucional\templates\services\services_site.html:8
+#: .\institucional\templates\json\_ld_json_about.html:23
+#: .\institucional\templates\json\_ld_json_contact.html:22
+#: .\institucional\templates\json\_ld_json_home.html:13
+#: .\institucional\templates\json\_ld_json_home.html:34
+msgid "Jorge R. Sarobe - Advogado em São José SC"
+msgstr "Jorge R. Sarobe - Abogado en São José (SC)"
+
+#: .\institucional\templates\json\_ld_json_about.html:52
+#: .\institucional\templates\json\_ld_json_contact.html:76
+#: .\institucional\templates\json\_ld_json_home.html:132
+msgid "Advogado"
+msgstr "Abogado"
+
+#: .\institucional\templates\json\_ld_json_about.html:75
+#: .\institucional\templates\json\_ld_json_blog_details.html:70
+#: .\institucional\templates\json\_ld_json_blog_list.html:74
+msgid "Início"
+msgstr "Inicio"
+
+#: .\institucional\templates\json\_ld_json_blog_details.html:76
+#: .\institucional\templates\json\_ld_json_blog_list.html:80
+msgid "Blog"
+msgstr "Blog"
+
+#: .\institucional\templates\json\_ld_json_contact.html:89
+#: .\institucional\templates\json\_ld_json_home.html:189
 msgid ""
-"Advogado em São José - SC com atuação em Direito Bancário, Previdenciário e "
-"Sucessões. Atendimento estratégico, personalizado e focado em resultado."
-msgstr ""
-"Abogado en São José (SC) con actuación en Derecho Bancario, Previsional y "
-"Sucesiones. Atención estratégica, personalizada y enfocada en resultados."
+"Você apresenta sua situação e os documentos disponíveis. Eu avalio o "
+"cenário, explico possibilidades, riscos e próximos passos. Se fizer sentido, "
+"definimos a estratégia e a forma de condução do caso."
+msgstr "Presentas tu situación y los documentos disponibles. Yo evalúo el escenario, explico posibilidades, riesgos y próximos pasos. Si tiene sentido, definimos la estrategia y la forma de llevar el caso."
 
-#: .\institucional\templates\services\services_site.html:21
+#: .\institucional\templates\json\_ld_json_contact.html:94
+#: .\institucional\templates\json\_ld_json_home.html:197
+msgid ""
+"Depende do tema, mas geralmente ajudam: RG/CPF, comprovantes, contratos, "
+"extratos, comunicações do banco/INSS, e qualquer documento que comprove a "
+"situação. Se faltar algo, eu oriento o que solicitar depois."
+msgstr "Depende del tema, pero por lo general ayudan: RG/CPF, comprobantes, contratos, extractos, comunicaciones del banco/INSS y cualquier documento que acredite la situación. Si falta algo, te indico qué solicitar después."
+
+#: .\institucional\templates\json\_ld_json_contact.html:99
+#: .\institucional\templates\json\_ld_json_home.html:205
+msgid ""
+"Sim. O atendimento online é possível para a maioria dos casos, com envio de "
+"documentos digitalizados e reunião por vídeo/WhatsApp. Quando necessário, "
+"alinhamos atendimento presencial."
+msgstr "Sí. La atención online es posible para la mayoría de los casos, con envío de documentos digitalizados y reunión por video/WhatsApp. Cuando sea necesario, coordinamos atención presencial."
+
+#: .\institucional\templates\json\_ld_json_contact.html:104
+#: .\institucional\templates\json\_ld_json_home.html:213
+msgid ""
+"O prazo varia conforme o caso, a urgência, o volume de provas e a resposta "
+"da outra parte/órgão. Na consulta, eu estimarei cenários de tempo e as "
+"alternativas para buscar maior agilidade."
+msgstr "El plazo varía según el caso, la urgencia, el volumen de pruebas y la respuesta de la otra parte/órgano. En la consulta, estimaré escenarios de tiempo y alternativas para buscar mayor agilidad."
+
+#: .\institucional\templates\json\_ld_json_contact.html:109
+#: .\institucional\templates\json\_ld_json_home.html:221
+msgid ""
+"Normalmente precisamos do contrato, demonstrativos, extratos, comprovantes "
+"de pagamento e eventuais renegociações. Com isso, é possível avaliar a "
+"legalidade de taxas e cláusulas."
+msgstr "Normalmente necesitamos el contrato, estados, extractos, comprobantes de pago y eventuales renegociaciones. Con eso, es posible evaluar la legalidad de tasas y cláusulas."
+
+#: .\institucional\templates\json\_ld_json_contact.html:114
+#: .\institucional\templates\json\_ld_json_home.html:229
+msgid ""
+"Sim. Dependendo do motivo do indeferimento, podemos recorrer "
+"administrativamente ou ingressar com ação. Avalio o fundamento, documentos, "
+"laudos e histórico contributivo para definir a melhor estratégia."
+msgstr "Sí. Dependiendo del motivo de la denegación, podemos recurrir administrativamente o presentar una demanda. Evalúo el fundamento, documentos, informes y el historial contributivo para definir la mejor estrategia."
+
+#: .\institucional\templates\json\_ld_json_contact.html:119
+#: .\institucional\templates\json\_ld_json_home.html:237
+msgid ""
+"O inventário organiza bens, dívidas e herdeiros para formalizar a partilha. "
+"Pode ser judicial ou em cartório, conforme requisitos. Eu conduzo o processo "
+"e indico a via mais adequada para o seu cenário."
+msgstr "El inventario organiza bienes, deudas y herederos para formalizar la partición. Puede ser judicial o ante notario, según los requisitos. Yo conduzco el proceso y te indico la vía más adecuada para tu escenario."
+
+#: .\institucional\templates\json\_ld_json_contact.html:124
+#: .\institucional\templates\json\_ld_json_home.html:245
+msgid ""
+"O testamento é útil para organizar a vontade, reduzir conflitos e dar "
+"previsibilidade. Ele não elimina regras legais, mas ajuda muito no "
+"planejamento sucessório. Eu explico opções e limites de forma clara."
+msgstr "El testamento es útil para organizar la voluntad, reducir conflictos y dar previsibilidad. No elimina reglas legales, pero ayuda mucho en la planificación sucesoria. Explico opciones y límites de forma clara."
+
+#: .\institucional\templates\json\_ld_json_contact.html:129
+#: .\institucional\templates\json\_ld_json_home.html:253
+msgid ""
+"Os honorários variam conforme complexidade, urgência e modelo de atuação "
+"(consultivo, administrativo ou judicial). Eu apresento a proposta com "
+"clareza e alinhamos tudo antes de iniciar."
+msgstr "Los honorarios varían según la complejidad, la urgencia y el modelo de actuación (consultivo, administrativo o judicial). Presento la propuesta con claridad y lo alineamos todo antes de iniciar."
+
+#: .\institucional\templates\json\_ld_json_contact.html:134
+#: .\institucional\templates\json\_ld_json_home.html:261
+msgid ""
+"Você pode agendar pelo WhatsApp ou telefone. Normalmente retorno no mesmo "
+"dia útil, e em casos urgentes priorizo o atendimento conforme "
+"disponibilidade."
+msgstr "Puedes agendar por WhatsApp o teléfono. Normalmente respondo el mismo día hábil y, en casos urgentes, priorizo la atención según la disponibilidad."
+
+#: .\institucional\templates\json\_ld_json_home.html:21
+msgid ""
+"Advogado em São José - SC com atuação em Direito Bancário, Previdenciário, "
+"Sucessões e Direito Migratório, incluindo residência no Brasil e "
+"naturalização brasileira."
+msgstr "Abogado en São José (SC) con actuación en Derecho Bancario, Previsional y Sucesiones. Atención estratégica y personalizada."
+
+#: .\institucional\templates\json\_ld_json_home.html:37
+msgid ""
+"Advocacia em São José - SC com atuação em Direito Bancário, Direito "
+"Previdenciário, Sucessões e Direito Migratório para residência no Brasil e "
+"naturalização brasileira."
+msgstr "Abogado en São José (SC) con actuación en Derecho Bancario, Previsional y Sucesiones. Atención estratégica y personalizada."
+
+#: .\institucional\templates\json\_ld_json_home.html:73
+msgid "Áreas de atuação jurídica"
+msgstr "Áreas de Actuación"
+
+#: .\institucional\templates\json\_ld_json_home.html:81
+msgid ""
+"Revisão de contratos, análise de juros abusivos, renegociação de dívidas e "
+"defesa do consumidor em relações com bancos e instituições financeiras."
+msgstr ""
+"                        Actuación en São José (SC) en la revisión de contratos, análisis de intereses abusivos, renegociación de\n"
+"                        deudas y defensa del consumidor en relaciones con bancos e instituciones financieras.\n"
+"                        "
+
+#: .\institucional\templates\json\_ld_json_home.html:91
+msgid ""
+"Planejamento e requerimento de aposentadorias e benefícios do INSS, revisões "
+"e acompanhamento administrativo e judicial."
+msgstr ""
+"                        Planificación y solicitud de jubilaciones y beneficios del INSS, revisiones y acompañamiento\n"
+"                        administrativo y judicial para clientes de São José y la región.\n"
+"                        "
+
+#: .\institucional\templates\json\_ld_json_home.html:101
+msgid ""
+"Inventário judicial e extrajudicial, partilha de bens, testamentos e "
+"planejamento sucessório."
+msgstr "Inventarios judiciales y extrajudiciales en São José (SC), partición de bienes y planificación sucesoria con seguridad jurídica y organización patrimonial familiar."
+
+#: .\institucional\templates\json\_ld_json_home.html:111
+msgid ""
+"Orientação para estrangeiros que desejam viver legalmente no Brasil por mais "
+"de 90 dias, com análise documental, traduções juramentadas e acompanhamento "
+"do pedido."
+msgstr "Orientación para extranjeros que desean vivir legalmente en Brasil por más de 90 días, con análisis documental, traducciones juradas y seguimiento de la solicitud."
+
+#: .\institucional\templates\json\_ld_json_home.html:121
+msgid ""
+"Orientação em pedidos de naturalização ordinária, extraordinária, especial e "
+"provisória, com análise de requisitos, documentos e histórico migratório."
+msgstr "Orientación en solicitudes de naturalización ordinaria, extraordinaria, especial y provisional, con análisis de requisitos, documentos e historial migratorio."
+
+#: .\institucional\templates\json\_ld_json_home.html:144
+msgid "Especialidades jurídicas"
+msgstr "Especialidades"
+
+#: .\institucional\templates\services\services_site.html:22
 msgid "Advocacia estratégica em São José - SC"
 msgstr "Abogacía estratégica en São José (SC)"
 
-#: .\institucional\templates\services\services_site.html:22
+#: .\institucional\templates\services\services_site.html:23
 msgid ""
-"Atuação em Direito Bancário, Previdenciário e Sucessões, com atendimento "
-"direto, análise técnica e soluções jurídicas personalizadas em São José e "
-"região."
-msgstr ""
-"Actuación en Derecho Bancario, Previsional y Sucesiones, con atención "
-"directa, análisis técnico y soluciones jurídicas personalizadas en São José "
-"y la región."
+"Atuação em Direito Bancário, Previdenciário, Sucessões e Direito Migratório, "
+"incluindo residência no Brasil e naturalização brasileira, com atendimento "
+"direto e análise técnica."
+msgstr "Actuación en Derecho Bancario, Previsional y Sucesiones, con atención directa, análisis técnico y soluciones jurídicas personalizadas en São José y la región."
 
-#: .\institucional\templates\services\services_site.html:43
+#: .\institucional\templates\services\services_site.html:44
 msgid ""
 "Atuação em São José - SC na defesa dos seus direitos frente a bancos e "
 "instituições financeiras, com análise de contratos, cobrança de juros "
 "abusivos e revisão de financiamentos."
-msgstr ""
-"Actuación en São José (SC) en la defensa de tus derechos frente a bancos e "
-"instituciones financieras, con análisis de contratos, cobro de intereses "
-"abusivos y revisión de financiaciones."
+msgstr "Actuación en São José (SC) en la defensa de tus derechos frente a bancos e instituciones financieras, con análisis de contratos, cobro de intereses abusivos y revisión de financiaciones."
 
-#: .\institucional\templates\services\services_site.html:49
-#: .\institucional\templates\services\services_site.html:269
-#: .\institucional\templates\services\services_site.html:298
+#: .\institucional\templates\services\services_site.html:50
+#: .\institucional\templates\services\services_site.html:270
+#: .\institucional\templates\services\services_site.html:299
+#: .\institucional\templates\services\services_site.html:529
+#: .\institucional\templates\services\services_site.html:558
 msgid "Agendar Consulta nesta Área"
 msgstr "Agendar consulta en esta área"
 
-#: .\institucional\templates\services\services_site.html:57
-#: .\institucional\templates\services\services_site.html:160
-#: .\institucional\templates\services\services_site.html:306
+#: .\institucional\templates\services\services_site.html:58
+#: .\institucional\templates\services\services_site.html:161
+#: .\institucional\templates\services\services_site.html:307
+#: .\institucional\templates\services\services_site.html:407
 msgid "Como posso ajudar"
 msgstr "Cómo puedo ayudar"
 
-#: .\institucional\templates\services\services_site.html:68
+#: .\institucional\templates\services\services_site.html:69
 msgid "Revisão de contratos de financiamento e empréstimos"
 msgstr "Revisión de contratos de financiación y préstamos"
 
-#: .\institucional\templates\services\services_site.html:79
+#: .\institucional\templates\services\services_site.html:80
 msgid "Contestação de juros abusivos e tarifas ilegais"
 msgstr "Impugnación de intereses abusivos y tarifas ilegales"
 
-#: .\institucional\templates\services\services_site.html:90
+#: .\institucional\templates\services\services_site.html:91
 msgid "Ações de repetição de indébito bancário"
 msgstr "Acciones de repetición de pagos indebidos bancarios"
 
-#: .\institucional\templates\services\services_site.html:101
+#: .\institucional\templates\services\services_site.html:102
 msgid "Negociação e renegociação de dívidas"
 msgstr "Negociación y renegociación de deudas"
 
-#: .\institucional\templates\services\services_site.html:112
+#: .\institucional\templates\services\services_site.html:113
 msgid "Defesa em casos de inscrição indevida"
 msgstr "Defensa en casos de registro indebido"
 
-#: .\institucional\templates\services\services_site.html:123
+#: .\institucional\templates\services\services_site.html:124
 msgid "Análise de cédulas de crédito bancário"
 msgstr "Análisis de cédulas de crédito bancario"
 
-#: .\institucional\templates\services\services_site.html:138
-#: .\institucional\templates\services\services_site.html:234
-#: .\institucional\templates\services\services_site.html:380
+#: .\institucional\templates\services\services_site.html:139
+#: .\institucional\templates\services\services_site.html:235
+#: .\institucional\templates\services\services_site.html:381
+#: .\institucional\templates\services\services_site.html:493
+#: .\institucional\templates\services\services_site.html:651
 msgid "Documentos úteis"
 msgstr "Documentos útiles"
 
-#: .\institucional\templates\services\services_site.html:141
+#: .\institucional\templates\services\services_site.html:142
 msgid "Contratos bancários (empréstimo, financiamento, cartão)"
 msgstr "Contratos bancarios (préstamo, financiación, tarjeta)"
 
-#: .\institucional\templates\services\services_site.html:142
+#: .\institucional\templates\services\services_site.html:143
 msgid "Extratos bancários e faturas"
 msgstr "Extractos bancarios y facturas"
 
-#: .\institucional\templates\services\services_site.html:143
+#: .\institucional\templates\services\services_site.html:144
 msgid "Comprovantes de pagamento"
 msgstr "Comprobantes de pago"
 
-#: .\institucional\templates\services\services_site.html:144
+#: .\institucional\templates\services\services_site.html:145
 msgid "Notificações de cobrança"
 msgstr "Notificaciones de cobro"
 
-#: .\institucional\templates\services\services_site.html:145
-#: .\institucional\templates\services\services_site.html:238
+#: .\institucional\templates\services\services_site.html:146
+#: .\institucional\templates\services\services_site.html:239
 msgid "Documentos pessoais (RG, CPF, comprovante de residência)"
 msgstr "Documentos personales (RG, CPF, comprobante de domicilio)"
 
-#: .\institucional\templates\services\services_site.html:147
+#: .\institucional\templates\services\services_site.html:148
 msgid ""
 "* Esta é uma lista geral. A documentação\n"
 "                                necessária pode variar conforme seu caso "
 "específico."
 msgstr ""
 "* Esta es una lista general. La documentación\n"
-"                                necesaria puede variar según tu caso "
-"específico."
+"                                necesaria puede variar según tu caso específico."
 
-#: .\institucional\templates\services\services_site.html:172
+#: .\institucional\templates\services\services_site.html:173
 msgid "Aposentadorias (idade, tempo, especial e rural)"
 msgstr "Jubilaciones (edad, tiempo, especial y rural)"
 
-#: .\institucional\templates\services\services_site.html:184
+#: .\institucional\templates\services\services_site.html:185
 msgid "Benefícios por incapacidade (auxílio e aposentadoria)"
 msgstr "Beneficios por incapacidad (subsidio y jubilación)"
 
-#: .\institucional\templates\services\services_site.html:196
+#: .\institucional\templates\services\services_site.html:197
 msgid "Pensão por morte e auxílio-reclusão"
 msgstr "Pensión por fallecimiento y subsidio por reclusión"
 
-#: .\institucional\templates\services\services_site.html:208
+#: .\institucional\templates\services\services_site.html:209
 msgid "Revisão de benefício e cálculos previdenciários"
 msgstr "Revisión de beneficios y cálculos previsionales"
 
-#: .\institucional\templates\services\services_site.html:220
+#: .\institucional\templates\services\services_site.html:221
 msgid "Recursos administrativos e ações judiciais"
 msgstr "Recursos administrativos y acciones judiciales"
 
-#: .\institucional\templates\services\services_site.html:239
+#: .\institucional\templates\services\services_site.html:240
 msgid "Carteira de trabalho (CTPS) e CNIS"
 msgstr "Cartera de trabajo (CTPS) y CNIS"
 
-#: .\institucional\templates\services\services_site.html:240
+#: .\institucional\templates\services\services_site.html:241
 msgid "Comprovantes de contribuição (carnês/GUIA/holerites)"
 msgstr "Comprobantes de contribución (boletos/GUIA/recibos de sueldo)"
 
-#: .\institucional\templates\services\services_site.html:241
+#: .\institucional\templates\services\services_site.html:242
 msgid "Laudos e exames médicos (se aplicável)"
 msgstr "Informes y exámenes médicos (si aplica)"
 
-#: .\institucional\templates\services\services_site.html:242
+#: .\institucional\templates\services\services_site.html:243
 msgid "Carta de indeferimento e processo administrativo (se houver)"
 msgstr "Carta de denegación y proceso administrativo (si lo hubiera)"
 
-#: .\institucional\templates\services\services_site.html:246
-#: .\institucional\templates\services\services_site.html:392
+#: .\institucional\templates\services\services_site.html:247
+#: .\institucional\templates\services\services_site.html:393
 msgid ""
 "* Esta é uma lista geral. A documentação necessária pode variar conforme\n"
 "                                seu caso específico."
@@ -1908,68 +1874,247 @@ msgstr ""
 "* Esta es una lista general. La documentación necesaria puede variar según\n"
 "                                tu caso específico."
 
-#: .\institucional\templates\services\services_site.html:263
+#: .\institucional\templates\services\services_site.html:264
 msgid ""
 "Atuação em São José - SC na concessão de aposentadorias e benefícios do "
 "INSS, revisões previdenciárias e recursos administrativos ou judiciais para "
 "garantir seus direitos."
-msgstr ""
-"Actuación en São José (SC) en la concesión de jubilaciones y beneficios del "
-"INSS, revisiones previsionales y recursos administrativos o judiciales para "
-"garantizar tus derechos."
+msgstr "Actuación en São José (SC) en la concesión de jubilaciones y beneficios del INSS, revisiones previsionales y recursos administrativos o judiciales para garantizar tus derechos."
 
-#: .\institucional\templates\services\services_site.html:292
+#: .\institucional\templates\services\services_site.html:293
 msgid ""
 "Inventários judiciais e extrajudiciais em São José - SC, partilha de bens e "
 "planejamento sucessório com segurança jurídica e organização patrimonial "
 "familiar."
-msgstr ""
-"Inventarios judiciales y extrajudiciales en São José (SC), partición de bienes y "
-"planificación sucesoria con seguridad jurídica y organización patrimonial "
-"familiar."
+msgstr "Inventarios judiciales y extrajudiciales en São José (SC), partición de bienes y planificación sucesoria con seguridad jurídica y organización patrimonial familiar."
 
-#: .\institucional\templates\services\services_site.html:318
+#: .\institucional\templates\services\services_site.html:319
 msgid "Inventários judiciais e extrajudiciais"
 msgstr "Inventarios judiciales y extrajudiciales"
 
-#: .\institucional\templates\services\services_site.html:330
+#: .\institucional\templates\services\services_site.html:331
 msgid "Partilha de bens e acordos entre herdeiros"
 msgstr "Partición de bienes y acuerdos entre herederos"
 
-#: .\institucional\templates\services\services_site.html:342
+#: .\institucional\templates\services\services_site.html:343
 msgid "Alvarás para levantamento de valores"
 msgstr "Autorizaciones judiciales para retiro de valores"
 
-#: .\institucional\templates\services\services_site.html:354
+#: .\institucional\templates\services\services_site.html:355
 msgid "Testamentos e planejamento sucessório"
 msgstr "Testamentos y planificación sucesoria"
 
-#: .\institucional\templates\services\services_site.html:366
+#: .\institucional\templates\services\services_site.html:367
 msgid "Reconhecimento de união estável para fins sucessórios"
 msgstr "Reconocimiento de unión estable para fines sucesorios"
 
-#: .\institucional\templates\services\services_site.html:384
+#: .\institucional\templates\services\services_site.html:385
 msgid "Certidão de óbito"
 msgstr "Certificado de defunción"
 
-#: .\institucional\templates\services\services_site.html:385
+#: .\institucional\templates\services\services_site.html:386
 msgid "Documentos do falecido e herdeiros"
 msgstr "Documentos del fallecido y de los herederos"
 
-#: .\institucional\templates\services\services_site.html:386
+#: .\institucional\templates\services\services_site.html:387
 msgid "Certidões de bens (imóveis, veículos, investimentos)"
 msgstr "Certificados de bienes (inmuebles, vehículos, inversiones)"
 
-#: .\institucional\templates\services\services_site.html:387
+#: .\institucional\templates\services\services_site.html:388
 msgid "Certidão de casamento/união estável (se aplicável)"
 msgstr "Certificado de matrimonio/unión estable (si aplica)"
 
-#: .\institucional\templates\services\services_site.html:388
+#: .\institucional\templates\services\services_site.html:389
 msgid "Testamento (se houver)"
 msgstr "Testamento (si lo hubiera)"
 
-#: .\institucional\templates\services\services_site.html:406
+#: .\institucional\templates\services\services_site.html:419
+msgid "Análise da categoria adequada de autorização de residência"
+msgstr "Análisis de la categoría adecuada de autorización de residencia"
+
+#: .\institucional\templates\services\services_site.html:431
+msgid "Orientação sobre visto prévio ou pedido direto no Brasil"
+msgstr "Orientación sobre visa previa o solicitud directa en Brasil"
+
+#: .\institucional\templates\services\services_site.html:443
+msgid "Organização de documentos estrangeiros legalizados ou apostilados"
+msgstr "Organización de documentos extranjeros legalizados o apostillados"
+
+#: .\institucional\templates\services\services_site.html:455
+msgid "Orientação sobre tradução pública juramentada para o português"
+msgstr "Orientación sobre traducción pública jurada al portugués"
+
+#: .\institucional\templates\services\services_site.html:467
+msgid "Protocolo e acompanhamento perante a Polícia Federal"
+msgstr "Presentación y seguimiento ante la Policía Federal"
+
+#: .\institucional\templates\services\services_site.html:479
+msgid ""
+"Regularização migratória para viver, trabalhar, estudar ou formar família no "
+"Brasil"
+msgstr "Regularización migratoria para vivir, trabajar, estudiar o formar una familia en Brasil"
+
+#: .\institucional\templates\services\services_site.html:497
+msgid "Passaporte ou documento de identidade"
+msgstr "Pasaporte o documento de identidad"
+
+#: .\institucional\templates\services\services_site.html:498
+msgid "Certidão de nascimento ou casamento"
+msgstr "Certificado de nacimiento o matrimonio"
+
+#: .\institucional\templates\services\services_site.html:499
+msgid "Antecedentes criminais"
+msgstr "Antecedentes penales"
+
+#: .\institucional\templates\services\services_site.html:500
+msgid "Comprovante de vínculo familiar, profissional, acadêmico ou financeiro"
+msgstr "Comprobante de vínculo familiar, profesional, académico o financiero"
+
+#: .\institucional\templates\services\services_site.html:501
+msgid "Formulário da Polícia Federal"
+msgstr "Formulario de la Policía Federal"
+
+#: .\institucional\templates\services\services_site.html:502
+msgid "Traduções juramentadas, quando exigidas"
+msgstr "Traducciones juradas, cuando se exijan"
+
+#: .\institucional\templates\services\services_site.html:506
+msgid ""
+"* O prazo pode variar conforme a categoria e a localidade de protocolo. Em "
+"geral, a análise pode levar de 30 a 180 dias."
+msgstr "* El plazo puede variar según la categoría y la localidad de presentación. En general, el análisis puede tardar de 30 a 180 días."
+
+#: .\institucional\templates\services\services_site.html:523
+msgid ""
+"Estrangeiros que desejam viver legalmente no Brasil por mais de 90 dias "
+"precisam solicitar autorização de residência, com documentos regularizados, "
+"tradução juramentada quando necessária e atenção aos critérios da Lei de "
+"Migração."
+msgstr "Los extranjeros que desean vivir legalmente en Brasil por más de 90 días deben solicitar autorización de residencia, con documentos regularizados, traducción jurada cuando sea necesaria y atención a los criterios de la Ley de Migración."
+
+#: .\institucional\templates\services\services_site.html:552
+msgid ""
+"A naturalização brasileira é o procedimento pelo qual o estrangeiro pode "
+"adquirir a nacionalidade brasileira, observando a Constituição Federal, a "
+"Lei de Migração e os requisitos de cada modalidade."
+msgstr "La naturalización brasileña es el procedimiento mediante el cual el extranjero puede adquirir la nacionalidad brasileña, observando la Constitución Federal, la Ley de Migración y los requisitos de cada modalidad."
+
+#: .\institucional\templates\services\services_site.html:565
+msgid "Modalidades e requisitos"
+msgstr "Modalidades y requisitos"
+
+#: .\institucional\templates\services\services_site.html:577
+msgid ""
+"Naturalização ordinária, com análise do tempo de residência e demais "
+"requisitos"
+msgstr "Naturalización ordinaria, con análisis del tiempo de residencia y demás requisitos"
+
+#: .\institucional\templates\services\services_site.html:589
+msgid "Naturalização extraordinária para residência prolongada no Brasil"
+msgstr "Naturalización extraordinaria para residencia prolongada en Brasil"
+
+#: .\institucional\templates\services\services_site.html:601
+msgid "Naturalização especial em situações previstas na legislação migratória"
+msgstr "Naturalización especial en situaciones previstas en la legislación migratoria"
+
+#: .\institucional\templates\services\services_site.html:613
+msgid ""
+"Naturalização provisória para estrangeiros que chegaram ao Brasil ainda "
+"crianças"
+msgstr "Naturalización provisional para extranjeros que llegaron a Brasil siendo niños"
+
+#: .\institucional\templates\services\services_site.html:625
+msgid ""
+"Análise de redução de prazo por casamento, filho brasileiro ou outras "
+"hipóteses legais"
+msgstr "Análisis de reducción de plazo por matrimonio, hijo brasileño u otras hipótesis legales"
+
+#: .\institucional\templates\services\services_site.html:637
+msgid "Preparação e acompanhamento do pedido de nacionalidade brasileira"
+msgstr "Preparación y seguimiento de la solicitud de nacionalidad brasileña"
+
+#: .\institucional\templates\services\services_site.html:655
+msgid "Documento de identificação e registro migratório"
+msgstr "Documento de identificación y registro migratorio"
+
+#: .\institucional\templates\services\services_site.html:656
+msgid "Comprovantes de residência no Brasil"
+msgstr "Comprobantes de pago"
+
+#: .\institucional\templates\services\services_site.html:657
+msgid "Certidões e antecedentes criminais"
+msgstr "Certificados y antecedentes penales"
+
+#: .\institucional\templates\services\services_site.html:658
+msgid "Comprovantes de vínculo familiar, quando aplicável"
+msgstr "Comprobantes de vínculo familiar, cuando corresponda"
+
+#: .\institucional\templates\services\services_site.html:659
+msgid "Documentos que comprovem comunicação em português, quando exigido"
+msgstr "Documentos que comprueben comunicación en portugués, cuando se exija"
+
+#: .\institucional\templates\services\services_site.html:660
+msgid ""
+"Certidões estrangeiras traduzidas por tradutor público juramentado, quando "
+"necessário"
+msgstr "Certificados extranjeros traducidos por traductor público jurado, cuando sea necesario"
+
+#: .\institucional\templates\services\services_site.html:664
+msgid ""
+"* Esta é uma lista geral. A documentação e os requisitos podem variar "
+"conforme a modalidade de naturalização e o histórico migratório do "
+"requerente."
+msgstr "* Esta es una lista general. La documentación y los requisitos pueden variar según la modalidad de naturalización y el historial migratorio del solicitante."
+
+#: .\institucional\templates\services\services_site.html:678
 msgid ""
 "Fale agora e receba orientação jurídica estratégica em São José e região."
-msgstr ""
-"Habla ahora y recibe orientación jurídica estratégica en São José y la región."
+msgstr "Habla ahora y recibe orientación jurídica estratégica en São José y la región."
+
+#: .\templates\403.html:7
+msgid "Acesso negado | Jorge R. Sarobe"
+msgstr "Foto de Jorge R. Sarobe"
+
+#: .\templates\403.html:19
+msgid "Acesso negado"
+msgstr "Acceso denegado"
+
+#: .\templates\403.html:23
+msgid "Você não tem permissão para acessar esta página."
+msgstr "No tienes permiso para acceder a esta página."
+
+#: .\templates\403.html:27
+msgid "Ir para a página inicial"
+msgstr "Ir a la página de inicio"
+
+#: .\templates\404.html:7
+msgid "Página não encontrada | Jorge R. Sarobe"
+msgstr "Página no encontrada | Jorge R. Sarobe"
+
+#: .\templates\404.html:19
+msgid "Página não encontrada"
+msgstr "Página no encontrada"
+
+#: .\templates\404.html:23
+msgid "O endereço acessado não existe ou foi removido."
+msgstr "La dirección a la que accediste no existe o fue eliminada."
+
+#: .\templates\404.html:27
+msgid "Voltar para o início"
+msgstr "Volver al inicio"
+
+#: .\templates\500.html:7
+msgid "Erro interno | Jorge R. Sarobe"
+msgstr "Foto de Jorge R. Sarobe"
+
+#: .\templates\500.html:19
+msgid "Erro interno do servidor"
+msgstr "Error interno del servidor"
+
+#: .\templates\500.html:23
+msgid "Ocorreu um erro inesperado. Tente novamente em instantes."
+msgstr "Ocurrió un error inesperado. Inténtalo nuevamente en unos instantes."
+
+#: .\templates\500.html:27
+msgid "Voltar ao início"
+msgstr "Volver al inicio"
