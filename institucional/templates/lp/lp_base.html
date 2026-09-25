@@ -1,17 +1,10 @@
-{% load static %}
-{% load i18n %}
-{% load seo_i18n %}
-{% load compress %}
-{% load static compress %}
-{% load seo_i18n %}
+{% load static i18n seo_i18n compress %}
 {% get_current_language as CURRENT_LANG %}
-
 <!DOCTYPE html>
 <html lang="{{ CURRENT_LANG }}">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% if IS_PROD and GTM_ID %}
     <script>
@@ -19,57 +12,37 @@
     </script>
     {% endif %}
 
-    {% block info %}
-    {% endblock %}
+    {% block info %}{% endblock %}
 
-    <link rel="icon" href="{% static 'img//icon/logo_icon.ico' %}" type="image/x-icon">
-
-    <!-- canonical e alternate -->
+    <link rel="icon" href="{% static 'img/icon/logo_icon.ico' %}" type="image/x-icon">
     <link rel="canonical" href="{{ request.build_absolute_uri }}">
     <link rel="alternate" hreflang="pt-br" href="{% hreflang_url 'pt-br' %}">
     <link rel="alternate" hreflang="es" href="{% hreflang_url 'es' %}">
     <link rel="alternate" hreflang="x-default" href="{% hreflang_url 'pt-br' %}">
 
-    <!-- ld json -->
-    {% block ld_json %}
-    {% endblock %}
+    {% block ld_json %}{% endblock %}
 
     {% compress css inline %}
     <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/base_site.css' %}">
+    <link rel="stylesheet" href="{% static 'css/lp.css' %}">
     {% block styles %}{% endblock %}
     {% endcompress %}
-
-    <link rel="preload" as="style" href="{% static 'css/aos.css' %}">
-    <link rel="stylesheet" href="{% static 'css/aos.css' %}" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="{% static 'css/aos.css' %}">
-    </noscript>
-
-    {% compress js %}
-    <!-- AOS JS -->
-    <script defer src="{% static 'js/aos.js' %}"></script>
-    <!-- UI components (modal, collapse, accordion) -->
-    <script defer src="{% static 'js/ui_components.js' %}"></script>
-    <!-- Script de animações -->
-    <script defer src="{% static 'js/animation_script.js' %}"></script>
-    {% block scripts %}{% endblock %}
-    {% endcompress %}
-
 </head>
 
 <body class="d-flex flex-column min-vh-100 {% block body_class %}{% endblock %}">
+    <a class="skip-link" href="#main-content">{% translate "Pular para o conteúdo" %}</a>
 
-    {% include 'components/_header.html' %}
-    {% include 'components/_cookie_banner.html' %}
-    <main class="flex-grow-1 ">
-        {% block content %}
-        {% endblock %}
+    {% include 'lp/components/_header.html' %}
+
+    <main id="main-content" class="flex-grow-1">
+        {% block content %}{% endblock %}
     </main>
-    {% include 'components/_whats_button.html' %}
-    {% include 'components/_privacy_terms.html' %}
-    {% include 'components/_footer.html' %}
 
+    {% include 'lp/components/_footer.html' %}
+
+    {% compress js %}
+    <script defer src="{% static 'js/lp.js' %}"></script>
+    {% block scripts %}{% endblock %}
+    {% endcompress %}
 </body>
-
 </html>

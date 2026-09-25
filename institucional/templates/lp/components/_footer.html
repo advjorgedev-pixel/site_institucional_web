@@ -1,0 +1,57 @@
+{% load static i18n %}
+{% url 'home' as site_home_url %}
+{% translate 'Atendimento jurídico personalizado em São José - SC, com clareza e acompanhamento em cada etapa.' as default_footer_description %}
+
+<footer class="lp-footer">
+    <div class="container">
+        <div class="row gy-4 lp-footer__content">
+            <div class="col-12 col-md-6 {% if lp_nav_items %}col-lg-5{% else %}col-lg-6{% endif %}">
+                <a class="lp-brand lp-footer__brand" href="{{ lp_brand_url|default:site_home_url }}">
+                    <img class="lp-brand__logo"
+                        src="{% static 'img/logo/logo_icon_azul-removebg-preview.webp' %}"
+                        alt="" width="44" height="44" loading="lazy" decoding="async">
+                    <span class="lp-brand__text">
+                        <span class="lp-brand__kicker">{% translate 'Advocacia' %}</span>
+                        <span class="lp-brand__name">Jorge R. Sarobe</span>
+                    </span>
+                </a>
+                <p class="lp-footer__description">
+                    {{ lp_footer_description|default:default_footer_description }}
+                </p>
+            </div>
+
+            {% if lp_nav_items %}
+            <nav class="col-12 col-md-6 col-lg-3" aria-label="{% translate 'Navegação do rodapé' %}">
+                <h2 class="lp-footer__title">{% translate 'Navegação' %}</h2>
+                <ul class="lp-footer__list">
+                    {% for item in lp_nav_items %}
+                    <li><a class="lp-footer__link" href="{{ item.url }}">{{ item.label }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            {% endif %}
+
+            <div class="col-12 col-md-6 {% if lp_nav_items %}col-lg-4{% else %}col-lg-6{% endif %}">
+                <h2 class="lp-footer__title">{% translate 'Contato' %}</h2>
+                <ul class="lp-footer__list">
+                    <li><a class="lp-footer__link" href="tel:+5548988366235">+55 (48) 98836-6235</a></li>
+                    <li><a class="lp-footer__link" href="mailto:jrsarobe@gmail.com">jrsarobe@gmail.com</a></li>
+                    <li>{% translate 'São José - SC' %}</li>
+                </ul>
+                <a class="lp-button lp-footer__button"
+                    href="{{ lp_whatsapp_url|default:'https://wa.me/5548988366235' }}"
+                    target="_blank" rel="noopener noreferrer">
+                    {% translate 'Fale pelo WhatsApp' %}
+                </a>
+            </div>
+        </div>
+
+        <div class="lp-footer__bottom">
+            <small>© {% now 'Y' %} Jorge R. Sarobe · OAB/SC 74.996. {% translate 'Todos os direitos reservados.' %}</small>
+            <div class="lp-footer__socials">
+                <a class="lp-footer__link" href="https://www.linkedin.com/in/jorge-sarobe-05869a22/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="lp-footer__link" href="https://www.instagram.com/jorgesarobe" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </div>
+</footer>

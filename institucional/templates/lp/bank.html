@@ -1,19 +1,15 @@
-{% extends 'lp_base.html' %}
+{% extends 'lp/lp_base.html' %}
 {% load static %}
 {% load i18n %}
 {% get_current_language as CURRENT_LANG %}
 
-{% block body_class %}page-home{% endblock %}
+{% block body_class %}lp-page lp-page--bank{% endblock %}
 
 {% block info %}
     <title>
         {% translate "Advogado em São José SC | Bancário, Previdenciário, Sucessões e Migratório" %}
     </title>
     <meta name="description" content="{% translate 'Advogado em São José - SC com atuação em Direito Bancário, Previdenciário, Sucessões e Direito Migratório para residência e naturalização no Brasil.' %}">
-{% endblock %}
-
-{% block styles %}
-<link rel="stylesheet" href="">
 {% endblock %}
 
 {% block ld_json %}
@@ -24,10 +20,4 @@
 
 {% block content %}
 
-{% endblock %}
-
-
-
-{% block scripts %}
-<script defer src=""></script>
 {% endblock %}

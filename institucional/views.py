@@ -139,3 +139,20 @@ class BlogPostDetailView(DetailView):
 
 class ContactView(TemplateView):
     template_name = "contact/contact_site.html"
+
+
+class BankLawView(TemplateView):
+    template_name = "lp/bank.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["lp_brand_url"] = "#home"
+        context["lp_nav_items"] = [
+            {"label": _("Home"), "url": "#home"},
+            {"label": _("Atuação"), "url": "#atuacao"},
+            {"label": _("Calculadora"), "url": "#calculadora"},
+            {"label": _("Sobre"), "url": "#sobre"},
+            {"label": _("Avaliações"), "url": "#avaliacoes"},
+            {"label": _("FAQ"), "url": "#faq"},
+        ]
+        return context
