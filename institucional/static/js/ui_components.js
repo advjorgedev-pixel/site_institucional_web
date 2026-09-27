@@ -87,11 +87,14 @@
             document.body.classList.add("modal-open");
         }
 
-        const focusable = getFocusableElements(modal);
-        const focusTarget = focusable[0] || modal;
-        focusTarget.focus({ preventScroll: true });
-
         activeModal = modal;
+        // Aguarda a transição de visibilidade antes de mover o foco.
+        window.setTimeout(() => {
+            if (activeModal !== modal) return;
+            const focusable = getFocusableElements(modal);
+            const focusTarget = focusable[0] || modal;
+            focusTarget.focus({ preventScroll: true });
+        }, 220);
     };
 
     const closeModal = (modal, restoreFocus = true) => {
@@ -253,16 +256,25 @@ function setupCookieBanner() {
 
     const backdrop = banner.querySelector('[data-cookie-close="true"]');
     const panel = banner.querySelector(".cookie-banner__panel");
+    let previousFocus = null;
 
     const openBanner = () => {
+        previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
         banner.hidden = false;
         document.body.classList.add("cookie-banner-open");
         panel?.focus?.();
     };
 
     const closeBanner = () => {
+        const shouldRestoreFocus = banner.contains(document.activeElement);
         banner.hidden = true;
         document.body.classList.remove("cookie-banner-open");
+        if (shouldRestoreFocus) {
+            const focusTarget = previousFocus && previousFocus !== document.body && previousFocus.isConnected
+                ? previousFocus
+                : document.querySelector("header a");
+            focusTarget?.focus?.({ preventScroll: true });
+        }
     };
 
     // já aceitou: não mostra e carrega GTM
@@ -278,11 +290,33 @@ function setupCookieBanner() {
     // fechar clicando fora (sem aceitar)
     backdrop?.addEventListener("click", closeBanner);
 
-    // fechar com ESC (sem aceitar)
+    // Mantém o teclado no aviso até a escolha ou a abertura de um modal.
     const onKeyDown = (e) => {
-        if (e.key === "Escape") closeBanner();
+        if (banner.hidden || e.defaultPrevented || document.querySelector(".modal.show")) return;
+
+        if (e.key === "Escape") {
+            closeBanner();
+            return;
+        }
+
+        if (e.key !== "Tab") return;
+
+        const focusable = Array.from(banner.querySelectorAll("a[href], button:not([disabled])"));
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (!first) {
+            e.preventDefault();
+            panel?.focus?.();
+        } else if (e.shiftKey && (document.activeElement === first || document.activeElement === panel)) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
     };
-    document.addEventListener("keydown", onKeyDown, { passive: true });
+    document.addEventListener("keydown", onKeyDown);
 
     // aceitar => salva + carrega GTM
     acceptBtn.addEventListener("click", () => {

@@ -8,6 +8,7 @@
     const menu = header.querySelector("[data-lp-menu]");
     const menuToggle = header.querySelector("[data-lp-menu-toggle]");
     const navigationLinks = Array.from(header.querySelectorAll("[data-lp-nav-link]"));
+    const backToTop = document.querySelector("[data-lp-back-to-top]");
     const desktopQuery = window.matchMedia("(min-width: 1200px)");
     let scrollFrame = null;
 
@@ -27,7 +28,8 @@
     };
 
     const updateHeaderOnScroll = () => {
-        header.classList.toggle("is-scrolled", window.scrollY > 8);
+        header.classList.toggle("is-scrolled", window.scrollY > 20);
+        if (backToTop) backToTop.hidden = window.scrollY < 300;
         scrollFrame = null;
     };
 
@@ -124,6 +126,12 @@
 
     desktopQuery.addEventListener("change", () => setMenuState(false));
     window.addEventListener("scroll", requestHeaderUpdate, { passive: true });
+
+    backToTop?.addEventListener("click", () => {
+        const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth";
+        window.scrollTo({ top: 0, behavior });
+        header.querySelector(".lp-brand")?.focus({ preventScroll: true });
+    });
 
     header.classList.add("is-ready");
     updateHeaderOnScroll();

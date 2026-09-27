@@ -1,7 +1,10 @@
+from urllib.parse import quote
+
 from django.views.generic import TemplateView, ListView, DetailView
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
 from django.http import Http404
+from django.urls import reverse
 from .models import BlogPost, AreaOfPractice
 
 
@@ -147,6 +150,28 @@ class BankLawView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["lp_brand_url"] = "#home"
+        whatsapp_message = _(
+            "Olá! Vim pela página de Direito Bancário e gostaria de analisar meu caso."
+        )
+        context["lp_whatsapp_url"] = (
+            f"https://wa.me/5548988366235?text={quote(str(whatsapp_message))}"
+        )
+        context["lp_hero"] = {
+            "eyebrow": _("Direito Bancário · São José / SC"),
+            "title": _("Entenda seus direitos nas relações com bancos."),
+            "description": _("Análise jurídica clara de contratos, cobranças e dívidas bancárias."),
+            "primary_label": _("Solicitar análise do meu caso"),
+            "primary_url": context["lp_whatsapp_url"],
+            "primary_external": True,
+            "primary_icon": "whatsapp",
+            "secondary_label": _("Conhecer áreas de atuação"),
+            "secondary_url": reverse("services"),
+            "highlights": [
+                {"icon": "person", "title": _("Atendimento direto"), "detail": _("com o advogado")},
+                {"icon": "shield", "title": _("Estratégia e clareza"), "detail": _("em todas as etapas")},
+                {"icon": "scale", "title": _("OAB/SC 74.996"), "detail": _("Regularmente inscrito")},
+            ],
+        }
         context["lp_nav_items"] = [
             {"label": _("Home"), "url": "#home"},
             {"label": _("Atuação"), "url": "#atuacao"},

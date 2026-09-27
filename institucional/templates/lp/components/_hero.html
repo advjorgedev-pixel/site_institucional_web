@@ -1,0 +1,52 @@
+{% load static i18n %}
+{% static 'img/photos/jorge_com_fundo.webp' as default_hero_image %}
+{% translate 'Advogado Jorge R. Sarobe no escritório' as default_hero_alt %}
+
+{% if lp_hero %}
+<section class="lp-hero" id="home" aria-labelledby="lp-hero-title">
+    <div class="lp-hero__container container">
+        <div class="lp-hero__content">
+            {% if lp_hero.eyebrow %}<p class="lp-hero__eyebrow">{{ lp_hero.eyebrow }}</p>{% endif %}
+            <h1 class="lp-hero__title" id="lp-hero-title">{{ lp_hero.title }}</h1>
+            {% if lp_hero.description %}<p class="lp-hero__description">{{ lp_hero.description }}</p>{% endif %}
+
+            <div class="lp-hero__actions">
+                {% if lp_hero.primary_label and lp_hero.primary_url %}
+                <a class="lp-button lp-hero__button" href="{{ lp_hero.primary_url }}"{% if lp_hero.primary_external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                    {% if lp_hero.primary_icon == 'whatsapp' %}
+                    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+                    {% endif %}
+                    <span class="lp-hero__button-label">{{ lp_hero.primary_label }}</span>
+                </a>
+                {% endif %}
+                {% if lp_hero.secondary_label and lp_hero.secondary_url %}
+                <a class="lp-hero__button lp-hero__button--outline" href="{{ lp_hero.secondary_url }}"><span class="lp-hero__button-label">{{ lp_hero.secondary_label }}</span></a>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="lp-hero__media">
+            <img src="{{ lp_hero.image_url|default:default_hero_image }}" alt="{{ lp_hero.image_alt|default:default_hero_alt }}" loading="eager" decoding="async" fetchpriority="high">
+        </div>
+
+        {% if lp_hero.highlights %}
+        <ul class="lp-hero__highlights" aria-label="{% translate 'Diferenciais do atendimento' %}">
+            {% for highlight in lp_hero.highlights %}
+            <li class="lp-hero__highlight">
+                <svg class="lp-hero__highlight-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    {% if highlight.icon == 'shield' %}
+                    <path d="M24 4 40 10v12c0 10-6.7 17.2-16 22C14.7 39.2 8 32 8 22V10L24 4Z"/><path d="m17 24 5 5 10-11"/>
+                    {% elif highlight.icon == 'scale' %}
+                    <path d="M24 5v36M10 13h28M14 13l-8 15h16l-8-15Zm20 0-8 15h16l-8-15ZM13 41h22"/>
+                    {% else %}
+                    <circle cx="24" cy="14" r="7"/><path d="M10 42v-4c0-8 6.3-14 14-14s14 6 14 14v4H10Z"/>
+                    {% endif %}
+                </svg>
+                <span><strong>{{ highlight.title }}</strong>{% if highlight.detail %}<span>{{ highlight.detail }}</span>{% endif %}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</section>
+{% endif %}

@@ -1372,6 +1372,10 @@ body.cookie-banner-open .backtotop-container {
     z-index: 1000;
 }
 
+body.cookie-banner-open {
+    overflow: hidden;
+}
+
 body.cookie-banner-open header,
 body.cookie-banner-open .navbar,
 body.cookie-banner-open .site-header {

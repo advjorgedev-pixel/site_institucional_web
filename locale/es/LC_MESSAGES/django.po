@@ -2118,3 +2118,41 @@ msgstr "Ocurrió un error inesperado. Inténtalo nuevamente en unos instantes."
 #: .\templates\500.html:27
 msgid "Voltar ao início"
 msgstr "Volver al inicio"
+
+#: LP hero compartilhado
+msgid "Advogado Jorge R. Sarobe no escritório"
+msgstr "Abogado Jorge R. Sarobe en el despacho"
+
+msgid "Diferenciais do atendimento"
+msgstr "Aspectos destacados de la atención"
+
+#: LP de Direito Bancário
+msgid "Direito Bancário · São José / SC"
+msgstr "Derecho Bancario · São José / SC"
+
+msgid "Entenda seus direitos nas relações com bancos."
+msgstr "Comprenda sus derechos en sus relaciones con los bancos."
+
+msgid "Análise jurídica clara de contratos, cobranças e dívidas bancárias."
+msgstr "Análisis jurídico claro de contratos, cobros y deudas bancarias."
+
+msgid "Solicitar análise do meu caso"
+msgstr "Solicitar un análisis de mi caso"
+
+msgid "Conhecer áreas de atuação"
+msgstr "Conocer las áreas de actuación"
+
+msgid "com o advogado"
+msgstr "con el abogado"
+
+msgid "em todas as etapas"
+msgstr "en todas las etapas"
+
+msgid "OAB/SC 74.996"
+msgstr "OAB/SC 74.996"
+
+msgid "Regularmente inscrito"
+msgstr "Debidamente inscrito"
+
+msgid "Olá! Vim pela página de Direito Bancário e gostaria de analisar meu caso."
+msgstr "¡Hola! Llegué desde la página de Derecho Bancario y me gustaría analizar mi caso."

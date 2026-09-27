@@ -33,14 +33,25 @@
     <a class="skip-link" href="#main-content">{% translate "Pular para o conteúdo" %}</a>
 
     {% include 'lp/components/_header.html' %}
+    {% include 'components/_cookie_banner.html' %}
 
     <main id="main-content" class="flex-grow-1">
         {% block content %}{% endblock %}
     </main>
 
     {% include 'lp/components/_footer.html' %}
+    {% block floating_actions %}{% endblock %}
+    <button class="lp-back-to-top" type="button" data-lp-back-to-top
+        aria-label="{% translate 'Voltar ao topo' %}" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M12 19V5m-7 7 7-7 7 7" />
+        </svg>
+    </button>
+    {% include 'components/_privacy_terms.html' %}
 
     {% compress js %}
+    <script defer src="{% static 'js/ui_components.js' %}"></script>
     <script defer src="{% static 'js/lp.js' %}"></script>
     {% block scripts %}{% endblock %}
     {% endcompress %}
