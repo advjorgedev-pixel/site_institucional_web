@@ -4,7 +4,6 @@ from django.views.generic import TemplateView, ListView, DetailView
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
 from django.http import Http404
-from django.urls import reverse
 from .models import BlogPost, AreaOfPractice
 
 
@@ -165,7 +164,7 @@ class BankLawView(TemplateView):
             "primary_external": True,
             "primary_icon": "whatsapp",
             "secondary_label": _("Conhecer áreas de atuação"),
-            "secondary_url": reverse("services"),
+            "secondary_url": "#atuacao",
             "highlights": [
                 {"icon": "person", "title": _("Atendimento direto"), "detail": _("com o advogado")},
                 {"icon": "shield", "title": _("Estratégia e clareza"), "detail": _("em todas as etapas")},
@@ -179,5 +178,52 @@ class BankLawView(TemplateView):
             {"label": _("Sobre"), "url": "#sobre"},
             {"label": _("Avaliações"), "url": "#avaliacoes"},
             {"label": _("FAQ"), "url": "#faq"},
+        ]
+        context["bank_help_cards"] = [
+            {
+                "icon": "document",
+                "title": _("Revisão de empréstimos e financiamentos"),
+                "description": _("Análise de contrato, CET, tarifas, seguros e evolução da dívida."),
+                "details": [
+                    _("Conferência das cláusulas e dos encargos previstos no contrato."),
+                    _("Levantamento dos pagamentos, do saldo e dos documentos relevantes."),
+                ],
+            },
+            {
+                "icon": "car",
+                "title": _("Busca e apreensão de veículos"),
+                "description": _("Análise de contrato, mora, notificação e encargos."),
+                "details": [
+                    _("Verificação da notificação e da constituição em mora."),
+                    _("Conferência dos valores cobrados e do histórico do financiamento."),
+                ],
+            },
+            {
+                "icon": "gavel",
+                "title": _("Cobranças e execuções bancárias"),
+                "description": _("Defesa de pessoas físicas e jurídicas em cobranças e execuções."),
+                "details": [
+                    _("Análise do processo, dos títulos e dos valores exigidos."),
+                    _("Avaliação de prazos, garantias e possibilidades de defesa."),
+                ],
+            },
+            {
+                "icon": "handshake",
+                "title": _("Negociação de dívidas bancárias"),
+                "description": _("Análise da situação e alternativas de renegociação."),
+                "details": [
+                    _("Mapeamento do saldo, dos contratos e da capacidade de pagamento."),
+                    _("Avaliação das propostas e condições de quitação ou parcelamento."),
+                ],
+            },
+            {
+                "icon": "chart",
+                "title": _("Juros e revisão de contratos"),
+                "description": _("Avaliação de taxas e encargos conforme o caso concreto."),
+                "details": [
+                    _("Conferência de taxas, indexadores e encargos previstos."),
+                    _("Comparação entre o contrato e as cobranças realizadas."),
+                ],
+            },
         ]
         return context

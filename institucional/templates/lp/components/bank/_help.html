@@ -1,0 +1,59 @@
+{% load i18n %}
+
+<section class="lp-help" id="atuacao" aria-labelledby="lp-help-title" data-lp-help>
+    <div class="container">
+        <div class="lp-help__intro">
+            <p class="lp-help__eyebrow">{% translate 'Como posso ajudar' %}</p>
+            <h2 class="lp-help__title" id="lp-help-title">{% translate 'Atuação em diferentes situações bancárias' %}</h2>
+            <p class="lp-help__description">{% translate 'Análise técnica e orientação jurídica para pessoas físicas e jurídicas.' %}</p>
+        </div>
+
+        <div class="row g-3 justify-content-center">
+            {% for card in bank_help_cards %}
+            <div class="col-12 col-md-6 col-lg-4 col-xl">
+                <article class="lp-help-card" data-lp-help-card>
+                    <div class="lp-help-card__inner">
+                        <div class="lp-help-card__face lp-help-card__face--front" data-lp-help-front>
+                            <span class="lp-help-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                    {% if card.icon == 'document' %}
+                                    <path d="M12 5h18l6 6v32H12V5Z"/><path d="M30 5v7h6M18 19h12M18 25h12M18 31h9"/>
+                                    {% elif card.icon == 'car' %}
+                                    <path d="m10 29 3-10a4 4 0 0 1 4-3h14a4 4 0 0 1 4 3l3 10M8 29h32v9H8v-9ZM12 38v4h5v-4M31 38v4h5v-4M13 24h22"/><circle cx="15" cy="33" r="2"/><circle cx="33" cy="33" r="2"/>
+                                    {% elif card.icon == 'gavel' %}
+                                    <path d="m19 7 5 5-9 9-5-5 9-9Zm16 16 5 5-9 9-5-5 9-9ZM21 17l10 10M11 38h25M8 42h31"/>
+                                    {% elif card.icon == 'handshake' %}
+                                    <path d="m5 17 7-5 8 3 5-3 11 4 7 6-7 12-5-3-5 4-5-4-5 2-9-8-2-8Z"/><path d="m20 15-5 6a4 4 0 0 0 6 5l5-4 10 8M26 22l9 8M21 31l3 3"/>
+                                    {% else %}
+                                    <path d="M7 41h34M10 35h6V22h-6v13ZM21 35h6V14h-6v21ZM32 35h6V7h-6v28Z"/>
+                                    {% endif %}
+                                </svg>
+                            </span>
+                            <h3 class="lp-help-card__title" id="lp-help-title-{{ forloop.counter }}">{{ card.title }}</h3>
+                            <p class="lp-help-card__description">{{ card.description }}</p>
+                            <button class="lp-help-card__action" type="button" data-lp-help-open
+                                aria-controls="lp-help-details-{{ forloop.counter }}" aria-expanded="false"
+                                aria-label="{{ card.title }} — {% translate 'Ver detalhes' %}">
+                                {% translate 'Ver detalhes' %}
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 14 0m-6-6 6 6-6 6"/></svg>
+                            </button>
+                        </div>
+
+                        <div class="lp-help-card__face lp-help-card__face--back" id="lp-help-details-{{ forloop.counter }}"
+                            data-lp-help-back aria-hidden="true" inert>
+                            <ul class="lp-help-card__details">
+                                {% for detail in card.details %}<li>{{ detail }}</li>{% endfor %}
+                            </ul>
+                            <button class="lp-help-card__action lp-help-card__action--back" type="button" data-lp-help-close tabindex="-1"
+                                aria-label="{{ card.title }} — {% translate 'Voltar ao resumo' %}">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m6 6-6-6 6-6"/></svg>
+                                {% translate 'Voltar' %}
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

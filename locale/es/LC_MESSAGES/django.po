@@ -2156,3 +2156,76 @@ msgstr "Debidamente inscrito"
 
 msgid "Olá! Vim pela página de Direito Bancário e gostaria de analisar meu caso."
 msgstr "¡Hola! Llegué desde la página de Derecho Bancario y me gustaría analizar mi caso."
+
+#: LP bancária: atuação
+msgid "Atuação em diferentes situações bancárias"
+msgstr "Actuación en diferentes situaciones bancarias"
+
+msgid "Análise técnica e orientação jurídica para pessoas físicas e jurídicas."
+msgstr "Análisis técnico y orientación jurídica para personas físicas y jurídicas."
+
+msgid "Ver detalhes"
+msgstr "Ver detalles"
+
+msgid "Voltar ao resumo"
+msgstr "Volver al resumen"
+
+msgid "Revisão de empréstimos e financiamentos"
+msgstr "Revisión de préstamos y financiaciones"
+
+msgid "Análise de contrato, CET, tarifas, seguros e evolução da dívida."
+msgstr "Análisis del contrato, costo efectivo total, tarifas, seguros y evolución de la deuda."
+
+msgid "Conferência das cláusulas e dos encargos previstos no contrato."
+msgstr "Revisión de las cláusulas y los cargos previstos en el contrato."
+
+msgid "Levantamento dos pagamentos, do saldo e dos documentos relevantes."
+msgstr "Recopilación de los pagos, el saldo y los documentos relevantes."
+
+msgid "Busca e apreensão de veículos"
+msgstr "Búsqueda y aprehensión de vehículos"
+
+msgid "Análise de contrato, mora, notificação e encargos."
+msgstr "Análisis del contrato, la mora, la notificación y los cargos."
+
+msgid "Verificação da notificação e da constituição em mora."
+msgstr "Verificación de la notificación y de la constitución en mora."
+
+msgid "Conferência dos valores cobrados e do histórico do financiamento."
+msgstr "Revisión de los importes cobrados y del historial de financiación."
+
+msgid "Cobranças e execuções bancárias"
+msgstr "Cobros y ejecuciones bancarias"
+
+msgid "Defesa de pessoas físicas e jurídicas em cobranças e execuções."
+msgstr "Defensa de personas físicas y jurídicas en cobros y ejecuciones."
+
+msgid "Análise do processo, dos títulos e dos valores exigidos."
+msgstr "Análisis del proceso, los títulos y los importes reclamados."
+
+msgid "Avaliação de prazos, garantias e possibilidades de defesa."
+msgstr "Evaluación de plazos, garantías y posibilidades de defensa."
+
+msgid "Negociação de dívidas bancárias"
+msgstr "Negociación de deudas bancarias"
+
+msgid "Análise da situação e alternativas de renegociação."
+msgstr "Análisis de la situación y de las alternativas de renegociación."
+
+msgid "Mapeamento do saldo, dos contratos e da capacidade de pagamento."
+msgstr "Revisión del saldo, los contratos y la capacidad de pago."
+
+msgid "Avaliação das propostas e condições de quitação ou parcelamento."
+msgstr "Evaluación de las propuestas y condiciones de liquidación o pago a plazos."
+
+msgid "Juros e revisão de contratos"
+msgstr "Intereses y revisión de contratos"
+
+msgid "Avaliação de taxas e encargos conforme o caso concreto."
+msgstr "Evaluación de tasas y cargos según el caso concreto."
+
+msgid "Conferência de taxas, indexadores e encargos previstos."
+msgstr "Revisión de tasas, índices y cargos previstos."
+
+msgid "Comparação entre o contrato e as cobranças realizadas."
+msgstr "Comparación entre el contrato y los cobros efectuados."
