@@ -128,7 +128,7 @@
     window.addEventListener("scroll", requestHeaderUpdate, { passive: true });
 
     backToTop?.addEventListener("click", () => {
-        const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth";
+        const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
         window.scrollTo({ top: 0, behavior });
         header.querySelector(".lp-brand")?.focus({ preventScroll: true });
     });
@@ -136,4 +136,59 @@
     header.classList.add("is-ready");
     updateHeaderOnScroll();
     observeSections();
+})();
+
+(() => {
+    "use strict";
+
+    const section = document.querySelector("[data-lp-reviews]");
+    if (!section) return;
+
+    const track = section.querySelector("[data-lp-reviews-track]");
+    const controls = section.querySelector("[data-lp-reviews-controls]");
+    const previousButton = section.querySelector("[data-lp-reviews-prev]");
+    const nextButton = section.querySelector("[data-lp-reviews-next]");
+    if (!track || !controls || !previousButton || !nextButton) return;
+
+    const cards = Array.from(track.querySelectorAll(".lp-reviews__card"));
+    if (cards.length < 2) return;
+
+    let scrollFrame = null;
+
+    const updateControls = () => {
+        const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+        const canScroll = maxScroll > 2;
+
+        if (!canScroll && controls.contains(document.activeElement)) {
+            track.focus({ preventScroll: true });
+        }
+
+        controls.hidden = !canScroll;
+        previousButton.disabled = !canScroll || track.scrollLeft <= 2;
+        nextButton.disabled = !canScroll || track.scrollLeft >= maxScroll - 2;
+    };
+
+    const requestControlUpdate = () => {
+        if (scrollFrame !== null) return;
+        scrollFrame = window.requestAnimationFrame(() => {
+            scrollFrame = null;
+            updateControls();
+        });
+    };
+
+    const moveByCard = (direction) => {
+        const step = cards[1].offsetLeft - cards[0].offsetLeft;
+        if (step <= 0) return;
+
+        const currentIndex = Math.round(track.scrollLeft / step);
+        const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth";
+        track.scrollTo({ left: (currentIndex + direction) * step, behavior });
+    };
+
+    previousButton.addEventListener("click", () => moveByCard(-1));
+    nextButton.addEventListener("click", () => moveByCard(1));
+    track.addEventListener("scroll", requestControlUpdate, { passive: true });
+    window.addEventListener("resize", requestControlUpdate);
+
+    updateControls();
 })();

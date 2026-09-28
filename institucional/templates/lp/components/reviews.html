@@ -1,0 +1,67 @@
+{% load i18n %}
+
+<section class="lp-reviews" id="avaliacoes" aria-labelledby="lp-reviews-title" data-lp-reviews>
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-12 col-lg-4">
+                <div class="lp-reviews__intro">
+                    <p class="lp-reviews__eyebrow">{% translate 'Avaliações' %}</p>
+                    <h2 class="lp-reviews__title" id="lp-reviews-title">{% translate 'O que dizem no Google' %}</h2>
+                    <a class="lp-reviews__summary"
+                        href="https://www.google.com/search?q=JORGE+R.+SAROBE+ASSESSORIA+E+CONSULTORIA+JUR%C3%8DDICA&amp;stick=H4sIAAAAAAAA_-NgU1I1qLA0NTI3Nk-yNDFLNjA0NDe1MqhINDBJM7QwS00yTkpJtEw2X8Rq5OUf5O6qEKSnEOwY5O_kquAYHOwaHOwf5Omo4Krg7O8XHOoTAuZ5hQYd7nXxdHYEACViu0FeAAAA&amp;hl=pt-BR&amp;mat=CdYx41xdJm5uElcBTVDHnolo_VcSR2_WR3L7KZQ1YsUjl50xHW952tTzBLbuLd2OXrVoarc8Sru7tnTW-CdjF22kOjgMH1P4nOtjfUyWRFDBI9hkwQNGOmhXnTigkQ5aGSA&amp;authuser=0#mpd=~7957339774042452438/customers/reviews?p%3DCg51cGRhdGV0aW1lZGVzYxIDYWxs"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg class="lp-reviews__google" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                            <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.6 32.7 29.1 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.5-.4-3.5Z"/>
+                            <path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6 29.3 4 24 4c-7.7 0-14.4 4.3-17.7 10.7Z"/>
+                            <path fill="#4CAF50" d="M24 44c5.2 0 10-2 13.6-5.3l-6.3-5.3C29.3 35 26.8 36 24 36c-5.1 0-9.5-3.2-11.2-7.6l-6.6 5.1C9.5 39.8 16.2 44 24 44Z"/>
+                            <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.9 2.2-2.3 4-4.3 5.3l6.3 5.3C41.4 35 44 29.8 44 24c0-1.3-.1-2.5-.4-3.5Z"/>
+                        </svg>
+                        <span class="lp-reviews__summary-copy">
+                            <span class="lp-reviews__score">5,0</span>
+                            <span class="lp-reviews__stars" aria-hidden="true">★★★★★</span>
+                            <span class="lp-reviews__count">+15 {% translate 'avaliações' %}</span>
+                        </span>
+                        <span class="lp-reviews__sr-only">{% translate 'Ver no Google (abre em nova aba)' %}</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-8">
+                <div class="lp-reviews__track" id="lp-reviews-track" role="region" tabindex="0"
+                    aria-label="{% translate 'Avaliações de clientes' %}" data-lp-reviews-track>
+                    <article class="lp-reviews__card">
+                        <span class="lp-reviews__card-stars" role="img" aria-label="{% translate '5 de 5 estrelas' %}">★★★★★</span>
+                        <blockquote>
+                            <p>“{% translate 'Atendimento humanizado, super indico' %}”</p>
+                            <footer><span class="lp-reviews__avatar" aria-hidden="true">W</span><cite>Wando Mendes</cite></footer>
+                        </blockquote>
+                    </article>
+                    <article class="lp-reviews__card">
+                        <span class="lp-reviews__card-stars" role="img" aria-label="{% translate '5 de 5 estrelas' %}">★★★★★</span>
+                        <blockquote>
+                            <p>“{% translate 'Tira nossas dúvidas com clareza' %}”</p>
+                            <footer><span class="lp-reviews__avatar" aria-hidden="true">P</span><cite>Paulo Fargoni</cite></footer>
+                        </blockquote>
+                    </article>
+                    <article class="lp-reviews__card">
+                        <span class="lp-reviews__card-stars" role="img" aria-label="{% translate '5 de 5 estrelas' %}">★★★★★</span>
+                        <blockquote>
+                            <p>“{% translate 'De muita confiança e com vasto conhecimento' %}”</p>
+                            <footer><span class="lp-reviews__avatar" aria-hidden="true">L</span><cite>Luiz Puccini Vieira</cite></footer>
+                        </blockquote>
+                    </article>
+                </div>
+                <div class="lp-reviews__controls" role="group" aria-label="{% translate 'Navegação das avaliações' %}" data-lp-reviews-controls hidden>
+                    <button type="button" aria-controls="lp-reviews-track" aria-label="{% translate 'Avaliação anterior' %}"
+                        data-lp-reviews-prev>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" aria-controls="lp-reviews-track" aria-label="{% translate 'Próxima avaliação' %}"
+                        data-lp-reviews-next>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
