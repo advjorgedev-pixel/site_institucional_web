@@ -5,7 +5,7 @@
 <footer class="lp-footer" id="contato">
     <div class="container lp-footer__inner">
         <div class="row g-4 g-lg-5 lp-footer__content">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" data-aos="fade-up">
                 <a class="lp-brand lp-footer__brand" href="{{ lp_brand_url|default:site_home_url }}">
                     <img class="lp-brand__logo" src="{% static 'img/logo/logo_icon_azul-removebg-preview.webp' %}"
                         alt="" width="72" height="72" loading="lazy" decoding="async">
@@ -41,7 +41,7 @@
                 </ul>
             </div>
 
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="lp-footer__contact">
                     <span class="lp-footer__title">{% translate 'Contato' %}</span>
                     <h2 class="lp-footer__heading">{% translate 'Vamos conversar sobre o seu caso?' %}</h2>

@@ -372,3 +372,24 @@
         openItem.querySelector("summary")?.focus({ preventScroll: true });
     });
 })();
+
+(() => {
+    "use strict";
+
+    const calculator = document.querySelector("[data-lp-calculator]");
+    if (!calculator || !("MutationObserver" in window)) return;
+
+    let refreshFrame = null;
+    const observer = new MutationObserver((mutations) => {
+        const layoutChanged = mutations.some(({ target }) =>
+            target.matches("[data-calculator-step], [data-result-content]"));
+        if (!layoutChanged || refreshFrame !== null) return;
+
+        refreshFrame = window.requestAnimationFrame(() => {
+            refreshFrame = null;
+            window.AOS?.refreshHard();
+        });
+    });
+
+    observer.observe(calculator, { attributes: true, attributeFilter: ["hidden"], subtree: true });
+})();

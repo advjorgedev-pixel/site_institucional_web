@@ -7,7 +7,7 @@
         <div class="row g-4 gx-xl-5 align-items-center">
             {% if lp_about.photo %}
             <div class="col-12 col-md-5 col-lg-3 order-1">
-                <figure class="lp-about__photo">
+                <figure class="lp-about__photo" data-aos="fade-up">
                     <img src="{% static lp_about.photo %}" alt="{{ lp_about.photo_alt }}"
                         width="1000" height="666" loading="lazy" decoding="async">
                     {% if lp_about.name or lp_about.registration %}
@@ -23,13 +23,13 @@
             <div class="col-12 {% if lp_about.photo %}col-md-7 {% endif %}{% if lp_about.photo and lp_about.quote %}col-lg-6{% elif lp_about.photo or lp_about.quote %}col-lg-9{% else %}col-lg-12{% endif %} order-2">
                 <div class="lp-about__content">
                     {% if lp_about.eyebrow %}<p class="lp-about__eyebrow">{{ lp_about.eyebrow }}</p>{% endif %}
-                    <h2 class="lp-about__title" id="lp-about-title">{{ lp_about.title }}</h2>
-                    {% if lp_about.description %}<p class="lp-about__description">{{ lp_about.description }}</p>{% endif %}
+                    <h2 class="lp-about__title" id="lp-about-title" data-aos="fade-up">{{ lp_about.title }}</h2>
+                    {% if lp_about.description %}<p class="lp-about__description" data-aos="fade-up" data-aos-delay="50">{{ lp_about.description }}</p>{% endif %}
 
                     {% if lp_about.credentials %}
                     <ul class="lp-about__credentials">
                         {% for credential in lp_about.credentials %}
-                        <li>
+                        <li data-aos="fade-up" data-aos-delay="{% cycle '0' '50' '100' '150' %}">
                             <span class="lp-about__credential-icon" aria-hidden="true">
                                 <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
                                     {% if credential.icon == 'book' %}
@@ -53,7 +53,7 @@
 
             {% if lp_about.quote %}
             <div class="col-12 col-lg-3 order-4 order-lg-3">
-                <blockquote class="lp-about__quote">
+                <blockquote class="lp-about__quote" data-aos="fade-up" data-aos-delay="100">
                     <p>{{ lp_about.quote.text }}</p>
                     <footer><cite>{{ lp_about.quote.author }}</cite><span>{{ lp_about.quote.registration }}</span></footer>
                 </blockquote>
@@ -65,7 +65,7 @@
                 <div class="lp-about__documents" role="group" aria-label="{{ lp_about.documents_label }}">
                     {% for document in lp_about.documents %}
                     <button class="lp-about__document" type="button" data-bs-toggle="modal" data-bs-target="#lp-document-modal"
-                        data-lp-document data-lp-document-url="{% static document.path %}">
+                        data-lp-document data-lp-document-url="{% static document.path %}" data-aos="fade-up" data-aos-delay="{% cycle '0' '100' %}">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 14h6M9 17h6"/></svg>
                         <span class="lp-about__document-copy"><strong data-lp-document-label>{{ document.label }}</strong><small>{{ document.caption }}</small></span>
                         <svg class="lp-about__document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>

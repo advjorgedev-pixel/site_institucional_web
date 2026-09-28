@@ -447,6 +447,22 @@ button {
     max-width: 62ch;
 }
 
+@keyframes lp-hero-enter {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 1.25rem, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.lp-hero__content[data-aos].aos-animate {
+    animation: lp-hero-enter 700ms ease-out 150ms both;
+}
+
 .lp-hero__eyebrow {
     margin: 0 0 0.75rem;
     color: var(--lp-color-gold-300);
@@ -1601,6 +1617,12 @@ body.cookie-banner-open {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
     }
+}
+
+/* Keep LP content visible if the animation script is unavailable. */
+body:not([data-aos-easing]) [data-aos] {
+    opacity: 1;
+    transform: none;
 }
 
 /* Shared LP: how we can help */

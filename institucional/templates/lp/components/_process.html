@@ -4,7 +4,7 @@
 <section class="lp-process" id="{{ lp_process.id|default:'processo' }}" aria-labelledby="lp-process-title"
     {% if lp_process.background_image %}style="--lp-process-background: url('{% static lp_process.background_image %}');"{% endif %}>
     <div class="container">
-        <div class="lp-process__intro">
+        <div class="lp-process__intro" data-aos="fade-up">
             <span class="lp-process__accent" aria-hidden="true"></span>
             <h2 class="lp-process__title" id="lp-process-title">{{ lp_process.title }}{% if lp_process.highlight %} <span>{{ lp_process.highlight }}</span>{% endif %}</h2>
             {% if lp_process.description %}<p class="lp-process__description">{{ lp_process.description }}</p>{% endif %}
@@ -25,7 +25,7 @@
 
         <ol class="lp-process__steps row g-4 g-lg-3">
             {% for step in lp_process.steps %}
-            <li class="col-12 col-lg-4" data-step-number="{{ forloop.counter|stringformat:'02d' }}">
+            <li class="col-12 col-lg-4" data-step-number="{{ forloop.counter|stringformat:'02d' }}" data-aos="fade-up" data-aos-delay="{% cycle '0' '100' '200' %}">
                 <div class="lp-process__step">
                     <svg class="lp-process__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor"
                         stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"

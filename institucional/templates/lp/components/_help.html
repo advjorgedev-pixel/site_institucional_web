@@ -3,7 +3,7 @@
 {% if lp_help.cards %}
 <section class="lp-help" id="{{ lp_help.id|default:'atuacao' }}" aria-labelledby="lp-help-title" data-lp-help>
     <div class="container">
-        <div class="lp-help__intro">
+        <div class="lp-help__intro" data-aos="fade-up">
             {% if lp_help.eyebrow %}<p class="lp-help__eyebrow">{{ lp_help.eyebrow }}</p>{% endif %}
             <h2 class="lp-help__title" id="lp-help-title">{{ lp_help.title }}</h2>
             {% if lp_help.description %}<p class="lp-help__description">{{ lp_help.description }}</p>{% endif %}
@@ -11,7 +11,7 @@
 
         <div class="row g-3 justify-content-center">
             {% for card in lp_help.cards %}
-            <div class="col-12 col-md-6 col-lg-4 col-xl">
+            <div class="col-12 col-md-6 col-lg-4 col-xl" data-aos="fade-up" data-aos-delay="{% cycle '0' '50' '100' '150' '200' %}">
                 <article class="lp-help-card" data-lp-help-card>
                     <div class="lp-help-card__inner">
                         <div class="lp-help-card__face lp-help-card__face--front" data-lp-help-front>

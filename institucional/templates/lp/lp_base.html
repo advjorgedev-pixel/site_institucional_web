@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="{% static 'css/lp.css' %}">
     {% block styles %}{% endblock %}
     {% endcompress %}
+
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
 </head>
 
 <body class="d-flex flex-column min-vh-100 {% block body_class %}{% endblock %}">
@@ -52,9 +54,11 @@
     {% include 'components/_privacy_terms.html' %}
 
     {% compress js %}
+    <script defer src="{% static 'js/aos.js' %}"></script>
     <script defer src="{% static 'js/ui_components.js' %}"></script>
     <script defer src="{% static 'js/lp.js' %}"></script>
     {% block scripts %}{% endblock %}
+    <script defer src="{% static 'js/animation_script.js' %}"></script>
     {% endcompress %}
 </body>
 </html>

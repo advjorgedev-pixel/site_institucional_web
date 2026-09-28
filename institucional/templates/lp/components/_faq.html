@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row g-4 gx-lg-5">
             <div class="col-12 col-lg-4">
-                <div class="lp-faq__intro">
+                <div class="lp-faq__intro" data-aos="fade-up">
                     <span class="lp-faq__accent" aria-hidden="true"></span>
                     {% if lp_faq.eyebrow %}<p class="lp-faq__eyebrow">{{ lp_faq.eyebrow }}</p>{% endif %}
                     <h2 class="lp-faq__title" id="lp-faq-title">{{ lp_faq.title }}</h2>
@@ -14,7 +14,7 @@
             <div class="col-12 col-lg-8">
                 <div class="lp-faq__items">
                     {% for item in lp_faq.items %}
-                    <details class="lp-faq__item" data-lp-faq-item {% if item.open %}open{% endif %}>
+                    <details class="lp-faq__item" data-lp-faq-item data-aos="fade-up" data-aos-delay="{% cycle '0' '50' '100' '150' %}" {% if item.open %}open{% endif %}>
                         <summary class="lp-faq__question">
                             <span class="lp-faq__number" aria-hidden="true">{{ forloop.counter|stringformat:'02d' }}</span>
                             <span class="lp-faq__question-text">{{ item.question }}</span>
