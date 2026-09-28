@@ -228,8 +228,10 @@
 }
 
 .lp-process__button svg {
-    width: 1.2rem;
-    height: 1.2rem;
+    display: block;
+    flex: 0 0 1.125rem;
+    width: 1.125rem;
+    height: 1.125rem;
 }
 
 .lp-process__steps {
@@ -293,7 +295,7 @@
     .lp-process__steps > li:not(:last-child)::after {
         position: absolute;
         top: 0.45rem;
-        right: -0.5rem;
+        right: 0.5rem;
         color: var(--lp-color-gold-300);
         font-size: 1.25rem;
         line-height: 1;
