@@ -1,7 +1,5 @@
 {% extends 'lp/lp_base.html' %}
-{% load static %}
 {% load i18n %}
-{% get_current_language as CURRENT_LANG %}
 
 {% block body_class %}lp-page lp-page--bank{% endblock %}
 
@@ -16,24 +14,15 @@
 {% include 'json/_ld_json_home.html' %}
 {% endblock %}
 
-{% block styles %}
-<link rel="stylesheet" href="{% static 'css/lp_bank.css' %}">
-{% endblock %}
-
-
 {% block content %}
 {% include 'lp/components/_hero.html' %}
-{% include 'lp/components/bank/_help.html' %}
-{% include 'lp/components/bank/_process.html' %}
-{% include 'lp/components/bank/_about.html' %}
+{% include 'lp/components/_help.html' %}
+{% include 'lp/components/_process.html' %}
+{% include 'lp/components/_about.html' %}
 {% include 'lp/components/reviews.html' %}
-{% include 'lp/components/bank/_faq.html' %}
+{% include 'lp/components/_faq.html' %}
 {% endblock %}
 
 {% block floating_actions %}
 {% include 'lp/components/_whats_button.html' %}
-{% endblock %}
-
-{% block scripts %}
-<script defer src="{% static 'js/lp_bank.js' %}"></script>
 {% endblock %}

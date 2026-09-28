@@ -179,51 +179,193 @@ class BankLawView(TemplateView):
             {"label": _("Avaliações"), "url": "#avaliacoes"},
             {"label": _("FAQ"), "url": "#faq"},
         ]
-        context["bank_help_cards"] = [
-            {
-                "icon": "document",
-                "title": _("Revisão de empréstimos e financiamentos"),
-                "description": _("Análise de contrato, CET, tarifas, seguros e evolução da dívida."),
-                "details": [
-                    _("Conferência das cláusulas e dos encargos previstos no contrato."),
-                    _("Levantamento dos pagamentos, do saldo e dos documentos relevantes."),
-                ],
+        context["lp_help"] = {
+            "id": "atuacao",
+            "eyebrow": _("Como posso ajudar"),
+            "title": _("Atuação em diferentes situações bancárias"),
+            "description": _("Análise técnica e orientação jurídica para pessoas físicas e jurídicas."),
+            "cards": [
+                {
+                    "icon": "document",
+                    "title": _("Revisão de empréstimos e financiamentos"),
+                    "description": _("Análise de contrato, CET, tarifas, seguros e evolução da dívida."),
+                    "details": [
+                        _("Conferência das cláusulas e dos encargos previstos no contrato."),
+                        _("Levantamento dos pagamentos, do saldo e dos documentos relevantes."),
+                    ],
+                },
+                {
+                    "icon": "car",
+                    "title": _("Busca e apreensão de veículos"),
+                    "description": _("Análise de contrato, mora, notificação e encargos."),
+                    "details": [
+                        _("Verificação da notificação e da constituição em mora."),
+                        _("Conferência dos valores cobrados e do histórico do financiamento."),
+                    ],
+                },
+                {
+                    "icon": "gavel",
+                    "title": _("Cobranças e execuções bancárias"),
+                    "description": _("Defesa de pessoas físicas e jurídicas em cobranças e execuções."),
+                    "details": [
+                        _("Análise do processo, dos títulos e dos valores exigidos."),
+                        _("Avaliação de prazos, garantias e possibilidades de defesa."),
+                    ],
+                },
+                {
+                    "icon": "handshake",
+                    "title": _("Negociação de dívidas bancárias"),
+                    "description": _("Análise da situação e alternativas de renegociação."),
+                    "details": [
+                        _("Mapeamento do saldo, dos contratos e da capacidade de pagamento."),
+                        _("Avaliação das propostas e condições de quitação ou parcelamento."),
+                    ],
+                },
+                {
+                    "icon": "chart",
+                    "title": _("Juros e revisão de contratos"),
+                    "description": _("Avaliação de taxas e encargos conforme o caso concreto."),
+                    "details": [
+                        _("Conferência de taxas, indexadores e encargos previstos."),
+                        _("Comparação entre o contrato e as cobranças realizadas."),
+                    ],
+                },
+            ],
+        }
+        context["lp_process"] = {
+            "id": "processo",
+            "title": _("Como funciona"),
+            "highlight": _("a análise"),
+            "description": _("Um processo simples, com foco na clareza e na sua segurança jurídica."),
+            "button_label": _("Conversar sobre meu caso"),
+            "button_url": context["lp_whatsapp_url"],
+            "button_external": True,
+            "background_image": "img/lp/process-background.webp",
+            "steps": [
+                {
+                    "icon": "document",
+                    "title": _("Você apresenta o contrato"),
+                    "description": _("Envio dos documentos para análise inicial."),
+                },
+                {
+                    "icon": "search",
+                    "title": _("Análise de taxas, encargos e documentos"),
+                    "description": _("Estudo técnico da situação com base na legislação."),
+                },
+                {
+                    "icon": "document",
+                    "title": _("Orientação sobre caminhos possíveis"),
+                    "description": _("Explicação clara das alternativas jurídicas para o seu caso."),
+                },
+            ],
+        }
+        context["lp_about"] = {
+            "id": "sobre",
+            "eyebrow": _("Sobre o advogado"),
+            "title": _("Atendimento jurídico com experiência prática"),
+            "description": _(
+                "Compromisso com um atendimento próximo, análise técnica e orientação clara em todas as etapas."
+            ),
+            "background_image": "img/lp/about-background.webp",
+            "photo": "img/photos/jorge_com_fundo.webp",
+            "photo_alt": _("Jorge R. Sarobe em seu escritório"),
+            "name": "Jorge R. Sarobe",
+            "registration": _("OAB/SC 74.996"),
+            "credentials": [
+                {
+                    "icon": "graduation",
+                    "title": _("Formação sólida"),
+                    "description": _("Graduado pela Universidade Estácio de Sá (2020)"),
+                },
+                {
+                    "icon": "book",
+                    "title": _("Especialização"),
+                    "description": _("Pós-graduação em Direito Bancário"),
+                },
+                {
+                    "icon": "people",
+                    "title": _("Atuação institucional"),
+                    "description": _("Integrante da Comissão de Direito Bancário da OAB/SC — Subseção São José"),
+                },
+                {
+                    "icon": "court",
+                    "title": _("Experiência prática"),
+                    "description": _("Ex-conciliador judicial no Fórum de São José/SC"),
+                },
+            ],
+            "quote": {
+                "text": _(
+                    "Meu compromisso é oferecer um atendimento jurídico claro, ético e técnico, sempre com foco na análise responsável de cada caso."
+                ),
+                "author": "Jorge R. Sarobe",
+                "registration": _("OAB/SC 74.996"),
             },
-            {
-                "icon": "car",
-                "title": _("Busca e apreensão de veículos"),
-                "description": _("Análise de contrato, mora, notificação e encargos."),
-                "details": [
-                    _("Verificação da notificação e da constituição em mora."),
-                    _("Conferência dos valores cobrados e do histórico do financiamento."),
-                ],
-            },
-            {
-                "icon": "gavel",
-                "title": _("Cobranças e execuções bancárias"),
-                "description": _("Defesa de pessoas físicas e jurídicas em cobranças e execuções."),
-                "details": [
-                    _("Análise do processo, dos títulos e dos valores exigidos."),
-                    _("Avaliação de prazos, garantias e possibilidades de defesa."),
-                ],
-            },
-            {
-                "icon": "handshake",
-                "title": _("Negociação de dívidas bancárias"),
-                "description": _("Análise da situação e alternativas de renegociação."),
-                "details": [
-                    _("Mapeamento do saldo, dos contratos e da capacidade de pagamento."),
-                    _("Avaliação das propostas e condições de quitação ou parcelamento."),
-                ],
-            },
-            {
-                "icon": "chart",
-                "title": _("Juros e revisão de contratos"),
-                "description": _("Avaliação de taxas e encargos conforme o caso concreto."),
-                "details": [
-                    _("Conferência de taxas, indexadores e encargos previstos."),
-                    _("Comparação entre o contrato e as cobranças realizadas."),
-                ],
-            },
-        ]
+            "documents_label": _("Documentos de formação em Direito Bancário"),
+            "modal_title": _("Documento de Direito Bancário"),
+            "documents": [
+                {
+                    "path": "doc/Diploma Direito Bancário.pdf",
+                    "label": _("Ver diploma de Direito Bancário"),
+                    "caption": _("Visualizar PDF"),
+                },
+                {
+                    "path": "doc/Certificado ESA Direito Bancario.pdf",
+                    "label": _("Ver certificado ESA: Direito Bancário na Prática"),
+                    "caption": _("Visualizar PDF"),
+                },
+            ],
+        }
+        context["lp_faq"] = {
+            "id": "faq",
+            "eyebrow": "FAQ",
+            "title": _("Dúvidas frequentes"),
+            "description": _(
+                "Reunimos as principais perguntas para esclarecer o processo de análise e atendimento."
+            ),
+            "items": [
+                {
+                    "question": _("Como funciona a análise do meu caso?"),
+                    "answer": _(
+                        "Você apresenta sua situação e os documentos disponíveis. O advogado avalia os pontos relevantes e explica as possibilidades, os riscos e os próximos passos conforme o caso."
+                    ),
+                },
+                {
+                    "question": _("Quais documentos preciso enviar?"),
+                    "answer": _(
+                        "Contratos, extratos, comprovantes de pagamento e comunicações do banco costumam ajudar. Se faltar algum documento, você receberá orientação sobre o que reunir."
+                    ),
+                },
+                {
+                    "question": _("Quanto tempo leva para receber a análise?"),
+                    "answer": _(
+                        "O prazo depende da complexidade da situação e do recebimento dos documentos necessários. Após o primeiro contato, informamos uma previsão de retorno para o seu caso."
+                    ),
+                    "open": True,
+                },
+                {
+                    "question": _("A consulta é paga?"),
+                    "answer": _(
+                        "As condições da consulta e dos honorários são informadas antes da contratação, de acordo com o atendimento e o serviço necessários."
+                    ),
+                },
+                {
+                    "question": _("Vocês atuam em todo o Brasil?"),
+                    "answer": _(
+                        "O atendimento pode ocorrer online. A possibilidade de atuação em outras localidades é avaliada conforme a demanda e a localidade envolvida."
+                    ),
+                },
+                {
+                    "question": _("Quais são as áreas de atuação?"),
+                    "answer": _(
+                        "Em Direito Bancário, a atuação inclui análise de contratos, busca e apreensão de veículos, cobranças, negociações de dívidas e revisão de encargos, conforme a situação apresentada."
+                    ),
+                },
+                {
+                    "question": _("Como faço para iniciar o atendimento?"),
+                    "answer": _(
+                        "Entre em contato pelo WhatsApp, explique brevemente o caso e informe quais documentos possui. Você receberá orientação sobre os próximos passos."
+                    ),
+                },
+            ],
+        }
         return context

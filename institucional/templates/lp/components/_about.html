@@ -1,0 +1,99 @@
+{% load static i18n %}
+
+{% if lp_about.title %}
+<section class="lp-about" id="{{ lp_about.id|default:'sobre' }}" aria-labelledby="lp-about-title"
+    {% if lp_about.background_image %}style="--lp-about-background: url('{% static lp_about.background_image %}');"{% endif %}>
+    <div class="container">
+        <div class="row g-4 gx-xl-5 align-items-center">
+            {% if lp_about.photo %}
+            <div class="col-12 col-md-5 col-lg-3 order-1">
+                <figure class="lp-about__photo">
+                    <img src="{% static lp_about.photo %}" alt="{{ lp_about.photo_alt }}"
+                        width="1000" height="666" loading="lazy" decoding="async">
+                    {% if lp_about.name or lp_about.registration %}
+                    <figcaption class="lp-about__photo-caption">
+                        <strong>{{ lp_about.name }}</strong>
+                        <span>{{ lp_about.registration }}</span>
+                    </figcaption>
+                    {% endif %}
+                </figure>
+            </div>
+            {% endif %}
+
+            <div class="col-12 {% if lp_about.photo %}col-md-7 {% endif %}{% if lp_about.photo and lp_about.quote %}col-lg-6{% elif lp_about.photo or lp_about.quote %}col-lg-9{% else %}col-lg-12{% endif %} order-2">
+                <div class="lp-about__content">
+                    {% if lp_about.eyebrow %}<p class="lp-about__eyebrow">{{ lp_about.eyebrow }}</p>{% endif %}
+                    <h2 class="lp-about__title" id="lp-about-title">{{ lp_about.title }}</h2>
+                    {% if lp_about.description %}<p class="lp-about__description">{{ lp_about.description }}</p>{% endif %}
+
+                    {% if lp_about.credentials %}
+                    <ul class="lp-about__credentials">
+                        {% for credential in lp_about.credentials %}
+                        <li>
+                            <span class="lp-about__credential-icon" aria-hidden="true">
+                                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                    {% if credential.icon == 'book' %}
+                                    <path d="M16 8c-4-3-8-3-12-1v18c4-2 8-2 12 1 4-3 8-3 12-1V7c-4-2-8-2-12 1Zm0 0v18"/>
+                                    {% elif credential.icon == 'people' %}
+                                    <circle cx="16" cy="9" r="3"/><circle cx="7" cy="12" r="2"/><circle cx="25" cy="12" r="2"/><path d="M10 24v-4a6 6 0 0 1 12 0v4H10Zm-7 0v-4a4 4 0 0 1 5-4m21 8v-4a4 4 0 0 0-5-4"/>
+                                    {% elif credential.icon == 'court' %}
+                                    <path d="m3 12 13-7 13 7H3Zm3 2v11m7-11v11m6-11v11m7-11v11M3 27h26M2 30h28"/>
+                                    {% else %}
+                                    <path d="m3 12 13-7 13 7-13 7L3 12Zm5 4v7c5 4 11 4 16 0v-7M29 12v10"/>
+                                    {% endif %}
+                                </svg>
+                            </span>
+                            <span class="lp-about__credential-copy"><strong>{{ credential.title }}</strong><span>{{ credential.description }}</span></span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+
+            {% if lp_about.quote %}
+            <div class="col-12 col-lg-3 order-4 order-lg-3">
+                <blockquote class="lp-about__quote">
+                    <p>{{ lp_about.quote.text }}</p>
+                    <footer><cite>{{ lp_about.quote.author }}</cite><span>{{ lp_about.quote.registration }}</span></footer>
+                </blockquote>
+            </div>
+            {% endif %}
+
+            {% if lp_about.documents %}
+            <div class="col-12 {% if lp_about.photo %}col-lg-9 offset-lg-3{% endif %} order-3 order-lg-4">
+                <div class="lp-about__documents" role="group" aria-label="{{ lp_about.documents_label }}">
+                    {% for document in lp_about.documents %}
+                    <button class="lp-about__document" type="button" data-bs-toggle="modal" data-bs-target="#lp-document-modal"
+                        data-lp-document data-lp-document-url="{% static document.path %}">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 14h6M9 17h6"/></svg>
+                        <span class="lp-about__document-copy"><strong data-lp-document-label>{{ document.label }}</strong><small>{{ document.caption }}</small></span>
+                        <svg class="lp-about__document-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                    </button>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% if lp_about.documents %}
+<div class="modal lp-document-modal" id="lp-document-modal" tabindex="-1" role="dialog" aria-labelledby="lp-document-title" aria-hidden="true" data-lp-document-modal>
+    <div class="modal-dialog">
+        <div class="modal-content modal-themed">
+            <div class="modal-header">
+                <h2 class="modal-title" id="lp-document-title" data-lp-document-title>{{ lp_about.modal_title }}</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{% translate 'Fechar' %}"></button>
+            </div>
+            <div class="modal-body lp-document-modal__body">
+                <iframe class="lp-document-modal__frame" title="{% translate 'Visualização do documento PDF' %}" tabindex="-1" data-lp-document-frame></iframe>
+                <p class="lp-document-modal__fallback">{% translate 'Se o documento não aparecer no seu navegador, baixe o PDF.' %}
+                    <a href="#" download data-lp-document-download>{% translate 'Baixar PDF' %}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endif %}

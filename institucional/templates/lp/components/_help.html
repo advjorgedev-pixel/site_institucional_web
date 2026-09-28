@@ -1,15 +1,16 @@
 {% load i18n %}
 
-<section class="lp-help" id="atuacao" aria-labelledby="lp-help-title" data-lp-help>
+{% if lp_help.cards %}
+<section class="lp-help" id="{{ lp_help.id|default:'atuacao' }}" aria-labelledby="lp-help-title" data-lp-help>
     <div class="container">
         <div class="lp-help__intro">
-            <p class="lp-help__eyebrow">{% translate 'Como posso ajudar' %}</p>
-            <h2 class="lp-help__title" id="lp-help-title">{% translate 'Atuação em diferentes situações bancárias' %}</h2>
-            <p class="lp-help__description">{% translate 'Análise técnica e orientação jurídica para pessoas físicas e jurídicas.' %}</p>
+            {% if lp_help.eyebrow %}<p class="lp-help__eyebrow">{{ lp_help.eyebrow }}</p>{% endif %}
+            <h2 class="lp-help__title" id="lp-help-title">{{ lp_help.title }}</h2>
+            {% if lp_help.description %}<p class="lp-help__description">{{ lp_help.description }}</p>{% endif %}
         </div>
 
         <div class="row g-3 justify-content-center">
-            {% for card in bank_help_cards %}
+            {% for card in lp_help.cards %}
             <div class="col-12 col-md-6 col-lg-4 col-xl">
                 <article class="lp-help-card" data-lp-help-card>
                     <div class="lp-help-card__inner">
@@ -57,3 +58,4 @@
         </div>
     </div>
 </section>
+{% endif %}
