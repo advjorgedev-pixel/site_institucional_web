@@ -37,6 +37,7 @@
 
     <main id="main-content" class="flex-grow-1">
         {% block content %}{% endblock %}
+        {% block cta %}{% include 'lp/components/_cta.html' %}{% endblock %}
     </main>
 
     {% include 'lp/components/_footer.html' %}
