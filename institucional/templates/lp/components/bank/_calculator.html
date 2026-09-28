@@ -1,0 +1,129 @@
+{% load static %}
+
+<section class="lp-calculator" id="calculadora" aria-labelledby="lp-calculator-title"
+    data-lp-calculator
+    data-whatsapp-url="{{ lp_whatsapp_url }}">
+    <div class="container">
+        <div class="row g-4 align-items-start">
+            <div class="col-12 col-lg-6">
+                <div class="lp-calculator__intro">
+                    <p class="lp-calculator__eyebrow">Calculadora bancária</p>
+                    <h2 id="lp-calculator-title">Compare os juros do seu contrato</h2>
+                    <p>Simule o custo do financiamento e compare a taxa mensal com a média do Banco Central no mês da contratação.</p>
+                </div>
+
+                <form class="lp-calculator__form" data-calculator-form novalidate>
+                    <ol class="lp-calculator__progress" aria-label="Etapas da simulação">
+                        <li data-calculator-progress>Contrato</li>
+                        <li data-calculator-progress>Financiamento</li>
+                        <li data-calculator-progress>Parcelas</li>
+                    </ol>
+
+                    <fieldset class="lp-calculator__step" data-calculator-step>
+                        <legend>Qual é o tipo do contrato?</legend>
+                        <label id="calculator-modality-label" for="calculator-modality">Modalidade</label>
+                        <select id="calculator-modality" name="modality" aria-labelledby="calculator-modality-label" required>
+                            <option value="">Selecione uma modalidade</option>
+                            <optgroup label="Pessoa física">
+                                <option value="25464" data-person="PF" data-rates-url="{% static 'data/lp/bank/25464.csv' %}">Crédito pessoal não consignado</option>
+                                <option value="25471" data-person="PF" data-rates-url="{% static 'data/lp/bank/25471.csv' %}">Aquisição de veículos</option>
+                            </optgroup>
+                            <optgroup label="Pessoa jurídica">
+                                <option value="25444" data-person="PJ" data-rates-url="{% static 'data/lp/bank/25444.csv' %}">Capital de giro total</option>
+                                <option value="25443" data-person="PJ" data-rates-url="{% static 'data/lp/bank/25443.csv' %}">Capital de giro rotativo</option>
+                                <option value="25450" data-person="PJ" data-rates-url="{% static 'data/lp/bank/25450.csv' %}">Arrendamento mercantil de veículos</option>
+                            </optgroup>
+                        </select>
+                        <div class="lp-calculator__select" data-calculator-select hidden>
+                            <button class="lp-calculator__select-trigger" type="button" role="combobox"
+                                data-calculator-select-trigger aria-labelledby="calculator-modality-label calculator-modality-value"
+                                aria-haspopup="listbox" aria-expanded="false" aria-controls="calculator-modality-options">
+                                <span id="calculator-modality-value" data-calculator-select-value>Selecione uma modalidade</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div class="lp-calculator__select-options" id="calculator-modality-options"
+                                data-calculator-select-options role="listbox" aria-labelledby="calculator-modality-label" hidden></div>
+                        </div>
+                        <small data-pj-series-note hidden>A série 25.450 enviada é de arrendamento mercantil; aquisição de veículos PJ exige a série 25.447.</small>
+                    </fieldset>
+
+                    <fieldset class="lp-calculator__step" data-calculator-step hidden>
+                        <legend>Quando e quanto foi financiado?</legend>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <label for="calculator-date">Mês do contrato</label>
+                                <input id="calculator-date" name="date" type="month" required>
+                                <small>Usamos o mês para encontrar a média do Banco Central.</small>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="calculator-principal">Valor financiado (R$)</label>
+                                <input id="calculator-principal" name="principal" type="text" inputmode="numeric" autocomplete="off" placeholder="50.000,00" data-calculator-money required>
+                                <small>Digite os números; os centavos aparecem automaticamente.</small>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="lp-calculator__step" data-calculator-step hidden>
+                        <legend>Como são as parcelas?</legend>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <label for="calculator-terms">Quantidade de parcelas</label>
+                                <input id="calculator-terms" name="terms" type="number" inputmode="numeric" min="1" max="600" step="1" placeholder="48" required>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="calculator-payment">Valor de uma parcela (R$)</label>
+                                <input id="calculator-payment" name="payment" type="text" inputmode="numeric" autocomplete="off" placeholder="1.596,80" aria-describedby="calculator-payment-help" data-calculator-money required>
+                                <small id="calculator-payment-help">Para parcelas variáveis, informe a primeira. Digite apenas números.</small>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <p class="lp-calculator__error" data-calculator-error role="alert" tabindex="-1" hidden></p>
+                    <div class="lp-calculator__actions">
+                        <button class="lp-calculator__back" type="button" data-calculator-back hidden>Voltar</button>
+                        <button class="lp-button lp-calculator__submit" type="button" data-calculator-next>Continuar</button>
+                        <button class="lp-button lp-calculator__submit" type="submit" data-calculator-submit hidden>Ver minha estimativa</button>
+                        <button class="lp-button lp-calculator__submit" type="button" data-calculator-new hidden>Fazer uma nova</button>
+                    </div>
+                    <p class="lp-calculator__fine-print">Simulação informativa, sem CET, tarifas, seguros, mora ou correção monetária. A comparação com a média não confirma abusividade: o contrato exige análise individual.</p>
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="lp-calculator__result" data-calculator-result aria-live="polite" aria-atomic="true">
+                    <p class="lp-calculator__result-kicker">Estimativa informativa</p>
+                    <h3 data-result-heading tabindex="-1">Preencha os dados para comparar</h3>
+                    <p class="lp-calculator__result-intro" data-result-intro>São só cinco informações, em três etapas. O cálculo é feito no seu navegador.</p>
+                    <div data-result-content hidden>
+                        <p class="lp-calculator__assumption">Estimativa principal para parcelas fixas pelo sistema Price. Com uma única parcela não é possível identificar o sistema real do contrato.</p>
+                        <p class="lp-calculator__status" data-result-status></p>
+                        <div class="lp-calculator__metrics">
+                            <div><span>Taxa estimada pelas parcelas</span><strong data-result-rate></strong></div>
+                            <div><span>Média BCB</span><strong data-result-average></strong></div>
+                            <div><span>Diferença</span><strong data-result-difference></strong></div>
+                        </div>
+                        <p class="lp-calculator__source" data-result-source></p>
+                        <div class="lp-calculator__metrics lp-calculator__metrics--money">
+                            <div><span>Parcela informada</span><strong data-result-payment></strong></div>
+                            <div><span>Total estimado</span><strong data-result-total></strong></div>
+                            <div><span>Juros estimados</span><strong data-result-interest></strong></div>
+                        </div>
+                        <p class="lp-calculator__comparison" data-result-comparison></p>
+                        <details class="lp-calculator__alternatives">
+                            <summary>Ver hipóteses Gauss e SAC</summary>
+                            <p>São cenários matemáticos, não uma identificação automática do sistema do seu contrato.</p>
+                            <div class="lp-calculator__alternative-list">
+                                <div><strong>Gauss · parcela fixa</strong><span data-result-gauss></span></div>
+                                <div><strong>SAC · primeira parcela</strong><span data-result-sac></span></div>
+                            </div>
+                        </details>
+                        <a class="lp-button lp-calculator__whatsapp" data-result-whatsapp href="{{ lp_whatsapp_url }}" target="_blank" rel="noopener noreferrer">Conversar sobre meu caso pelo WhatsApp</a>
+                        <p class="lp-calculator__fine-print">“Potencialmente abusivo” sinaliza, nesta triagem, taxa ao menos 50% acima da média. Esse corte não é parâmetro legal. A média BCB não é limite de juros; só a análise do contrato e das circunstâncias permite avaliar abusividade. Os dados da simulação só seguem para o WhatsApp se você clicar no botão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

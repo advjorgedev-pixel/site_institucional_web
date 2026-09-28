@@ -1,5 +1,5 @@
 {% extends 'lp/lp_base.html' %}
-{% load i18n %}
+{% load i18n static %}
 
 {% block body_class %}lp-page lp-page--bank{% endblock %}
 
@@ -14,9 +14,12 @@
 {% include 'json/_ld_json_home.html' %}
 {% endblock %}
 
+{% block styles %}<link rel="stylesheet" href="{% static 'css/calculator.css' %}">{% endblock %}
+
 {% block content %}
 {% include 'lp/components/_hero.html' %}
 {% include 'lp/components/_help.html' %}
+{% include 'lp/components/bank/_calculator.html' %}
 {% include 'lp/components/_process.html' %}
 {% include 'lp/components/_about.html' %}
 {% include 'lp/components/reviews.html' %}
@@ -26,3 +29,5 @@
 {% block floating_actions %}
 {% include 'lp/components/_whats_button.html' %}
 {% endblock %}
+
+{% block scripts %}<script defer src="{% static 'js/calculator.js' %}"></script>{% endblock %}
