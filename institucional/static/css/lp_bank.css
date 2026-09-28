@@ -187,55 +187,71 @@
 
 /* Bank LP: analysis process */
 .lp-process {
-    padding-block: clamp(3rem, 6vw, 5rem);
+    padding-block: clamp(4rem, 8vw, 7rem);
     color: var(--lp-color-white);
-    background: linear-gradient(120deg, #163e68 0%, #12345a 55%, #0c294d 100%);
+    background-color: var(--lp-color-navy-900);
+    background-image:
+        linear-gradient(90deg, rgba(1, 13, 38, 0.95), rgba(1, 13, 38, 0.88)),
+        url("../img/lp/bank/process-background.webp");
+    background-position: center, 72% center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-bottom: 0.125rem solid rgba(242, 214, 128, 0.48);
 }
 
 .lp-process__intro {
-    max-width: 48rem;
+    max-width: 72rem;
 }
 
 .lp-process__accent {
     display: block;
-    width: 2rem;
-    height: 0.2rem;
-    margin-bottom: 0.65rem;
+    width: 3rem;
+    height: 0.15rem;
+    margin-bottom: 1rem;
     background: var(--lp-color-gold-300);
     border-radius: 999px;
 }
 
 .lp-process__title {
     margin: 0;
-    font-family: var(--lp-font-sans);
-    font-size: clamp(1.6rem, 3.2vw, 2.4rem);
-    font-weight: 800;
-    line-height: 1.2;
+    font-family: var(--lp-font-display);
+    font-size: clamp(2.75rem, 5vw, 5rem);
+    font-weight: 600;
+    line-height: 1;
     text-wrap: balance;
 }
 
+.lp-process__title span {
+    color: var(--lp-color-gold-300);
+}
+
 .lp-process__description {
-    margin: 0.35rem 0 0;
+    margin: 0.7rem 0 0;
     color: rgba(255, 255, 255, 0.82);
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    font-size: clamp(1rem, 1.65vw, 1.3rem);
 }
 
 .lp-process__button {
-    min-height: 2.9rem;
-    margin-top: 1.3rem;
-    padding-inline: 1.25rem;
+    width: min(100%, 24rem);
+    min-height: 3.5rem;
+    margin-top: 1.25rem;
+    padding: 0.7rem 1.25rem;
+    font-size: clamp(0.87rem, 1.2vw, 1rem);
 }
 
 .lp-process__button svg {
     display: block;
-    flex: 0 0 1.125rem;
-    width: 1.125rem;
-    height: 1.125rem;
+    flex: 0 0 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.lp-process__button .lp-process__button-arrow {
+    margin-left: auto;
 }
 
 .lp-process__steps {
-    margin-top: 1rem;
+    margin-top: clamp(3rem, 5vw, 5rem);
     margin-bottom: 0;
     padding: 0;
     list-style: none;
@@ -247,29 +263,46 @@
 }
 
 .lp-process__step {
+    position: relative;
+    z-index: 1;
     display: grid;
-    grid-template-columns: 2.25rem 2.5rem minmax(0, 1fr);
+    grid-template-columns: 2.5rem 3.5rem minmax(0, 1fr);
     align-items: start;
-    gap: clamp(0.6rem, 1.2vw, 0.9rem);
+    gap: clamp(0.65rem, 1.3vw, 1rem);
     min-width: 0;
 }
 
 .lp-process__number {
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.25rem;
+    width: 2.5rem;
     aspect-ratio: 1;
     color: var(--lp-color-navy-900);
     background: var(--lp-gold-gradient);
     border-radius: 50%;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.lp-process__number::after {
+    position: absolute;
+    top: 0;
+    right: -0.4rem;
+    width: 0.0625rem;
+    height: 3.5rem;
+    background: rgba(242, 214, 128, 0.35);
+    content: "";
 }
 
 .lp-process__icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    color: var(--lp-color-white);
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.7rem;
+    color: var(--lp-color-gold-300);
+    border: 0.0625rem solid rgba(242, 214, 128, 0.6);
+    border-radius: 0.85rem;
 }
 
 .lp-process__step-copy {
@@ -278,26 +311,46 @@
 
 .lp-process__step h3 {
     margin: 0;
-    font-family: var(--lp-font-sans);
-    font-size: clamp(0.91rem, 1.35vw, 1.02rem);
-    font-weight: 800;
-    line-height: 1.3;
+    font-family: var(--lp-font-display);
+    font-size: clamp(1.35rem, 2vw, 1.85rem);
+    font-weight: 700;
+    line-height: 1.05;
+    text-wrap: balance;
 }
 
 .lp-process__step p {
-    margin: 0.4rem 0 0;
+    margin: 0.65rem 0 0;
     color: rgba(255, 255, 255, 0.8);
-    font-size: 0.84rem;
+    font-size: clamp(0.88rem, 1.2vw, 1rem);
     line-height: 1.5;
 }
 
 @media (min-width: 992px) {
+    .lp-process {
+        background-image:
+            linear-gradient(90deg, rgba(1, 13, 38, 0.97), rgba(1, 13, 38, 0.8) 55%, rgba(1, 13, 38, 0.55)),
+            url("../img/lp/bank/process-background.webp");
+        background-position: center, right center;
+    }
+
+    .lp-process__steps > li::before {
+        position: absolute;
+        bottom: -2rem;
+        left: 0.25rem;
+        color: rgba(255, 255, 255, 0.07);
+        content: attr(data-step-number);
+        font-family: var(--lp-font-display);
+        font-size: clamp(6rem, 10vw, 9rem);
+        line-height: 1;
+        pointer-events: none;
+    }
+
     .lp-process__steps > li:not(:last-child)::after {
         position: absolute;
-        top: 0.45rem;
-        right: 0.5rem;
+        top: 1.5rem;
+        right: -0.6rem;
         color: var(--lp-color-gold-300);
-        font-size: 1.25rem;
+        font-size: 2rem;
         line-height: 1;
         content: "→";
     }
@@ -306,7 +359,13 @@
 /* Bank LP: attorney profile */
 .lp-about {
     padding-block: clamp(3.5rem, 7vw, 6rem);
-    background: radial-gradient(circle at 100% 40%, rgba(191, 159, 99, 0.11), transparent 35%), #fbfaf8;
+    background-color: #fbfaf8;
+    background-image:
+        linear-gradient(rgba(251, 250, 248, 0.93), rgba(251, 250, 248, 0.95)),
+        url("../img/lp/bank/about-background.webp");
+    background-position: center, right center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .lp-about__photo {
@@ -567,6 +626,13 @@
 }
 
 @media (min-width: 992px) {
+    .lp-about {
+        background-image:
+            linear-gradient(90deg, #fbfaf8 0%, rgba(251, 250, 248, 0.97) 54%, rgba(251, 250, 248, 0.8)),
+            url("../img/lp/bank/about-background.webp");
+        background-position: center, right center;
+    }
+
     .lp-about__quote {
         padding: 0 0 0 1.5rem;
         border-top: 0;
