@@ -16,14 +16,22 @@
 {% include 'json/_ld_json_home.html' %}
 {% endblock %}
 
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/lp_bank.css' %}">
+{% endblock %}
 
 
 {% block content %}
 {% include 'lp/components/_hero.html' %}
 {% include 'lp/components/bank/_help.html' %}
+{% include 'lp/components/bank/_process.html' %}
 {% include 'lp/components/bank/_about.html' %}
 {% endblock %}
 
 {% block floating_actions %}
 {% include 'lp/components/_whats_button.html' %}
+{% endblock %}
+
+{% block scripts %}
+<script defer src="{% static 'js/lp_bank.js' %}"></script>
 {% endblock %}

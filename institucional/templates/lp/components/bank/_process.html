@@ -1,0 +1,56 @@
+{% load i18n %}
+
+<section class="lp-process" id="processo" aria-labelledby="lp-process-title">
+    <div class="container">
+        <div class="lp-process__intro">
+            <span class="lp-process__accent" aria-hidden="true"></span>
+            <h2 class="lp-process__title" id="lp-process-title">{% translate 'Como funciona a análise' %}</h2>
+            <p class="lp-process__description">{% translate 'Um processo simples, com foco na clareza e na sua segurança jurídica.' %}</p>
+            <a class="lp-button lp-process__button" href="{{ lp_whatsapp_url }}" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 20l1.4-4.3A8 8 0 1 1 20 11.5Z"/><path d="M9 8.7c.2-.3.4-.3.6-.3h.5c.2 0 .4.1.5.4l.6 1.5c.1.3 0 .5-.2.7l-.4.5a6.6 6.6 0 0 0 2.8 2.8l.5-.4c.2-.2.4-.3.7-.2l1.5.6c.3.1.4.3.4.5v.5c0 .2 0 .4-.3.6-.5.4-1.1.6-1.7.5-2.8-.5-5.4-3.1-5.9-5.9-.1-.6.1-1.2.4-1.5Z"/>
+                </svg>
+                {% translate 'Conversar sobre meu caso' %}
+            </a>
+        </div>
+
+        <ol class="lp-process__steps row g-4 g-lg-3">
+            <li class="col-12 col-lg-4">
+                <div class="lp-process__step">
+                    <span class="lp-process__number" aria-hidden="true">1</span>
+                    <svg class="lp-process__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M10 4h19l9 9v31H10V4Z"/><path d="M29 4v10h9M17 23h14M17 30h14"/>
+                    </svg>
+                    <div class="lp-process__step-copy">
+                        <h3>{% translate 'Você apresenta o contrato' %}</h3>
+                        <p>{% translate 'Envio dos documentos para análise inicial.' %}</p>
+                    </div>
+                </div>
+            </li>
+            <li class="col-12 col-lg-4">
+                <div class="lp-process__step">
+                    <span class="lp-process__number" aria-hidden="true">2</span>
+                    <svg class="lp-process__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <circle cx="21" cy="21" r="12"/><path d="m30 30 12 12M15 21h12M21 15v12"/>
+                    </svg>
+                    <div class="lp-process__step-copy">
+                        <h3>{% translate 'Análise de taxas, encargos e documentos' %}</h3>
+                        <p>{% translate 'Estudo técnico da situação com base na legislação.' %}</p>
+                    </div>
+                </div>
+            </li>
+            <li class="col-12 col-lg-4">
+                <div class="lp-process__step">
+                    <span class="lp-process__number" aria-hidden="true">3</span>
+                    <svg class="lp-process__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M10 4h19l9 9v31H10V4Z"/><path d="M29 4v10h9M17 24h14M17 31h10"/>
+                    </svg>
+                    <div class="lp-process__step-copy">
+                        <h3>{% translate 'Orientação sobre caminhos possíveis' %}</h3>
+                        <p>{% translate 'Explicação clara das alternativas jurídicas para o seu caso.' %}</p>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>

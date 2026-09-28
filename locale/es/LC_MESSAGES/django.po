@@ -2290,3 +2290,31 @@ msgstr "Si el documento no aparece en su navegador, descargue el PDF."
 
 msgid "Baixar PDF"
 msgstr "Descargar PDF"
+
+#: LP bancária: etapas da análise
+msgid "Como funciona a análise"
+msgstr "Cómo funciona el análisis"
+
+msgid "Um processo simples, com foco na clareza e na sua segurança jurídica."
+msgstr "Un proceso sencillo, centrado en la claridad y en su seguridad jurídica."
+
+msgid "Conversar sobre meu caso"
+msgstr "Conversar sobre mi caso"
+
+msgid "Você apresenta o contrato"
+msgstr "Usted presenta el contrato"
+
+msgid "Envio dos documentos para análise inicial."
+msgstr "Envío de los documentos para un análisis inicial."
+
+msgid "Análise de taxas, encargos e documentos"
+msgstr "Análisis de tasas, cargos y documentos"
+
+msgid "Estudo técnico da situação com base na legislação."
+msgstr "Estudio técnico de la situación conforme a la legislación."
+
+msgid "Orientação sobre caminhos possíveis"
+msgstr "Orientación sobre posibles caminos"
+
+msgid "Explicação clara das alternativas jurídicas para o seu caso."
+msgstr "Explicación clara de las alternativas jurídicas para su caso."
