@@ -67,7 +67,8 @@
     outline-offset: 0.1rem;
 }
 
-.lp-calculator__select {
+.lp-calculator__select,
+.lp-calculator__calendar {
     position: relative;
 }
 
@@ -175,6 +176,85 @@
     flex: 0 0 auto;
     color: var(--lp-color-gold-700);
     content: "✓";
+}
+
+.lp-calculator__calendar-trigger[aria-expanded="true"] svg {
+    transform: none;
+}
+
+.lp-calculator__calendar-panel {
+    max-height: min(22rem, 55vh);
+    padding: 0.7rem;
+}
+
+.lp-calculator__calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.lp-calculator__calendar-header button,
+.lp-calculator__calendar-months button,
+.lp-calculator__calendar-years button {
+    min-width: 0;
+    min-height: 2.5rem;
+    border: 0;
+    border-radius: 0.4rem;
+    background: transparent;
+    color: var(--lp-color-navy-900);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.82rem;
+}
+
+.lp-calculator__calendar-header button:focus-visible,
+.lp-calculator__calendar-months button:focus-visible,
+.lp-calculator__calendar-years button:focus-visible {
+    outline: 0.17rem solid var(--lp-color-gold-500);
+    outline-offset: 0.1rem;
+}
+
+.lp-calculator__calendar-header button:hover:not(:disabled),
+.lp-calculator__calendar-months button:hover:not(:disabled),
+.lp-calculator__calendar-years button:hover:not(:disabled) {
+    background: #f5efe3;
+}
+
+.lp-calculator__calendar-header button:disabled,
+.lp-calculator__calendar-months button:disabled {
+    color: #87929d;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.lp-calculator__calendar-header > button:first-child,
+.lp-calculator__calendar-header > button:last-child {
+    flex: 0 0 2.5rem;
+}
+
+.lp-calculator__calendar-header svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.lp-calculator__calendar-header .lp-calculator__calendar-year-toggle {
+    flex: 1 1 auto;
+    font-weight: 800;
+}
+
+.lp-calculator__calendar-months,
+.lp-calculator__calendar-years {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.25rem;
+}
+
+.lp-calculator__calendar-months button[aria-pressed="true"],
+.lp-calculator__calendar-years button[aria-pressed="true"] {
+    background: var(--lp-color-gold-300);
+    font-weight: 800;
 }
 
 .lp-calculator__form small {

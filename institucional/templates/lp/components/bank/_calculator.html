@@ -54,9 +54,44 @@
                         <legend>Quando e quanto foi financiado?</legend>
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
-                                <label for="calculator-date">Mês do contrato</label>
-                                <input id="calculator-date" name="date" type="month" required>
-                                <small>Usamos o mês para encontrar a média do Banco Central.</small>
+                                <label id="calculator-date-label" for="calculator-date">Mês do contrato</label>
+                                <input id="calculator-date" name="date" type="month" aria-labelledby="calculator-date-label"
+                                    aria-describedby="calculator-calendar-range" required>
+                                <div class="lp-calculator__calendar" data-calculator-calendar hidden>
+                                    <button class="lp-calculator__select-trigger lp-calculator__calendar-trigger" type="button" data-calendar-trigger
+                                        aria-haspopup="dialog" aria-expanded="false" aria-controls="calculator-calendar-panel"
+                                        aria-labelledby="calculator-date-label calculator-date-value"
+                                        aria-describedby="calculator-calendar-range">
+                                        <span id="calculator-date-value" data-calendar-value>Escolha o mês</span>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                            <rect x="3" y="5" width="18" height="16" rx="2" />
+                                            <path d="M7 3v4M17 3v4M3 10h18" />
+                                        </svg>
+                                    </button>
+                                    <div class="lp-calculator__select-options lp-calculator__calendar-panel" id="calculator-calendar-panel"
+                                        data-calendar-panel role="dialog" aria-label="Escolha o mês do contrato" hidden>
+                                        <div class="lp-calculator__calendar-header">
+                                            <button type="button" data-calendar-prev aria-label="Ano anterior">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                                    <path d="m15 18-6-6 6-6" />
+                                                </svg>
+                                            </button>
+                                            <button class="lp-calculator__calendar-year-toggle" type="button"
+                                                data-calendar-year-toggle aria-expanded="false" aria-controls="calculator-calendar-years"></button>
+                                            <button type="button" data-calendar-next aria-label="Próximo ano">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                                    <path d="m9 18 6-6-6-6" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="lp-calculator__calendar-months" data-calendar-months></div>
+                                        <div class="lp-calculator__calendar-years" id="calculator-calendar-years" data-calendar-years hidden></div>
+                                    </div>
+                                </div>
+                                <small id="calculator-calendar-range" data-calendar-range aria-live="polite">Escolha um mês com taxa disponível no Banco Central.</small>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <label for="calculator-principal">Valor financiado (R$)</label>

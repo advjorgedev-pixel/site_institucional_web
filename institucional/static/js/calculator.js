@@ -6,6 +6,7 @@
 
     const form = calculator.querySelector("[data-calculator-form]");
     const modalityField = form.elements.modality;
+    const dateField = form.elements.date;
     const pjSeriesNote = calculator.querySelector("[data-pj-series-note]");
     const errorBox = calculator.querySelector("[data-calculator-error]");
     const resultContent = calculator.querySelector("[data-result-content]");
@@ -16,10 +17,21 @@
     const selectTrigger = calculator.querySelector("[data-calculator-select-trigger]");
     const selectValue = calculator.querySelector("[data-calculator-select-value]");
     const selectList = calculator.querySelector("[data-calculator-select-options]");
+    const calendarShell = calculator.querySelector("[data-calculator-calendar]");
+    const calendarTrigger = calculator.querySelector("[data-calendar-trigger]");
+    const calendarValue = calculator.querySelector("[data-calendar-value]");
+    const calendarPanel = calculator.querySelector("[data-calendar-panel]");
+    const calendarRange = calculator.querySelector("[data-calendar-range]");
+    const calendarPrevious = calculator.querySelector("[data-calendar-prev]");
+    const calendarNext = calculator.querySelector("[data-calendar-next]");
+    const calendarYearToggle = calculator.querySelector("[data-calendar-year-toggle]");
+    const calendarMonths = calculator.querySelector("[data-calendar-months]");
+    const calendarYears = calculator.querySelector("[data-calendar-years]");
     const steps = Array.from(calculator.querySelectorAll("[data-calculator-step]"));
     const progressItems = Array.from(calculator.querySelectorAll("[data-calculator-progress]"));
     const backButton = calculator.querySelector("[data-calculator-back]");
     const nextButton = calculator.querySelector("[data-calculator-next]");
+    const initialNextButtonText = nextButton.textContent;
     const submitButton = calculator.querySelector("[data-calculator-submit]");
     const newButton = calculator.querySelector("[data-calculator-new]");
     const moneyFields = Array.from(calculator.querySelectorAll("[data-calculator-money]"));
@@ -27,12 +39,15 @@
     let currentStep = 0;
     let interactionVersion = 0;
     let hasResult = false;
+    let calendarAvailability = null;
+    let calendarViewYear = null;
     const initialResultHeading = resultHeading.textContent;
     const initialResultIntro = resultIntro.textContent;
     const currency = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
     const moneyInputFormat = new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     const percent = new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     const monthNames = { jan: 1, fev: 2, mar: 3, abr: 4, mai: 5, jun: 6, jul: 7, ago: 8, set: 9, out: 10, nov: 11, dez: 12 };
+    const calendarMonthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
     function parseDecimal(value) {
         let normalized = String(value).trim().replace(/\s|R\$/g, "");
@@ -143,7 +158,6 @@
         const lines = csv.trim().split(/\r?\n/);
         if (!lines[0] || !lines[0].includes(series)) throw new Error("A base de taxas selecionada é inválida.");
         const rates = new Map();
-        const labels = [];
         for (const line of lines.slice(1)) {
             const match = /^([a-z]{3})\/(\d{2});(\d+(?:,\d+)?)$/.exec(line.trim());
             if (!match || !monthNames[match[1]]) continue;
@@ -151,15 +165,15 @@
             const month = String(monthNames[match[1]]).padStart(2, "0");
             const key = `${year}-${month}`;
             rates.set(key, Number(match[3].replace(",", ".")) / 100);
-            labels.push(key);
         }
         if (!rates.size) throw new Error("Não há taxas válidas para esta modalidade.");
+        const labels = Array.from(rates.keys()).sort();
         return { rates, first: labels[0], last: labels[labels.length - 1] };
     }
 
     async function getRates(series, url) {
         if (!rateCache.has(series)) {
-            const request = fetch(url)
+            const request = fetch(url, { cache: "no-cache" })
                 .then((response) => {
                     if (!response.ok) throw new Error("Não foi possível carregar a base do Banco Central.");
                     return response.text();
@@ -208,6 +222,119 @@
     let activeOptionIndex = -1;
     let typedSearch = "";
     let searchTimer;
+
+    function formatCalendarMonth(key) {
+        const [year, month] = key.split("-");
+        return `${calendarMonthNames[Number(month) - 1]} de ${year}`;
+    }
+
+    function getCalendarAvailability(datasets, selectedIndex) {
+        const commonStart = datasets.map((data) => data.first).sort().at(-1);
+        const today = new Date();
+        const currentMonth = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
+        const months = Array.from(datasets[selectedIndex].rates.keys())
+            .filter((month) => month >= commonStart && month <= currentMonth)
+            .sort();
+        if (!months.length) throw new Error("Não há meses disponíveis para esta modalidade na faixa comum das séries.");
+        return {
+            months: new Set(months),
+            years: Array.from(new Set(months.map((month) => Number(month.slice(0, 4))))),
+            first: months[0],
+            last: months[months.length - 1],
+        };
+    }
+
+    async function loadCalendarAvailability() {
+        rateCache.clear();
+        const datasets = await Promise.all(nativeOptions.map((option) => getRates(option.value, option.dataset.ratesUrl)));
+        const selectedIndex = nativeOptions.findIndex((option) => option.value === modalityField.value);
+        return getCalendarAvailability(datasets, selectedIndex);
+    }
+
+    function syncCalendarValue() {
+        calendarValue.textContent = dateField.value ? formatCalendarMonth(dateField.value) : "Escolha o mês";
+        if (dateField.value) calendarTrigger.removeAttribute("aria-invalid");
+    }
+
+    function renderCalendar() {
+        if (!calendarAvailability) return;
+        const years = calendarAvailability.years;
+        if (!years.includes(calendarViewYear)) calendarViewYear = years[years.length - 1];
+        const yearIndex = years.indexOf(calendarViewYear);
+        calendarYearToggle.textContent = String(calendarViewYear);
+        calendarPrevious.disabled = yearIndex === 0;
+        calendarNext.disabled = yearIndex === years.length - 1;
+        calendarMonths.replaceChildren();
+
+        calendarMonthNames.forEach((name, index) => {
+            const key = `${calendarViewYear}-${String(index + 1).padStart(2, "0")}`;
+            const button = document.createElement("button");
+            button.type = "button";
+            button.textContent = name.slice(0, 3);
+            button.setAttribute("aria-label", `${name} de ${calendarViewYear}`);
+            button.setAttribute("aria-pressed", String(dateField.value === key));
+            button.disabled = !calendarAvailability.months.has(key);
+            button.addEventListener("click", () => {
+                dateField.value = key;
+                dateField.dispatchEvent(new Event("change", { bubbles: true }));
+                syncCalendarValue();
+                closeCalendar(true);
+            });
+            calendarMonths.appendChild(button);
+        });
+
+        calendarYears.replaceChildren();
+        years.forEach((year) => {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.textContent = String(year);
+            button.setAttribute("aria-pressed", String(year === calendarViewYear));
+            button.addEventListener("click", () => {
+                calendarViewYear = year;
+                calendarYears.hidden = true;
+                calendarMonths.hidden = false;
+                calendarYearToggle.setAttribute("aria-expanded", "false");
+                renderCalendar();
+                calendarYearToggle.focus();
+            });
+            calendarYears.appendChild(button);
+        });
+    }
+
+    function setCalendarAvailability(availability) {
+        calendarAvailability = availability;
+        if (!availability.months.has(dateField.value)) dateField.value = "";
+        calendarViewYear = Number((dateField.value || availability.last).slice(0, 4));
+        calendarRange.textContent = `Meses disponíveis: ${formatCalendarMonth(availability.first)} a ${formatCalendarMonth(availability.last)}.`;
+        syncCalendarValue();
+        renderCalendar();
+    }
+
+    function openCalendar() {
+        if (!calendarAvailability) return;
+        renderCalendar();
+        calendarPanel.hidden = false;
+        calendarTrigger.setAttribute("aria-expanded", "true");
+        calendarYearToggle.focus();
+    }
+
+    function closeCalendar(returnFocus = false) {
+        calendarPanel.hidden = true;
+        calendarYears.hidden = true;
+        calendarMonths.hidden = false;
+        calendarTrigger.setAttribute("aria-expanded", "false");
+        calendarYearToggle.setAttribute("aria-expanded", "false");
+        if (returnFocus) calendarTrigger.focus();
+    }
+
+    function initCalendar() {
+        dateField.hidden = true;
+        calendarShell.hidden = false;
+        const label = calculator.querySelector("#calculator-date-label");
+        label.removeAttribute("for");
+        label.addEventListener("click", () => calendarTrigger.focus());
+        syncCalendarValue();
+    }
 
     function syncCustomSelect() {
         const selected = modalityField.selectedOptions[0];
@@ -291,6 +418,7 @@
 
     function setStep(index, focus = false) {
         closeCustomSelect();
+        closeCalendar();
         interactionVersion += 1;
         currentStep = index;
         steps.forEach((step, position) => { step.hidden = position !== index; });
@@ -321,11 +449,12 @@
             return "";
         }
         if (index === 1) {
-            const date = form.elements.date.value;
+            const date = dateField.value;
             const principal = parseDecimal(form.elements.principal.value);
-            const today = new Date();
-            const currentMonth = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
-            if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(date) || date > currentMonth) return "Informe o mês real do contrato, sem usar uma data futura.";
+            if (!calendarAvailability || !calendarAvailability.months.has(date)) {
+                calendarTrigger.setAttribute("aria-invalid", "true");
+                return "Selecione um dos meses disponíveis no calendário.";
+            }
             if (!Number.isFinite(principal) || principal <= 0) return "Informe um valor financiado maior que zero.";
             return "";
         }
@@ -397,7 +526,7 @@
             const average = data.rates.get(date);
             if (average === undefined) {
                 setStep(1);
-                showError(`Não há taxa BCB para ${formatMonth(date)} nesta modalidade. A base cobre ${formatMonth(data.first)} a ${formatMonth(data.last)}. Informe o mês real do contrato dentro desse período.`);
+                showError(`Não há taxa BCB para ${formatMonth(date)} nesta modalidade. Selecione outro mês disponível no calendário.`);
                 return;
             }
 
@@ -446,6 +575,45 @@
     modalityField.addEventListener("change", () => {
         syncCustomSelect();
         pjSeriesNote.hidden = modalityField.value !== "25450";
+        calendarAvailability = null;
+        dateField.value = "";
+        calendarRange.textContent = "Escolha um mês com taxa disponível no Banco Central.";
+        syncCalendarValue();
+        closeCalendar();
+    });
+    dateField.addEventListener("change", syncCalendarValue);
+    calendarTrigger.addEventListener("click", () => {
+        if (calendarPanel.hidden) openCalendar();
+        else closeCalendar(true);
+    });
+    calendarPrevious.addEventListener("click", () => {
+        const years = calendarAvailability.years;
+        calendarViewYear = years[years.indexOf(calendarViewYear) - 1];
+        renderCalendar();
+    });
+    calendarNext.addEventListener("click", () => {
+        const years = calendarAvailability.years;
+        calendarViewYear = years[years.indexOf(calendarViewYear) + 1];
+        renderCalendar();
+    });
+    calendarYearToggle.addEventListener("click", () => {
+        const showYears = calendarYears.hidden;
+        calendarYears.hidden = !showYears;
+        calendarMonths.hidden = showYears;
+        calendarYearToggle.setAttribute("aria-expanded", String(showYears));
+        if (showYears) {
+            const selectedYear = calendarYears.querySelector('[aria-pressed="true"]');
+            if (selectedYear) selectedYear.focus();
+        }
+    });
+    calendarShell.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !calendarPanel.hidden) {
+            event.preventDefault();
+            closeCalendar(true);
+        }
+    });
+    calendarShell.addEventListener("focusout", (event) => {
+        if (!calendarShell.contains(event.relatedTarget)) closeCalendar();
     });
     selectTrigger.addEventListener("click", () => {
         if (selectList.hidden) openCustomSelect();
@@ -498,6 +666,7 @@
     });
     document.addEventListener("pointerdown", (event) => {
         if (!selectList.hidden && !selectShell.contains(event.target)) closeCustomSelect();
+        if (!calendarPanel.hidden && !calendarShell.contains(event.target)) closeCalendar();
     });
     backButton.addEventListener("click", () => {
         if (hasResult) clearResult();
@@ -507,8 +676,12 @@
         form.reset();
         resetMoneyMasks.forEach((resetMask) => resetMask());
         syncCustomSelect();
+        calendarAvailability = null;
+        calendarRange.textContent = "Escolha um mês com taxa disponível no Banco Central.";
+        syncCalendarValue();
         pjSeriesNote.hidden = true;
         selectTrigger.removeAttribute("aria-invalid");
+        calendarTrigger.removeAttribute("aria-invalid");
         clearResult();
         setStep(0);
         selectTrigger.focus();
@@ -519,27 +692,23 @@
             showError(message);
             return;
         }
-        if (currentStep !== 1) {
+        if (currentStep !== 0) {
             setStep(currentStep + 1, true);
             return;
         }
-        const series = modalityField.value;
-        const date = form.elements.date.value;
-        const selectedOption = modalityField.selectedOptions[0];
         const requestVersion = interactionVersion;
         nextButton.disabled = true;
+        nextButton.textContent = "Carregando meses...";
         try {
-            const data = await getRates(series, selectedOption.dataset.ratesUrl);
+            const availability = await loadCalendarAvailability();
             if (requestVersion !== interactionVersion) return;
-            if (!data.rates.has(date)) {
-                showError(`Não há taxa BCB para ${formatMonth(date)} nesta modalidade. A base cobre ${formatMonth(data.first)} a ${formatMonth(data.last)}. Informe o mês real do contrato dentro desse período.`);
-                return;
-            }
-            setStep(2, true);
+            setCalendarAvailability(availability);
+            setStep(1, true);
         } catch (error) {
             if (requestVersion === interactionVersion) showError(error.message || "Não foi possível consultar as taxas agora. Tente novamente.");
         } finally {
             nextButton.disabled = false;
+            nextButton.textContent = initialNextButtonText;
         }
     });
     form.addEventListener("input", () => {
@@ -561,5 +730,6 @@
     form.addEventListener("submit", handleSubmit);
     const resetMoneyMasks = moneyFields.map(attachMoneyMask);
     initCustomSelect();
+    initCalendar();
     setStep(0);
 })();
