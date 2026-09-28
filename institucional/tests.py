@@ -15,6 +15,7 @@ class LandingPageComponentTests(SimpleTestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "data-lp-help-card", count=5)
         self.assertContains(response, "data-step-number", count=3)
+        self.assertNotContains(response, 'class="lp-process__number"')
         self.assertContains(response, "data-lp-faq-item", count=7)
         self.assertContains(response, "img/lp/process-background.webp")
         self.assertContains(response, "img/lp/about-background.webp")
