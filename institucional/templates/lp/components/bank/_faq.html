@@ -1,0 +1,113 @@
+{% load i18n %}
+
+<section class="lp-faq" id="faq" aria-labelledby="lp-faq-title" data-lp-faq>
+    <div class="container">
+        <div class="row g-4 gx-lg-5">
+            <div class="col-12 col-lg-4">
+                <div class="lp-faq__intro">
+                    <span class="lp-faq__accent" aria-hidden="true"></span>
+                    <p class="lp-faq__eyebrow">FAQ</p>
+                    <h2 class="lp-faq__title" id="lp-faq-title">{% translate 'Dúvidas frequentes' %}</h2>
+                    <p class="lp-faq__description">
+                        {% translate 'Reunimos as principais perguntas para esclarecer o processo de análise e atendimento.' %}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-8">
+                <div class="lp-faq__items">
+                    <details class="lp-faq__item" data-lp-faq-item>
+                        <summary class="lp-faq__question">
+                            <span class="lp-faq__number" aria-hidden="true">01</span>
+                            <span class="lp-faq__question-text">{% translate 'Como funciona a análise do meu caso?' %}</span>
+                            <span class="lp-faq__toggle" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 9 7 7 7-7"/></svg>
+                            </span>
+                        </summary>
+                        <div class="lp-faq__answer"><div class="lp-faq__answer-inner">
+                            <p>{% translate 'Você apresenta sua situação e os documentos disponíveis. O advogado avalia os pontos relevantes e explica as possibilidades, os riscos e os próximos passos conforme o caso.' %}</p>
+                        </div></div>
+                    </details>
+
+                    <details class="lp-faq__item" data-lp-faq-item>
+                        <summary class="lp-faq__question">
+                            <span class="lp-faq__number" aria-hidden="true">02</span>
+                            <span class="lp-faq__question-text">{% translate 'Quais documentos preciso enviar?' %}</span>
+                            <span class="lp-faq__toggle" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 9 7 7 7-7"/></svg>
+                            </span>
+                        </summary>
+                        <div class="lp-faq__answer"><div class="lp-faq__answer-inner">
+                            <p>{% translate 'Contratos, extratos, comprovantes de pagamento e comunicações do banco costumam ajudar. Se faltar algum documento, você receberá orientação sobre o que reunir.' %}</p>
+                        </div></div>
+                    </details>
+
+                    <details class="lp-faq__item" data-lp-faq-item open>
+                        <summary class="lp-faq__question">
+                            <span class="lp-faq__number" aria-hidden="true">03</span>
+                            <span class="lp-faq__question-text">{% translate 'Quanto tempo leva para receber a análise?' %}</span>
+                            <span class="lp-faq__toggle" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 9 7 7 7-7"/></svg>
+                            </span>
+                        </summary>
+                        <div class="lp-faq__answer"><div class="lp-faq__answer-inner">
+                            <p>{% translate 'O prazo depende da complexidade da situação e do recebimento dos documentos necessários. Após o primeiro contato, informamos uma previsão de retorno para o seu caso.' %}</p>
+                        </div></div>
+                    </details>
+
+                    <details class="lp-faq__item" data-lp-faq-item>
+                        <summary class="lp-faq__question">
+                            <span class="lp-faq__number" aria-hidden="true">04</span>
+                            <span class="lp-faq__question-text">{% translate 'A consulta é paga?' %}</span>
+                            <span class="lp-faq__toggle" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 9 7 7 7-7"/></svg>
+                            </span>
+                        </summary>
+                        <div class="lp-faq__answer"><div class="lp-faq__answer-inner">
+                            <p>{% translate 'As condições da consulta e dos honorários são informadas antes da contratação, de acordo com o atendimento e o serviço necessários.' %}</p>
+                        </div></div>
+                    </details>
+
+                    <details class="lp-faq__item" data-lp-faq-item>
+                        <summary class="lp-faq__question">
+                            <span class="lp-faq__number" aria-hidden="true">05</span>
+                            <span class="lp-faq__question-text">{% translate 'Vocês atuam em todo o Brasil?' %}</span>
+                            <span class="lp-faq__toggle" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 9 7 7 7-7"/></svg>
+                            </span>
+                        </summary>
+                        <div class="lp-faq__answer"><div class="lp-faq__answer-inner">
+                            <p>{% translate 'O atendimento pode ocorrer online. A possibilidade de atuação em outras localidades é avaliada conforme a demanda e a localidade envolvida.' %}</p>
+                        </div></div>
+                    </details>
+
+                    <details class="lp-faq__item" data-lp-faq-item>
+                        <summary class="lp-faq__question">
+                            <span class="lp-faq__number" aria-hidden="true">06</span>
+                            <span class="lp-faq__question-text">{% translate 'Quais são as áreas de atuação?' %}</span>
+                            <span class="lp-faq__toggle" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 9 7 7 7-7"/></svg>
+                            </span>
+                        </summary>
+                        <div class="lp-faq__answer"><div class="lp-faq__answer-inner">
+                            <p>{% translate 'Em Direito Bancário, a atuação inclui análise de contratos, busca e apreensão de veículos, cobranças, negociações de dívidas e revisão de encargos, conforme a situação apresentada.' %}</p>
+                        </div></div>
+                    </details>
+
+                    <details class="lp-faq__item" data-lp-faq-item>
+                        <summary class="lp-faq__question">
+                            <span class="lp-faq__number" aria-hidden="true">07</span>
+                            <span class="lp-faq__question-text">{% translate 'Como faço para iniciar o atendimento?' %}</span>
+                            <span class="lp-faq__toggle" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 9 7 7 7-7"/></svg>
+                            </span>
+                        </summary>
+                        <div class="lp-faq__answer"><div class="lp-faq__answer-inner">
+                            <p>{% translate 'Entre em contato pelo WhatsApp, explique brevemente o caso e informe quais documentos possui. Você receberá orientação sobre os próximos passos.' %}</p>
+                        </div></div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

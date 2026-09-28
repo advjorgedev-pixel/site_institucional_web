@@ -92,3 +92,88 @@
         openCard = null;
     });
 })();
+
+(() => {
+    "use strict";
+
+    const section = document.querySelector("[data-lp-faq]");
+    if (!section) return;
+
+    const items = Array.from(section.querySelectorAll("[data-lp-faq-item]"));
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const animations = new WeakMap();
+
+    const closeImmediately = (item) => {
+        animations.get(item)?.animation.cancel();
+        animations.delete(item);
+        item.open = false;
+    };
+
+    const setOpen = (item, shouldOpen) => {
+        const answer = item.querySelector(".lp-faq__answer");
+        if (!answer) return;
+
+        const currentHeight = answer.getBoundingClientRect().height;
+        animations.get(item)?.animation.cancel();
+        animations.delete(item);
+
+        if (reduceMotion.matches || typeof answer.animate !== "function") {
+            item.open = shouldOpen;
+            return;
+        }
+
+        if (shouldOpen) item.open = true;
+        const targetHeight = shouldOpen ? answer.scrollHeight : 0;
+        const startHeight = currentHeight || (shouldOpen ? 0 : answer.scrollHeight);
+
+        if (startHeight === targetHeight) {
+            item.open = shouldOpen;
+            return;
+        }
+
+        const animation = answer.animate([
+            { height: `${startHeight}px`, opacity: shouldOpen ? 0 : 1 },
+            { height: `${targetHeight}px`, opacity: shouldOpen ? 1 : 0 }
+        ], {
+            duration: 240,
+            easing: "ease-in-out",
+            fill: "forwards"
+        });
+
+        animations.set(item, { animation, targetOpen: shouldOpen });
+        animation.finished.then(() => {
+            if (animations.get(item)?.animation !== animation) return;
+            item.open = shouldOpen;
+            animations.delete(item);
+            animation.cancel();
+        }).catch(() => {});
+    };
+
+    section.addEventListener("click", (event) => {
+        const summary = event.target.closest(".lp-faq__question");
+        if (!summary || !section.contains(summary)) return;
+
+        event.preventDefault();
+        const item = summary.closest("[data-lp-faq-item]");
+        const pending = animations.get(item);
+        const shouldOpen = pending ? !pending.targetOpen : !item.open;
+
+        if (shouldOpen) {
+            items.forEach((other) => {
+                if (other !== item && other.open) closeImmediately(other);
+            });
+        }
+
+        setOpen(item, shouldOpen);
+    });
+
+    section.addEventListener("keydown", (event) => {
+        if (event.key !== "Escape") return;
+        const openItem = items.find((item) => item.open && animations.get(item)?.targetOpen !== false);
+        if (!openItem) return;
+
+        event.preventDefault();
+        setOpen(openItem, false);
+        openItem.querySelector("summary")?.focus({ preventScroll: true });
+    });
+})();
