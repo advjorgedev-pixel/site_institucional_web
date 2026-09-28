@@ -2229,3 +2229,64 @@ msgstr "Revisión de tasas, índices y cargos previstos."
 
 msgid "Comparação entre o contrato e as cobranças realizadas."
 msgstr "Comparación entre el contrato y los cobros efectuados."
+
+#: LP bancária: sobre o advogado
+msgid "Jorge R. Sarobe em seu escritório"
+msgstr "Jorge R. Sarobe en su despacho"
+
+msgid "Sobre o advogado"
+msgstr "Sobre el abogado"
+
+msgid "Atendimento jurídico com experiência prática"
+msgstr "Asesoramiento jurídico con experiencia práctica"
+
+msgid "Compromisso com um atendimento próximo, análise técnica e orientação clara em todas as etapas."
+msgstr "Compromiso con una atención cercana, análisis técnico y orientación clara en todas las etapas."
+
+msgid "Graduado pela Universidade Estácio de Sá (2020)"
+msgstr "Graduado por la Universidad Estácio de Sá (2020)"
+
+msgid "Formação sólida"
+msgstr "Formación sólida"
+
+msgid "Especialização"
+msgstr "Especialización"
+
+msgid "Atuação institucional"
+msgstr "Actividad institucional"
+
+msgid "Experiência prática"
+msgstr "Experiencia práctica"
+
+msgid "Integrante da Comissão de Direito Bancário da OAB/SC — Subseção São José"
+msgstr "Miembro de la Comisión de Derecho Bancario de la OAB/SC — Subsección São José"
+
+msgid "Ex-conciliador judicial no Fórum de São José/SC"
+msgstr "Exconciliador judicial en el Foro de São José/SC"
+
+msgid "Documentos de formação em Direito Bancário"
+msgstr "Documentos de formación en Derecho Bancario"
+
+msgid "Ver diploma de Direito Bancário"
+msgstr "Ver diploma de Derecho Bancario"
+
+msgid "Visualizar PDF nesta página"
+msgstr "Ver PDF en esta página"
+
+msgid "Ver certificado ESA: Direito Bancário na Prática"
+msgstr "Ver certificado ESA: Derecho Bancario en la Práctica"
+
+msgid "Meu compromisso é oferecer um atendimento jurídico claro, ético e técnico, sempre com foco na análise responsável de cada caso."
+msgstr "Mi compromiso es ofrecer una atención jurídica clara, ética y técnica, siempre centrada en el análisis responsable de cada caso."
+
+msgid "Documento de Direito Bancário"
+msgstr "Documento de Derecho Bancario"
+
+msgid "Visualização do documento PDF"
+msgstr "Visualización del documento PDF"
+
+msgid "Se o documento não aparecer no seu navegador, baixe o PDF."
+msgstr "Si el documento no aparece en su navegador, descargue el PDF."
+
+msgid "Baixar PDF"
+msgstr "Descargar PDF"

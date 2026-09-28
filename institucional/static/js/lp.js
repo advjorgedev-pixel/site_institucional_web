@@ -141,6 +141,38 @@
 (() => {
     "use strict";
 
+    const modal = document.querySelector("[data-lp-document-modal]");
+    if (!modal) return;
+
+    const frame = modal.querySelector("[data-lp-document-frame]");
+    const title = modal.querySelector("[data-lp-document-title]");
+    const download = modal.querySelector("[data-lp-document-download]");
+    if (!frame || !title || !download) return;
+
+    // Prepara o documento antes de o controlador de modais compartilhado abrir a janela.
+    document.addEventListener("click", (event) => {
+        const trigger = event.target.closest("[data-lp-document]");
+        if (!trigger) return;
+
+        const url = trigger.dataset.lpDocumentUrl;
+        const label = trigger.querySelector("[data-lp-document-label]")?.textContent.trim();
+        if (!url || !label) return;
+
+        title.textContent = label;
+        frame.title = label;
+        frame.src = url;
+        download.href = url;
+    }, true);
+
+    // Interrompe a renderização do PDF ao fechar, inclusive por Esc ou clique no fundo.
+    new MutationObserver(() => {
+        if (!modal.classList.contains("show")) frame.removeAttribute("src");
+    }).observe(modal, { attributes: true, attributeFilter: ["class"] });
+})();
+
+(() => {
+    "use strict";
+
     const section = document.querySelector("[data-lp-help]");
     if (!section) return;
 
