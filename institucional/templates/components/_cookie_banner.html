@@ -1,18 +1,19 @@
+{% load i18n %}
 <section id="cookieBanner" class="cookie-banner" role="dialog" aria-modal="true" aria-live="polite"
-    aria-label="Aviso de cookies" hidden>
+    aria-label="{% translate 'Aviso de cookies' %}" hidden>
     <div class="cookie-banner__backdrop" data-cookie-close="true"></div>
 
     <div class="cookie-banner__panel" role="document" tabindex="-1">
         <p class="cookie-banner__text mb-0">
-            Usamos cookies apenas para <strong>métricas de acesso</strong>.
-            Ao clicar em “Aceitar”, você concorda com essa coleta.
+            {% translate 'Usamos cookies apenas para' %} <strong>{% translate 'métricas de acesso' %}</strong>.
+            {% translate 'Ao clicar em “Aceitar”, você concorda com essa coleta.' %}
             <a class="cookie-banner__link" href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">
-                Saiba mais
+                {% translate 'Saiba mais' %}
             </a>.
         </p>
 
         <button type="button" class="btn-primary cookie-banner__btn" id="cookieAcceptBtn">
-            Aceitar
+            {% translate 'Aceitar' %}
         </button>
     </div>
 </section>

@@ -3,6 +3,49 @@
 
     const calculator = document.querySelector("[data-lp-calculator]");
     if (!calculator) return;
+    const isSpanish = document.documentElement.lang.toLowerCase().startsWith("es");
+    const copy = isSpanish ? {
+        invalidRates: "La serie de tasas seleccionada no es válida.", noRates: "No hay tasas válidas para esta modalidad.",
+        loadRates: "No se pudo cargar la base del Banco Central.", noMonths: "No hay meses disponibles para esta modalidad en el período común de las series.",
+        chooseMonth: "Elija el mes", availableMonths: (first, last) => `Meses disponibles: ${first} a ${last}.`,
+        chooseModality: "Seleccione una modalidad", chooseContract: "Seleccione la modalidad del contrato para continuar.",
+        chooseAvailableMonth: "Seleccione uno de los meses disponibles en el calendario.", principal: "Indique un importe financiado mayor que cero.",
+        terms: "Indique entre 1 y 600 cuotas.", payment: "Indique el importe de una cuota mayor que cero.",
+        paymentLow: "La cuota indicada es menor que el importe financiado dividido por el número de cuotas. Revise los datos.",
+        inferredRate: "No se pudo estimar la tasa a partir de las cuotas bajo la hipótesis Price. Revise los importes indicados.",
+        missingRate: (month) => `No hay una tasa del Banco Central para ${month} en esta modalidad. Seleccione otro mes disponible.`,
+        resultHeading: "Resultado de la simulación", resultIntro: "La tasa se estimó automáticamente a partir de los importes indicados.",
+        highDifference: "Diferencia considerable respecto a la media del Banco Central · requiere análisis",
+        aboveAverage: "Por encima de la media del Banco Central · requiere análisis",
+        withinAverage: "La comparación de tasas no indica una diferencia superior a la media",
+        source: (series, date, last) => `Fuente: serie BCB/SGS ${series}, ${date}. Datos disponibles hasta ${last}.`,
+        comparison: (payment, total, difference) => `Bajo la hipótesis Price con la media del Banco Central, la cuota sería ${payment} y el total ${total}. Diferencia estimada: ${difference}.`,
+        noAlternative: "No es posible estimar con esta cuota y plazo.",
+        alternative: (rate, total, average) => `Tasa estimada: ${rate}% mensual; total: ${total}. Con la media del Banco Central: ${average}.`,
+        calculatorError: "No se pudo calcular ahora. Inténtelo de nuevo.", calendarHint: "Elija un mes con una tasa disponible del Banco Central.",
+        loadingMonths: "Cargando meses...", rateError: "No se pudieron consultar las tasas. Inténtelo de nuevo.",
+        whatsapp: (details, principal, payment, rate, average) => `Hola. Utilicé la calculadora bancaria y quisiera información sobre el análisis de mi contrato. Modalidad: ${details.person} - ${details.modality}. Mes del contrato: ${details.date}. Importe financiado: ${principal}. ${details.terms} cuotas; cuota indicada: ${payment}. Bajo la hipótesis Price, tasa estimada: ${rate}% mensual; media del Banco Central: ${average}% mensual. Entiendo que el sistema real y la valoración jurídica dependen del contrato.`,
+    } : {
+        invalidRates: "A base de taxas selecionada é inválida.", noRates: "Não há taxas válidas para esta modalidade.",
+        loadRates: "Não foi possível carregar a base do Banco Central.", noMonths: "Não há meses disponíveis para esta modalidade na faixa comum das séries.",
+        chooseMonth: "Escolha o mês", availableMonths: (first, last) => `Meses disponíveis: ${first} a ${last}.`,
+        chooseModality: "Selecione uma modalidade", chooseContract: "Selecione a modalidade do contrato para continuar.",
+        chooseAvailableMonth: "Selecione um dos meses disponíveis no calendário.", principal: "Informe um valor financiado maior que zero.",
+        terms: "Informe uma quantidade entre 1 e 600 parcelas.", payment: "Informe o valor de uma parcela maior que zero.",
+        paymentLow: "A parcela informada é menor que o valor financiado dividido pelo número de parcelas. Confira os dados.",
+        inferredRate: "Não foi possível estimar a taxa pelas parcelas na hipótese Price. Confira os valores informados.",
+        missingRate: (month) => `Não há taxa BCB para ${month} nesta modalidade. Selecione outro mês disponível no calendário.`,
+        resultHeading: "Resultado da simulação", resultIntro: "A taxa foi estimada automaticamente a partir dos valores informados.",
+        highDifference: "Diferença expressiva em relação à média BCB · requer análise",
+        aboveAverage: "Acima da média BCB · requer análise", withinAverage: "Comparação de taxas sem diferença acima da média",
+        source: (series, date, last) => `Fonte: série BCB/SGS ${series}, ${date}. Base estática atualizada até ${last}.`,
+        comparison: (payment, total, difference) => `Na hipótese Price com a média BCB, a parcela seria ${payment} e o total ${total}. Diferença estimada: ${difference}.`,
+        noAlternative: "Não é possível estimar com esta parcela e prazo.",
+        alternative: (rate, total, average) => `Taxa estimada: ${rate}% a.m.; total: ${total}. Com a média BCB: ${average}.`,
+        calculatorError: "Não foi possível calcular agora. Tente novamente.", calendarHint: "Escolha um mês com taxa disponível no Banco Central.",
+        loadingMonths: "Carregando meses...", rateError: "Não foi possível consultar as taxas agora. Tente novamente.",
+        whatsapp: (details, principal, payment, rate, average) => `Olá! Usei a calculadora bancária e gostaria de informações sobre a análise do meu contrato. Modalidade: ${details.person} - ${details.modality}. Mês do financiamento: ${details.date}. Valor financiado: ${principal}. ${details.terms} parcelas; parcela informada: ${payment}. Na hipótese Price, taxa estimada: ${rate}% a.m.; média BCB: ${average}% a.m. Sei que o sistema real e a avaliação jurídica dependem da análise do contrato.`,
+    };
 
     const form = calculator.querySelector("[data-calculator-form]");
     const modalityField = form.elements.modality;
@@ -43,11 +86,13 @@
     let calendarViewYear = null;
     const initialResultHeading = resultHeading.textContent;
     const initialResultIntro = resultIntro.textContent;
-    const currency = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
+    const currency = new Intl.NumberFormat(isSpanish ? "es-ES" : "pt-BR", { style: "currency", currency: "BRL" });
     const moneyInputFormat = new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    const percent = new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const percent = new Intl.NumberFormat(isSpanish ? "es-ES" : "pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     const monthNames = { jan: 1, fev: 2, mar: 3, abr: 4, mai: 5, jun: 6, jul: 7, ago: 8, set: 9, out: 10, nov: 11, dez: 12 };
-    const calendarMonthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    const calendarMonthNames = isSpanish
+        ? ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+        : ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
     function parseDecimal(value) {
         let normalized = String(value).trim().replace(/\s|R\$/g, "");
@@ -156,7 +201,7 @@
 
     function parseRates(csv, series) {
         const lines = csv.trim().split(/\r?\n/);
-        if (!lines[0] || !lines[0].includes(series)) throw new Error("A base de taxas selecionada é inválida.");
+        if (!lines[0] || !lines[0].includes(series)) throw new Error(copy.invalidRates);
         const rates = new Map();
         for (const line of lines.slice(1)) {
             const match = /^([a-z]{3})\/(\d{2});(\d+(?:,\d+)?)$/.exec(line.trim());
@@ -166,7 +211,7 @@
             const key = `${year}-${month}`;
             rates.set(key, Number(match[3].replace(",", ".")) / 100);
         }
-        if (!rates.size) throw new Error("Não há taxas válidas para esta modalidade.");
+        if (!rates.size) throw new Error(copy.noRates);
         const labels = Array.from(rates.keys()).sort();
         return { rates, first: labels[0], last: labels[labels.length - 1] };
     }
@@ -175,7 +220,7 @@
         if (!rateCache.has(series)) {
             const request = fetch(url, { cache: "no-cache" })
                 .then((response) => {
-                    if (!response.ok) throw new Error("Não foi possível carregar a base do Banco Central.");
+                    if (!response.ok) throw new Error(copy.loadRates);
                     return response.text();
                 })
                 .then((csv) => parseRates(csv, series));
@@ -235,7 +280,7 @@
         const months = Array.from(datasets[selectedIndex].rates.keys())
             .filter((month) => month >= commonStart && month <= currentMonth)
             .sort();
-        if (!months.length) throw new Error("Não há meses disponíveis para esta modalidade na faixa comum das séries.");
+        if (!months.length) throw new Error(copy.noMonths);
         return {
             months: new Set(months),
             years: Array.from(new Set(months.map((month) => Number(month.slice(0, 4))))),
@@ -252,7 +297,7 @@
     }
 
     function syncCalendarValue() {
-        calendarValue.textContent = dateField.value ? formatCalendarMonth(dateField.value) : "Escolha o mês";
+        calendarValue.textContent = dateField.value ? formatCalendarMonth(dateField.value) : copy.chooseMonth;
         if (dateField.value) calendarTrigger.removeAttribute("aria-invalid");
     }
 
@@ -305,7 +350,7 @@
         calendarAvailability = availability;
         if (!availability.months.has(dateField.value)) dateField.value = "";
         calendarViewYear = Number((dateField.value || availability.last).slice(0, 4));
-        calendarRange.textContent = `Meses disponíveis: ${formatCalendarMonth(availability.first)} a ${formatCalendarMonth(availability.last)}.`;
+        calendarRange.textContent = copy.availableMonths(formatCalendarMonth(availability.first), formatCalendarMonth(availability.last));
         syncCalendarValue();
         renderCalendar();
     }
@@ -338,7 +383,7 @@
 
     function syncCustomSelect() {
         const selected = modalityField.selectedOptions[0];
-        selectValue.textContent = selected && selected.value ? selected.textContent.trim() : "Selecione uma modalidade";
+        selectValue.textContent = selected && selected.value ? selected.textContent.trim() : copy.chooseModality;
         customOptions.forEach((option, index) => {
             option.setAttribute("aria-selected", String(nativeOptions[index].value === modalityField.value));
         });
@@ -444,7 +489,7 @@
         if (index === 0) {
             if (!modalityField.value) {
                 selectTrigger.setAttribute("aria-invalid", "true");
-                return "Selecione a modalidade do contrato para continuar.";
+                return copy.chooseContract;
             }
             return "";
         }
@@ -453,17 +498,17 @@
             const principal = parseDecimal(form.elements.principal.value);
             if (!calendarAvailability || !calendarAvailability.months.has(date)) {
                 calendarTrigger.setAttribute("aria-invalid", "true");
-                return "Selecione um dos meses disponíveis no calendário.";
+                return copy.chooseAvailableMonth;
             }
-            if (!Number.isFinite(principal) || principal <= 0) return "Informe um valor financiado maior que zero.";
+            if (!Number.isFinite(principal) || principal <= 0) return copy.principal;
             return "";
         }
         const principal = parseDecimal(form.elements.principal.value);
         const terms = Number(form.elements.terms.value);
         const payment = parseDecimal(form.elements.payment.value);
-        if (!Number.isInteger(terms) || terms < 1 || terms > 600) return "Informe uma quantidade entre 1 e 600 parcelas.";
-        if (!Number.isFinite(payment) || payment <= 0) return "Informe o valor de uma parcela maior que zero.";
-        if (payment < principal / terms - 0.01) return "A parcela informada é menor que o valor financiado dividido pelo número de parcelas. Confira os dados.";
+        if (!Number.isInteger(terms) || terms < 1 || terms > 600) return copy.terms;
+        if (!Number.isFinite(payment) || payment <= 0) return copy.payment;
+        if (payment < principal / terms - 0.01) return copy.paymentLow;
         return "";
     }
 
@@ -475,7 +520,7 @@
         const link = calculator.querySelector("[data-result-whatsapp]");
         try {
             const url = new URL(calculator.dataset.whatsappUrl);
-            const message = `Olá! Usei a calculadora bancária e gostaria de analisar meu contrato. Modalidade: ${details.person} - ${details.modality}. Mês do financiamento: ${details.date}. Valor financiado: ${currency.format(details.principal)}. ${details.terms} parcelas; parcela informada: ${currency.format(details.payment)}. Na hipótese Price, taxa estimada: ${percent.format(details.rate * 100)}% a.m.; média BCB: ${percent.format(details.average * 100)}% a.m. Sei que o sistema real e a abusividade dependem da análise do contrato.`;
+            const message = copy.whatsapp(details, currency.format(details.principal), currency.format(details.payment), percent.format(details.rate * 100), percent.format(details.average * 100));
             url.searchParams.set("text", message);
             link.href = url.toString();
         } catch (_) {
@@ -514,7 +559,7 @@
 
         const rate = inferRate(principal, terms, payment, "price");
         if (!Number.isFinite(rate) || rate < 0 || rate > 1) {
-            showError("Não foi possível estimar a taxa pelas parcelas na hipótese Price. Confira os valores informados.");
+            showError(copy.inferredRate);
             return;
         }
 
@@ -526,7 +571,7 @@
             const average = data.rates.get(date);
             if (average === undefined) {
                 setStep(1);
-                showError(`Não há taxa BCB para ${formatMonth(date)} nesta modalidade. Selecione outro mês disponível no calendário.`);
+                showError(copy.missingRate(formatMonth(date)));
                 return;
             }
 
@@ -535,28 +580,28 @@
             const difference = rate - average;
             const above = difference > 0.00005;
             const potential = rate >= average * 1.5;
-            resultHeading.textContent = "Resultado da simulação";
-            resultIntro.textContent = "A taxa foi estimada automaticamente a partir dos valores informados.";
-            resultStatus.textContent = potential ? "Potencialmente abusivo · requer análise" : above ? "Acima da média BCB · requer análise" : "Sem indício pela comparação de taxas";
+            resultHeading.textContent = copy.resultHeading;
+            resultIntro.textContent = copy.resultIntro;
+            resultStatus.textContent = potential ? copy.highDifference : above ? copy.aboveAverage : copy.withinAverage;
             resultStatus.className = `lp-calculator__status lp-calculator__status--${above ? "above" : "within"}`;
             setText("[data-result-rate]", `${percent.format(rate * 100)}% a.m.`);
             setText("[data-result-average]", `${percent.format(average * 100)}% a.m.`);
             setText("[data-result-difference]", `${difference >= 0 ? "+" : ""}${percent.format(difference * 100)} p.p.`);
-            setText("[data-result-source]", `Fonte: série BCB/SGS ${series}, ${formatMonth(date)}. Base estática atualizada até ${formatMonth(data.last)}.`);
+            setText("[data-result-source]", copy.source(series, formatMonth(date), formatMonth(data.last)));
             setText("[data-result-payment]", currency.format(payment));
             setText("[data-result-total]", currency.format(payment * terms));
             setText("[data-result-interest]", currency.format(payment * terms - principal));
-            setText("[data-result-comparison]", `Na hipótese Price com a média BCB, a parcela seria ${currency.format(benchmark.firstPayment)} e o total ${currency.format(benchmark.total)}. Diferença estimada: ${currency.format(estimate.total - benchmark.total)}.`);
+            setText("[data-result-comparison]", copy.comparison(currency.format(benchmark.firstPayment), currency.format(benchmark.total), currency.format(estimate.total - benchmark.total)));
 
             for (const system of ["gauss", "sac"]) {
                 const alternativeRate = inferRate(principal, terms, payment, system);
                 if (!Number.isFinite(alternativeRate) || alternativeRate > 1) {
-                    setText(`[data-result-${system}]`, "Não é possível estimar com esta parcela e prazo.");
+                    setText(`[data-result-${system}]`, copy.noAlternative);
                     continue;
                 }
                 const alternative = simulate(principal, terms, alternativeRate, system);
                 const averageAlternative = simulate(principal, terms, average, system);
-                setText(`[data-result-${system}]`, `Taxa estimada: ${percent.format(alternativeRate * 100)}% a.m.; total: ${currency.format(alternative.total)}. Com a média BCB: ${currency.format(averageAlternative.total)}.`);
+                setText(`[data-result-${system}]`, copy.alternative(percent.format(alternativeRate * 100), currency.format(alternative.total), currency.format(averageAlternative.total)));
             }
 
             updateWhatsApp({ modality: selectedOption.textContent, person: selectedOption.dataset.person, date, principal, terms, payment, rate, average });
@@ -566,7 +611,7 @@
             newButton.hidden = false;
             resultHeading.focus();
         } catch (error) {
-            if (requestVersion === interactionVersion) showError(error.message || "Não foi possível calcular agora. Tente novamente.");
+            if (requestVersion === interactionVersion) showError(error.message || copy.calculatorError);
         } finally {
             submitButton.disabled = false;
         }
@@ -577,7 +622,7 @@
         pjSeriesNote.hidden = modalityField.value !== "25450";
         calendarAvailability = null;
         dateField.value = "";
-        calendarRange.textContent = "Escolha um mês com taxa disponível no Banco Central.";
+        calendarRange.textContent = copy.calendarHint;
         syncCalendarValue();
         closeCalendar();
     });
@@ -677,7 +722,7 @@
         resetMoneyMasks.forEach((resetMask) => resetMask());
         syncCustomSelect();
         calendarAvailability = null;
-        calendarRange.textContent = "Escolha um mês com taxa disponível no Banco Central.";
+        calendarRange.textContent = copy.calendarHint;
         syncCalendarValue();
         pjSeriesNote.hidden = true;
         selectTrigger.removeAttribute("aria-invalid");
@@ -698,14 +743,14 @@
         }
         const requestVersion = interactionVersion;
         nextButton.disabled = true;
-        nextButton.textContent = "Carregando meses...";
+        nextButton.textContent = copy.loadingMonths;
         try {
             const availability = await loadCalendarAvailability();
             if (requestVersion !== interactionVersion) return;
             setCalendarAvailability(availability);
             setStep(1, true);
         } catch (error) {
-            if (requestVersion === interactionVersion) showError(error.message || "Não foi possível consultar as taxas agora. Tente novamente.");
+            if (requestVersion === interactionVersion) showError(error.message || copy.rateError);
         } finally {
             nextButton.disabled = false;
             nextButton.textContent = initialNextButtonText;

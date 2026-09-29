@@ -4,14 +4,44 @@
 {% block body_class %}lp-page lp-page--bank{% endblock %}
 
 {% block info %}
-    <title>
-        {% translate "Advogado em São José SC | Bancário, Previdenciário, Sucessões e Migratório" %}
-    </title>
-    <meta name="description" content="{% translate 'Advogado em São José - SC com atuação em Direito Bancário, Previdenciário, Sucessões e Direito Migratório para residência e naturalização no Brasil.' %}">
+    {% with bank_meta_title=lp_meta_title bank_meta_description=lp_meta_description %}
+    {% static 'img/photos/jorge_com_fundo.webp' as bank_social_image %}
+    <title>{{ bank_meta_title }}</title>
+    <meta name="description" content="{{ bank_meta_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ bank_meta_title }}">
+    <meta property="og:description" content="{{ bank_meta_description }}">
+    <meta property="og:url" content="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
+    <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ bank_social_image }}">
+    <meta property="og:image:alt" content="{% translate 'Advogado Jorge R. Sarobe em seu escritório' %}">
+    <meta property="og:site_name" content="Jorge R. Sarobe Advocacia">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ bank_meta_title }}">
+    <meta name="twitter:description" content="{{ bank_meta_description }}">
+    <meta name="twitter:image" content="{{ request.scheme }}://{{ request.get_host }}{{ bank_social_image }}">
+    {% endwith %}
 {% endblock %}
 
 {% block ld_json %}
-{% include 'json/_ld_json_home.html' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ request.scheme|escapejs }}://{{ request.get_host|escapejs }}{{ request.path|escapejs }}#webpage",
+  "url": "{{ request.scheme|escapejs }}://{{ request.get_host|escapejs }}{{ request.path|escapejs }}",
+  "name": "{{ lp_hero.title|escapejs }}",
+  "description": "{{ lp_hero.description|escapejs }}",
+  "inLanguage": "{{ CURRENT_LANG|escapejs }}",
+  "isPartOf": {"@id": "{{ request.scheme|escapejs }}://{{ request.get_host|escapejs }}/#website"},
+  "about": {
+    "@type": "Service",
+    "@id": "{{ request.scheme|escapejs }}://{{ request.get_host|escapejs }}{{ request.path|escapejs }}#service",
+    "name": "{{ lp_help.title|escapejs }}",
+    "serviceType": "{% filter escapejs %}{% translate 'Direito Bancário' %}{% endfilter %}",
+    "provider": {"@id": "{{ request.scheme|escapejs }}://{{ request.get_host|escapejs }}/#legalservice"}
+  }
+}
+</script>
 {% endblock %}
 
 {% block styles %}<link rel="stylesheet" href="{% static 'css/calculator.css' %}">{% endblock %}

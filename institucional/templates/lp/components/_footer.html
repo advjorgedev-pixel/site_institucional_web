@@ -1,8 +1,10 @@
 {% load static i18n %}
 {% url 'home' as site_home_url %}
 {% translate 'Atendimento jurídico personalizado em São José - SC, com clareza e acompanhamento em cada etapa.' as default_footer_description %}
+{% translate 'Vamos conversar sobre o seu caso?' as default_footer_heading %}
+{% translate 'Fale diretamente com o Dr. Jorge R. Sarobe e receba uma análise inicial do seu caso.' as default_footer_contact_description %}
 
-<footer class="lp-footer" id="contato">
+<footer class="lp-footer">
     <div class="container lp-footer__inner">
         <div class="row g-4 g-lg-5 lp-footer__content">
             <div class="col-12 col-lg-6" data-aos="fade-up">
@@ -44,9 +46,9 @@
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="lp-footer__contact">
                     <span class="lp-footer__title">{% translate 'Contato' %}</span>
-                    <h2 class="lp-footer__heading">{% translate 'Vamos conversar sobre o seu caso?' %}</h2>
+                    <h2 class="lp-footer__heading">{{ lp_footer_heading|default:default_footer_heading }}</h2>
                     <p class="lp-footer__contact-description">
-                        {% translate 'Fale diretamente com o Dr. Jorge R. Sarobe e receba uma análise inicial do seu caso.' %}
+                        {{ lp_footer_contact_description|default:default_footer_contact_description }}
                     </p>
                     <a class="lp-button lp-footer__button"
                         href="{{ lp_whatsapp_url|default:'https://wa.me/5548988366235' }}"

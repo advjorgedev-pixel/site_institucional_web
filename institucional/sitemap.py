@@ -14,7 +14,7 @@ class StaticViewMultilangSitemap(Sitemap):
     changefreq = "weekly"
 
     def items(self):
-        static_names = ["home", "about", "services", "blog_list", "contact"]
+        static_names = ["home", "bank_law", "about", "services", "blog_list", "contact"]
         return [(lang, name) for lang in LANG_CODES for name in static_names]
 
     def location(self, item):

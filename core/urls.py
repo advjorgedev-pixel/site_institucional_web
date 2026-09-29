@@ -7,6 +7,7 @@ from django.contrib.sitemaps.views import sitemap
 from django.views.generic import TemplateView
 from institucional.sitemap import StaticViewMultilangSitemap, BlogPostMultilangSitemap
 from django.conf.urls import handler404, handler500, handler403
+from institucional.views import bank_calculator_rates
 
 handler404 = "django.views.defaults.page_not_found"
 handler500 = "django.views.defaults.server_error"
@@ -23,6 +24,7 @@ urlpatterns = [
     path("i18n/", include("django.conf.urls.i18n")),
     path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="sitemap"),
     path("robots.txt", TemplateView.as_view( template_name="robots.txt", content_type="text/plain"), name="robots", ),
+    path("dados/calculadora/<int:series>.csv", bank_calculator_rates, name="bank_calculator_rates"),
 ]
 
 urlpatterns += i18n_patterns(

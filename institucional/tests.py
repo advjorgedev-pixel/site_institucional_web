@@ -1,6 +1,7 @@
 from django.template.loader import render_to_string
 from django.test import SimpleTestCase, override_settings
 from django.urls import reverse
+from django.utils import translation
 
 
 @override_settings(
@@ -10,7 +11,8 @@ from django.urls import reverse
 )
 class LandingPageComponentTests(SimpleTestCase):
     def test_bank_page_uses_shared_components_and_assets(self):
-        response = self.client.get(reverse("bank_law"))
+        with translation.override("pt-br"):
+            response = self.client.get(reverse("bank_law"))
 
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "data-lp-help-card", count=5)
@@ -28,12 +30,16 @@ class LandingPageComponentTests(SimpleTestCase):
         self.assertContains(response, 'class="lp-hero__highlight" data-aos="fade-up"', count=3)
         self.assertContains(response, 'class="col-12 col-md-6 col-lg-4 col-xl" data-aos="fade-up"', count=5)
         self.assertContains(response, 'class="lp-reviews__card" data-aos="fade-up"', count=3)
+        self.assertContains(response, 'href="#avaliacoes"')
+        self.assertContains(response, "Direito bancário: contratos, cobranças e financiamentos")
+        self.assertContains(response, "Taxa acima da média do Banco Central é abusiva?")
         self.assertContains(response, 'data-lp-faq-item data-aos="fade-up"', count=7)
         self.assertContains(response, "data-lp-calculator")
         self.assertContains(response, 'id="calculadora"')
         self.assertContains(response, "/static/css/calculator.css")
         self.assertContains(response, "/static/js/calculator.js")
-        self.assertContains(response, "/static/data/lp/bank/25464.csv")
+        self.assertContains(response, reverse("bank_calculator_rates", kwargs={"series": 25464}))
+        self.assertNotContains(response, "/static/data/lp/bank/")
         self.assertContains(response, 'value="25450"')
         self.assertContains(response, "Arrendamento mercantil de veículos")
         self.assertContains(response, "data-calculator-step", count=3)
@@ -58,6 +64,37 @@ class LandingPageComponentTests(SimpleTestCase):
         self.assertNotContains(response, 'name="rate"')
         self.assertNotContains(response, "lp_bank.css")
         self.assertNotContains(response, "lp_bank.js")
+
+    def test_bank_page_has_spanish_copy(self):
+        response = self.client.get("/es" + reverse("bank_law"))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Derecho bancario: contratos, cobros y financiación")
+        self.assertContains(response, "Defensa en cobros y ejecuciones bancarias")
+        self.assertContains(response, "Formación en Derecho Bancario")
+        self.assertContains(response, "¿Una tasa superior a la media del Banco Central es abusiva?")
+        self.assertContains(response, "Calculadora bancaria")
+        self.assertContains(response, "Seleccione una modalidad")
+        self.assertContains(response, "Ir al contenido")
+        self.assertContains(response, "Navegación principal")
+        self.assertContains(response, "Aviso de cookies")
+        self.assertContains(response, "Ver PDF")
+        self.assertContains(response, "Lo que dicen en Google")
+        self.assertContains(response, "Aclara nuestras dudas con claridad")
+        self.assertNotContains(response, "Potencialmente abusivo")
+
+    def test_calculator_rates_are_accessible_but_not_indexable(self):
+        for series in (25443, 25444, 25450, 25464, 25471):
+            with self.subTest(series=series):
+                response = self.client.get(reverse("bank_calculator_rates", kwargs={"series": series}))
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(response["X-Robots-Tag"], "noindex")
+                self.assertTrue(response["Content-Type"].startswith("text/csv"))
+                self.assertIn(str(series).encode(), response.content)
+
+        self.assertEqual(
+            self.client.get(reverse("bank_calculator_rates", kwargs={"series": 99999})).status_code,
+            404,
+        )
 
     def test_shared_components_accept_other_view_data(self):
         help_html = render_to_string("lp/components/_help.html", {

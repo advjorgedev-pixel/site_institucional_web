@@ -15,7 +15,7 @@
     {% block info %}{% endblock %}
 
     <link rel="icon" href="{% static 'img/icon/logo_icon.ico' %}" type="image/x-icon">
-    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    <link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
     <link rel="alternate" hreflang="pt-br" href="{% hreflang_url 'pt-br' %}">
     <link rel="alternate" hreflang="es" href="{% hreflang_url 'es' %}">
     <link rel="alternate" hreflang="x-default" href="{% hreflang_url 'pt-br' %}">

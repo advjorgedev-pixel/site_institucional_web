@@ -3,16 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: site_institucional_web\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-09 06:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-09-29 00:00-0300\n"
+"Last-Translator: Equipe do projeto\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2318,3 +2317,445 @@ msgstr "Orientación sobre posibles caminos"
 
 msgid "Explicação clara das alternativas jurídicas para o seu caso."
 msgstr "Explicación clara de las alternativas jurídicas para su caso."
+
+#: Página de Derecho Bancario: contenido informativo
+msgid "Olá! Encontrei a página de Direito Bancário e gostaria de informações sobre atendimento."
+msgstr "Hola. Encontré la página de Derecho Bancario y quisiera información sobre la atención."
+
+msgid "Direito bancário: contratos, cobranças e financiamentos"
+msgstr "Derecho bancario: contratos, cobros y financiación"
+
+msgid "Informações sobre revisão de contratos, busca e apreensão, execuções bancárias e negociação de dívidas. Cada situação exige análise individual."
+msgstr "Información sobre revisión de contratos, recuperación de vehículos, ejecuciones bancarias y negociación de deudas. Cada situación requiere un análisis individual."
+
+msgid "Contato com o advogado"
+msgstr "Contacto con el abogado"
+
+msgid "Ver temas de atuação"
+msgstr "Ver áreas de actuación"
+
+msgid "Análise individual"
+msgstr "Análisis individual"
+
+msgid "de cada situação"
+msgstr "de cada situación"
+
+msgid "Direito bancário em São José/SC: informações sobre contratos, financiamentos, busca e apreensão, cobranças e renegociação de dívidas."
+msgstr "Derecho bancario en São José/SC: información sobre contratos, financiación, recuperación de vehículos, cobros y renegociación de deudas."
+
+msgid "Direito Bancário em São José/SC | Jorge R. Sarobe"
+msgstr "Derecho Bancario en São José/SC | Jorge R. Sarobe"
+
+msgid "Informações e contato"
+msgstr "Información y contacto"
+
+msgid "Contato com o advogado pelo WhatsApp"
+msgstr "Contactar con el abogado por WhatsApp"
+
+msgid "Jorge R. Sarobe, OAB/SC 74.996, atende em São José/SC. Entre em contato para informações sobre a análise do seu caso."
+msgstr "Jorge R. Sarobe, OAB/SC 74.996, atiende en São José/SC. Póngase en contacto para informarse sobre el análisis de su caso."
+
+msgid "Dúvidas sobre um contrato bancário?"
+msgstr "¿Tiene dudas sobre un contrato bancario?"
+
+msgid "As informações desta página são gerais. A avaliação jurídica depende dos documentos e das circunstâncias do contrato."
+msgstr "La información de esta página es general. La evaluación jurídica depende de los documentos y las circunstancias del contrato."
+
+msgid "Contato pelo WhatsApp"
+msgstr "Contacto por WhatsApp"
+
+msgid "Jorge R. Sarobe · OAB/SC 74.996 · São José/SC"
+msgstr "Jorge R. Sarobe · OAB/SC 74.996 · São José/SC"
+
+msgid "Temas de atuação em Direito Bancário"
+msgstr "Áreas de actuación en Derecho Bancario"
+
+msgid "A atuação depende dos documentos, da modalidade contratual e das circunstâncias de cada caso."
+msgstr "La actuación depende de los documentos, la modalidad contractual y las circunstancias de cada caso."
+
+msgid "Análise de juros, encargos, CET, tarifas, seguros, capitalização e evolução da dívida."
+msgstr "Análisis de intereses, cargos, coste efectivo total (CET), comisiones, seguros, capitalización y evolución de la deuda."
+
+msgid "Pode abranger financiamento de veículos, empréstimos pessoais e contratos empresariais."
+msgstr "Puede abarcar financiación de vehículos, préstamos personales y contratos empresariales."
+
+msgid "A revisão depende do contrato, do histórico de pagamentos e da análise jurídica."
+msgstr "La revisión depende del contrato, el historial de pagos y el análisis jurídico."
+
+msgid "Defesa em busca e apreensão de veículos"
+msgstr "Defensa en procesos de recuperación de vehículos"
+
+msgid "Atuação em ações ligadas a financiamento com alienação fiduciária."
+msgstr "Actuación en procesos relacionados con financiación con garantía fiduciaria."
+
+msgid "Análise do contrato, da mora e da notificação."
+msgstr "Análisis del contrato, la mora y la notificación."
+
+msgid "Conferência dos encargos cobrados e das circunstâncias da ação."
+msgstr "Revisión de los cargos exigidos y las circunstancias del proceso."
+
+msgid "Defesa em cobranças e execuções bancárias"
+msgstr "Defensa en cobros y ejecuciones bancarias"
+
+msgid "Defesa de pessoas físicas e empresas em ações de cobrança e execução."
+msgstr "Defensa de particulares y empresas en procesos de cobro y ejecución."
+
+msgid "Análise de CCB, empréstimos, capital de giro, cheque especial e outras dívidas bancárias."
+msgstr "Análisis de cédulas de crédito bancario (CCB), préstamos, capital de trabajo, descubierto y otras deudas bancarias."
+
+msgid "Avaliação do título, dos valores exigidos, dos prazos e das possibilidades de defesa."
+msgstr "Evaluación del título, los importes exigidos, los plazos y las posibilidades de defensa."
+
+msgid "Negociação e renegociação de dívidas bancárias"
+msgstr "Negociación y renegociación de deudas bancarias"
+
+msgid "Análise do débito e das condições propostas para pessoas e empresas."
+msgstr "Análisis de la deuda y las condiciones propuestas para particulares y empresas."
+
+msgid "Atuação extrajudicial ou judicial, conforme as circunstâncias."
+msgstr "Actuación extrajudicial o judicial, según las circunstancias."
+
+msgid "Avaliação de quitação, parcelamento e revisão das condições da dívida."
+msgstr "Evaluación de liquidación, pago a plazos y revisión de las condiciones de la deuda."
+
+msgid "Juros abusivos e revisão de contratos bancários"
+msgstr "Intereses abusivos y revisión de contratos bancarios"
+
+msgid "Análise técnica das taxas e dos encargos aplicados ao contrato."
+msgstr "Análisis técnico de las tasas y los cargos aplicados al contrato."
+
+msgid "Comparação com parâmetros do Banco Central, quando juridicamente pertinentes."
+msgstr "Comparación con referencias del Banco Central, cuando sean jurídicamente pertinentes."
+
+msgid "Taxa acima da média, isoladamente, não define abusividade."
+msgstr "Una tasa superior a la media, por sí sola, no determina que sea abusiva."
+
+msgid "Como ocorre"
+msgstr "Cómo se realiza"
+
+msgid "a análise jurídica"
+msgstr "el análisis jurídico"
+
+msgid "A orientação considera os documentos disponíveis, a legislação e as particularidades do contrato."
+msgstr "La orientación considera los documentos disponibles, la legislación y las particularidades del contrato."
+
+msgid "Informações de contato"
+msgstr "Información de contacto"
+
+msgid "Relato da situação e apresentação dos documentos disponíveis."
+msgstr "Descripción de la situación y presentación de los documentos disponibles."
+
+msgid "Exame do contrato, das cobranças e dos documentos pertinentes."
+msgstr "Examen del contrato, los cobros y los documentos pertinentes."
+
+msgid "Esclarecimento das possibilidades e dos riscos identificados."
+msgstr "Explicación de las posibilidades y los riesgos identificados."
+
+msgid "Jorge R. Sarobe: formação e atuação em Direito Bancário"
+msgstr "Jorge R. Sarobe: formación y actuación en Derecho Bancario"
+
+msgid "Advogado inscrito na OAB/SC sob o nº 74.996, com atendimento em São José/SC. Formação em Direito Bancário documentada abaixo."
+msgstr "Abogado inscrito en la OAB/SC con el n.º 74.996, con atención en São José/SC. Su formación en Derecho Bancario se documenta a continuación."
+
+msgid "Graduação em Direito"
+msgstr "Grado en Derecho"
+
+msgid "Formação em Direito Bancário"
+msgstr "Formación en Derecho Bancario"
+
+msgid "Pós-graduação em Direito Bancário e certificado ESA em Direito Bancário na Prática"
+msgstr "Posgrado en Derecho Bancario y certificado ESA en Derecho Bancario en la Práctica"
+
+msgid "Respostas gerais sobre contratos, cobranças e atendimento. A análise de cada caso depende dos documentos."
+msgstr "Respuestas generales sobre contratos, cobros y atención. El análisis de cada caso depende de los documentos."
+
+msgid "O que pode ser analisado em um contrato bancário?"
+msgstr "¿Qué se puede analizar en un contrato bancario?"
+
+msgid "Podem ser examinados juros, encargos, CET, tarifas, seguros, capitalização e evolução da dívida, conforme a modalidade e os documentos disponíveis. A análise não implica revisão automática do contrato."
+msgstr "Se pueden examinar intereses, cargos, coste efectivo total (CET), comisiones, seguros, capitalización y evolución de la deuda, según la modalidad y los documentos disponibles. El análisis no supone una revisión automática del contrato."
+
+msgid "Quais documentos ajudam na análise?"
+msgstr "¿Qué documentos ayudan en el análisis?"
+
+msgid "Contrato, extratos, comprovantes de pagamento, planilhas e comunicações do banco costumam ser úteis. Em processos judiciais, também são importantes a petição e as intimações recebidas."
+msgstr "Suelen ser útiles el contrato, extractos, justificantes de pago, hojas de cálculo y comunicaciones del banco. En procesos judiciales también son importantes la demanda y las notificaciones recibidas."
+
+msgid "Taxa acima da média do Banco Central é abusiva?"
+msgstr "¿Una tasa superior a la media del Banco Central es abusiva?"
+
+msgid "Não necessariamente. As séries do Banco Central são referências estatísticas, não limites legais automáticos. A avaliação jurídica considera a modalidade, a época da contratação, as cláusulas e as circunstâncias do caso."
+msgstr "No necesariamente. Las series del Banco Central son referencias estadísticas, no límites legales automáticos. La evaluación jurídica considera la modalidad, la fecha de contratación, las cláusulas y las circunstancias del caso."
+
+msgid "O que é examinado em busca e apreensão de veículo?"
+msgstr "¿Qué se examina en un proceso de recuperación de vehículo?"
+
+msgid "Em financiamentos com alienação fiduciária, podem ser examinados o contrato, a mora, a notificação, os encargos cobrados e os documentos do processo. Os prazos judiciais exigem atenção individual."
+msgstr "En financiaciones con garantía fiduciaria pueden examinarse el contrato, la mora, la notificación, los cargos exigidos y los documentos del proceso. Los plazos judiciales requieren atención individual."
+
+msgid "Como funciona a defesa em cobrança ou execução bancária?"
+msgstr "¿Cómo funciona la defensa en un cobro o ejecución bancaria?"
+
+msgid "O advogado examina o título, a dívida exigida, os documentos e os prazos processuais. A atuação pode envolver CCB, empréstimos, capital de giro e cheque especial, conforme o caso."
+msgstr "El abogado examina el título, la deuda reclamada, los documentos y los plazos procesales. La actuación puede abarcar CCB, préstamos, capital de trabajo y descubierto, según el caso."
+
+msgid "É possível negociar uma dívida bancária?"
+msgstr "¿Es posible negociar una deuda bancaria?"
+
+msgid "Podem ser avaliadas propostas de renegociação, quitação ou parcelamento, pela via extrajudicial ou judicial. As condições dependem do contrato, do débito e da negociação com a instituição financeira."
+msgstr "Pueden evaluarse propuestas de renegociación, liquidación o pago a plazos, por vía extrajudicial o judicial. Las condiciones dependen del contrato, la deuda y la negociación con la entidad financiera."
+
+msgid "Como obter informações sobre atendimento e honorários?"
+msgstr "¿Cómo obtener información sobre atención y honorarios?"
+
+msgid "O contato pode ser feito pelo WhatsApp. As condições da consulta e dos honorários são informadas antes de eventual contratação, conforme o serviço necessário."
+msgstr "Puede ponerse en contacto por WhatsApp. Las condiciones de la consulta y los honorarios se informan antes de una posible contratación, según el servicio necesario."
+
+#: Calculadora de la LP bancaria
+msgid "Calculadora bancária"
+msgstr "Calculadora bancaria"
+
+msgid "Compare as taxas do seu contrato"
+msgstr "Compare las tasas de su contrato"
+
+msgid "Estimativa matemática das parcelas e comparação com a média do Banco Central no mês da contratação. O resultado não determina a legalidade dos juros."
+msgstr "Estimación matemática de las cuotas y comparación con la media del Banco Central en el mes de contratación. El resultado no determina la legalidad de los intereses."
+
+msgid "Etapas da simulação"
+msgstr "Etapas de la simulación"
+
+msgid "Contrato"
+msgstr "Contrato"
+
+msgid "Financiamento"
+msgstr "Financiación"
+
+msgid "Parcelas"
+msgstr "Cuotas"
+
+msgid "Qual é o tipo do contrato?"
+msgstr "¿Qué tipo de contrato es?"
+
+msgid "Modalidade"
+msgstr "Modalidad"
+
+msgid "Selecione uma modalidade"
+msgstr "Seleccione una modalidad"
+
+msgid "Pessoa física"
+msgstr "Persona física"
+
+msgid "Crédito pessoal não consignado"
+msgstr "Crédito personal no sujeto a descuento en nómina"
+
+msgid "Aquisição de veículos"
+msgstr "Adquisición de vehículos"
+
+msgid "Pessoa jurídica"
+msgstr "Persona jurídica"
+
+msgid "Capital de giro total"
+msgstr "Capital de trabajo total"
+
+msgid "Capital de giro rotativo"
+msgstr "Capital de trabajo rotativo"
+
+msgid "Arrendamento mercantil de veículos"
+msgstr "Arrendamiento financiero de vehículos"
+
+msgid "A série 25.450 é de arrendamento mercantil; aquisição de veículos PJ exige a série 25.447."
+msgstr "La serie 25.450 corresponde al arrendamiento financiero; la adquisición de vehículos por personas jurídicas requiere la serie 25.447."
+
+msgid "Quando e quanto foi financiado?"
+msgstr "¿Cuándo se contrató y cuánto se financió?"
+
+msgid "Mês do contrato"
+msgstr "Mes del contrato"
+
+msgid "Escolha o mês"
+msgstr "Elija el mes"
+
+msgid "Escolha o mês do contrato"
+msgstr "Elija el mes del contrato"
+
+msgid "Ano anterior"
+msgstr "Año anterior"
+
+msgid "Próximo ano"
+msgstr "Año siguiente"
+
+msgid "Escolha um mês com taxa disponível no Banco Central."
+msgstr "Elija un mes con una tasa disponible del Banco Central."
+
+msgid "Valor financiado (R$)"
+msgstr "Importe financiado (R$)"
+
+msgid "Digite os números; os centavos aparecem automaticamente."
+msgstr "Introduzca los números; los centavos aparecen automáticamente."
+
+msgid "Como são as parcelas?"
+msgstr "¿Cómo son las cuotas?"
+
+msgid "Quantidade de parcelas"
+msgstr "Número de cuotas"
+
+msgid "Valor de uma parcela (R$)"
+msgstr "Importe de una cuota (R$)"
+
+msgid "Para parcelas variáveis, informe a primeira. Digite apenas números."
+msgstr "Si las cuotas varían, indique la primera. Introduzca solo números."
+
+msgid "Continuar"
+msgstr "Continuar"
+
+msgid "Ver minha estimativa"
+msgstr "Ver mi estimación"
+
+msgid "Fazer uma nova"
+msgstr "Hacer otra simulación"
+
+msgid "Simulação informativa, sem CET, tarifas, seguros, mora ou correção monetária. A comparação com a média não confirma abusividade: o contrato exige análise individual."
+msgstr "Simulación informativa, sin CET, comisiones, seguros, mora ni actualización monetaria. La comparación con la media no confirma que haya intereses abusivos: el contrato requiere un análisis individual."
+
+msgid "Estimativa informativa"
+msgstr "Estimación informativa"
+
+msgid "Preencha os dados para comparar"
+msgstr "Complete los datos para comparar"
+
+msgid "São só cinco informações, em três etapas. O cálculo é feito no seu navegador."
+msgstr "Son cinco datos en tres etapas. El cálculo se realiza en su navegador."
+
+msgid "Estimativa principal para parcelas fixas pelo sistema Price. Com uma única parcela não é possível identificar o sistema real do contrato."
+msgstr "Estimación principal para cuotas fijas con el sistema Price. Una sola cuota no permite identificar el sistema real del contrato."
+
+msgid "Taxa estimada pelas parcelas"
+msgstr "Tasa estimada a partir de las cuotas"
+
+msgid "Média BCB"
+msgstr "Media del Banco Central"
+
+msgid "Diferença"
+msgstr "Diferencia"
+
+msgid "Parcela informada"
+msgstr "Cuota indicada"
+
+msgid "Total estimado"
+msgstr "Total estimado"
+
+msgid "Juros estimados"
+msgstr "Intereses estimados"
+
+msgid "Ver hipóteses Gauss e SAC"
+msgstr "Ver hipótesis Gauss y SAC"
+
+msgid "São cenários matemáticos, não uma identificação automática do sistema do seu contrato."
+msgstr "Son escenarios matemáticos, no una identificación automática del sistema de su contrato."
+
+msgid "Gauss · parcela fixa"
+msgstr "Gauss · cuota fija"
+
+msgid "SAC · primeira parcela"
+msgstr "SAC · primera cuota"
+
+msgid "Solicitar informações pelo WhatsApp"
+msgstr "Solicitar información por WhatsApp"
+
+msgid "Diferença expressiva sinaliza, nesta triagem, taxa ao menos 50% acima da média. Esse corte não é parâmetro legal. A média BCB não é limite de juros; só a análise do contrato e das circunstâncias permite avaliar abusividade. Os dados da simulação só seguem para o WhatsApp se você clicar no botão."
+msgstr "En esta simulación, una diferencia considerable indica una tasa al menos un 50 % superior a la media. Ese umbral no es un parámetro legal. La media del Banco Central no limita los intereses; solo el análisis del contrato y las circunstancias permite valorar si son abusivos. Los datos de la simulación solo se envían a WhatsApp si pulsa el botón."
+
+#: Textos compartidos visibles en la LP
+msgid "Pular para o conteúdo"
+msgstr "Ir al contenido"
+
+msgid "Navegação principal"
+msgstr "Navegación principal"
+
+msgid "Ir para o início"
+msgstr "Ir al inicio"
+
+msgid "Advocacia"
+msgstr "Abogacía"
+
+msgid "Fechar menu"
+msgstr "Cerrar menú"
+
+msgid "Atuação"
+msgstr "Áreas de actuación"
+
+msgid "Voltar ao topo"
+msgstr "Volver arriba"
+
+msgid "Fale conosco no WhatsApp"
+msgstr "Contáctenos por WhatsApp"
+
+msgid "Atendimento jurídico personalizado em São José - SC, com clareza e acompanhamento em cada etapa."
+msgstr "Atención jurídica personalizada en São José/SC, con claridad y seguimiento en cada etapa."
+
+msgid "Visualizar PDF"
+msgstr "Ver PDF"
+
+msgid "Advogado Jorge R. Sarobe em seu escritório"
+msgstr "Abogado Jorge R. Sarobe en su despacho"
+
+msgid "Aviso de cookies"
+msgstr "Aviso de cookies"
+
+msgid "Usamos cookies apenas para"
+msgstr "Usamos cookies solo para"
+
+msgid "métricas de acesso"
+msgstr "métricas de acceso"
+
+msgid "Ao clicar em “Aceitar”, você concorda com essa coleta."
+msgstr "Al pulsar «Aceptar», usted acepta esta recopilación."
+
+msgid "Saiba mais"
+msgstr "Más información"
+
+msgid "Aceitar"
+msgstr "Aceptar"
+
+msgid "Atendimento direto com o advogado"
+msgstr "Atención directa con el abogado"
+
+msgid "Análise clara e técnica"
+msgstr "Análisis claro y técnico"
+
+msgid "Segurança em todas as etapas"
+msgstr "Atención en cada etapa"
+
+msgid "Falar pelo WhatsApp"
+msgstr "Contacto por WhatsApp"
+
+#: Evaluaciones públicas mostradas en la LP
+msgid "avaliações"
+msgstr "reseñas"
+
+msgid "Ver no Google (abre em nova aba)"
+msgstr "Ver en Google (se abre en una nueva pestaña)"
+
+msgid "Avaliações de clientes"
+msgstr "Opiniones de clientes"
+
+msgid "5 de 5 estrelas"
+msgstr "5 de 5 estrellas"
+
+msgid "Atendimento humanizado, super indico"
+msgstr "Atención humana, lo recomiendo mucho"
+
+msgid "Tira nossas dúvidas com clareza"
+msgstr "Aclara nuestras dudas con claridad"
+
+msgid "De muita confiança e com vasto conhecimento"
+msgstr "De mucha confianza y con amplios conocimientos"
+
+msgid "Navegação das avaliações"
+msgstr "Navegación de las reseñas"
+
+msgid "Avaliação anterior"
+msgstr "Reseña anterior"
+
+msgid "Próxima avaliação"
+msgstr "Siguiente reseña"
